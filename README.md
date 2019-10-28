@@ -31,7 +31,7 @@ Small-Amp uses a simple visualizing window. This window appears when the run of 
 
 ![Visualise window](screenshots/Screenshot&#32;2019-10-28&#32;at&#32;13.14.59.png)
 
-1. List of classes has been amplified
+1. List of classes have been amplified
 2. Versions (original, amplified, amplified and minified) for the class selected in 1.
 3. Mutation status for the selected version in 2.
 4. List of mutants (mutants list selected in 3)
