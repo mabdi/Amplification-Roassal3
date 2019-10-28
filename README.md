@@ -9,7 +9,7 @@ Test Amplification for Roassal3
 ## How to load
 ```smalltalk
 Metacello new
-  baseline: 'Amplification-Roassal3';
+  baseline: 'AmplificationRoassal3';
   repository: 'github://mabdi/Amplification-Roassal3/src';
   load.
 ```
