@@ -11,12 +11,10 @@ TestAmplificationRoassel >> amplifyAll [
 ]
 
 { #category : #'as yet unclassified' }
-TestAmplificationRoassel >> amplifySample [
-	<script: 'self new amplifySample'>
-	| runs amps |
-	ASTHelper uniqueInstance clearTempClasses.
-	amps := OrderedCollection with: RSViewTest -> RSView with:  TSLinesTest -> TSCanvas..
-	runs := self amplifyAll: amps.
+TestAmplificationRoassel >> amplifyAndVisualize [
+	<script: 'self new amplifyAndVisualize'>
+	| runs |
+	runs := super amplifyAll.
 	self visualizeAmplification2: runs
 ]
 
@@ -26,25 +24,25 @@ TestAmplificationRoassel >> testTargtsMapping [
 	list := OrderedCollection new.
 	"**** Roassal3-Scripting tests ***"
 	list add: RSViewTest -> RSView.
-	list add: RSShapeBuilderTest -> RSShapeBuilder.
+	"list add: RSShapeBuilderTest -> RSShapeBuilder."	"TODO Flanky test"
 	"list add: RSRoassalTest -> ??."
 	"list add: RSMenuActivableTest -> ??."
 	"list add: RSGroupTest -> ??."
 	list add: RSEdgeTest -> RSEdge.
-	list add: RSEdgeBuilderTest -> RSEdgeBuilder.
+	list add: RSEdgeBuilderTest -> RSEdgeBuilder.	"Mutalk Error -> TODO check it"
 	"list add: RSCompositeElementTest -> ??."
 
 	"**** Roassal3-Animation tests ****"
-	list add: TSSequentialAnimationTest -> TSSequentialAnimation.
-	list add: TSTransitionAnimationTest -> TSTransitionAnimation.
+	"list add: TSSequentialAnimationTest -> TSSequentialAnimation."	"TODO timeout related"
+	"list add: TSTransitionAnimationTest -> TSTransitionAnimation."	"TODO timeout related"
 	list add: TSAnimationTest -> TSTransitionAnimation.
-	
+
 	"***** Roassal3 tests ****"
-	list add: TSLinesTest -> TSCanvas.
-	list add: TSLabelTest -> TSCanvas.
-	list add: TSBoundingTest -> TSCanvas.
-	list add: TSCanvasTest -> TSCanvas.
-	list add: TSGroupTest -> TSGroup.
+	"list add: TSLinesTest -> TSCanvas."	"TODO Flanky test"
+	"list add: TSLabelTest -> TSCanvas."	"TODO Flanky test"
+	"list add: TSBoundingTest -> TSCanvas."	"TODO Flanky test"
+	"list add: TSCanvasTest -> TSCanvas."	"TODO Flanky test"
+	"list add: TSGroupTest -> TSGroup."	"TODO Flanky test"
 	list add: TSCompositeTest -> TSComposite.
 	list add: TSAthensRendererTest -> TSAthensRenderer.
 	^ list
