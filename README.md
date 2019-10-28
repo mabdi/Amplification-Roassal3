@@ -18,3 +18,7 @@ Metacello new
 ```smalltalk
 TestAmplificationRoassel new amplifyAndVisualize
 ```
+
+Or simply click on Run script icon next to `amplifyAndVisualize` method:
+
+![Run Script](screenshots/Screenshot&#32;2019-10-28&#32;at&#32;10.50.14.png)
