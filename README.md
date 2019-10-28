@@ -27,7 +27,7 @@ Or simply click on Run script icon next to `amplifyAndVisualize` method. You can
 
 ## Visualization window
 
-Small-Amp uses a simple visualising window. This window appears when the run of `amplifyAndVisualize` method finishes.
+Small-Amp uses a simple visualizing window. This window appears when the run of `amplifyAndVisualize` method finishes.
 
 ![Visualise window](screenshots/Screenshot&#32;2019-10-28&#32;at&#32;13.14.59.png)
 
