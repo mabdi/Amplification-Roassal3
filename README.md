@@ -32,10 +32,10 @@ Small-Amp uses a simple visualizing window. This window appears when the run of 
 ![Visualise window](screenshots/Screenshot&#32;2019-10-28&#32;at&#32;13.14.59.png)
 
 1. List of classes has been amplified
-2. Versions -original, amplified, amplified and minified- of the class (class selected in 1).
-3. Mutation status (for version selected in 2)
+2. Versions (original, amplified, amplified and minified) for the class selected in 1.
+3. Mutation status for the selected version in 2.
 4. List of mutants (mutants list selected in 3)
-5. Method before mutaion (mutant selected in 4)
-6. Method after mutation (mutant selected in 4)
-7. List of methods (class version selected in 2)
-8. Method source code (method selected in 7)
+5. Method before mutaion for mutant selected in 4.
+6. Method after mutation for mutant selected in 4.
+7. List of methods for the class version selected in 2.
+8. Source code for the method selected in 7.
