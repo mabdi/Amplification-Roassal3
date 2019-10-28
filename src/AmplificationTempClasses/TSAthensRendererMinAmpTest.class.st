@@ -1,0 +1,13 @@
+Class {
+	#name : #TSAthensRendererMinAmpTest,
+	#superclass : #TSTest,
+	#category : #AmplificationTempClasses
+}
+
+{ #category : #'as yet unclassified' }
+TSAthensRendererMinAmpTest >> testArcCorner [
+	<madeBySmallAmp>
+	| renderer |
+	renderer := TSAthensRenderer new.
+	self assert: renderer builder class equals: UndefinedObject
+]
