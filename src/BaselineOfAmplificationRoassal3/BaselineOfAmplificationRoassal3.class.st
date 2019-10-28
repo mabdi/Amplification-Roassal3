@@ -12,8 +12,7 @@ BaselineOfAmplificationRoassal3 >> baseline: spec [
 		do: [ spec
 				package: 'AmplificationRoassal3'
 				with: [ spec requires: #('Amplification' 'Roassal3') ].
-				spec 
-				package: 'AmplificationTempClasses'.
+			spec package: 'AmplificationTempClasses' with: [ spec requires: #('AmplificationRoassal3') ].
 			spec
 				baseline: 'Amplification'
 				with: [ spec repository: 'github://mabdi/small-amp/src' ].
