@@ -1,7 +1,7 @@
 Class {
 	#name : #TestAmplificationRoassel,
 	#superclass : #AmplificationHelper,
-	#category : #'Amplification-Roassal3'
+	#category : #AmplificationRoassal3
 }
 
 { #category : #'as yet unclassified' }
