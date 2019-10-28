@@ -10,7 +10,7 @@ BaselineOfAmplificationRoassal3 >> baseline: spec [
 	spec
 		for: #common
 		do: [ spec
-				package: 'AmplificationRoassal3'
+				package: 'Amplification-Roassal3'
 				with: [ spec requires: #('Amplification' 'Roassal3') ].
 			spec
 				baseline: 'Amplification'
