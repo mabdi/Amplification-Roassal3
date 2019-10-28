@@ -14,6 +14,7 @@ TestAmplificationRoassel >> amplifyAll [
 TestAmplificationRoassel >> amplifyAndVisualize [
 	<script: 'self new amplifyAndVisualize'>
 	| runs |
+	ASTHelper uniqueInstance clearTempClasses.
 	runs := super amplifyAll.
 	self visualizeAmplification2: runs
 ]
