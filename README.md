@@ -13,3 +13,8 @@ Metacello new
   repository: 'github://mabdi/Amplification-Roassal3/src';
   load.
 ```
+
+## How to Run
+```smalltalk
+TestAmplificationRoassel new amplifyAndVisualize
+```
