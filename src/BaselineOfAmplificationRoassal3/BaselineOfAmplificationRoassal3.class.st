@@ -1,7 +1,7 @@
 Class {
 	#name : #BaselineOfAmplificationRoassal3,
 	#superclass : #BaselineOf,
-	#category : #'BaselineOfAmplification-Roassal3'
+	#category : #BaselineOfAmplificationRoassal3
 }
 
 { #category : #baselines }
