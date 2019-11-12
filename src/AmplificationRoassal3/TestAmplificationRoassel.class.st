@@ -25,7 +25,7 @@ TestAmplificationRoassel >> testTargtsMapping [
 	list := OrderedCollection new.
 	"**** Roassal3-Scripting tests ***"
 	list add: RSViewTest -> RSView.
-	"list add: RSShapeBuilderTest -> RSShapeBuilder."	"TODO Flanky test"
+	"list add: RSShapeBuilderTest -> RSShapeBuilder."	"TODO Flaky test"
 	"list add: RSRoassalTest -> ??."
 	"list add: RSMenuActivableTest -> ??."
 	"list add: RSGroupTest -> ??."
@@ -39,11 +39,11 @@ TestAmplificationRoassel >> testTargtsMapping [
 	list add: TSAnimationTest -> TSTransitionAnimation.
 
 	"***** Roassal3 tests ****"
-	"list add: TSLinesTest -> TSCanvas."	"TODO Flanky test"
-	"list add: TSLabelTest -> TSCanvas."	"TODO Flanky test"
-	"list add: TSBoundingTest -> TSCanvas."	"TODO Flanky test"
-	"list add: TSCanvasTest -> TSCanvas."	"TODO Flanky test"
-	"list add: TSGroupTest -> TSGroup."	"TODO Flanky test"
+	"list add: TSLinesTest -> TSCanvas."	"TODO Flaky test"
+	"list add: TSLabelTest -> TSCanvas."	"TODO Flaky test"
+	"list add: TSBoundingTest -> TSCanvas."	"TODO Flaky test"
+	"list add: TSCanvasTest -> TSCanvas."	"TODO Flaky test"
+	"list add: TSGroupTest -> TSGroup."	"TODO Flaky test"
 	list add: TSCompositeTest -> TSComposite.
 	list add: TSAthensRendererTest -> TSAthensRenderer.
 	^ list
