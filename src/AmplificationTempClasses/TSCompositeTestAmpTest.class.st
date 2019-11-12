@@ -1,5 +1,5 @@
 Class {
-	#name : #TSCompositeAmpTest,
+	#name : #TSCompositeTestAmpTest,
 	#superclass : #TSTest,
 	#classInstVars : [
 		'smallamp_logs'
@@ -8,31 +8,31 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-TSCompositeAmpTest class >> logs [ ^ smallamp_logs ifNil: [ smallamp_logs:= OrderedCollection new ]  
+TSCompositeTestAmpTest class >> logs [ ^ smallamp_logs ifNil: [ smallamp_logs:= OrderedCollection new ]  
 ]
 
 { #category : #'as yet unclassified' }
-TSCompositeAmpTest >> assert: actual equals: expected description: description [ ^ self
+TSCompositeTestAmpTest >> assert: actual equals: expected description: description [ ^ self
 		assert: actual = expected
 		description: description
 ]
 
 { #category : #'as yet unclassified' }
-TSCompositeAmpTest >> deny: actual equals: expected description: description [ ^ self
+TSCompositeTestAmpTest >> deny: actual equals: expected description: description [ ^ self
 		deny: actual = expected
 		description: description
 ]
 
 { #category : #'as yet unclassified' }
-TSCompositeAmpTest >> isLogging [ ^true
+TSCompositeTestAmpTest >> isLogging [ ^true
 ]
 
 { #category : #'as yet unclassified' }
-TSCompositeAmpTest >> logFailure: aString [ self class logs add: aString
+TSCompositeTestAmpTest >> logFailure: aString [ self class logs add: aString
 ]
 
 { #category : #'as yet unclassified' }
-TSCompositeAmpTest >> should: aBlock notTakeMoreThan: aDuration description: description [ ^ aBlock
+TSCompositeTestAmpTest >> should: aBlock notTakeMoreThan: aDuration description: description [ ^ aBlock
 		valueWithin: aDuration
 		onTimeout: [ self
 				assert: false
@@ -40,7 +40,7 @@ TSCompositeAmpTest >> should: aBlock notTakeMoreThan: aDuration description: des
 ]
 
 { #category : #'as yet unclassified' }
-TSCompositeAmpTest >> should: aBlock takeMoreThan: aDuration description: description [ ^ aBlock
+TSCompositeTestAmpTest >> should: aBlock takeMoreThan: aDuration description: description [ ^ aBlock
 		valueWithin: aDuration
 		onTimeout: [ self
 				assert: true
@@ -48,139 +48,139 @@ TSCompositeAmpTest >> should: aBlock takeMoreThan: aDuration description: descri
 ]
 
 { #category : #'as yet unclassified' }
-TSCompositeAmpTest >> testPaddingOkay [
+TSCompositeTestAmpTest >> testPaddingOkay [
 	"No error should be raised"
 
 	<madeBySmallAmp>
-	| tmp_UiX2PLhcCW3 tmp_KKvUMrNwAo4 tmp_R8OB6uI7Vf7 tmp_JylbyJzvx58 tmp_f2TLK72vsY11 tmp_svJNcWahpK12 |
-	tmp_UiX2PLhcCW3 := TSComposite new.
+	| tmp_9zA4zBBaxz3 tmp_HVVdZgqAOg4 tmp_4cRNY1edpn7 tmp_TKNoqyDHMf8 tmp_gVsh3jmeIF11 tmp_dy1ow3Csju12 |
+	tmp_9zA4zBBaxz3 := TSComposite new.
 	self
-		assert: tmp_UiX2PLhcCW3 class
+		assert: tmp_9zA4zBBaxz3 class
 		equals: TSComposite
 		description: 'testPaddingOkay:1.1'.
 	self
-		assert: tmp_UiX2PLhcCW3 shapes class
+		assert: tmp_9zA4zBBaxz3 shapes class
 		equals: TSGroup
 		description: 'testPaddingOkay:1.2'.
 	self
-		assert: tmp_UiX2PLhcCW3 shapes size
+		assert: tmp_9zA4zBBaxz3 shapes size
 		equals: 0
 		description: 'testPaddingOkay:1.3'.
-	tmp_R8OB6uI7Vf7 := TSComposite new.
+	tmp_4cRNY1edpn7 := TSComposite new.
 	self
-		assert: tmp_R8OB6uI7Vf7 class
+		assert: tmp_4cRNY1edpn7 class
 		equals: TSComposite
 		description: 'testPaddingOkay:2.1'.
 	self
-		assert: tmp_R8OB6uI7Vf7 shapes class
+		assert: tmp_4cRNY1edpn7 shapes class
 		equals: TSGroup
 		description: 'testPaddingOkay:2.2'.
 	self
-		assert: tmp_R8OB6uI7Vf7 shapes size
+		assert: tmp_4cRNY1edpn7 shapes size
 		equals: 0
 		description: 'testPaddingOkay:2.3'.
-	tmp_f2TLK72vsY11 := TSComposite new.
+	tmp_gVsh3jmeIF11 := TSComposite new.
 	self
-		assert: tmp_f2TLK72vsY11 class
+		assert: tmp_gVsh3jmeIF11 class
 		equals: TSComposite
 		description: 'testPaddingOkay:3.1'.
 	self
-		assert: tmp_f2TLK72vsY11 shapes class
+		assert: tmp_gVsh3jmeIF11 shapes class
 		equals: TSGroup
 		description: 'testPaddingOkay:3.2'.
 	self
-		assert: tmp_f2TLK72vsY11 shapes size
+		assert: tmp_gVsh3jmeIF11 shapes size
 		equals: 0
 		description: 'testPaddingOkay:3.3'.
-	tmp_f2TLK72vsY11 shapes: TSGroup new.
+	tmp_gVsh3jmeIF11 shapes: TSGroup new.
 	self
-		assert: tmp_f2TLK72vsY11 class
+		assert: tmp_gVsh3jmeIF11 class
 		equals: TSComposite
 		description: 'testPaddingOkay:4.1'.
 	self
-		assert: tmp_f2TLK72vsY11 shapes class
+		assert: tmp_gVsh3jmeIF11 shapes class
 		equals: TSGroup
 		description: 'testPaddingOkay:4.2'.
 	self
-		assert: tmp_f2TLK72vsY11 shapes size
+		assert: tmp_gVsh3jmeIF11 shapes size
 		equals: 0
 		description: 'testPaddingOkay:4.3'.
-	tmp_svJNcWahpK12 := TSComposite new.
+	tmp_dy1ow3Csju12 := TSComposite new.
 	self
-		assert: tmp_svJNcWahpK12 class
+		assert: tmp_dy1ow3Csju12 class
 		equals: TSComposite
 		description: 'testPaddingOkay:5.1'.
 	self
-		assert: tmp_svJNcWahpK12 shapes class
+		assert: tmp_dy1ow3Csju12 shapes class
 		equals: TSGroup
 		description: 'testPaddingOkay:5.2'.
 	self
-		assert: tmp_svJNcWahpK12 shapes size
+		assert: tmp_dy1ow3Csju12 shapes size
 		equals: 0
 		description: 'testPaddingOkay:5.3'.
-	tmp_svJNcWahpK12 padding: 5.
+	tmp_dy1ow3Csju12 padding: 5.
 	self
-		assert: tmp_svJNcWahpK12 class
+		assert: tmp_dy1ow3Csju12 class
 		equals: TSComposite
 		description: 'testPaddingOkay:6.1'.
 	self
-		assert: tmp_svJNcWahpK12 shapes class
+		assert: tmp_dy1ow3Csju12 shapes class
 		equals: TSGroup
 		description: 'testPaddingOkay:6.2'.
 	self
-		assert: tmp_svJNcWahpK12 shapes size
+		assert: tmp_dy1ow3Csju12 shapes size
 		equals: 0
 		description: 'testPaddingOkay:6.3'.
-	tmp_JylbyJzvx58 := TSComposite new.
+	tmp_TKNoqyDHMf8 := TSComposite new.
 	self
-		assert: tmp_JylbyJzvx58 class
+		assert: tmp_TKNoqyDHMf8 class
 		equals: TSComposite
 		description: 'testPaddingOkay:7.1'.
 	self
-		assert: tmp_JylbyJzvx58 shapes class
+		assert: tmp_TKNoqyDHMf8 shapes class
 		equals: TSGroup
 		description: 'testPaddingOkay:7.2'.
 	self
-		assert: tmp_JylbyJzvx58 shapes size
+		assert: tmp_TKNoqyDHMf8 shapes size
 		equals: 0
 		description: 'testPaddingOkay:7.3'.
-	tmp_JylbyJzvx58 padding: 5.
+	tmp_TKNoqyDHMf8 padding: 5.
 	self
-		assert: tmp_JylbyJzvx58 class
+		assert: tmp_TKNoqyDHMf8 class
 		equals: TSComposite
 		description: 'testPaddingOkay:8.1'.
 	self
-		assert: tmp_JylbyJzvx58 shapes class
+		assert: tmp_TKNoqyDHMf8 shapes class
 		equals: TSGroup
 		description: 'testPaddingOkay:8.2'.
 	self
-		assert: tmp_JylbyJzvx58 shapes size
+		assert: tmp_TKNoqyDHMf8 shapes size
 		equals: 0
 		description: 'testPaddingOkay:8.3'.
-	tmp_KKvUMrNwAo4 := TSComposite new.
+	tmp_HVVdZgqAOg4 := TSComposite new.
 	self
-		assert: tmp_KKvUMrNwAo4 class
+		assert: tmp_HVVdZgqAOg4 class
 		equals: TSComposite
 		description: 'testPaddingOkay:9.1'.
 	self
-		assert: tmp_KKvUMrNwAo4 shapes class
+		assert: tmp_HVVdZgqAOg4 shapes class
 		equals: TSGroup
 		description: 'testPaddingOkay:9.2'.
 	self
-		assert: tmp_KKvUMrNwAo4 shapes size
+		assert: tmp_HVVdZgqAOg4 shapes size
 		equals: 0
 		description: 'testPaddingOkay:9.3'.
-	tmp_KKvUMrNwAo4 padding: 5.
+	tmp_HVVdZgqAOg4 padding: 5.
 	self
-		assert: tmp_KKvUMrNwAo4 class
+		assert: tmp_HVVdZgqAOg4 class
 		equals: TSComposite
 		description: 'testPaddingOkay:10.1'.
 	self
-		assert: tmp_KKvUMrNwAo4 shapes class
+		assert: tmp_HVVdZgqAOg4 shapes class
 		equals: TSGroup
 		description: 'testPaddingOkay:10.2'.
 	self
-		assert: tmp_KKvUMrNwAo4 shapes size
+		assert: tmp_HVVdZgqAOg4 shapes size
 		equals: 0
 		description: 'testPaddingOkay:10.3'.
 	TSComposite new

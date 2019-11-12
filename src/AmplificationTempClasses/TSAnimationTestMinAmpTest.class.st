@@ -1,5 +1,5 @@
 Class {
-	#name : #TSTransitionAnimationMinAmpTest,
+	#name : #TSAnimationTestMinAmpTest,
 	#superclass : #TSTest,
 	#instVars : [
 		'canvas'
@@ -8,12 +8,12 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-TSTransitionAnimationMinAmpTest >> setUp [
+TSAnimationTestMinAmpTest >> setUp [
 	canvas := TSCanvas new.
 ]
 
 { #category : #'as yet unclassified' }
-TSTransitionAnimationMinAmpTest >> testTransitionAnimationCreation [
+TSAnimationTestMinAmpTest >> testTransitionAnimationCreation [
 	<madeBySmallAmp>
 	| animation |
 	animation := canvas newAnimation.

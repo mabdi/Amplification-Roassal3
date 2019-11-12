@@ -1,5 +1,5 @@
 Class {
-	#name : #TSAthensRendererAmpTest,
+	#name : #TSAthensRendererTestAmpTest,
 	#superclass : #TSTest,
 	#classInstVars : [
 		'smallamp_logs'
@@ -8,31 +8,31 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-TSAthensRendererAmpTest class >> logs [ ^ smallamp_logs ifNil: [ smallamp_logs:= OrderedCollection new ]  
+TSAthensRendererTestAmpTest class >> logs [ ^ smallamp_logs ifNil: [ smallamp_logs:= OrderedCollection new ]  
 ]
 
 { #category : #'as yet unclassified' }
-TSAthensRendererAmpTest >> assert: actual equals: expected description: description [ ^ self
+TSAthensRendererTestAmpTest >> assert: actual equals: expected description: description [ ^ self
 		assert: actual = expected
 		description: description
 ]
 
 { #category : #'as yet unclassified' }
-TSAthensRendererAmpTest >> deny: actual equals: expected description: description [ ^ self
+TSAthensRendererTestAmpTest >> deny: actual equals: expected description: description [ ^ self
 		deny: actual = expected
 		description: description
 ]
 
 { #category : #'as yet unclassified' }
-TSAthensRendererAmpTest >> isLogging [ ^true
+TSAthensRendererTestAmpTest >> isLogging [ ^true
 ]
 
 { #category : #'as yet unclassified' }
-TSAthensRendererAmpTest >> logFailure: aString [ self class logs add: aString
+TSAthensRendererTestAmpTest >> logFailure: aString [ self class logs add: aString
 ]
 
 { #category : #'as yet unclassified' }
-TSAthensRendererAmpTest >> should: aBlock notTakeMoreThan: aDuration description: description [ ^ aBlock
+TSAthensRendererTestAmpTest >> should: aBlock notTakeMoreThan: aDuration description: description [ ^ aBlock
 		valueWithin: aDuration
 		onTimeout: [ self
 				assert: false
@@ -40,7 +40,7 @@ TSAthensRendererAmpTest >> should: aBlock notTakeMoreThan: aDuration description
 ]
 
 { #category : #'as yet unclassified' }
-TSAthensRendererAmpTest >> should: aBlock takeMoreThan: aDuration description: description [ ^ aBlock
+TSAthensRendererTestAmpTest >> should: aBlock takeMoreThan: aDuration description: description [ ^ aBlock
 		valueWithin: aDuration
 		onTimeout: [ self
 				assert: true
@@ -48,7 +48,7 @@ TSAthensRendererAmpTest >> should: aBlock takeMoreThan: aDuration description: d
 ]
 
 { #category : #'as yet unclassified' }
-TSAthensRendererAmpTest >> testArcCorner [
+TSAthensRendererTestAmpTest >> testArcCorner [
 	<madeBySmallAmp>
 	| renderer |
 	renderer := TSAthensRenderer new.

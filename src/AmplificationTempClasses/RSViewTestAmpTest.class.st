@@ -1,5 +1,5 @@
 Class {
-	#name : #RSViewAmpTest,
+	#name : #RSViewTestAmpTest,
 	#superclass : #TSTest,
 	#instVars : [
 		'view'
@@ -11,37 +11,37 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-RSViewAmpTest class >> logs [ ^ smallamp_logs ifNil: [ smallamp_logs:= OrderedCollection new ]  
+RSViewTestAmpTest class >> logs [ ^ smallamp_logs ifNil: [ smallamp_logs:= OrderedCollection new ]  
 ]
 
 { #category : #'as yet unclassified' }
-RSViewAmpTest >> assert: actual equals: expected description: description [ ^ self
+RSViewTestAmpTest >> assert: actual equals: expected description: description [ ^ self
 		assert: actual = expected
 		description: description
 ]
 
 { #category : #'as yet unclassified' }
-RSViewAmpTest >> deny: actual equals: expected description: description [ ^ self
+RSViewTestAmpTest >> deny: actual equals: expected description: description [ ^ self
 		deny: actual = expected
 		description: description
 ]
 
 { #category : #'as yet unclassified' }
-RSViewAmpTest >> isLogging [ ^true
+RSViewTestAmpTest >> isLogging [ ^true
 ]
 
 { #category : #'as yet unclassified' }
-RSViewAmpTest >> logFailure: aString [ self class logs add: aString
+RSViewTestAmpTest >> logFailure: aString [ self class logs add: aString
 ]
 
 { #category : #'as yet unclassified' }
-RSViewAmpTest >> setUp [
+RSViewTestAmpTest >> setUp [
 	super setUp.
 	view := RSView new.
 ]
 
 { #category : #'as yet unclassified' }
-RSViewAmpTest >> should: aBlock notTakeMoreThan: aDuration description: description [ ^ aBlock
+RSViewTestAmpTest >> should: aBlock notTakeMoreThan: aDuration description: description [ ^ aBlock
 		valueWithin: aDuration
 		onTimeout: [ self
 				assert: false
@@ -49,7 +49,7 @@ RSViewAmpTest >> should: aBlock notTakeMoreThan: aDuration description: descript
 ]
 
 { #category : #'as yet unclassified' }
-RSViewAmpTest >> should: aBlock takeMoreThan: aDuration description: description [ ^ aBlock
+RSViewTestAmpTest >> should: aBlock takeMoreThan: aDuration description: description [ ^ aBlock
 		valueWithin: aDuration
 		onTimeout: [ self
 				assert: true
@@ -57,7 +57,7 @@ RSViewAmpTest >> should: aBlock takeMoreThan: aDuration description: description
 ]
 
 { #category : #'as yet unclassified' }
-RSViewAmpTest >> testElementFromModel [
+RSViewTestAmpTest >> testElementFromModel [
 	<madeBySmallAmp>
 	| els |
 	els := RSShapeBuilder box elementsOn: (1 to: 3).
@@ -99,35 +99,59 @@ RSViewAmpTest >> testElementFromModel [
 		equals: TSCanvas
 		description: 'testElementFromModel:2.7'.
 	self
+		assert: view canvas showRectangles class
+		equals: False
+		description: 'testElementFromModel:2.8'.
+	self
+		assert: view canvas showRectangles
+		equals: false
+		description: 'testElementFromModel:2.9'.
+	self
 		assert: view canvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testElementFromModel:2.8'.
+		description: 'testElementFromModel:2.10'.
 	self
 		assert: view canvas numberOfFixedShapes
 		equals: 0
-		description: 'testElementFromModel:2.9'.
+		description: 'testElementFromModel:2.11'.
 	self
 		assert: view canvas morph class
 		equals: UndefinedObject
-		description: 'testElementFromModel:2.10'.
+		description: 'testElementFromModel:2.12'.
 	self
 		assert: view canvas morph
 		equals: nil
-		description: 'testElementFromModel:2.11'.
+		description: 'testElementFromModel:2.13'.
+	self
+		assert: view canvas isShape class
+		equals: False
+		description: 'testElementFromModel:2.14'.
+	self
+		assert: view canvas isShape
+		equals: false
+		description: 'testElementFromModel:2.15'.
 	self
 		assert: view canvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testElementFromModel:2.12'.
+		description: 'testElementFromModel:2.16'.
 	self
 		assert: view canvas numberOfShapes
 		equals: 3
-		description: 'testElementFromModel:2.13'.
+		description: 'testElementFromModel:2.17'.
+	self
+		assert: view canvas clearBackground class
+		equals: True
+		description: 'testElementFromModel:2.18'.
+	self
+		assert: view canvas clearBackground
+		equals: true
+		description: 'testElementFromModel:2.19'.
 	self
 		assert: view elements class
 		equals: TSGroup
-		description: 'testElementFromModel:2.14'.
+		description: 'testElementFromModel:2.20'.
 	self
 		assert: view elements size
 		equals: 3
-		description: 'testElementFromModel:2.15'
+		description: 'testElementFromModel:2.21'
 ]

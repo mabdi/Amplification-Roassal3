@@ -1,11 +1,11 @@
 Class {
-	#name : #TSAthensRendererMinAmpTest,
+	#name : #TSAthensRendererTestMinAmpTest,
 	#superclass : #TSTest,
 	#category : #AmplificationTempClasses
 }
 
 { #category : #'as yet unclassified' }
-TSAthensRendererMinAmpTest >> testArcCorner [
+TSAthensRendererTestMinAmpTest >> testArcCorner [
 	<madeBySmallAmp>
 	| renderer |
 	renderer := TSAthensRenderer new.

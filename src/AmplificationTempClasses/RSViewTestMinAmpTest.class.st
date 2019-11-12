@@ -1,5 +1,5 @@
 Class {
-	#name : #RSViewMinAmpTest,
+	#name : #RSViewTestMinAmpTest,
 	#superclass : #TSTest,
 	#instVars : [
 		'view'
@@ -8,13 +8,13 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-RSViewMinAmpTest >> setUp [
+RSViewTestMinAmpTest >> setUp [
 	super setUp.
 	view := RSView new.
 ]
 
 { #category : #'as yet unclassified' }
-RSViewMinAmpTest >> testElementFromModel [
+RSViewTestMinAmpTest >> testElementFromModel [
 	<madeBySmallAmp>
 	| els |
 	els := RSShapeBuilder box elementsOn: (1 to: 3).
