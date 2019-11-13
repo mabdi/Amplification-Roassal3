@@ -1,6 +1,6 @@
 # Amplification-Roassal3
 
-Test Amplification for Roassal3
+Test Amplification for Roassal3 (works on the forked version: https://github.com/mabdi/Roassal3)
 
 ### Current status 
 
