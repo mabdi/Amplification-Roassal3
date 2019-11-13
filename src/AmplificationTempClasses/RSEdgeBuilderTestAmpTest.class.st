@@ -64,7 +64,7 @@ RSEdgeBuilderTestAmpTest >> should: aBlock takeMoreThan: aDuration description: 
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testAllowRepetitionAndUseAssociations_amp [
 	<madeBySmallAmp>
-	| v eb tmp_YovJF7oads5 tmp_p1G9j8Bazg6 |
+	| v eb tmp_bbf5HEYoXX5 tmp_CNd0FUiWrj6 |
 	v := RSView new.
 	self
 		assert: v class
@@ -523,7 +523,7 @@ RSEdgeBuilderTestAmpTest >> testAllowRepetitionAndUseAssociations_amp [
 		assert: eb viewElements size
 		equals: 3
 		description: 'testAllowRepetitionAndUseAssociations_amp:6.18'.
-	tmp_YovJF7oads5 := eb
+	tmp_bbf5HEYoXX5 := eb
 		useAssociations: (Array with: 1 -> 2 with: 2 -> 3 with: 1 -> 2).
 	self
 		assert: eb class
@@ -598,20 +598,20 @@ RSEdgeBuilderTestAmpTest >> testAllowRepetitionAndUseAssociations_amp [
 		equals: 3
 		description: 'testAllowRepetitionAndUseAssociations_amp:7.18'.
 	self
-		assert: tmp_YovJF7oads5 class
+		assert: tmp_bbf5HEYoXX5 class
 		equals: TSGroup
 		description: 'testAllowRepetitionAndUseAssociations_amp:7.1'.
 	self
-		assert: tmp_YovJF7oads5 size
+		assert: tmp_bbf5HEYoXX5 size
 		equals: 2
 		description: 'testAllowRepetitionAndUseAssociations_amp:7.2'.
-	tmp_p1G9j8Bazg6 := TSGridLayout on: v elements.
+	tmp_CNd0FUiWrj6 := TSGridLayout on: v elements.
 	self
-		assert: tmp_p1G9j8Bazg6 class
+		assert: tmp_CNd0FUiWrj6 class
 		equals: TSGroup
 		description: 'testAllowRepetitionAndUseAssociations_amp:8.1'.
 	self
-		assert: tmp_p1G9j8Bazg6 size
+		assert: tmp_CNd0FUiWrj6 size
 		equals: 3
 		description: 'testAllowRepetitionAndUseAssociations_amp:8.2'
 ]
@@ -619,7 +619,7 @@ RSEdgeBuilderTestAmpTest >> testAllowRepetitionAndUseAssociations_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testConnectFrom_amp [
 	<madeBySmallAmp>
-	| e tmp_gvKJXALbUL3 |
+	| e tmp_VqT2Ilt5H53 |
 	b view: view.
 	self
 		assert: b class
@@ -766,7 +766,7 @@ RSEdgeBuilderTestAmpTest >> testConnectFrom_amp [
 		assert: b viewElements size
 		equals: 10
 		description: 'testConnectFrom_amp:2.18'.
-	tmp_gvKJXALbUL3 := b connectFrom: [ :v | v - 1 ].
+	tmp_VqT2Ilt5H53 := b connectFrom: [ :v | v - 1 ].
 	self
 		assert: b class
 		equals: RSEdgeBuilder
@@ -840,11 +840,11 @@ RSEdgeBuilderTestAmpTest >> testConnectFrom_amp [
 		equals: 10
 		description: 'testConnectFrom_amp:3.18'.
 	self
-		assert: tmp_gvKJXALbUL3 class
+		assert: tmp_VqT2Ilt5H53 class
 		equals: TSGroup
 		description: 'testConnectFrom_amp:3.1'.
 	self
-		assert: tmp_gvKJXALbUL3 size
+		assert: tmp_VqT2Ilt5H53 size
 		equals: 1
 		description: 'testConnectFrom_amp:3.2'.
 	e := view edges anyOne.
@@ -909,7 +909,7 @@ RSEdgeBuilderTestAmpTest >> testConnectFrom_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testConnectToAll_amp [
 	<madeBySmallAmp>
-	| eFrom eTo tmp_ng2sDHs5133 |
+	| eFrom eTo tmp_h6q7XIJ87V3 |
 	b view: view.
 	self
 		assert: b class
@@ -1056,7 +1056,7 @@ RSEdgeBuilderTestAmpTest >> testConnectToAll_amp [
 		assert: b viewElements size
 		equals: 10
 		description: 'testConnectToAll_amp:2.18'.
-	tmp_ng2sDHs5133 := b
+	tmp_h6q7XIJ87V3 := b
 		connectToAll: [ :v | Array with: v - 1 with: v - 2 ].
 	self
 		assert: b class
@@ -1131,11 +1131,11 @@ RSEdgeBuilderTestAmpTest >> testConnectToAll_amp [
 		equals: 10
 		description: 'testConnectToAll_amp:3.18'.
 	self
-		assert: tmp_ng2sDHs5133 class
+		assert: tmp_h6q7XIJ87V3 class
 		equals: TSGroup
 		description: 'testConnectToAll_amp:3.1'.
 	self
-		assert: tmp_ng2sDHs5133 size
+		assert: tmp_h6q7XIJ87V3 size
 		equals: 3
 		description: 'testConnectToAll_amp:3.2'.
 	eFrom := (view edges collect: [ :edge | edge from model ]) sorted
@@ -1178,7 +1178,7 @@ RSEdgeBuilderTestAmpTest >> testConnectToAll_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testConnectTo_amp [
 	<madeBySmallAmp>
-	| e tmp_UL3xK3i3Vi3 |
+	| e tmp_VyMpNzMWxR3 |
 	b view: view.
 	self
 		assert: b class
@@ -1325,7 +1325,7 @@ RSEdgeBuilderTestAmpTest >> testConnectTo_amp [
 		assert: b viewElements size
 		equals: 10
 		description: 'testConnectTo_amp:2.18'.
-	tmp_UL3xK3i3Vi3 := b connectTo: [ :v | v - 1 ].
+	tmp_VyMpNzMWxR3 := b connectTo: [ :v | v - 1 ].
 	self
 		assert: b class
 		equals: RSEdgeBuilder
@@ -1399,11 +1399,11 @@ RSEdgeBuilderTestAmpTest >> testConnectTo_amp [
 		equals: 10
 		description: 'testConnectTo_amp:3.18'.
 	self
-		assert: tmp_UL3xK3i3Vi3 class
+		assert: tmp_VyMpNzMWxR3 class
 		equals: TSGroup
 		description: 'testConnectTo_amp:3.1'.
 	self
-		assert: tmp_UL3xK3i3Vi3 size
+		assert: tmp_VyMpNzMWxR3 size
 		equals: 1
 		description: 'testConnectTo_amp:3.2'.
 	e := view edges anyOne.
@@ -1990,7 +1990,7 @@ RSEdgeBuilderTestAmpTest >> testElements_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testFromAll_amp [
 	<madeBySmallAmp>
-	| v es tmp_MAkLlVRCnI4 tmp_HSGNGVtBeI6 tmp_UF0iQjg0zJ8 tmp_nJf6EL8QAW9 tmp_Pli53kceem10 |
+	| v es tmp_V3HLESOJqS4 tmp_vuuJlYs8hG6 tmp_Yx5JIciIoV8 tmp_8xiyVuZw5o9 tmp_UUa8MLqecR10 |
 	v := RSView new.
 	self
 		assert: v class
@@ -2175,303 +2175,303 @@ RSEdgeBuilderTestAmpTest >> testFromAll_amp [
 		assert: v elements size
 		equals: 2
 		description: 'testFromAll_amp:3.21'.
-	tmp_HSGNGVtBeI6 := RSEdgeBuilder new.
+	tmp_vuuJlYs8hG6 := RSEdgeBuilder new.
 	self
-		assert: tmp_HSGNGVtBeI6 class
+		assert: tmp_vuuJlYs8hG6 class
 		equals: RSEdgeBuilder
 		description: 'testFromAll_amp:4.1'.
 	self
-		assert: tmp_HSGNGVtBeI6 isBidirectional class
+		assert: tmp_vuuJlYs8hG6 isBidirectional class
 		equals: True
 		description: 'testFromAll_amp:4.2'.
 	self
-		assert: tmp_HSGNGVtBeI6 isBidirectional
+		assert: tmp_vuuJlYs8hG6 isBidirectional
 		equals: true
 		description: 'testFromAll_amp:4.3'.
 	self
-		assert: tmp_HSGNGVtBeI6 toObjects class
+		assert: tmp_vuuJlYs8hG6 toObjects class
 		equals: Array
 		description: 'testFromAll_amp:4.4'.
 	self
-		assert: tmp_HSGNGVtBeI6 toObjects size
+		assert: tmp_vuuJlYs8hG6 toObjects size
 		equals: 0
 		description: 'testFromAll_amp:4.5'.
 	self
-		assert: tmp_HSGNGVtBeI6 controlPoints class
+		assert: tmp_vuuJlYs8hG6 controlPoints class
 		equals: UndefinedObject
 		description: 'testFromAll_amp:4.6'.
 	self
-		assert: tmp_HSGNGVtBeI6 controlPoints
+		assert: tmp_vuuJlYs8hG6 controlPoints
 		equals: nil
 		description: 'testFromAll_amp:4.7'.
 	self
-		assert: tmp_HSGNGVtBeI6 toElements class
+		assert: tmp_vuuJlYs8hG6 toElements class
 		equals: Array
 		description: 'testFromAll_amp:4.8'.
 	self
-		assert: tmp_HSGNGVtBeI6 toElements size
+		assert: tmp_vuuJlYs8hG6 toElements size
 		equals: 0
 		description: 'testFromAll_amp:4.9'.
 	self
-		assert: tmp_HSGNGVtBeI6 view class
+		assert: tmp_vuuJlYs8hG6 view class
 		equals: UndefinedObject
 		description: 'testFromAll_amp:4.10'.
 	self
-		assert: tmp_HSGNGVtBeI6 view
+		assert: tmp_vuuJlYs8hG6 view
 		equals: nil
 		description: 'testFromAll_amp:4.11'.
 	self
-		assert: tmp_HSGNGVtBeI6 fromElements class
+		assert: tmp_vuuJlYs8hG6 fromElements class
 		equals: Array
 		description: 'testFromAll_amp:4.12'.
 	self
-		assert: tmp_HSGNGVtBeI6 fromElements size
+		assert: tmp_vuuJlYs8hG6 fromElements size
 		equals: 0
 		description: 'testFromAll_amp:4.13'.
 	self
-		assert: tmp_HSGNGVtBeI6 fromObjects class
+		assert: tmp_vuuJlYs8hG6 fromObjects class
 		equals: Array
 		description: 'testFromAll_amp:4.14'.
 	self
-		assert: tmp_HSGNGVtBeI6 fromObjects size
+		assert: tmp_vuuJlYs8hG6 fromObjects size
 		equals: 0
 		description: 'testFromAll_amp:4.15'.
 	self
-		assert: tmp_HSGNGVtBeI6 viewElements class
+		assert: tmp_vuuJlYs8hG6 viewElements class
 		equals: Array
 		description: 'testFromAll_amp:4.16'.
 	self
-		assert: tmp_HSGNGVtBeI6 viewElements size
+		assert: tmp_vuuJlYs8hG6 viewElements size
 		equals: 0
 		description: 'testFromAll_amp:4.17'.
-	tmp_Pli53kceem10 := TSTreeLayout on: es.
+	tmp_UUa8MLqecR10 := TSTreeLayout on: es.
 	self
-		assert: tmp_Pli53kceem10 class
+		assert: tmp_UUa8MLqecR10 class
 		equals: TSGroup
 		description: 'testFromAll_amp:5.1'.
 	self
-		assert: tmp_Pli53kceem10 size
+		assert: tmp_UUa8MLqecR10 size
 		equals: 2
 		description: 'testFromAll_amp:5.2'.
-	tmp_UF0iQjg0zJ8 := RSEdgeBuilder new.
+	tmp_Yx5JIciIoV8 := RSEdgeBuilder new.
 	self
-		assert: tmp_UF0iQjg0zJ8 class
+		assert: tmp_Yx5JIciIoV8 class
 		equals: RSEdgeBuilder
 		description: 'testFromAll_amp:6.1'.
 	self
-		assert: tmp_UF0iQjg0zJ8 isBidirectional class
+		assert: tmp_Yx5JIciIoV8 isBidirectional class
 		equals: True
 		description: 'testFromAll_amp:6.2'.
 	self
-		assert: tmp_UF0iQjg0zJ8 isBidirectional
+		assert: tmp_Yx5JIciIoV8 isBidirectional
 		equals: true
 		description: 'testFromAll_amp:6.3'.
 	self
-		assert: tmp_UF0iQjg0zJ8 toObjects class
+		assert: tmp_Yx5JIciIoV8 toObjects class
 		equals: Array
 		description: 'testFromAll_amp:6.4'.
 	self
-		assert: tmp_UF0iQjg0zJ8 toObjects size
+		assert: tmp_Yx5JIciIoV8 toObjects size
 		equals: 0
 		description: 'testFromAll_amp:6.5'.
 	self
-		assert: tmp_UF0iQjg0zJ8 controlPoints class
+		assert: tmp_Yx5JIciIoV8 controlPoints class
 		equals: UndefinedObject
 		description: 'testFromAll_amp:6.6'.
 	self
-		assert: tmp_UF0iQjg0zJ8 controlPoints
+		assert: tmp_Yx5JIciIoV8 controlPoints
 		equals: nil
 		description: 'testFromAll_amp:6.7'.
 	self
-		assert: tmp_UF0iQjg0zJ8 toElements class
+		assert: tmp_Yx5JIciIoV8 toElements class
 		equals: Array
 		description: 'testFromAll_amp:6.8'.
 	self
-		assert: tmp_UF0iQjg0zJ8 toElements size
+		assert: tmp_Yx5JIciIoV8 toElements size
 		equals: 0
 		description: 'testFromAll_amp:6.9'.
 	self
-		assert: tmp_UF0iQjg0zJ8 view class
+		assert: tmp_Yx5JIciIoV8 view class
 		equals: UndefinedObject
 		description: 'testFromAll_amp:6.10'.
 	self
-		assert: tmp_UF0iQjg0zJ8 view
+		assert: tmp_Yx5JIciIoV8 view
 		equals: nil
 		description: 'testFromAll_amp:6.11'.
 	self
-		assert: tmp_UF0iQjg0zJ8 fromElements class
+		assert: tmp_Yx5JIciIoV8 fromElements class
 		equals: Array
 		description: 'testFromAll_amp:6.12'.
 	self
-		assert: tmp_UF0iQjg0zJ8 fromElements size
+		assert: tmp_Yx5JIciIoV8 fromElements size
 		equals: 0
 		description: 'testFromAll_amp:6.13'.
 	self
-		assert: tmp_UF0iQjg0zJ8 fromObjects class
+		assert: tmp_Yx5JIciIoV8 fromObjects class
 		equals: Array
 		description: 'testFromAll_amp:6.14'.
 	self
-		assert: tmp_UF0iQjg0zJ8 fromObjects size
+		assert: tmp_Yx5JIciIoV8 fromObjects size
 		equals: 0
 		description: 'testFromAll_amp:6.15'.
 	self
-		assert: tmp_UF0iQjg0zJ8 viewElements class
+		assert: tmp_Yx5JIciIoV8 viewElements class
 		equals: Array
 		description: 'testFromAll_amp:6.16'.
 	self
-		assert: tmp_UF0iQjg0zJ8 viewElements size
+		assert: tmp_Yx5JIciIoV8 viewElements size
 		equals: 0
 		description: 'testFromAll_amp:6.17'.
 	self
-		should: [ tmp_UF0iQjg0zJ8 objects: (1 to: 2) ]
+		should: [ tmp_Yx5JIciIoV8 objects: (1 to: 2) ]
 		raise: AssertionFailure
 		description: 'testFromAll_amp:7.1'.
-	tmp_nJf6EL8QAW9 := RSEdgeBuilder new.
+	tmp_8xiyVuZw5o9 := RSEdgeBuilder new.
 	self
-		assert: tmp_nJf6EL8QAW9 class
+		assert: tmp_8xiyVuZw5o9 class
 		equals: RSEdgeBuilder
 		description: 'testFromAll_amp:8.1'.
 	self
-		assert: tmp_nJf6EL8QAW9 isBidirectional class
+		assert: tmp_8xiyVuZw5o9 isBidirectional class
 		equals: True
 		description: 'testFromAll_amp:8.2'.
 	self
-		assert: tmp_nJf6EL8QAW9 isBidirectional
+		assert: tmp_8xiyVuZw5o9 isBidirectional
 		equals: true
 		description: 'testFromAll_amp:8.3'.
 	self
-		assert: tmp_nJf6EL8QAW9 toObjects class
+		assert: tmp_8xiyVuZw5o9 toObjects class
 		equals: Array
 		description: 'testFromAll_amp:8.4'.
 	self
-		assert: tmp_nJf6EL8QAW9 toObjects size
+		assert: tmp_8xiyVuZw5o9 toObjects size
 		equals: 0
 		description: 'testFromAll_amp:8.5'.
 	self
-		assert: tmp_nJf6EL8QAW9 controlPoints class
+		assert: tmp_8xiyVuZw5o9 controlPoints class
 		equals: UndefinedObject
 		description: 'testFromAll_amp:8.6'.
 	self
-		assert: tmp_nJf6EL8QAW9 controlPoints
+		assert: tmp_8xiyVuZw5o9 controlPoints
 		equals: nil
 		description: 'testFromAll_amp:8.7'.
 	self
-		assert: tmp_nJf6EL8QAW9 toElements class
+		assert: tmp_8xiyVuZw5o9 toElements class
 		equals: Array
 		description: 'testFromAll_amp:8.8'.
 	self
-		assert: tmp_nJf6EL8QAW9 toElements size
+		assert: tmp_8xiyVuZw5o9 toElements size
 		equals: 0
 		description: 'testFromAll_amp:8.9'.
 	self
-		assert: tmp_nJf6EL8QAW9 view class
+		assert: tmp_8xiyVuZw5o9 view class
 		equals: UndefinedObject
 		description: 'testFromAll_amp:8.10'.
 	self
-		assert: tmp_nJf6EL8QAW9 view
+		assert: tmp_8xiyVuZw5o9 view
 		equals: nil
 		description: 'testFromAll_amp:8.11'.
 	self
-		assert: tmp_nJf6EL8QAW9 fromElements class
+		assert: tmp_8xiyVuZw5o9 fromElements class
 		equals: Array
 		description: 'testFromAll_amp:8.12'.
 	self
-		assert: tmp_nJf6EL8QAW9 fromElements size
+		assert: tmp_8xiyVuZw5o9 fromElements size
 		equals: 0
 		description: 'testFromAll_amp:8.13'.
 	self
-		assert: tmp_nJf6EL8QAW9 fromObjects class
+		assert: tmp_8xiyVuZw5o9 fromObjects class
 		equals: Array
 		description: 'testFromAll_amp:8.14'.
 	self
-		assert: tmp_nJf6EL8QAW9 fromObjects size
+		assert: tmp_8xiyVuZw5o9 fromObjects size
 		equals: 0
 		description: 'testFromAll_amp:8.15'.
 	self
-		assert: tmp_nJf6EL8QAW9 viewElements class
+		assert: tmp_8xiyVuZw5o9 viewElements class
 		equals: Array
 		description: 'testFromAll_amp:8.16'.
 	self
-		assert: tmp_nJf6EL8QAW9 viewElements size
+		assert: tmp_8xiyVuZw5o9 viewElements size
 		equals: 0
 		description: 'testFromAll_amp:8.17'.
-	tmp_MAkLlVRCnI4 := tmp_nJf6EL8QAW9
+	tmp_V3HLESOJqS4 := tmp_8xiyVuZw5o9
 		connectFromAll: (Array with: 1)
 		to: 2.
 	self
-		assert: tmp_nJf6EL8QAW9 class
+		assert: tmp_8xiyVuZw5o9 class
 		equals: RSEdgeBuilder
 		description: 'testFromAll_amp:9.1'.
 	self
-		assert: tmp_nJf6EL8QAW9 isBidirectional class
+		assert: tmp_8xiyVuZw5o9 isBidirectional class
 		equals: True
 		description: 'testFromAll_amp:9.2'.
 	self
-		assert: tmp_nJf6EL8QAW9 isBidirectional
+		assert: tmp_8xiyVuZw5o9 isBidirectional
 		equals: true
 		description: 'testFromAll_amp:9.3'.
 	self
-		assert: tmp_nJf6EL8QAW9 toObjects class
+		assert: tmp_8xiyVuZw5o9 toObjects class
 		equals: Array
 		description: 'testFromAll_amp:9.4'.
 	self
-		assert: tmp_nJf6EL8QAW9 toObjects size
+		assert: tmp_8xiyVuZw5o9 toObjects size
 		equals: 0
 		description: 'testFromAll_amp:9.5'.
 	self
-		assert: tmp_nJf6EL8QAW9 controlPoints class
+		assert: tmp_8xiyVuZw5o9 controlPoints class
 		equals: UndefinedObject
 		description: 'testFromAll_amp:9.6'.
 	self
-		assert: tmp_nJf6EL8QAW9 controlPoints
+		assert: tmp_8xiyVuZw5o9 controlPoints
 		equals: nil
 		description: 'testFromAll_amp:9.7'.
 	self
-		assert: tmp_nJf6EL8QAW9 toElements class
+		assert: tmp_8xiyVuZw5o9 toElements class
 		equals: Array
 		description: 'testFromAll_amp:9.8'.
 	self
-		assert: tmp_nJf6EL8QAW9 toElements size
+		assert: tmp_8xiyVuZw5o9 toElements size
 		equals: 0
 		description: 'testFromAll_amp:9.9'.
 	self
-		assert: tmp_nJf6EL8QAW9 view class
+		assert: tmp_8xiyVuZw5o9 view class
 		equals: UndefinedObject
 		description: 'testFromAll_amp:9.10'.
 	self
-		assert: tmp_nJf6EL8QAW9 view
+		assert: tmp_8xiyVuZw5o9 view
 		equals: nil
 		description: 'testFromAll_amp:9.11'.
 	self
-		assert: tmp_nJf6EL8QAW9 fromElements class
+		assert: tmp_8xiyVuZw5o9 fromElements class
 		equals: Array
 		description: 'testFromAll_amp:9.12'.
 	self
-		assert: tmp_nJf6EL8QAW9 fromElements size
+		assert: tmp_8xiyVuZw5o9 fromElements size
 		equals: 0
 		description: 'testFromAll_amp:9.13'.
 	self
-		assert: tmp_nJf6EL8QAW9 fromObjects class
+		assert: tmp_8xiyVuZw5o9 fromObjects class
 		equals: Array
 		description: 'testFromAll_amp:9.14'.
 	self
-		assert: tmp_nJf6EL8QAW9 fromObjects size
+		assert: tmp_8xiyVuZw5o9 fromObjects size
 		equals: 0
 		description: 'testFromAll_amp:9.15'.
 	self
-		assert: tmp_nJf6EL8QAW9 viewElements class
+		assert: tmp_8xiyVuZw5o9 viewElements class
 		equals: Array
 		description: 'testFromAll_amp:9.16'.
 	self
-		assert: tmp_nJf6EL8QAW9 viewElements size
+		assert: tmp_8xiyVuZw5o9 viewElements size
 		equals: 0
 		description: 'testFromAll_amp:9.17'.
 	self
-		assert: tmp_MAkLlVRCnI4 class
+		assert: tmp_V3HLESOJqS4 class
 		equals: TSGroup
 		description: 'testFromAll_amp:9.1'.
 	self
-		assert: tmp_MAkLlVRCnI4 size
+		assert: tmp_V3HLESOJqS4 size
 		equals: 0
 		description: 'testFromAll_amp:9.2'.
 	TSTreeLayout on: es
@@ -2486,7 +2486,7 @@ RSEdgeBuilderTestAmpTest >> testFromObjects02_amp [
 	b := RTEdgeBuilder new."
 
 	<madeBySmallAmp>
-	| tmp_fOqmMlAO763 |
+	| tmp_C4Pe0ctVS13 |
 	b view: view.
 	self
 		assert: b class
@@ -2633,7 +2633,7 @@ RSEdgeBuilderTestAmpTest >> testFromObjects02_amp [
 		assert: b viewElements size
 		equals: 10
 		description: 'testFromObjects02_amp:2.18'.
-	tmp_fOqmMlAO763 := b connectFrom: #yourself to: 10.
+	tmp_C4Pe0ctVS13 := b connectFrom: #yourself to: 10.
 	self
 		assert: b class
 		equals: RSEdgeBuilder
@@ -2707,11 +2707,11 @@ RSEdgeBuilderTestAmpTest >> testFromObjects02_amp [
 		equals: 10
 		description: 'testFromObjects02_amp:3.18'.
 	self
-		assert: tmp_fOqmMlAO763 class
+		assert: tmp_C4Pe0ctVS13 class
 		equals: TSGroup
 		description: 'testFromObjects02_amp:3.1'.
 	self
-		assert: tmp_fOqmMlAO763 size
+		assert: tmp_C4Pe0ctVS13 size
 		equals: 1
 		description: 'testFromObjects02_amp:3.2'
 ]
@@ -2900,7 +2900,7 @@ RSEdgeBuilderTestAmpTest >> testFromObjects_amp [
 	b := RTEdgeBuilder new."
 
 	<madeBySmallAmp>
-	| edges tmp_jdhiRSLzQl3 |
+	| edges tmp_25BJW8vsdB3 |
 	b view: view.
 	self
 		assert: b class
@@ -3047,7 +3047,7 @@ RSEdgeBuilderTestAmpTest >> testFromObjects_amp [
 		assert: b viewElements size
 		equals: 10
 		description: 'testFromObjects_amp:2.18'.
-	tmp_jdhiRSLzQl3 := b connectFrom: #yourself to: 10.
+	tmp_25BJW8vsdB3 := b connectFrom: #yourself to: 10.
 	self
 		assert: b class
 		equals: RSEdgeBuilder
@@ -3121,11 +3121,11 @@ RSEdgeBuilderTestAmpTest >> testFromObjects_amp [
 		equals: 10
 		description: 'testFromObjects_amp:3.18'.
 	self
-		assert: tmp_jdhiRSLzQl3 class
+		assert: tmp_25BJW8vsdB3 class
 		equals: TSGroup
 		description: 'testFromObjects_amp:3.1'.
 	self
-		assert: tmp_jdhiRSLzQl3 size
+		assert: tmp_25BJW8vsdB3 size
 		equals: 2
 		description: 'testFromObjects_amp:3.2'.
 	edges := view edges.
@@ -3364,220 +3364,220 @@ RSEdgeBuilderTestAmpTest >> testInit_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testNoMoveBehind_amp [
 	<madeBySmallAmp>
-	| tmp_NAIm9C4BOK3 tmp_Le5UhzeCbD4 |
-	tmp_NAIm9C4BOK3 := RSEdgeBuilder line.
+	| tmp_btN4eePksd3 tmp_mYmR9Wq8JD4 |
+	tmp_btN4eePksd3 := RSEdgeBuilder line.
 	self
-		assert: tmp_NAIm9C4BOK3 class
+		assert: tmp_btN4eePksd3 class
 		equals: RSEdgeBuilder
 		description: 'testNoMoveBehind_amp:1.1'.
 	self
-		assert: tmp_NAIm9C4BOK3 isBidirectional class
+		assert: tmp_btN4eePksd3 isBidirectional class
 		equals: True
 		description: 'testNoMoveBehind_amp:1.2'.
 	self
-		assert: tmp_NAIm9C4BOK3 isBidirectional
+		assert: tmp_btN4eePksd3 isBidirectional
 		equals: true
 		description: 'testNoMoveBehind_amp:1.3'.
 	self
-		assert: tmp_NAIm9C4BOK3 toObjects class
+		assert: tmp_btN4eePksd3 toObjects class
 		equals: Array
 		description: 'testNoMoveBehind_amp:1.4'.
 	self
-		assert: tmp_NAIm9C4BOK3 toObjects size
+		assert: tmp_btN4eePksd3 toObjects size
 		equals: 0
 		description: 'testNoMoveBehind_amp:1.5'.
 	self
-		assert: tmp_NAIm9C4BOK3 controlPoints class
+		assert: tmp_btN4eePksd3 controlPoints class
 		equals: UndefinedObject
 		description: 'testNoMoveBehind_amp:1.6'.
 	self
-		assert: tmp_NAIm9C4BOK3 controlPoints
+		assert: tmp_btN4eePksd3 controlPoints
 		equals: nil
 		description: 'testNoMoveBehind_amp:1.7'.
 	self
-		assert: tmp_NAIm9C4BOK3 toElements class
+		assert: tmp_btN4eePksd3 toElements class
 		equals: Array
 		description: 'testNoMoveBehind_amp:1.8'.
 	self
-		assert: tmp_NAIm9C4BOK3 toElements size
+		assert: tmp_btN4eePksd3 toElements size
 		equals: 0
 		description: 'testNoMoveBehind_amp:1.9'.
 	self
-		assert: tmp_NAIm9C4BOK3 view class
+		assert: tmp_btN4eePksd3 view class
 		equals: UndefinedObject
 		description: 'testNoMoveBehind_amp:1.10'.
 	self
-		assert: tmp_NAIm9C4BOK3 view
+		assert: tmp_btN4eePksd3 view
 		equals: nil
 		description: 'testNoMoveBehind_amp:1.11'.
 	self
-		assert: tmp_NAIm9C4BOK3 fromElements class
+		assert: tmp_btN4eePksd3 fromElements class
 		equals: Array
 		description: 'testNoMoveBehind_amp:1.12'.
 	self
-		assert: tmp_NAIm9C4BOK3 fromElements size
+		assert: tmp_btN4eePksd3 fromElements size
 		equals: 0
 		description: 'testNoMoveBehind_amp:1.13'.
 	self
-		assert: tmp_NAIm9C4BOK3 fromObjects class
+		assert: tmp_btN4eePksd3 fromObjects class
 		equals: Array
 		description: 'testNoMoveBehind_amp:1.14'.
 	self
-		assert: tmp_NAIm9C4BOK3 fromObjects size
+		assert: tmp_btN4eePksd3 fromObjects size
 		equals: 0
 		description: 'testNoMoveBehind_amp:1.15'.
 	self
-		assert: tmp_NAIm9C4BOK3 viewElements class
+		assert: tmp_btN4eePksd3 viewElements class
 		equals: Array
 		description: 'testNoMoveBehind_amp:1.16'.
 	self
-		assert: tmp_NAIm9C4BOK3 viewElements size
+		assert: tmp_btN4eePksd3 viewElements size
 		equals: 0
 		description: 'testNoMoveBehind_amp:1.17'.
-	tmp_NAIm9C4BOK3 view: view.
+	tmp_btN4eePksd3 view: view.
 	self
-		assert: tmp_NAIm9C4BOK3 class
+		assert: tmp_btN4eePksd3 class
 		equals: RSEdgeBuilder
 		description: 'testNoMoveBehind_amp:2.1'.
 	self
-		assert: tmp_NAIm9C4BOK3 isBidirectional class
+		assert: tmp_btN4eePksd3 isBidirectional class
 		equals: True
 		description: 'testNoMoveBehind_amp:2.2'.
 	self
-		assert: tmp_NAIm9C4BOK3 isBidirectional
+		assert: tmp_btN4eePksd3 isBidirectional
 		equals: true
 		description: 'testNoMoveBehind_amp:2.3'.
 	self
-		assert: tmp_NAIm9C4BOK3 toObjects class
+		assert: tmp_btN4eePksd3 toObjects class
 		equals: TSGroup
 		description: 'testNoMoveBehind_amp:2.4'.
 	self
-		assert: tmp_NAIm9C4BOK3 toObjects size
+		assert: tmp_btN4eePksd3 toObjects size
 		equals: 10
 		description: 'testNoMoveBehind_amp:2.5'.
 	self
-		assert: tmp_NAIm9C4BOK3 controlPoints class
+		assert: tmp_btN4eePksd3 controlPoints class
 		equals: UndefinedObject
 		description: 'testNoMoveBehind_amp:2.6'.
 	self
-		assert: tmp_NAIm9C4BOK3 controlPoints
+		assert: tmp_btN4eePksd3 controlPoints
 		equals: nil
 		description: 'testNoMoveBehind_amp:2.7'.
 	self
-		assert: tmp_NAIm9C4BOK3 toElements class
+		assert: tmp_btN4eePksd3 toElements class
 		equals: TSGroup
 		description: 'testNoMoveBehind_amp:2.8'.
 	self
-		assert: tmp_NAIm9C4BOK3 toElements size
+		assert: tmp_btN4eePksd3 toElements size
 		equals: 10
 		description: 'testNoMoveBehind_amp:2.9'.
 	self
-		assert: tmp_NAIm9C4BOK3 view class
+		assert: tmp_btN4eePksd3 view class
 		equals: RSView
 		description: 'testNoMoveBehind_amp:2.10'.
 	self
-		assert: tmp_NAIm9C4BOK3 view numberOfEdges class
+		assert: tmp_btN4eePksd3 view numberOfEdges class
 		equals: SmallInteger
 		description: 'testNoMoveBehind_amp:2.11'.
 	self
-		assert: tmp_NAIm9C4BOK3 view numberOfEdges
+		assert: tmp_btN4eePksd3 view numberOfEdges
 		equals: 0
 		description: 'testNoMoveBehind_amp:2.12'.
 	self
-		assert: tmp_NAIm9C4BOK3 fromElements class
+		assert: tmp_btN4eePksd3 fromElements class
 		equals: TSGroup
 		description: 'testNoMoveBehind_amp:2.13'.
 	self
-		assert: tmp_NAIm9C4BOK3 fromElements size
+		assert: tmp_btN4eePksd3 fromElements size
 		equals: 10
 		description: 'testNoMoveBehind_amp:2.14'.
 	self
-		assert: tmp_NAIm9C4BOK3 fromObjects class
+		assert: tmp_btN4eePksd3 fromObjects class
 		equals: TSGroup
 		description: 'testNoMoveBehind_amp:2.15'.
 	self
-		assert: tmp_NAIm9C4BOK3 fromObjects size
+		assert: tmp_btN4eePksd3 fromObjects size
 		equals: 10
 		description: 'testNoMoveBehind_amp:2.16'.
 	self
-		assert: tmp_NAIm9C4BOK3 viewElements class
+		assert: tmp_btN4eePksd3 viewElements class
 		equals: TSGroup
 		description: 'testNoMoveBehind_amp:2.17'.
 	self
-		assert: tmp_NAIm9C4BOK3 viewElements size
+		assert: tmp_btN4eePksd3 viewElements size
 		equals: 10
 		description: 'testNoMoveBehind_amp:2.18'.
-	tmp_Le5UhzeCbD4 := RSEdgeBuilder line.
+	tmp_mYmR9Wq8JD4 := RSEdgeBuilder line.
 	self
-		assert: tmp_Le5UhzeCbD4 class
+		assert: tmp_mYmR9Wq8JD4 class
 		equals: RSEdgeBuilder
 		description: 'testNoMoveBehind_amp:3.1'.
 	self
-		assert: tmp_Le5UhzeCbD4 isBidirectional class
+		assert: tmp_mYmR9Wq8JD4 isBidirectional class
 		equals: True
 		description: 'testNoMoveBehind_amp:3.2'.
 	self
-		assert: tmp_Le5UhzeCbD4 isBidirectional
+		assert: tmp_mYmR9Wq8JD4 isBidirectional
 		equals: true
 		description: 'testNoMoveBehind_amp:3.3'.
 	self
-		assert: tmp_Le5UhzeCbD4 toObjects class
+		assert: tmp_mYmR9Wq8JD4 toObjects class
 		equals: Array
 		description: 'testNoMoveBehind_amp:3.4'.
 	self
-		assert: tmp_Le5UhzeCbD4 toObjects size
+		assert: tmp_mYmR9Wq8JD4 toObjects size
 		equals: 0
 		description: 'testNoMoveBehind_amp:3.5'.
 	self
-		assert: tmp_Le5UhzeCbD4 controlPoints class
+		assert: tmp_mYmR9Wq8JD4 controlPoints class
 		equals: UndefinedObject
 		description: 'testNoMoveBehind_amp:3.6'.
 	self
-		assert: tmp_Le5UhzeCbD4 controlPoints
+		assert: tmp_mYmR9Wq8JD4 controlPoints
 		equals: nil
 		description: 'testNoMoveBehind_amp:3.7'.
 	self
-		assert: tmp_Le5UhzeCbD4 toElements class
+		assert: tmp_mYmR9Wq8JD4 toElements class
 		equals: Array
 		description: 'testNoMoveBehind_amp:3.8'.
 	self
-		assert: tmp_Le5UhzeCbD4 toElements size
+		assert: tmp_mYmR9Wq8JD4 toElements size
 		equals: 0
 		description: 'testNoMoveBehind_amp:3.9'.
 	self
-		assert: tmp_Le5UhzeCbD4 view class
+		assert: tmp_mYmR9Wq8JD4 view class
 		equals: UndefinedObject
 		description: 'testNoMoveBehind_amp:3.10'.
 	self
-		assert: tmp_Le5UhzeCbD4 view
+		assert: tmp_mYmR9Wq8JD4 view
 		equals: nil
 		description: 'testNoMoveBehind_amp:3.11'.
 	self
-		assert: tmp_Le5UhzeCbD4 fromElements class
+		assert: tmp_mYmR9Wq8JD4 fromElements class
 		equals: Array
 		description: 'testNoMoveBehind_amp:3.12'.
 	self
-		assert: tmp_Le5UhzeCbD4 fromElements size
+		assert: tmp_mYmR9Wq8JD4 fromElements size
 		equals: 0
 		description: 'testNoMoveBehind_amp:3.13'.
 	self
-		assert: tmp_Le5UhzeCbD4 fromObjects class
+		assert: tmp_mYmR9Wq8JD4 fromObjects class
 		equals: Array
 		description: 'testNoMoveBehind_amp:3.14'.
 	self
-		assert: tmp_Le5UhzeCbD4 fromObjects size
+		assert: tmp_mYmR9Wq8JD4 fromObjects size
 		equals: 0
 		description: 'testNoMoveBehind_amp:3.15'.
 	self
-		assert: tmp_Le5UhzeCbD4 viewElements class
+		assert: tmp_mYmR9Wq8JD4 viewElements class
 		equals: Array
 		description: 'testNoMoveBehind_amp:3.16'.
 	self
-		assert: tmp_Le5UhzeCbD4 viewElements size
+		assert: tmp_mYmR9Wq8JD4 viewElements size
 		equals: 0
 		description: 'testNoMoveBehind_amp:3.17'.
 	self
-		should: [ tmp_Le5UhzeCbD4
+		should: [ tmp_mYmR9Wq8JD4
 				useAssociations: (Array with: 1 -> 2 with: 2 -> 3 with: 5 -> 6) ]
 		raise: MessageNotUnderstood
 		description: 'testNoMoveBehind_amp:4.1'
@@ -3586,7 +3586,7 @@ RSEdgeBuilderTestAmpTest >> testNoMoveBehind_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testObjectFrom_amp [
 	<madeBySmallAmp>
-	| e tmp_QhD6Fr1uog2 |
+	| e tmp_5vSjGnIZpg2 |
 	b view: view.
 	self
 		assert: b class
@@ -3733,7 +3733,7 @@ RSEdgeBuilderTestAmpTest >> testObjectFrom_amp [
 		assert: b viewElements size
 		equals: 10
 		description: 'testObjectFrom_amp:2.18'.
-	tmp_QhD6Fr1uog2 := b connectFrom: [ :v | v - 1 ].
+	tmp_5vSjGnIZpg2 := b connectFrom: [ :v | v - 1 ].
 	self
 		assert: b class
 		equals: RSEdgeBuilder
@@ -3807,11 +3807,11 @@ RSEdgeBuilderTestAmpTest >> testObjectFrom_amp [
 		equals: 10
 		description: 'testObjectFrom_amp:3.18'.
 	self
-		assert: tmp_QhD6Fr1uog2 class
+		assert: tmp_5vSjGnIZpg2 class
 		equals: TSGroup
 		description: 'testObjectFrom_amp:3.1'.
 	self
-		assert: tmp_QhD6Fr1uog2 size
+		assert: tmp_5vSjGnIZpg2 size
 		equals: 1
 		description: 'testObjectFrom_amp:3.2'.
 	e := view edges anyOne.
@@ -3876,7 +3876,7 @@ RSEdgeBuilderTestAmpTest >> testObjectFrom_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testObjectTo_amp [
 	<madeBySmallAmp>
-	| e tmp_sYN2dZ6HvD2 |
+	| e tmp_7fRJvIIqbE2 |
 	b view: view.
 	self
 		assert: b class
@@ -4023,7 +4023,7 @@ RSEdgeBuilderTestAmpTest >> testObjectTo_amp [
 		assert: b viewElements size
 		equals: 10
 		description: 'testObjectTo_amp:2.18'.
-	tmp_sYN2dZ6HvD2 := b connectTo: [ :v | v - 1 ].
+	tmp_7fRJvIIqbE2 := b connectTo: [ :v | v - 1 ].
 	self
 		assert: b class
 		equals: RSEdgeBuilder
@@ -4097,11 +4097,11 @@ RSEdgeBuilderTestAmpTest >> testObjectTo_amp [
 		equals: 10
 		description: 'testObjectTo_amp:3.18'.
 	self
-		assert: tmp_sYN2dZ6HvD2 class
+		assert: tmp_7fRJvIIqbE2 class
 		equals: TSGroup
 		description: 'testObjectTo_amp:3.1'.
 	self
-		assert: tmp_sYN2dZ6HvD2 size
+		assert: tmp_7fRJvIIqbE2 size
 		equals: 1
 		description: 'testObjectTo_amp:3.2'.
 	e := view edges anyOne.
@@ -4619,7 +4619,7 @@ RSEdgeBuilderTestAmpTest >> testObjects_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testShouldAllowBidirection_amp [
 	<madeBySmallAmp>
-	| tmp_MoUgspPvsn4 |
+	| tmp_GD4YB9Plzu4 |
 	b view: view.
 	self
 		assert: b class
@@ -4839,7 +4839,7 @@ RSEdgeBuilderTestAmpTest >> testShouldAllowBidirection_amp [
 		assert: b viewElements size
 		equals: 10
 		description: 'testShouldAllowBidirection_amp:3.18'.
-	tmp_MoUgspPvsn4 := b
+	tmp_GD4YB9Plzu4 := b
 		useAssociations: (Array with: 1 -> 2 with: 2 -> 1).
 	self
 		assert: b class
@@ -4914,11 +4914,11 @@ RSEdgeBuilderTestAmpTest >> testShouldAllowBidirection_amp [
 		equals: 10
 		description: 'testShouldAllowBidirection_amp:4.18'.
 	self
-		assert: tmp_MoUgspPvsn4 class
+		assert: tmp_GD4YB9Plzu4 class
 		equals: TSGroup
 		description: 'testShouldAllowBidirection_amp:4.1'.
 	self
-		assert: tmp_MoUgspPvsn4 size
+		assert: tmp_GD4YB9Plzu4 size
 		equals: 1
 		description: 'testShouldAllowBidirection_amp:4.2'.
 	elements := view elementsFromModels: #(1 2).
@@ -5019,7 +5019,7 @@ RSEdgeBuilderTestAmpTest >> testShouldAllowBidirection_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testShouldNotAllowBidirection_amp [
 	<madeBySmallAmp>
-	| tmp_WPCYVb0Fdo3 |
+	| tmp_PJISAAV8lb3 |
 	b view: view.
 	self
 		assert: b class
@@ -5166,7 +5166,7 @@ RSEdgeBuilderTestAmpTest >> testShouldNotAllowBidirection_amp [
 		assert: b viewElements size
 		equals: 10
 		description: 'testShouldNotAllowBidirection_amp:2.18'.
-	tmp_WPCYVb0Fdo3 := b
+	tmp_PJISAAV8lb3 := b
 		useAssociations: (Array with: 1 -> 2 with: 2 -> 1).
 	self
 		assert: b class
@@ -5241,11 +5241,11 @@ RSEdgeBuilderTestAmpTest >> testShouldNotAllowBidirection_amp [
 		equals: 10
 		description: 'testShouldNotAllowBidirection_amp:3.18'.
 	self
-		assert: tmp_WPCYVb0Fdo3 class
+		assert: tmp_PJISAAV8lb3 class
 		equals: TSGroup
 		description: 'testShouldNotAllowBidirection_amp:3.1'.
 	self
-		assert: tmp_WPCYVb0Fdo3 size
+		assert: tmp_PJISAAV8lb3 size
 		equals: 2
 		description: 'testShouldNotAllowBidirection_amp:3.2'
 ]
@@ -5253,220 +5253,220 @@ RSEdgeBuilderTestAmpTest >> testShouldNotAllowBidirection_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testSimple2_amp [
 	<madeBySmallAmp>
-	| tmp_7s0VuB2cxJ3 tmp_a9IUZu8LJL4 |
-	tmp_7s0VuB2cxJ3 := RSEdgeBuilder line.
+	| tmp_5jhDEU6ubZ3 tmp_zdWbtOsAaI4 |
+	tmp_5jhDEU6ubZ3 := RSEdgeBuilder line.
 	self
-		assert: tmp_7s0VuB2cxJ3 class
+		assert: tmp_5jhDEU6ubZ3 class
 		equals: RSEdgeBuilder
 		description: 'testSimple2_amp:1.1'.
 	self
-		assert: tmp_7s0VuB2cxJ3 isBidirectional class
+		assert: tmp_5jhDEU6ubZ3 isBidirectional class
 		equals: True
 		description: 'testSimple2_amp:1.2'.
 	self
-		assert: tmp_7s0VuB2cxJ3 isBidirectional
+		assert: tmp_5jhDEU6ubZ3 isBidirectional
 		equals: true
 		description: 'testSimple2_amp:1.3'.
 	self
-		assert: tmp_7s0VuB2cxJ3 toObjects class
+		assert: tmp_5jhDEU6ubZ3 toObjects class
 		equals: Array
 		description: 'testSimple2_amp:1.4'.
 	self
-		assert: tmp_7s0VuB2cxJ3 toObjects size
+		assert: tmp_5jhDEU6ubZ3 toObjects size
 		equals: 0
 		description: 'testSimple2_amp:1.5'.
 	self
-		assert: tmp_7s0VuB2cxJ3 controlPoints class
+		assert: tmp_5jhDEU6ubZ3 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple2_amp:1.6'.
 	self
-		assert: tmp_7s0VuB2cxJ3 controlPoints
+		assert: tmp_5jhDEU6ubZ3 controlPoints
 		equals: nil
 		description: 'testSimple2_amp:1.7'.
 	self
-		assert: tmp_7s0VuB2cxJ3 toElements class
+		assert: tmp_5jhDEU6ubZ3 toElements class
 		equals: Array
 		description: 'testSimple2_amp:1.8'.
 	self
-		assert: tmp_7s0VuB2cxJ3 toElements size
+		assert: tmp_5jhDEU6ubZ3 toElements size
 		equals: 0
 		description: 'testSimple2_amp:1.9'.
 	self
-		assert: tmp_7s0VuB2cxJ3 view class
+		assert: tmp_5jhDEU6ubZ3 view class
 		equals: UndefinedObject
 		description: 'testSimple2_amp:1.10'.
 	self
-		assert: tmp_7s0VuB2cxJ3 view
+		assert: tmp_5jhDEU6ubZ3 view
 		equals: nil
 		description: 'testSimple2_amp:1.11'.
 	self
-		assert: tmp_7s0VuB2cxJ3 fromElements class
+		assert: tmp_5jhDEU6ubZ3 fromElements class
 		equals: Array
 		description: 'testSimple2_amp:1.12'.
 	self
-		assert: tmp_7s0VuB2cxJ3 fromElements size
+		assert: tmp_5jhDEU6ubZ3 fromElements size
 		equals: 0
 		description: 'testSimple2_amp:1.13'.
 	self
-		assert: tmp_7s0VuB2cxJ3 fromObjects class
+		assert: tmp_5jhDEU6ubZ3 fromObjects class
 		equals: Array
 		description: 'testSimple2_amp:1.14'.
 	self
-		assert: tmp_7s0VuB2cxJ3 fromObjects size
+		assert: tmp_5jhDEU6ubZ3 fromObjects size
 		equals: 0
 		description: 'testSimple2_amp:1.15'.
 	self
-		assert: tmp_7s0VuB2cxJ3 viewElements class
+		assert: tmp_5jhDEU6ubZ3 viewElements class
 		equals: Array
 		description: 'testSimple2_amp:1.16'.
 	self
-		assert: tmp_7s0VuB2cxJ3 viewElements size
+		assert: tmp_5jhDEU6ubZ3 viewElements size
 		equals: 0
 		description: 'testSimple2_amp:1.17'.
-	tmp_7s0VuB2cxJ3 view: view.
+	tmp_5jhDEU6ubZ3 view: view.
 	self
-		assert: tmp_7s0VuB2cxJ3 class
+		assert: tmp_5jhDEU6ubZ3 class
 		equals: RSEdgeBuilder
 		description: 'testSimple2_amp:2.1'.
 	self
-		assert: tmp_7s0VuB2cxJ3 isBidirectional class
+		assert: tmp_5jhDEU6ubZ3 isBidirectional class
 		equals: True
 		description: 'testSimple2_amp:2.2'.
 	self
-		assert: tmp_7s0VuB2cxJ3 isBidirectional
+		assert: tmp_5jhDEU6ubZ3 isBidirectional
 		equals: true
 		description: 'testSimple2_amp:2.3'.
 	self
-		assert: tmp_7s0VuB2cxJ3 toObjects class
+		assert: tmp_5jhDEU6ubZ3 toObjects class
 		equals: TSGroup
 		description: 'testSimple2_amp:2.4'.
 	self
-		assert: tmp_7s0VuB2cxJ3 toObjects size
+		assert: tmp_5jhDEU6ubZ3 toObjects size
 		equals: 10
 		description: 'testSimple2_amp:2.5'.
 	self
-		assert: tmp_7s0VuB2cxJ3 controlPoints class
+		assert: tmp_5jhDEU6ubZ3 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple2_amp:2.6'.
 	self
-		assert: tmp_7s0VuB2cxJ3 controlPoints
+		assert: tmp_5jhDEU6ubZ3 controlPoints
 		equals: nil
 		description: 'testSimple2_amp:2.7'.
 	self
-		assert: tmp_7s0VuB2cxJ3 toElements class
+		assert: tmp_5jhDEU6ubZ3 toElements class
 		equals: TSGroup
 		description: 'testSimple2_amp:2.8'.
 	self
-		assert: tmp_7s0VuB2cxJ3 toElements size
+		assert: tmp_5jhDEU6ubZ3 toElements size
 		equals: 10
 		description: 'testSimple2_amp:2.9'.
 	self
-		assert: tmp_7s0VuB2cxJ3 view class
+		assert: tmp_5jhDEU6ubZ3 view class
 		equals: RSView
 		description: 'testSimple2_amp:2.10'.
 	self
-		assert: tmp_7s0VuB2cxJ3 view numberOfEdges class
+		assert: tmp_5jhDEU6ubZ3 view numberOfEdges class
 		equals: SmallInteger
 		description: 'testSimple2_amp:2.11'.
 	self
-		assert: tmp_7s0VuB2cxJ3 view numberOfEdges
+		assert: tmp_5jhDEU6ubZ3 view numberOfEdges
 		equals: 0
 		description: 'testSimple2_amp:2.12'.
 	self
-		assert: tmp_7s0VuB2cxJ3 fromElements class
+		assert: tmp_5jhDEU6ubZ3 fromElements class
 		equals: TSGroup
 		description: 'testSimple2_amp:2.13'.
 	self
-		assert: tmp_7s0VuB2cxJ3 fromElements size
+		assert: tmp_5jhDEU6ubZ3 fromElements size
 		equals: 10
 		description: 'testSimple2_amp:2.14'.
 	self
-		assert: tmp_7s0VuB2cxJ3 fromObjects class
+		assert: tmp_5jhDEU6ubZ3 fromObjects class
 		equals: TSGroup
 		description: 'testSimple2_amp:2.15'.
 	self
-		assert: tmp_7s0VuB2cxJ3 fromObjects size
+		assert: tmp_5jhDEU6ubZ3 fromObjects size
 		equals: 10
 		description: 'testSimple2_amp:2.16'.
 	self
-		assert: tmp_7s0VuB2cxJ3 viewElements class
+		assert: tmp_5jhDEU6ubZ3 viewElements class
 		equals: TSGroup
 		description: 'testSimple2_amp:2.17'.
 	self
-		assert: tmp_7s0VuB2cxJ3 viewElements size
+		assert: tmp_5jhDEU6ubZ3 viewElements size
 		equals: 10
 		description: 'testSimple2_amp:2.18'.
-	tmp_a9IUZu8LJL4 := RSEdgeBuilder line.
+	tmp_zdWbtOsAaI4 := RSEdgeBuilder line.
 	self
-		assert: tmp_a9IUZu8LJL4 class
+		assert: tmp_zdWbtOsAaI4 class
 		equals: RSEdgeBuilder
 		description: 'testSimple2_amp:3.1'.
 	self
-		assert: tmp_a9IUZu8LJL4 isBidirectional class
+		assert: tmp_zdWbtOsAaI4 isBidirectional class
 		equals: True
 		description: 'testSimple2_amp:3.2'.
 	self
-		assert: tmp_a9IUZu8LJL4 isBidirectional
+		assert: tmp_zdWbtOsAaI4 isBidirectional
 		equals: true
 		description: 'testSimple2_amp:3.3'.
 	self
-		assert: tmp_a9IUZu8LJL4 toObjects class
+		assert: tmp_zdWbtOsAaI4 toObjects class
 		equals: Array
 		description: 'testSimple2_amp:3.4'.
 	self
-		assert: tmp_a9IUZu8LJL4 toObjects size
+		assert: tmp_zdWbtOsAaI4 toObjects size
 		equals: 0
 		description: 'testSimple2_amp:3.5'.
 	self
-		assert: tmp_a9IUZu8LJL4 controlPoints class
+		assert: tmp_zdWbtOsAaI4 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple2_amp:3.6'.
 	self
-		assert: tmp_a9IUZu8LJL4 controlPoints
+		assert: tmp_zdWbtOsAaI4 controlPoints
 		equals: nil
 		description: 'testSimple2_amp:3.7'.
 	self
-		assert: tmp_a9IUZu8LJL4 toElements class
+		assert: tmp_zdWbtOsAaI4 toElements class
 		equals: Array
 		description: 'testSimple2_amp:3.8'.
 	self
-		assert: tmp_a9IUZu8LJL4 toElements size
+		assert: tmp_zdWbtOsAaI4 toElements size
 		equals: 0
 		description: 'testSimple2_amp:3.9'.
 	self
-		assert: tmp_a9IUZu8LJL4 view class
+		assert: tmp_zdWbtOsAaI4 view class
 		equals: UndefinedObject
 		description: 'testSimple2_amp:3.10'.
 	self
-		assert: tmp_a9IUZu8LJL4 view
+		assert: tmp_zdWbtOsAaI4 view
 		equals: nil
 		description: 'testSimple2_amp:3.11'.
 	self
-		assert: tmp_a9IUZu8LJL4 fromElements class
+		assert: tmp_zdWbtOsAaI4 fromElements class
 		equals: Array
 		description: 'testSimple2_amp:3.12'.
 	self
-		assert: tmp_a9IUZu8LJL4 fromElements size
+		assert: tmp_zdWbtOsAaI4 fromElements size
 		equals: 0
 		description: 'testSimple2_amp:3.13'.
 	self
-		assert: tmp_a9IUZu8LJL4 fromObjects class
+		assert: tmp_zdWbtOsAaI4 fromObjects class
 		equals: Array
 		description: 'testSimple2_amp:3.14'.
 	self
-		assert: tmp_a9IUZu8LJL4 fromObjects size
+		assert: tmp_zdWbtOsAaI4 fromObjects size
 		equals: 0
 		description: 'testSimple2_amp:3.15'.
 	self
-		assert: tmp_a9IUZu8LJL4 viewElements class
+		assert: tmp_zdWbtOsAaI4 viewElements class
 		equals: Array
 		description: 'testSimple2_amp:3.16'.
 	self
-		assert: tmp_a9IUZu8LJL4 viewElements size
+		assert: tmp_zdWbtOsAaI4 viewElements size
 		equals: 0
 		description: 'testSimple2_amp:3.17'.
 	self
-		should: [ tmp_a9IUZu8LJL4
+		should: [ tmp_zdWbtOsAaI4
 				useAssociations: (Array with: 1 -> 2 with: 2 -> 3 with: 5 -> 6) ]
 		raise: MessageNotUnderstood
 		description: 'testSimple2_amp:4.1'
@@ -5475,441 +5475,441 @@ RSEdgeBuilderTestAmpTest >> testSimple2_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testSimple3_amp [
 	<madeBySmallAmp>
-	| tmp_nusO52D00c1 tmp_UL7ThEDCPy3 tmp_jApSCTZ8jM5 tmp_1Lalv0owOT7 tmp_zI5UpcG26C8 |
-	tmp_UL7ThEDCPy3 := RSEdgeBuilder line.
+	| tmp_dfo2iqilXs1 tmp_Ot75jBHQdB3 tmp_Wku2GdUyBl5 tmp_IqdZwFawWR7 tmp_rPzZugDNpT8 |
+	tmp_Ot75jBHQdB3 := RSEdgeBuilder line.
 	self
-		assert: tmp_UL7ThEDCPy3 class
+		assert: tmp_Ot75jBHQdB3 class
 		equals: RSEdgeBuilder
 		description: 'testSimple3_amp:1.1'.
 	self
-		assert: tmp_UL7ThEDCPy3 isBidirectional class
+		assert: tmp_Ot75jBHQdB3 isBidirectional class
 		equals: True
 		description: 'testSimple3_amp:1.2'.
 	self
-		assert: tmp_UL7ThEDCPy3 isBidirectional
+		assert: tmp_Ot75jBHQdB3 isBidirectional
 		equals: true
 		description: 'testSimple3_amp:1.3'.
 	self
-		assert: tmp_UL7ThEDCPy3 toObjects class
+		assert: tmp_Ot75jBHQdB3 toObjects class
 		equals: Array
 		description: 'testSimple3_amp:1.4'.
 	self
-		assert: tmp_UL7ThEDCPy3 toObjects size
+		assert: tmp_Ot75jBHQdB3 toObjects size
 		equals: 0
 		description: 'testSimple3_amp:1.5'.
 	self
-		assert: tmp_UL7ThEDCPy3 controlPoints class
+		assert: tmp_Ot75jBHQdB3 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple3_amp:1.6'.
 	self
-		assert: tmp_UL7ThEDCPy3 controlPoints
+		assert: tmp_Ot75jBHQdB3 controlPoints
 		equals: nil
 		description: 'testSimple3_amp:1.7'.
 	self
-		assert: tmp_UL7ThEDCPy3 toElements class
+		assert: tmp_Ot75jBHQdB3 toElements class
 		equals: Array
 		description: 'testSimple3_amp:1.8'.
 	self
-		assert: tmp_UL7ThEDCPy3 toElements size
+		assert: tmp_Ot75jBHQdB3 toElements size
 		equals: 0
 		description: 'testSimple3_amp:1.9'.
 	self
-		assert: tmp_UL7ThEDCPy3 view class
+		assert: tmp_Ot75jBHQdB3 view class
 		equals: UndefinedObject
 		description: 'testSimple3_amp:1.10'.
 	self
-		assert: tmp_UL7ThEDCPy3 view
+		assert: tmp_Ot75jBHQdB3 view
 		equals: nil
 		description: 'testSimple3_amp:1.11'.
 	self
-		assert: tmp_UL7ThEDCPy3 fromElements class
+		assert: tmp_Ot75jBHQdB3 fromElements class
 		equals: Array
 		description: 'testSimple3_amp:1.12'.
 	self
-		assert: tmp_UL7ThEDCPy3 fromElements size
+		assert: tmp_Ot75jBHQdB3 fromElements size
 		equals: 0
 		description: 'testSimple3_amp:1.13'.
 	self
-		assert: tmp_UL7ThEDCPy3 fromObjects class
+		assert: tmp_Ot75jBHQdB3 fromObjects class
 		equals: Array
 		description: 'testSimple3_amp:1.14'.
 	self
-		assert: tmp_UL7ThEDCPy3 fromObjects size
+		assert: tmp_Ot75jBHQdB3 fromObjects size
 		equals: 0
 		description: 'testSimple3_amp:1.15'.
 	self
-		assert: tmp_UL7ThEDCPy3 viewElements class
+		assert: tmp_Ot75jBHQdB3 viewElements class
 		equals: Array
 		description: 'testSimple3_amp:1.16'.
 	self
-		assert: tmp_UL7ThEDCPy3 viewElements size
+		assert: tmp_Ot75jBHQdB3 viewElements size
 		equals: 0
 		description: 'testSimple3_amp:1.17'.
-	tmp_UL7ThEDCPy3 view: view.
+	tmp_Ot75jBHQdB3 view: view.
 	self
-		assert: tmp_UL7ThEDCPy3 class
+		assert: tmp_Ot75jBHQdB3 class
 		equals: RSEdgeBuilder
 		description: 'testSimple3_amp:2.1'.
 	self
-		assert: tmp_UL7ThEDCPy3 isBidirectional class
+		assert: tmp_Ot75jBHQdB3 isBidirectional class
 		equals: True
 		description: 'testSimple3_amp:2.2'.
 	self
-		assert: tmp_UL7ThEDCPy3 isBidirectional
+		assert: tmp_Ot75jBHQdB3 isBidirectional
 		equals: true
 		description: 'testSimple3_amp:2.3'.
 	self
-		assert: tmp_UL7ThEDCPy3 toObjects class
+		assert: tmp_Ot75jBHQdB3 toObjects class
 		equals: TSGroup
 		description: 'testSimple3_amp:2.4'.
 	self
-		assert: tmp_UL7ThEDCPy3 toObjects size
+		assert: tmp_Ot75jBHQdB3 toObjects size
 		equals: 10
 		description: 'testSimple3_amp:2.5'.
 	self
-		assert: tmp_UL7ThEDCPy3 controlPoints class
+		assert: tmp_Ot75jBHQdB3 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple3_amp:2.6'.
 	self
-		assert: tmp_UL7ThEDCPy3 controlPoints
+		assert: tmp_Ot75jBHQdB3 controlPoints
 		equals: nil
 		description: 'testSimple3_amp:2.7'.
 	self
-		assert: tmp_UL7ThEDCPy3 toElements class
+		assert: tmp_Ot75jBHQdB3 toElements class
 		equals: TSGroup
 		description: 'testSimple3_amp:2.8'.
 	self
-		assert: tmp_UL7ThEDCPy3 toElements size
+		assert: tmp_Ot75jBHQdB3 toElements size
 		equals: 10
 		description: 'testSimple3_amp:2.9'.
 	self
-		assert: tmp_UL7ThEDCPy3 view class
+		assert: tmp_Ot75jBHQdB3 view class
 		equals: RSView
 		description: 'testSimple3_amp:2.10'.
 	self
-		assert: tmp_UL7ThEDCPy3 view numberOfEdges class
+		assert: tmp_Ot75jBHQdB3 view numberOfEdges class
 		equals: SmallInteger
 		description: 'testSimple3_amp:2.11'.
 	self
-		assert: tmp_UL7ThEDCPy3 view numberOfEdges
+		assert: tmp_Ot75jBHQdB3 view numberOfEdges
 		equals: 0
 		description: 'testSimple3_amp:2.12'.
 	self
-		assert: tmp_UL7ThEDCPy3 fromElements class
+		assert: tmp_Ot75jBHQdB3 fromElements class
 		equals: TSGroup
 		description: 'testSimple3_amp:2.13'.
 	self
-		assert: tmp_UL7ThEDCPy3 fromElements size
+		assert: tmp_Ot75jBHQdB3 fromElements size
 		equals: 10
 		description: 'testSimple3_amp:2.14'.
 	self
-		assert: tmp_UL7ThEDCPy3 fromObjects class
+		assert: tmp_Ot75jBHQdB3 fromObjects class
 		equals: TSGroup
 		description: 'testSimple3_amp:2.15'.
 	self
-		assert: tmp_UL7ThEDCPy3 fromObjects size
+		assert: tmp_Ot75jBHQdB3 fromObjects size
 		equals: 10
 		description: 'testSimple3_amp:2.16'.
 	self
-		assert: tmp_UL7ThEDCPy3 viewElements class
+		assert: tmp_Ot75jBHQdB3 viewElements class
 		equals: TSGroup
 		description: 'testSimple3_amp:2.17'.
 	self
-		assert: tmp_UL7ThEDCPy3 viewElements size
+		assert: tmp_Ot75jBHQdB3 viewElements size
 		equals: 10
 		description: 'testSimple3_amp:2.18'.
-	tmp_jApSCTZ8jM5 := RSEdgeBuilder line.
+	tmp_Wku2GdUyBl5 := RSEdgeBuilder line.
 	self
-		assert: tmp_jApSCTZ8jM5 class
+		assert: tmp_Wku2GdUyBl5 class
 		equals: RSEdgeBuilder
 		description: 'testSimple3_amp:3.1'.
 	self
-		assert: tmp_jApSCTZ8jM5 isBidirectional class
+		assert: tmp_Wku2GdUyBl5 isBidirectional class
 		equals: True
 		description: 'testSimple3_amp:3.2'.
 	self
-		assert: tmp_jApSCTZ8jM5 isBidirectional
+		assert: tmp_Wku2GdUyBl5 isBidirectional
 		equals: true
 		description: 'testSimple3_amp:3.3'.
 	self
-		assert: tmp_jApSCTZ8jM5 toObjects class
+		assert: tmp_Wku2GdUyBl5 toObjects class
 		equals: Array
 		description: 'testSimple3_amp:3.4'.
 	self
-		assert: tmp_jApSCTZ8jM5 toObjects size
+		assert: tmp_Wku2GdUyBl5 toObjects size
 		equals: 0
 		description: 'testSimple3_amp:3.5'.
 	self
-		assert: tmp_jApSCTZ8jM5 controlPoints class
+		assert: tmp_Wku2GdUyBl5 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple3_amp:3.6'.
 	self
-		assert: tmp_jApSCTZ8jM5 controlPoints
+		assert: tmp_Wku2GdUyBl5 controlPoints
 		equals: nil
 		description: 'testSimple3_amp:3.7'.
 	self
-		assert: tmp_jApSCTZ8jM5 toElements class
+		assert: tmp_Wku2GdUyBl5 toElements class
 		equals: Array
 		description: 'testSimple3_amp:3.8'.
 	self
-		assert: tmp_jApSCTZ8jM5 toElements size
+		assert: tmp_Wku2GdUyBl5 toElements size
 		equals: 0
 		description: 'testSimple3_amp:3.9'.
 	self
-		assert: tmp_jApSCTZ8jM5 view class
+		assert: tmp_Wku2GdUyBl5 view class
 		equals: UndefinedObject
 		description: 'testSimple3_amp:3.10'.
 	self
-		assert: tmp_jApSCTZ8jM5 view
+		assert: tmp_Wku2GdUyBl5 view
 		equals: nil
 		description: 'testSimple3_amp:3.11'.
 	self
-		assert: tmp_jApSCTZ8jM5 fromElements class
+		assert: tmp_Wku2GdUyBl5 fromElements class
 		equals: Array
 		description: 'testSimple3_amp:3.12'.
 	self
-		assert: tmp_jApSCTZ8jM5 fromElements size
+		assert: tmp_Wku2GdUyBl5 fromElements size
 		equals: 0
 		description: 'testSimple3_amp:3.13'.
 	self
-		assert: tmp_jApSCTZ8jM5 fromObjects class
+		assert: tmp_Wku2GdUyBl5 fromObjects class
 		equals: Array
 		description: 'testSimple3_amp:3.14'.
 	self
-		assert: tmp_jApSCTZ8jM5 fromObjects size
+		assert: tmp_Wku2GdUyBl5 fromObjects size
 		equals: 0
 		description: 'testSimple3_amp:3.15'.
 	self
-		assert: tmp_jApSCTZ8jM5 viewElements class
+		assert: tmp_Wku2GdUyBl5 viewElements class
 		equals: Array
 		description: 'testSimple3_amp:3.16'.
 	self
-		assert: tmp_jApSCTZ8jM5 viewElements size
+		assert: tmp_Wku2GdUyBl5 viewElements size
 		equals: 0
 		description: 'testSimple3_amp:3.17'.
 	self
-		should: [ tmp_jApSCTZ8jM5 fromObjects: #(1 2 3 6) ]
+		should: [ tmp_Wku2GdUyBl5 fromObjects: #(1 2 3 6) ]
 		raise: AssertionFailure
 		description: 'testSimple3_amp:4.1'.
-	tmp_1Lalv0owOT7 := RSEdgeBuilder line.
+	tmp_IqdZwFawWR7 := RSEdgeBuilder line.
 	self
-		assert: tmp_1Lalv0owOT7 class
+		assert: tmp_IqdZwFawWR7 class
 		equals: RSEdgeBuilder
 		description: 'testSimple3_amp:5.1'.
 	self
-		assert: tmp_1Lalv0owOT7 isBidirectional class
+		assert: tmp_IqdZwFawWR7 isBidirectional class
 		equals: True
 		description: 'testSimple3_amp:5.2'.
 	self
-		assert: tmp_1Lalv0owOT7 isBidirectional
+		assert: tmp_IqdZwFawWR7 isBidirectional
 		equals: true
 		description: 'testSimple3_amp:5.3'.
 	self
-		assert: tmp_1Lalv0owOT7 toObjects class
+		assert: tmp_IqdZwFawWR7 toObjects class
 		equals: Array
 		description: 'testSimple3_amp:5.4'.
 	self
-		assert: tmp_1Lalv0owOT7 toObjects size
+		assert: tmp_IqdZwFawWR7 toObjects size
 		equals: 0
 		description: 'testSimple3_amp:5.5'.
 	self
-		assert: tmp_1Lalv0owOT7 controlPoints class
+		assert: tmp_IqdZwFawWR7 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple3_amp:5.6'.
 	self
-		assert: tmp_1Lalv0owOT7 controlPoints
+		assert: tmp_IqdZwFawWR7 controlPoints
 		equals: nil
 		description: 'testSimple3_amp:5.7'.
 	self
-		assert: tmp_1Lalv0owOT7 toElements class
+		assert: tmp_IqdZwFawWR7 toElements class
 		equals: Array
 		description: 'testSimple3_amp:5.8'.
 	self
-		assert: tmp_1Lalv0owOT7 toElements size
+		assert: tmp_IqdZwFawWR7 toElements size
 		equals: 0
 		description: 'testSimple3_amp:5.9'.
 	self
-		assert: tmp_1Lalv0owOT7 view class
+		assert: tmp_IqdZwFawWR7 view class
 		equals: UndefinedObject
 		description: 'testSimple3_amp:5.10'.
 	self
-		assert: tmp_1Lalv0owOT7 view
+		assert: tmp_IqdZwFawWR7 view
 		equals: nil
 		description: 'testSimple3_amp:5.11'.
 	self
-		assert: tmp_1Lalv0owOT7 fromElements class
+		assert: tmp_IqdZwFawWR7 fromElements class
 		equals: Array
 		description: 'testSimple3_amp:5.12'.
 	self
-		assert: tmp_1Lalv0owOT7 fromElements size
+		assert: tmp_IqdZwFawWR7 fromElements size
 		equals: 0
 		description: 'testSimple3_amp:5.13'.
 	self
-		assert: tmp_1Lalv0owOT7 fromObjects class
+		assert: tmp_IqdZwFawWR7 fromObjects class
 		equals: Array
 		description: 'testSimple3_amp:5.14'.
 	self
-		assert: tmp_1Lalv0owOT7 fromObjects size
+		assert: tmp_IqdZwFawWR7 fromObjects size
 		equals: 0
 		description: 'testSimple3_amp:5.15'.
 	self
-		assert: tmp_1Lalv0owOT7 viewElements class
+		assert: tmp_IqdZwFawWR7 viewElements class
 		equals: Array
 		description: 'testSimple3_amp:5.16'.
 	self
-		assert: tmp_1Lalv0owOT7 viewElements size
+		assert: tmp_IqdZwFawWR7 viewElements size
 		equals: 0
 		description: 'testSimple3_amp:5.17'.
 	self
-		should: [ tmp_1Lalv0owOT7 toObjects: (1 to: 10) ]
+		should: [ tmp_IqdZwFawWR7 toObjects: (1 to: 10) ]
 		raise: AssertionFailure
 		description: 'testSimple3_amp:6.1'.
-	tmp_zI5UpcG26C8 := RSEdgeBuilder line.
+	tmp_rPzZugDNpT8 := RSEdgeBuilder line.
 	self
-		assert: tmp_zI5UpcG26C8 class
+		assert: tmp_rPzZugDNpT8 class
 		equals: RSEdgeBuilder
 		description: 'testSimple3_amp:7.1'.
 	self
-		assert: tmp_zI5UpcG26C8 isBidirectional class
+		assert: tmp_rPzZugDNpT8 isBidirectional class
 		equals: True
 		description: 'testSimple3_amp:7.2'.
 	self
-		assert: tmp_zI5UpcG26C8 isBidirectional
+		assert: tmp_rPzZugDNpT8 isBidirectional
 		equals: true
 		description: 'testSimple3_amp:7.3'.
 	self
-		assert: tmp_zI5UpcG26C8 toObjects class
+		assert: tmp_rPzZugDNpT8 toObjects class
 		equals: Array
 		description: 'testSimple3_amp:7.4'.
 	self
-		assert: tmp_zI5UpcG26C8 toObjects size
+		assert: tmp_rPzZugDNpT8 toObjects size
 		equals: 0
 		description: 'testSimple3_amp:7.5'.
 	self
-		assert: tmp_zI5UpcG26C8 controlPoints class
+		assert: tmp_rPzZugDNpT8 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple3_amp:7.6'.
 	self
-		assert: tmp_zI5UpcG26C8 controlPoints
+		assert: tmp_rPzZugDNpT8 controlPoints
 		equals: nil
 		description: 'testSimple3_amp:7.7'.
 	self
-		assert: tmp_zI5UpcG26C8 toElements class
+		assert: tmp_rPzZugDNpT8 toElements class
 		equals: Array
 		description: 'testSimple3_amp:7.8'.
 	self
-		assert: tmp_zI5UpcG26C8 toElements size
+		assert: tmp_rPzZugDNpT8 toElements size
 		equals: 0
 		description: 'testSimple3_amp:7.9'.
 	self
-		assert: tmp_zI5UpcG26C8 view class
+		assert: tmp_rPzZugDNpT8 view class
 		equals: UndefinedObject
 		description: 'testSimple3_amp:7.10'.
 	self
-		assert: tmp_zI5UpcG26C8 view
+		assert: tmp_rPzZugDNpT8 view
 		equals: nil
 		description: 'testSimple3_amp:7.11'.
 	self
-		assert: tmp_zI5UpcG26C8 fromElements class
+		assert: tmp_rPzZugDNpT8 fromElements class
 		equals: Array
 		description: 'testSimple3_amp:7.12'.
 	self
-		assert: tmp_zI5UpcG26C8 fromElements size
+		assert: tmp_rPzZugDNpT8 fromElements size
 		equals: 0
 		description: 'testSimple3_amp:7.13'.
 	self
-		assert: tmp_zI5UpcG26C8 fromObjects class
+		assert: tmp_rPzZugDNpT8 fromObjects class
 		equals: Array
 		description: 'testSimple3_amp:7.14'.
 	self
-		assert: tmp_zI5UpcG26C8 fromObjects size
+		assert: tmp_rPzZugDNpT8 fromObjects size
 		equals: 0
 		description: 'testSimple3_amp:7.15'.
 	self
-		assert: tmp_zI5UpcG26C8 viewElements class
+		assert: tmp_rPzZugDNpT8 viewElements class
 		equals: Array
 		description: 'testSimple3_amp:7.16'.
 	self
-		assert: tmp_zI5UpcG26C8 viewElements size
+		assert: tmp_rPzZugDNpT8 viewElements size
 		equals: 0
 		description: 'testSimple3_amp:7.17'.
-	tmp_nusO52D00c1 := tmp_zI5UpcG26C8
+	tmp_dfo2iqilXs1 := tmp_rPzZugDNpT8
 		connectFrom: #yourself
 		to: [ :v | v + 1 ].
 	self
-		assert: tmp_zI5UpcG26C8 class
+		assert: tmp_rPzZugDNpT8 class
 		equals: RSEdgeBuilder
 		description: 'testSimple3_amp:8.1'.
 	self
-		assert: tmp_zI5UpcG26C8 isBidirectional class
+		assert: tmp_rPzZugDNpT8 isBidirectional class
 		equals: True
 		description: 'testSimple3_amp:8.2'.
 	self
-		assert: tmp_zI5UpcG26C8 isBidirectional
+		assert: tmp_rPzZugDNpT8 isBidirectional
 		equals: true
 		description: 'testSimple3_amp:8.3'.
 	self
-		assert: tmp_zI5UpcG26C8 toObjects class
+		assert: tmp_rPzZugDNpT8 toObjects class
 		equals: Array
 		description: 'testSimple3_amp:8.4'.
 	self
-		assert: tmp_zI5UpcG26C8 toObjects size
+		assert: tmp_rPzZugDNpT8 toObjects size
 		equals: 0
 		description: 'testSimple3_amp:8.5'.
 	self
-		assert: tmp_zI5UpcG26C8 controlPoints class
+		assert: tmp_rPzZugDNpT8 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple3_amp:8.6'.
 	self
-		assert: tmp_zI5UpcG26C8 controlPoints
+		assert: tmp_rPzZugDNpT8 controlPoints
 		equals: nil
 		description: 'testSimple3_amp:8.7'.
 	self
-		assert: tmp_zI5UpcG26C8 toElements class
+		assert: tmp_rPzZugDNpT8 toElements class
 		equals: Array
 		description: 'testSimple3_amp:8.8'.
 	self
-		assert: tmp_zI5UpcG26C8 toElements size
+		assert: tmp_rPzZugDNpT8 toElements size
 		equals: 0
 		description: 'testSimple3_amp:8.9'.
 	self
-		assert: tmp_zI5UpcG26C8 view class
+		assert: tmp_rPzZugDNpT8 view class
 		equals: UndefinedObject
 		description: 'testSimple3_amp:8.10'.
 	self
-		assert: tmp_zI5UpcG26C8 view
+		assert: tmp_rPzZugDNpT8 view
 		equals: nil
 		description: 'testSimple3_amp:8.11'.
 	self
-		assert: tmp_zI5UpcG26C8 fromElements class
+		assert: tmp_rPzZugDNpT8 fromElements class
 		equals: Array
 		description: 'testSimple3_amp:8.12'.
 	self
-		assert: tmp_zI5UpcG26C8 fromElements size
+		assert: tmp_rPzZugDNpT8 fromElements size
 		equals: 0
 		description: 'testSimple3_amp:8.13'.
 	self
-		assert: tmp_zI5UpcG26C8 fromObjects class
+		assert: tmp_rPzZugDNpT8 fromObjects class
 		equals: Array
 		description: 'testSimple3_amp:8.14'.
 	self
-		assert: tmp_zI5UpcG26C8 fromObjects size
+		assert: tmp_rPzZugDNpT8 fromObjects size
 		equals: 0
 		description: 'testSimple3_amp:8.15'.
 	self
-		assert: tmp_zI5UpcG26C8 viewElements class
+		assert: tmp_rPzZugDNpT8 viewElements class
 		equals: Array
 		description: 'testSimple3_amp:8.16'.
 	self
-		assert: tmp_zI5UpcG26C8 viewElements size
+		assert: tmp_rPzZugDNpT8 viewElements size
 		equals: 0
 		description: 'testSimple3_amp:8.17'.
 	self
-		assert: tmp_nusO52D00c1 class
+		assert: tmp_dfo2iqilXs1 class
 		equals: TSGroup
 		description: 'testSimple3_amp:8.1'.
 	self
-		assert: tmp_nusO52D00c1 size
+		assert: tmp_dfo2iqilXs1 size
 		equals: 0
 		description: 'testSimple3_amp:8.2'
 ]
@@ -5917,441 +5917,441 @@ RSEdgeBuilderTestAmpTest >> testSimple3_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testSimple4_amp [
 	<madeBySmallAmp>
-	| tmp_jY2Adj0zIm1 tmp_FvWxr0ee7e3 tmp_Uffjg8HodU5 tmp_3JUujpvyv27 tmp_wxykp88GgM8 |
-	tmp_FvWxr0ee7e3 := RSEdgeBuilder line.
+	| tmp_jjpHjYUQDO1 tmp_rbzOHDPUxv3 tmp_1e6QW9SPeM5 tmp_ETD17CHkxL7 tmp_gwQ5zGqTDM8 |
+	tmp_rbzOHDPUxv3 := RSEdgeBuilder line.
 	self
-		assert: tmp_FvWxr0ee7e3 class
+		assert: tmp_rbzOHDPUxv3 class
 		equals: RSEdgeBuilder
 		description: 'testSimple4_amp:1.1'.
 	self
-		assert: tmp_FvWxr0ee7e3 isBidirectional class
+		assert: tmp_rbzOHDPUxv3 isBidirectional class
 		equals: True
 		description: 'testSimple4_amp:1.2'.
 	self
-		assert: tmp_FvWxr0ee7e3 isBidirectional
+		assert: tmp_rbzOHDPUxv3 isBidirectional
 		equals: true
 		description: 'testSimple4_amp:1.3'.
 	self
-		assert: tmp_FvWxr0ee7e3 toObjects class
+		assert: tmp_rbzOHDPUxv3 toObjects class
 		equals: Array
 		description: 'testSimple4_amp:1.4'.
 	self
-		assert: tmp_FvWxr0ee7e3 toObjects size
+		assert: tmp_rbzOHDPUxv3 toObjects size
 		equals: 0
 		description: 'testSimple4_amp:1.5'.
 	self
-		assert: tmp_FvWxr0ee7e3 controlPoints class
+		assert: tmp_rbzOHDPUxv3 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple4_amp:1.6'.
 	self
-		assert: tmp_FvWxr0ee7e3 controlPoints
+		assert: tmp_rbzOHDPUxv3 controlPoints
 		equals: nil
 		description: 'testSimple4_amp:1.7'.
 	self
-		assert: tmp_FvWxr0ee7e3 toElements class
+		assert: tmp_rbzOHDPUxv3 toElements class
 		equals: Array
 		description: 'testSimple4_amp:1.8'.
 	self
-		assert: tmp_FvWxr0ee7e3 toElements size
+		assert: tmp_rbzOHDPUxv3 toElements size
 		equals: 0
 		description: 'testSimple4_amp:1.9'.
 	self
-		assert: tmp_FvWxr0ee7e3 view class
+		assert: tmp_rbzOHDPUxv3 view class
 		equals: UndefinedObject
 		description: 'testSimple4_amp:1.10'.
 	self
-		assert: tmp_FvWxr0ee7e3 view
+		assert: tmp_rbzOHDPUxv3 view
 		equals: nil
 		description: 'testSimple4_amp:1.11'.
 	self
-		assert: tmp_FvWxr0ee7e3 fromElements class
+		assert: tmp_rbzOHDPUxv3 fromElements class
 		equals: Array
 		description: 'testSimple4_amp:1.12'.
 	self
-		assert: tmp_FvWxr0ee7e3 fromElements size
+		assert: tmp_rbzOHDPUxv3 fromElements size
 		equals: 0
 		description: 'testSimple4_amp:1.13'.
 	self
-		assert: tmp_FvWxr0ee7e3 fromObjects class
+		assert: tmp_rbzOHDPUxv3 fromObjects class
 		equals: Array
 		description: 'testSimple4_amp:1.14'.
 	self
-		assert: tmp_FvWxr0ee7e3 fromObjects size
+		assert: tmp_rbzOHDPUxv3 fromObjects size
 		equals: 0
 		description: 'testSimple4_amp:1.15'.
 	self
-		assert: tmp_FvWxr0ee7e3 viewElements class
+		assert: tmp_rbzOHDPUxv3 viewElements class
 		equals: Array
 		description: 'testSimple4_amp:1.16'.
 	self
-		assert: tmp_FvWxr0ee7e3 viewElements size
+		assert: tmp_rbzOHDPUxv3 viewElements size
 		equals: 0
 		description: 'testSimple4_amp:1.17'.
-	tmp_FvWxr0ee7e3 view: view.
+	tmp_rbzOHDPUxv3 view: view.
 	self
-		assert: tmp_FvWxr0ee7e3 class
+		assert: tmp_rbzOHDPUxv3 class
 		equals: RSEdgeBuilder
 		description: 'testSimple4_amp:2.1'.
 	self
-		assert: tmp_FvWxr0ee7e3 isBidirectional class
+		assert: tmp_rbzOHDPUxv3 isBidirectional class
 		equals: True
 		description: 'testSimple4_amp:2.2'.
 	self
-		assert: tmp_FvWxr0ee7e3 isBidirectional
+		assert: tmp_rbzOHDPUxv3 isBidirectional
 		equals: true
 		description: 'testSimple4_amp:2.3'.
 	self
-		assert: tmp_FvWxr0ee7e3 toObjects class
+		assert: tmp_rbzOHDPUxv3 toObjects class
 		equals: TSGroup
 		description: 'testSimple4_amp:2.4'.
 	self
-		assert: tmp_FvWxr0ee7e3 toObjects size
+		assert: tmp_rbzOHDPUxv3 toObjects size
 		equals: 10
 		description: 'testSimple4_amp:2.5'.
 	self
-		assert: tmp_FvWxr0ee7e3 controlPoints class
+		assert: tmp_rbzOHDPUxv3 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple4_amp:2.6'.
 	self
-		assert: tmp_FvWxr0ee7e3 controlPoints
+		assert: tmp_rbzOHDPUxv3 controlPoints
 		equals: nil
 		description: 'testSimple4_amp:2.7'.
 	self
-		assert: tmp_FvWxr0ee7e3 toElements class
+		assert: tmp_rbzOHDPUxv3 toElements class
 		equals: TSGroup
 		description: 'testSimple4_amp:2.8'.
 	self
-		assert: tmp_FvWxr0ee7e3 toElements size
+		assert: tmp_rbzOHDPUxv3 toElements size
 		equals: 10
 		description: 'testSimple4_amp:2.9'.
 	self
-		assert: tmp_FvWxr0ee7e3 view class
+		assert: tmp_rbzOHDPUxv3 view class
 		equals: RSView
 		description: 'testSimple4_amp:2.10'.
 	self
-		assert: tmp_FvWxr0ee7e3 view numberOfEdges class
+		assert: tmp_rbzOHDPUxv3 view numberOfEdges class
 		equals: SmallInteger
 		description: 'testSimple4_amp:2.11'.
 	self
-		assert: tmp_FvWxr0ee7e3 view numberOfEdges
+		assert: tmp_rbzOHDPUxv3 view numberOfEdges
 		equals: 0
 		description: 'testSimple4_amp:2.12'.
 	self
-		assert: tmp_FvWxr0ee7e3 fromElements class
+		assert: tmp_rbzOHDPUxv3 fromElements class
 		equals: TSGroup
 		description: 'testSimple4_amp:2.13'.
 	self
-		assert: tmp_FvWxr0ee7e3 fromElements size
+		assert: tmp_rbzOHDPUxv3 fromElements size
 		equals: 10
 		description: 'testSimple4_amp:2.14'.
 	self
-		assert: tmp_FvWxr0ee7e3 fromObjects class
+		assert: tmp_rbzOHDPUxv3 fromObjects class
 		equals: TSGroup
 		description: 'testSimple4_amp:2.15'.
 	self
-		assert: tmp_FvWxr0ee7e3 fromObjects size
+		assert: tmp_rbzOHDPUxv3 fromObjects size
 		equals: 10
 		description: 'testSimple4_amp:2.16'.
 	self
-		assert: tmp_FvWxr0ee7e3 viewElements class
+		assert: tmp_rbzOHDPUxv3 viewElements class
 		equals: TSGroup
 		description: 'testSimple4_amp:2.17'.
 	self
-		assert: tmp_FvWxr0ee7e3 viewElements size
+		assert: tmp_rbzOHDPUxv3 viewElements size
 		equals: 10
 		description: 'testSimple4_amp:2.18'.
-	tmp_Uffjg8HodU5 := RSEdgeBuilder line.
+	tmp_1e6QW9SPeM5 := RSEdgeBuilder line.
 	self
-		assert: tmp_Uffjg8HodU5 class
+		assert: tmp_1e6QW9SPeM5 class
 		equals: RSEdgeBuilder
 		description: 'testSimple4_amp:3.1'.
 	self
-		assert: tmp_Uffjg8HodU5 isBidirectional class
+		assert: tmp_1e6QW9SPeM5 isBidirectional class
 		equals: True
 		description: 'testSimple4_amp:3.2'.
 	self
-		assert: tmp_Uffjg8HodU5 isBidirectional
+		assert: tmp_1e6QW9SPeM5 isBidirectional
 		equals: true
 		description: 'testSimple4_amp:3.3'.
 	self
-		assert: tmp_Uffjg8HodU5 toObjects class
+		assert: tmp_1e6QW9SPeM5 toObjects class
 		equals: Array
 		description: 'testSimple4_amp:3.4'.
 	self
-		assert: tmp_Uffjg8HodU5 toObjects size
+		assert: tmp_1e6QW9SPeM5 toObjects size
 		equals: 0
 		description: 'testSimple4_amp:3.5'.
 	self
-		assert: tmp_Uffjg8HodU5 controlPoints class
+		assert: tmp_1e6QW9SPeM5 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple4_amp:3.6'.
 	self
-		assert: tmp_Uffjg8HodU5 controlPoints
+		assert: tmp_1e6QW9SPeM5 controlPoints
 		equals: nil
 		description: 'testSimple4_amp:3.7'.
 	self
-		assert: tmp_Uffjg8HodU5 toElements class
+		assert: tmp_1e6QW9SPeM5 toElements class
 		equals: Array
 		description: 'testSimple4_amp:3.8'.
 	self
-		assert: tmp_Uffjg8HodU5 toElements size
+		assert: tmp_1e6QW9SPeM5 toElements size
 		equals: 0
 		description: 'testSimple4_amp:3.9'.
 	self
-		assert: tmp_Uffjg8HodU5 view class
+		assert: tmp_1e6QW9SPeM5 view class
 		equals: UndefinedObject
 		description: 'testSimple4_amp:3.10'.
 	self
-		assert: tmp_Uffjg8HodU5 view
+		assert: tmp_1e6QW9SPeM5 view
 		equals: nil
 		description: 'testSimple4_amp:3.11'.
 	self
-		assert: tmp_Uffjg8HodU5 fromElements class
+		assert: tmp_1e6QW9SPeM5 fromElements class
 		equals: Array
 		description: 'testSimple4_amp:3.12'.
 	self
-		assert: tmp_Uffjg8HodU5 fromElements size
+		assert: tmp_1e6QW9SPeM5 fromElements size
 		equals: 0
 		description: 'testSimple4_amp:3.13'.
 	self
-		assert: tmp_Uffjg8HodU5 fromObjects class
+		assert: tmp_1e6QW9SPeM5 fromObjects class
 		equals: Array
 		description: 'testSimple4_amp:3.14'.
 	self
-		assert: tmp_Uffjg8HodU5 fromObjects size
+		assert: tmp_1e6QW9SPeM5 fromObjects size
 		equals: 0
 		description: 'testSimple4_amp:3.15'.
 	self
-		assert: tmp_Uffjg8HodU5 viewElements class
+		assert: tmp_1e6QW9SPeM5 viewElements class
 		equals: Array
 		description: 'testSimple4_amp:3.16'.
 	self
-		assert: tmp_Uffjg8HodU5 viewElements size
+		assert: tmp_1e6QW9SPeM5 viewElements size
 		equals: 0
 		description: 'testSimple4_amp:3.17'.
 	self
-		should: [ tmp_Uffjg8HodU5 fromObjects: #(1 2 3 6) ]
+		should: [ tmp_1e6QW9SPeM5 fromObjects: #(1 2 3 6) ]
 		raise: AssertionFailure
 		description: 'testSimple4_amp:4.1'.
-	tmp_3JUujpvyv27 := RSEdgeBuilder line.
+	tmp_ETD17CHkxL7 := RSEdgeBuilder line.
 	self
-		assert: tmp_3JUujpvyv27 class
+		assert: tmp_ETD17CHkxL7 class
 		equals: RSEdgeBuilder
 		description: 'testSimple4_amp:5.1'.
 	self
-		assert: tmp_3JUujpvyv27 isBidirectional class
+		assert: tmp_ETD17CHkxL7 isBidirectional class
 		equals: True
 		description: 'testSimple4_amp:5.2'.
 	self
-		assert: tmp_3JUujpvyv27 isBidirectional
+		assert: tmp_ETD17CHkxL7 isBidirectional
 		equals: true
 		description: 'testSimple4_amp:5.3'.
 	self
-		assert: tmp_3JUujpvyv27 toObjects class
+		assert: tmp_ETD17CHkxL7 toObjects class
 		equals: Array
 		description: 'testSimple4_amp:5.4'.
 	self
-		assert: tmp_3JUujpvyv27 toObjects size
+		assert: tmp_ETD17CHkxL7 toObjects size
 		equals: 0
 		description: 'testSimple4_amp:5.5'.
 	self
-		assert: tmp_3JUujpvyv27 controlPoints class
+		assert: tmp_ETD17CHkxL7 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple4_amp:5.6'.
 	self
-		assert: tmp_3JUujpvyv27 controlPoints
+		assert: tmp_ETD17CHkxL7 controlPoints
 		equals: nil
 		description: 'testSimple4_amp:5.7'.
 	self
-		assert: tmp_3JUujpvyv27 toElements class
+		assert: tmp_ETD17CHkxL7 toElements class
 		equals: Array
 		description: 'testSimple4_amp:5.8'.
 	self
-		assert: tmp_3JUujpvyv27 toElements size
+		assert: tmp_ETD17CHkxL7 toElements size
 		equals: 0
 		description: 'testSimple4_amp:5.9'.
 	self
-		assert: tmp_3JUujpvyv27 view class
+		assert: tmp_ETD17CHkxL7 view class
 		equals: UndefinedObject
 		description: 'testSimple4_amp:5.10'.
 	self
-		assert: tmp_3JUujpvyv27 view
+		assert: tmp_ETD17CHkxL7 view
 		equals: nil
 		description: 'testSimple4_amp:5.11'.
 	self
-		assert: tmp_3JUujpvyv27 fromElements class
+		assert: tmp_ETD17CHkxL7 fromElements class
 		equals: Array
 		description: 'testSimple4_amp:5.12'.
 	self
-		assert: tmp_3JUujpvyv27 fromElements size
+		assert: tmp_ETD17CHkxL7 fromElements size
 		equals: 0
 		description: 'testSimple4_amp:5.13'.
 	self
-		assert: tmp_3JUujpvyv27 fromObjects class
+		assert: tmp_ETD17CHkxL7 fromObjects class
 		equals: Array
 		description: 'testSimple4_amp:5.14'.
 	self
-		assert: tmp_3JUujpvyv27 fromObjects size
+		assert: tmp_ETD17CHkxL7 fromObjects size
 		equals: 0
 		description: 'testSimple4_amp:5.15'.
 	self
-		assert: tmp_3JUujpvyv27 viewElements class
+		assert: tmp_ETD17CHkxL7 viewElements class
 		equals: Array
 		description: 'testSimple4_amp:5.16'.
 	self
-		assert: tmp_3JUujpvyv27 viewElements size
+		assert: tmp_ETD17CHkxL7 viewElements size
 		equals: 0
 		description: 'testSimple4_amp:5.17'.
 	self
-		should: [ tmp_3JUujpvyv27 toObjects: #(1 2 3 6) ]
+		should: [ tmp_ETD17CHkxL7 toObjects: #(1 2 3 6) ]
 		raise: AssertionFailure
 		description: 'testSimple4_amp:6.1'.
-	tmp_wxykp88GgM8 := RSEdgeBuilder line.
+	tmp_gwQ5zGqTDM8 := RSEdgeBuilder line.
 	self
-		assert: tmp_wxykp88GgM8 class
+		assert: tmp_gwQ5zGqTDM8 class
 		equals: RSEdgeBuilder
 		description: 'testSimple4_amp:7.1'.
 	self
-		assert: tmp_wxykp88GgM8 isBidirectional class
+		assert: tmp_gwQ5zGqTDM8 isBidirectional class
 		equals: True
 		description: 'testSimple4_amp:7.2'.
 	self
-		assert: tmp_wxykp88GgM8 isBidirectional
+		assert: tmp_gwQ5zGqTDM8 isBidirectional
 		equals: true
 		description: 'testSimple4_amp:7.3'.
 	self
-		assert: tmp_wxykp88GgM8 toObjects class
+		assert: tmp_gwQ5zGqTDM8 toObjects class
 		equals: Array
 		description: 'testSimple4_amp:7.4'.
 	self
-		assert: tmp_wxykp88GgM8 toObjects size
+		assert: tmp_gwQ5zGqTDM8 toObjects size
 		equals: 0
 		description: 'testSimple4_amp:7.5'.
 	self
-		assert: tmp_wxykp88GgM8 controlPoints class
+		assert: tmp_gwQ5zGqTDM8 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple4_amp:7.6'.
 	self
-		assert: tmp_wxykp88GgM8 controlPoints
+		assert: tmp_gwQ5zGqTDM8 controlPoints
 		equals: nil
 		description: 'testSimple4_amp:7.7'.
 	self
-		assert: tmp_wxykp88GgM8 toElements class
+		assert: tmp_gwQ5zGqTDM8 toElements class
 		equals: Array
 		description: 'testSimple4_amp:7.8'.
 	self
-		assert: tmp_wxykp88GgM8 toElements size
+		assert: tmp_gwQ5zGqTDM8 toElements size
 		equals: 0
 		description: 'testSimple4_amp:7.9'.
 	self
-		assert: tmp_wxykp88GgM8 view class
+		assert: tmp_gwQ5zGqTDM8 view class
 		equals: UndefinedObject
 		description: 'testSimple4_amp:7.10'.
 	self
-		assert: tmp_wxykp88GgM8 view
+		assert: tmp_gwQ5zGqTDM8 view
 		equals: nil
 		description: 'testSimple4_amp:7.11'.
 	self
-		assert: tmp_wxykp88GgM8 fromElements class
+		assert: tmp_gwQ5zGqTDM8 fromElements class
 		equals: Array
 		description: 'testSimple4_amp:7.12'.
 	self
-		assert: tmp_wxykp88GgM8 fromElements size
+		assert: tmp_gwQ5zGqTDM8 fromElements size
 		equals: 0
 		description: 'testSimple4_amp:7.13'.
 	self
-		assert: tmp_wxykp88GgM8 fromObjects class
+		assert: tmp_gwQ5zGqTDM8 fromObjects class
 		equals: Array
 		description: 'testSimple4_amp:7.14'.
 	self
-		assert: tmp_wxykp88GgM8 fromObjects size
+		assert: tmp_gwQ5zGqTDM8 fromObjects size
 		equals: 0
 		description: 'testSimple4_amp:7.15'.
 	self
-		assert: tmp_wxykp88GgM8 viewElements class
+		assert: tmp_gwQ5zGqTDM8 viewElements class
 		equals: Array
 		description: 'testSimple4_amp:7.16'.
 	self
-		assert: tmp_wxykp88GgM8 viewElements size
+		assert: tmp_gwQ5zGqTDM8 viewElements size
 		equals: 0
 		description: 'testSimple4_amp:7.17'.
-	tmp_jY2Adj0zIm1 := tmp_wxykp88GgM8
+	tmp_jjpHjYUQDO1 := tmp_gwQ5zGqTDM8
 		connectFrom: #yourself
 		to: [ :v | v + 1 ].
 	self
-		assert: tmp_wxykp88GgM8 class
+		assert: tmp_gwQ5zGqTDM8 class
 		equals: RSEdgeBuilder
 		description: 'testSimple4_amp:8.1'.
 	self
-		assert: tmp_wxykp88GgM8 isBidirectional class
+		assert: tmp_gwQ5zGqTDM8 isBidirectional class
 		equals: True
 		description: 'testSimple4_amp:8.2'.
 	self
-		assert: tmp_wxykp88GgM8 isBidirectional
+		assert: tmp_gwQ5zGqTDM8 isBidirectional
 		equals: true
 		description: 'testSimple4_amp:8.3'.
 	self
-		assert: tmp_wxykp88GgM8 toObjects class
+		assert: tmp_gwQ5zGqTDM8 toObjects class
 		equals: Array
 		description: 'testSimple4_amp:8.4'.
 	self
-		assert: tmp_wxykp88GgM8 toObjects size
+		assert: tmp_gwQ5zGqTDM8 toObjects size
 		equals: 0
 		description: 'testSimple4_amp:8.5'.
 	self
-		assert: tmp_wxykp88GgM8 controlPoints class
+		assert: tmp_gwQ5zGqTDM8 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple4_amp:8.6'.
 	self
-		assert: tmp_wxykp88GgM8 controlPoints
+		assert: tmp_gwQ5zGqTDM8 controlPoints
 		equals: nil
 		description: 'testSimple4_amp:8.7'.
 	self
-		assert: tmp_wxykp88GgM8 toElements class
+		assert: tmp_gwQ5zGqTDM8 toElements class
 		equals: Array
 		description: 'testSimple4_amp:8.8'.
 	self
-		assert: tmp_wxykp88GgM8 toElements size
+		assert: tmp_gwQ5zGqTDM8 toElements size
 		equals: 0
 		description: 'testSimple4_amp:8.9'.
 	self
-		assert: tmp_wxykp88GgM8 view class
+		assert: tmp_gwQ5zGqTDM8 view class
 		equals: UndefinedObject
 		description: 'testSimple4_amp:8.10'.
 	self
-		assert: tmp_wxykp88GgM8 view
+		assert: tmp_gwQ5zGqTDM8 view
 		equals: nil
 		description: 'testSimple4_amp:8.11'.
 	self
-		assert: tmp_wxykp88GgM8 fromElements class
+		assert: tmp_gwQ5zGqTDM8 fromElements class
 		equals: Array
 		description: 'testSimple4_amp:8.12'.
 	self
-		assert: tmp_wxykp88GgM8 fromElements size
+		assert: tmp_gwQ5zGqTDM8 fromElements size
 		equals: 0
 		description: 'testSimple4_amp:8.13'.
 	self
-		assert: tmp_wxykp88GgM8 fromObjects class
+		assert: tmp_gwQ5zGqTDM8 fromObjects class
 		equals: Array
 		description: 'testSimple4_amp:8.14'.
 	self
-		assert: tmp_wxykp88GgM8 fromObjects size
+		assert: tmp_gwQ5zGqTDM8 fromObjects size
 		equals: 0
 		description: 'testSimple4_amp:8.15'.
 	self
-		assert: tmp_wxykp88GgM8 viewElements class
+		assert: tmp_gwQ5zGqTDM8 viewElements class
 		equals: Array
 		description: 'testSimple4_amp:8.16'.
 	self
-		assert: tmp_wxykp88GgM8 viewElements size
+		assert: tmp_gwQ5zGqTDM8 viewElements size
 		equals: 0
 		description: 'testSimple4_amp:8.17'.
 	self
-		assert: tmp_jY2Adj0zIm1 class
+		assert: tmp_jjpHjYUQDO1 class
 		equals: TSGroup
 		description: 'testSimple4_amp:8.1'.
 	self
-		assert: tmp_jY2Adj0zIm1 size
+		assert: tmp_jjpHjYUQDO1 size
 		equals: 0
 		description: 'testSimple4_amp:8.2'
 ]
@@ -6359,368 +6359,368 @@ RSEdgeBuilderTestAmpTest >> testSimple4_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testSimple5_amp [
 	<madeBySmallAmp>
-	| tmp_4bxiPnh2z11 tmp_yLSoCOHTuY3 tmp_EvHZFgNPIP5 tmp_VPZ9w5oi8L6 |
-	tmp_yLSoCOHTuY3 := RSEdgeBuilder line.
+	| tmp_dZOEXlAz681 tmp_lbWjN333w53 tmp_TBBQylm1re5 tmp_3evenUevuN6 |
+	tmp_lbWjN333w53 := RSEdgeBuilder line.
 	self
-		assert: tmp_yLSoCOHTuY3 class
+		assert: tmp_lbWjN333w53 class
 		equals: RSEdgeBuilder
 		description: 'testSimple5_amp:1.1'.
 	self
-		assert: tmp_yLSoCOHTuY3 isBidirectional class
+		assert: tmp_lbWjN333w53 isBidirectional class
 		equals: True
 		description: 'testSimple5_amp:1.2'.
 	self
-		assert: tmp_yLSoCOHTuY3 isBidirectional
+		assert: tmp_lbWjN333w53 isBidirectional
 		equals: true
 		description: 'testSimple5_amp:1.3'.
 	self
-		assert: tmp_yLSoCOHTuY3 toObjects class
+		assert: tmp_lbWjN333w53 toObjects class
 		equals: Array
 		description: 'testSimple5_amp:1.4'.
 	self
-		assert: tmp_yLSoCOHTuY3 toObjects size
+		assert: tmp_lbWjN333w53 toObjects size
 		equals: 0
 		description: 'testSimple5_amp:1.5'.
 	self
-		assert: tmp_yLSoCOHTuY3 controlPoints class
+		assert: tmp_lbWjN333w53 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple5_amp:1.6'.
 	self
-		assert: tmp_yLSoCOHTuY3 controlPoints
+		assert: tmp_lbWjN333w53 controlPoints
 		equals: nil
 		description: 'testSimple5_amp:1.7'.
 	self
-		assert: tmp_yLSoCOHTuY3 toElements class
+		assert: tmp_lbWjN333w53 toElements class
 		equals: Array
 		description: 'testSimple5_amp:1.8'.
 	self
-		assert: tmp_yLSoCOHTuY3 toElements size
+		assert: tmp_lbWjN333w53 toElements size
 		equals: 0
 		description: 'testSimple5_amp:1.9'.
 	self
-		assert: tmp_yLSoCOHTuY3 view class
+		assert: tmp_lbWjN333w53 view class
 		equals: UndefinedObject
 		description: 'testSimple5_amp:1.10'.
 	self
-		assert: tmp_yLSoCOHTuY3 view
+		assert: tmp_lbWjN333w53 view
 		equals: nil
 		description: 'testSimple5_amp:1.11'.
 	self
-		assert: tmp_yLSoCOHTuY3 fromElements class
+		assert: tmp_lbWjN333w53 fromElements class
 		equals: Array
 		description: 'testSimple5_amp:1.12'.
 	self
-		assert: tmp_yLSoCOHTuY3 fromElements size
+		assert: tmp_lbWjN333w53 fromElements size
 		equals: 0
 		description: 'testSimple5_amp:1.13'.
 	self
-		assert: tmp_yLSoCOHTuY3 fromObjects class
+		assert: tmp_lbWjN333w53 fromObjects class
 		equals: Array
 		description: 'testSimple5_amp:1.14'.
 	self
-		assert: tmp_yLSoCOHTuY3 fromObjects size
+		assert: tmp_lbWjN333w53 fromObjects size
 		equals: 0
 		description: 'testSimple5_amp:1.15'.
 	self
-		assert: tmp_yLSoCOHTuY3 viewElements class
+		assert: tmp_lbWjN333w53 viewElements class
 		equals: Array
 		description: 'testSimple5_amp:1.16'.
 	self
-		assert: tmp_yLSoCOHTuY3 viewElements size
+		assert: tmp_lbWjN333w53 viewElements size
 		equals: 0
 		description: 'testSimple5_amp:1.17'.
-	tmp_yLSoCOHTuY3 view: view.
+	tmp_lbWjN333w53 view: view.
 	self
-		assert: tmp_yLSoCOHTuY3 class
+		assert: tmp_lbWjN333w53 class
 		equals: RSEdgeBuilder
 		description: 'testSimple5_amp:2.1'.
 	self
-		assert: tmp_yLSoCOHTuY3 isBidirectional class
+		assert: tmp_lbWjN333w53 isBidirectional class
 		equals: True
 		description: 'testSimple5_amp:2.2'.
 	self
-		assert: tmp_yLSoCOHTuY3 isBidirectional
+		assert: tmp_lbWjN333w53 isBidirectional
 		equals: true
 		description: 'testSimple5_amp:2.3'.
 	self
-		assert: tmp_yLSoCOHTuY3 toObjects class
+		assert: tmp_lbWjN333w53 toObjects class
 		equals: TSGroup
 		description: 'testSimple5_amp:2.4'.
 	self
-		assert: tmp_yLSoCOHTuY3 toObjects size
+		assert: tmp_lbWjN333w53 toObjects size
 		equals: 10
 		description: 'testSimple5_amp:2.5'.
 	self
-		assert: tmp_yLSoCOHTuY3 controlPoints class
+		assert: tmp_lbWjN333w53 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple5_amp:2.6'.
 	self
-		assert: tmp_yLSoCOHTuY3 controlPoints
+		assert: tmp_lbWjN333w53 controlPoints
 		equals: nil
 		description: 'testSimple5_amp:2.7'.
 	self
-		assert: tmp_yLSoCOHTuY3 toElements class
+		assert: tmp_lbWjN333w53 toElements class
 		equals: TSGroup
 		description: 'testSimple5_amp:2.8'.
 	self
-		assert: tmp_yLSoCOHTuY3 toElements size
+		assert: tmp_lbWjN333w53 toElements size
 		equals: 10
 		description: 'testSimple5_amp:2.9'.
 	self
-		assert: tmp_yLSoCOHTuY3 view class
+		assert: tmp_lbWjN333w53 view class
 		equals: RSView
 		description: 'testSimple5_amp:2.10'.
 	self
-		assert: tmp_yLSoCOHTuY3 view numberOfEdges class
+		assert: tmp_lbWjN333w53 view numberOfEdges class
 		equals: SmallInteger
 		description: 'testSimple5_amp:2.11'.
 	self
-		assert: tmp_yLSoCOHTuY3 view numberOfEdges
+		assert: tmp_lbWjN333w53 view numberOfEdges
 		equals: 0
 		description: 'testSimple5_amp:2.12'.
 	self
-		assert: tmp_yLSoCOHTuY3 fromElements class
+		assert: tmp_lbWjN333w53 fromElements class
 		equals: TSGroup
 		description: 'testSimple5_amp:2.13'.
 	self
-		assert: tmp_yLSoCOHTuY3 fromElements size
+		assert: tmp_lbWjN333w53 fromElements size
 		equals: 10
 		description: 'testSimple5_amp:2.14'.
 	self
-		assert: tmp_yLSoCOHTuY3 fromObjects class
+		assert: tmp_lbWjN333w53 fromObjects class
 		equals: TSGroup
 		description: 'testSimple5_amp:2.15'.
 	self
-		assert: tmp_yLSoCOHTuY3 fromObjects size
+		assert: tmp_lbWjN333w53 fromObjects size
 		equals: 10
 		description: 'testSimple5_amp:2.16'.
 	self
-		assert: tmp_yLSoCOHTuY3 viewElements class
+		assert: tmp_lbWjN333w53 viewElements class
 		equals: TSGroup
 		description: 'testSimple5_amp:2.17'.
 	self
-		assert: tmp_yLSoCOHTuY3 viewElements size
+		assert: tmp_lbWjN333w53 viewElements size
 		equals: 10
 		description: 'testSimple5_amp:2.18'.
-	tmp_EvHZFgNPIP5 := RSEdgeBuilder line.
+	tmp_TBBQylm1re5 := RSEdgeBuilder line.
 	self
-		assert: tmp_EvHZFgNPIP5 class
+		assert: tmp_TBBQylm1re5 class
 		equals: RSEdgeBuilder
 		description: 'testSimple5_amp:3.1'.
 	self
-		assert: tmp_EvHZFgNPIP5 isBidirectional class
+		assert: tmp_TBBQylm1re5 isBidirectional class
 		equals: True
 		description: 'testSimple5_amp:3.2'.
 	self
-		assert: tmp_EvHZFgNPIP5 isBidirectional
+		assert: tmp_TBBQylm1re5 isBidirectional
 		equals: true
 		description: 'testSimple5_amp:3.3'.
 	self
-		assert: tmp_EvHZFgNPIP5 toObjects class
+		assert: tmp_TBBQylm1re5 toObjects class
 		equals: Array
 		description: 'testSimple5_amp:3.4'.
 	self
-		assert: tmp_EvHZFgNPIP5 toObjects size
+		assert: tmp_TBBQylm1re5 toObjects size
 		equals: 0
 		description: 'testSimple5_amp:3.5'.
 	self
-		assert: tmp_EvHZFgNPIP5 controlPoints class
+		assert: tmp_TBBQylm1re5 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple5_amp:3.6'.
 	self
-		assert: tmp_EvHZFgNPIP5 controlPoints
+		assert: tmp_TBBQylm1re5 controlPoints
 		equals: nil
 		description: 'testSimple5_amp:3.7'.
 	self
-		assert: tmp_EvHZFgNPIP5 toElements class
+		assert: tmp_TBBQylm1re5 toElements class
 		equals: Array
 		description: 'testSimple5_amp:3.8'.
 	self
-		assert: tmp_EvHZFgNPIP5 toElements size
+		assert: tmp_TBBQylm1re5 toElements size
 		equals: 0
 		description: 'testSimple5_amp:3.9'.
 	self
-		assert: tmp_EvHZFgNPIP5 view class
+		assert: tmp_TBBQylm1re5 view class
 		equals: UndefinedObject
 		description: 'testSimple5_amp:3.10'.
 	self
-		assert: tmp_EvHZFgNPIP5 view
+		assert: tmp_TBBQylm1re5 view
 		equals: nil
 		description: 'testSimple5_amp:3.11'.
 	self
-		assert: tmp_EvHZFgNPIP5 fromElements class
+		assert: tmp_TBBQylm1re5 fromElements class
 		equals: Array
 		description: 'testSimple5_amp:3.12'.
 	self
-		assert: tmp_EvHZFgNPIP5 fromElements size
+		assert: tmp_TBBQylm1re5 fromElements size
 		equals: 0
 		description: 'testSimple5_amp:3.13'.
 	self
-		assert: tmp_EvHZFgNPIP5 fromObjects class
+		assert: tmp_TBBQylm1re5 fromObjects class
 		equals: Array
 		description: 'testSimple5_amp:3.14'.
 	self
-		assert: tmp_EvHZFgNPIP5 fromObjects size
+		assert: tmp_TBBQylm1re5 fromObjects size
 		equals: 0
 		description: 'testSimple5_amp:3.15'.
 	self
-		assert: tmp_EvHZFgNPIP5 viewElements class
+		assert: tmp_TBBQylm1re5 viewElements class
 		equals: Array
 		description: 'testSimple5_amp:3.16'.
 	self
-		assert: tmp_EvHZFgNPIP5 viewElements size
+		assert: tmp_TBBQylm1re5 viewElements size
 		equals: 0
 		description: 'testSimple5_amp:3.17'.
 	self
-		should: [ tmp_EvHZFgNPIP5 fromObjects: #(1 2 3 6) ]
+		should: [ tmp_TBBQylm1re5 fromObjects: #(1 2 3 6) ]
 		raise: AssertionFailure
 		description: 'testSimple5_amp:4.1'.
-	tmp_VPZ9w5oi8L6 := RSEdgeBuilder line.
+	tmp_3evenUevuN6 := RSEdgeBuilder line.
 	self
-		assert: tmp_VPZ9w5oi8L6 class
+		assert: tmp_3evenUevuN6 class
 		equals: RSEdgeBuilder
 		description: 'testSimple5_amp:5.1'.
 	self
-		assert: tmp_VPZ9w5oi8L6 isBidirectional class
+		assert: tmp_3evenUevuN6 isBidirectional class
 		equals: True
 		description: 'testSimple5_amp:5.2'.
 	self
-		assert: tmp_VPZ9w5oi8L6 isBidirectional
+		assert: tmp_3evenUevuN6 isBidirectional
 		equals: true
 		description: 'testSimple5_amp:5.3'.
 	self
-		assert: tmp_VPZ9w5oi8L6 toObjects class
+		assert: tmp_3evenUevuN6 toObjects class
 		equals: Array
 		description: 'testSimple5_amp:5.4'.
 	self
-		assert: tmp_VPZ9w5oi8L6 toObjects size
+		assert: tmp_3evenUevuN6 toObjects size
 		equals: 0
 		description: 'testSimple5_amp:5.5'.
 	self
-		assert: tmp_VPZ9w5oi8L6 controlPoints class
+		assert: tmp_3evenUevuN6 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple5_amp:5.6'.
 	self
-		assert: tmp_VPZ9w5oi8L6 controlPoints
+		assert: tmp_3evenUevuN6 controlPoints
 		equals: nil
 		description: 'testSimple5_amp:5.7'.
 	self
-		assert: tmp_VPZ9w5oi8L6 toElements class
+		assert: tmp_3evenUevuN6 toElements class
 		equals: Array
 		description: 'testSimple5_amp:5.8'.
 	self
-		assert: tmp_VPZ9w5oi8L6 toElements size
+		assert: tmp_3evenUevuN6 toElements size
 		equals: 0
 		description: 'testSimple5_amp:5.9'.
 	self
-		assert: tmp_VPZ9w5oi8L6 view class
+		assert: tmp_3evenUevuN6 view class
 		equals: UndefinedObject
 		description: 'testSimple5_amp:5.10'.
 	self
-		assert: tmp_VPZ9w5oi8L6 view
+		assert: tmp_3evenUevuN6 view
 		equals: nil
 		description: 'testSimple5_amp:5.11'.
 	self
-		assert: tmp_VPZ9w5oi8L6 fromElements class
+		assert: tmp_3evenUevuN6 fromElements class
 		equals: Array
 		description: 'testSimple5_amp:5.12'.
 	self
-		assert: tmp_VPZ9w5oi8L6 fromElements size
+		assert: tmp_3evenUevuN6 fromElements size
 		equals: 0
 		description: 'testSimple5_amp:5.13'.
 	self
-		assert: tmp_VPZ9w5oi8L6 fromObjects class
+		assert: tmp_3evenUevuN6 fromObjects class
 		equals: Array
 		description: 'testSimple5_amp:5.14'.
 	self
-		assert: tmp_VPZ9w5oi8L6 fromObjects size
+		assert: tmp_3evenUevuN6 fromObjects size
 		equals: 0
 		description: 'testSimple5_amp:5.15'.
 	self
-		assert: tmp_VPZ9w5oi8L6 viewElements class
+		assert: tmp_3evenUevuN6 viewElements class
 		equals: Array
 		description: 'testSimple5_amp:5.16'.
 	self
-		assert: tmp_VPZ9w5oi8L6 viewElements size
+		assert: tmp_3evenUevuN6 viewElements size
 		equals: 0
 		description: 'testSimple5_amp:5.17'.
-	tmp_4bxiPnh2z11 := tmp_VPZ9w5oi8L6
+	tmp_dZOEXlAz681 := tmp_3evenUevuN6
 		connectFrom: #yourself
 		toAll: [ :v | Array with: v + 1 with: v + 2 ].
 	self
-		assert: tmp_VPZ9w5oi8L6 class
+		assert: tmp_3evenUevuN6 class
 		equals: RSEdgeBuilder
 		description: 'testSimple5_amp:6.1'.
 	self
-		assert: tmp_VPZ9w5oi8L6 isBidirectional class
+		assert: tmp_3evenUevuN6 isBidirectional class
 		equals: True
 		description: 'testSimple5_amp:6.2'.
 	self
-		assert: tmp_VPZ9w5oi8L6 isBidirectional
+		assert: tmp_3evenUevuN6 isBidirectional
 		equals: true
 		description: 'testSimple5_amp:6.3'.
 	self
-		assert: tmp_VPZ9w5oi8L6 toObjects class
+		assert: tmp_3evenUevuN6 toObjects class
 		equals: Array
 		description: 'testSimple5_amp:6.4'.
 	self
-		assert: tmp_VPZ9w5oi8L6 toObjects size
+		assert: tmp_3evenUevuN6 toObjects size
 		equals: 0
 		description: 'testSimple5_amp:6.5'.
 	self
-		assert: tmp_VPZ9w5oi8L6 controlPoints class
+		assert: tmp_3evenUevuN6 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple5_amp:6.6'.
 	self
-		assert: tmp_VPZ9w5oi8L6 controlPoints
+		assert: tmp_3evenUevuN6 controlPoints
 		equals: nil
 		description: 'testSimple5_amp:6.7'.
 	self
-		assert: tmp_VPZ9w5oi8L6 toElements class
+		assert: tmp_3evenUevuN6 toElements class
 		equals: Array
 		description: 'testSimple5_amp:6.8'.
 	self
-		assert: tmp_VPZ9w5oi8L6 toElements size
+		assert: tmp_3evenUevuN6 toElements size
 		equals: 0
 		description: 'testSimple5_amp:6.9'.
 	self
-		assert: tmp_VPZ9w5oi8L6 view class
+		assert: tmp_3evenUevuN6 view class
 		equals: UndefinedObject
 		description: 'testSimple5_amp:6.10'.
 	self
-		assert: tmp_VPZ9w5oi8L6 view
+		assert: tmp_3evenUevuN6 view
 		equals: nil
 		description: 'testSimple5_amp:6.11'.
 	self
-		assert: tmp_VPZ9w5oi8L6 fromElements class
+		assert: tmp_3evenUevuN6 fromElements class
 		equals: Array
 		description: 'testSimple5_amp:6.12'.
 	self
-		assert: tmp_VPZ9w5oi8L6 fromElements size
+		assert: tmp_3evenUevuN6 fromElements size
 		equals: 0
 		description: 'testSimple5_amp:6.13'.
 	self
-		assert: tmp_VPZ9w5oi8L6 fromObjects class
+		assert: tmp_3evenUevuN6 fromObjects class
 		equals: Array
 		description: 'testSimple5_amp:6.14'.
 	self
-		assert: tmp_VPZ9w5oi8L6 fromObjects size
+		assert: tmp_3evenUevuN6 fromObjects size
 		equals: 0
 		description: 'testSimple5_amp:6.15'.
 	self
-		assert: tmp_VPZ9w5oi8L6 viewElements class
+		assert: tmp_3evenUevuN6 viewElements class
 		equals: Array
 		description: 'testSimple5_amp:6.16'.
 	self
-		assert: tmp_VPZ9w5oi8L6 viewElements size
+		assert: tmp_3evenUevuN6 viewElements size
 		equals: 0
 		description: 'testSimple5_amp:6.17'.
 	self
-		assert: tmp_4bxiPnh2z11 class
+		assert: tmp_dZOEXlAz681 class
 		equals: TSGroup
 		description: 'testSimple5_amp:6.1'.
 	self
-		assert: tmp_4bxiPnh2z11 size
+		assert: tmp_dZOEXlAz681 size
 		equals: 0
 		description: 'testSimple5_amp:6.2'
 ]
@@ -6728,368 +6728,368 @@ RSEdgeBuilderTestAmpTest >> testSimple5_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testSimple6_amp [
 	<madeBySmallAmp>
-	| tmp_4YagdRm4CS1 tmp_l6TUP2LWYC3 tmp_UNAUAllZQJ5 tmp_wmROgOcWzR6 |
-	tmp_l6TUP2LWYC3 := RSEdgeBuilder line.
+	| tmp_Z6bdGjPDGF1 tmp_XuIEbZdizc3 tmp_mXF155ttvn5 tmp_S4jbHUElV86 |
+	tmp_XuIEbZdizc3 := RSEdgeBuilder line.
 	self
-		assert: tmp_l6TUP2LWYC3 class
+		assert: tmp_XuIEbZdizc3 class
 		equals: RSEdgeBuilder
 		description: 'testSimple6_amp:1.1'.
 	self
-		assert: tmp_l6TUP2LWYC3 isBidirectional class
+		assert: tmp_XuIEbZdizc3 isBidirectional class
 		equals: True
 		description: 'testSimple6_amp:1.2'.
 	self
-		assert: tmp_l6TUP2LWYC3 isBidirectional
+		assert: tmp_XuIEbZdizc3 isBidirectional
 		equals: true
 		description: 'testSimple6_amp:1.3'.
 	self
-		assert: tmp_l6TUP2LWYC3 toObjects class
+		assert: tmp_XuIEbZdizc3 toObjects class
 		equals: Array
 		description: 'testSimple6_amp:1.4'.
 	self
-		assert: tmp_l6TUP2LWYC3 toObjects size
+		assert: tmp_XuIEbZdizc3 toObjects size
 		equals: 0
 		description: 'testSimple6_amp:1.5'.
 	self
-		assert: tmp_l6TUP2LWYC3 controlPoints class
+		assert: tmp_XuIEbZdizc3 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple6_amp:1.6'.
 	self
-		assert: tmp_l6TUP2LWYC3 controlPoints
+		assert: tmp_XuIEbZdizc3 controlPoints
 		equals: nil
 		description: 'testSimple6_amp:1.7'.
 	self
-		assert: tmp_l6TUP2LWYC3 toElements class
+		assert: tmp_XuIEbZdizc3 toElements class
 		equals: Array
 		description: 'testSimple6_amp:1.8'.
 	self
-		assert: tmp_l6TUP2LWYC3 toElements size
+		assert: tmp_XuIEbZdizc3 toElements size
 		equals: 0
 		description: 'testSimple6_amp:1.9'.
 	self
-		assert: tmp_l6TUP2LWYC3 view class
+		assert: tmp_XuIEbZdizc3 view class
 		equals: UndefinedObject
 		description: 'testSimple6_amp:1.10'.
 	self
-		assert: tmp_l6TUP2LWYC3 view
+		assert: tmp_XuIEbZdizc3 view
 		equals: nil
 		description: 'testSimple6_amp:1.11'.
 	self
-		assert: tmp_l6TUP2LWYC3 fromElements class
+		assert: tmp_XuIEbZdizc3 fromElements class
 		equals: Array
 		description: 'testSimple6_amp:1.12'.
 	self
-		assert: tmp_l6TUP2LWYC3 fromElements size
+		assert: tmp_XuIEbZdizc3 fromElements size
 		equals: 0
 		description: 'testSimple6_amp:1.13'.
 	self
-		assert: tmp_l6TUP2LWYC3 fromObjects class
+		assert: tmp_XuIEbZdizc3 fromObjects class
 		equals: Array
 		description: 'testSimple6_amp:1.14'.
 	self
-		assert: tmp_l6TUP2LWYC3 fromObjects size
+		assert: tmp_XuIEbZdizc3 fromObjects size
 		equals: 0
 		description: 'testSimple6_amp:1.15'.
 	self
-		assert: tmp_l6TUP2LWYC3 viewElements class
+		assert: tmp_XuIEbZdizc3 viewElements class
 		equals: Array
 		description: 'testSimple6_amp:1.16'.
 	self
-		assert: tmp_l6TUP2LWYC3 viewElements size
+		assert: tmp_XuIEbZdizc3 viewElements size
 		equals: 0
 		description: 'testSimple6_amp:1.17'.
-	tmp_l6TUP2LWYC3 view: view.
+	tmp_XuIEbZdizc3 view: view.
 	self
-		assert: tmp_l6TUP2LWYC3 class
+		assert: tmp_XuIEbZdizc3 class
 		equals: RSEdgeBuilder
 		description: 'testSimple6_amp:2.1'.
 	self
-		assert: tmp_l6TUP2LWYC3 isBidirectional class
+		assert: tmp_XuIEbZdizc3 isBidirectional class
 		equals: True
 		description: 'testSimple6_amp:2.2'.
 	self
-		assert: tmp_l6TUP2LWYC3 isBidirectional
+		assert: tmp_XuIEbZdizc3 isBidirectional
 		equals: true
 		description: 'testSimple6_amp:2.3'.
 	self
-		assert: tmp_l6TUP2LWYC3 toObjects class
+		assert: tmp_XuIEbZdizc3 toObjects class
 		equals: TSGroup
 		description: 'testSimple6_amp:2.4'.
 	self
-		assert: tmp_l6TUP2LWYC3 toObjects size
+		assert: tmp_XuIEbZdizc3 toObjects size
 		equals: 10
 		description: 'testSimple6_amp:2.5'.
 	self
-		assert: tmp_l6TUP2LWYC3 controlPoints class
+		assert: tmp_XuIEbZdizc3 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple6_amp:2.6'.
 	self
-		assert: tmp_l6TUP2LWYC3 controlPoints
+		assert: tmp_XuIEbZdizc3 controlPoints
 		equals: nil
 		description: 'testSimple6_amp:2.7'.
 	self
-		assert: tmp_l6TUP2LWYC3 toElements class
+		assert: tmp_XuIEbZdizc3 toElements class
 		equals: TSGroup
 		description: 'testSimple6_amp:2.8'.
 	self
-		assert: tmp_l6TUP2LWYC3 toElements size
+		assert: tmp_XuIEbZdizc3 toElements size
 		equals: 10
 		description: 'testSimple6_amp:2.9'.
 	self
-		assert: tmp_l6TUP2LWYC3 view class
+		assert: tmp_XuIEbZdizc3 view class
 		equals: RSView
 		description: 'testSimple6_amp:2.10'.
 	self
-		assert: tmp_l6TUP2LWYC3 view numberOfEdges class
+		assert: tmp_XuIEbZdizc3 view numberOfEdges class
 		equals: SmallInteger
 		description: 'testSimple6_amp:2.11'.
 	self
-		assert: tmp_l6TUP2LWYC3 view numberOfEdges
+		assert: tmp_XuIEbZdizc3 view numberOfEdges
 		equals: 0
 		description: 'testSimple6_amp:2.12'.
 	self
-		assert: tmp_l6TUP2LWYC3 fromElements class
+		assert: tmp_XuIEbZdizc3 fromElements class
 		equals: TSGroup
 		description: 'testSimple6_amp:2.13'.
 	self
-		assert: tmp_l6TUP2LWYC3 fromElements size
+		assert: tmp_XuIEbZdizc3 fromElements size
 		equals: 10
 		description: 'testSimple6_amp:2.14'.
 	self
-		assert: tmp_l6TUP2LWYC3 fromObjects class
+		assert: tmp_XuIEbZdizc3 fromObjects class
 		equals: TSGroup
 		description: 'testSimple6_amp:2.15'.
 	self
-		assert: tmp_l6TUP2LWYC3 fromObjects size
+		assert: tmp_XuIEbZdizc3 fromObjects size
 		equals: 10
 		description: 'testSimple6_amp:2.16'.
 	self
-		assert: tmp_l6TUP2LWYC3 viewElements class
+		assert: tmp_XuIEbZdizc3 viewElements class
 		equals: TSGroup
 		description: 'testSimple6_amp:2.17'.
 	self
-		assert: tmp_l6TUP2LWYC3 viewElements size
+		assert: tmp_XuIEbZdizc3 viewElements size
 		equals: 10
 		description: 'testSimple6_amp:2.18'.
-	tmp_UNAUAllZQJ5 := RSEdgeBuilder line.
+	tmp_mXF155ttvn5 := RSEdgeBuilder line.
 	self
-		assert: tmp_UNAUAllZQJ5 class
+		assert: tmp_mXF155ttvn5 class
 		equals: RSEdgeBuilder
 		description: 'testSimple6_amp:3.1'.
 	self
-		assert: tmp_UNAUAllZQJ5 isBidirectional class
+		assert: tmp_mXF155ttvn5 isBidirectional class
 		equals: True
 		description: 'testSimple6_amp:3.2'.
 	self
-		assert: tmp_UNAUAllZQJ5 isBidirectional
+		assert: tmp_mXF155ttvn5 isBidirectional
 		equals: true
 		description: 'testSimple6_amp:3.3'.
 	self
-		assert: tmp_UNAUAllZQJ5 toObjects class
+		assert: tmp_mXF155ttvn5 toObjects class
 		equals: Array
 		description: 'testSimple6_amp:3.4'.
 	self
-		assert: tmp_UNAUAllZQJ5 toObjects size
+		assert: tmp_mXF155ttvn5 toObjects size
 		equals: 0
 		description: 'testSimple6_amp:3.5'.
 	self
-		assert: tmp_UNAUAllZQJ5 controlPoints class
+		assert: tmp_mXF155ttvn5 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple6_amp:3.6'.
 	self
-		assert: tmp_UNAUAllZQJ5 controlPoints
+		assert: tmp_mXF155ttvn5 controlPoints
 		equals: nil
 		description: 'testSimple6_amp:3.7'.
 	self
-		assert: tmp_UNAUAllZQJ5 toElements class
+		assert: tmp_mXF155ttvn5 toElements class
 		equals: Array
 		description: 'testSimple6_amp:3.8'.
 	self
-		assert: tmp_UNAUAllZQJ5 toElements size
+		assert: tmp_mXF155ttvn5 toElements size
 		equals: 0
 		description: 'testSimple6_amp:3.9'.
 	self
-		assert: tmp_UNAUAllZQJ5 view class
+		assert: tmp_mXF155ttvn5 view class
 		equals: UndefinedObject
 		description: 'testSimple6_amp:3.10'.
 	self
-		assert: tmp_UNAUAllZQJ5 view
+		assert: tmp_mXF155ttvn5 view
 		equals: nil
 		description: 'testSimple6_amp:3.11'.
 	self
-		assert: tmp_UNAUAllZQJ5 fromElements class
+		assert: tmp_mXF155ttvn5 fromElements class
 		equals: Array
 		description: 'testSimple6_amp:3.12'.
 	self
-		assert: tmp_UNAUAllZQJ5 fromElements size
+		assert: tmp_mXF155ttvn5 fromElements size
 		equals: 0
 		description: 'testSimple6_amp:3.13'.
 	self
-		assert: tmp_UNAUAllZQJ5 fromObjects class
+		assert: tmp_mXF155ttvn5 fromObjects class
 		equals: Array
 		description: 'testSimple6_amp:3.14'.
 	self
-		assert: tmp_UNAUAllZQJ5 fromObjects size
+		assert: tmp_mXF155ttvn5 fromObjects size
 		equals: 0
 		description: 'testSimple6_amp:3.15'.
 	self
-		assert: tmp_UNAUAllZQJ5 viewElements class
+		assert: tmp_mXF155ttvn5 viewElements class
 		equals: Array
 		description: 'testSimple6_amp:3.16'.
 	self
-		assert: tmp_UNAUAllZQJ5 viewElements size
+		assert: tmp_mXF155ttvn5 viewElements size
 		equals: 0
 		description: 'testSimple6_amp:3.17'.
 	self
-		should: [ tmp_UNAUAllZQJ5 fromObjects: (Array with: 2) ]
+		should: [ tmp_mXF155ttvn5 fromObjects: (Array with: 2) ]
 		raise: AssertionFailure
 		description: 'testSimple6_amp:4.1'.
-	tmp_wmROgOcWzR6 := RSEdgeBuilder line.
+	tmp_S4jbHUElV86 := RSEdgeBuilder line.
 	self
-		assert: tmp_wmROgOcWzR6 class
+		assert: tmp_S4jbHUElV86 class
 		equals: RSEdgeBuilder
 		description: 'testSimple6_amp:5.1'.
 	self
-		assert: tmp_wmROgOcWzR6 isBidirectional class
+		assert: tmp_S4jbHUElV86 isBidirectional class
 		equals: True
 		description: 'testSimple6_amp:5.2'.
 	self
-		assert: tmp_wmROgOcWzR6 isBidirectional
+		assert: tmp_S4jbHUElV86 isBidirectional
 		equals: true
 		description: 'testSimple6_amp:5.3'.
 	self
-		assert: tmp_wmROgOcWzR6 toObjects class
+		assert: tmp_S4jbHUElV86 toObjects class
 		equals: Array
 		description: 'testSimple6_amp:5.4'.
 	self
-		assert: tmp_wmROgOcWzR6 toObjects size
+		assert: tmp_S4jbHUElV86 toObjects size
 		equals: 0
 		description: 'testSimple6_amp:5.5'.
 	self
-		assert: tmp_wmROgOcWzR6 controlPoints class
+		assert: tmp_S4jbHUElV86 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple6_amp:5.6'.
 	self
-		assert: tmp_wmROgOcWzR6 controlPoints
+		assert: tmp_S4jbHUElV86 controlPoints
 		equals: nil
 		description: 'testSimple6_amp:5.7'.
 	self
-		assert: tmp_wmROgOcWzR6 toElements class
+		assert: tmp_S4jbHUElV86 toElements class
 		equals: Array
 		description: 'testSimple6_amp:5.8'.
 	self
-		assert: tmp_wmROgOcWzR6 toElements size
+		assert: tmp_S4jbHUElV86 toElements size
 		equals: 0
 		description: 'testSimple6_amp:5.9'.
 	self
-		assert: tmp_wmROgOcWzR6 view class
+		assert: tmp_S4jbHUElV86 view class
 		equals: UndefinedObject
 		description: 'testSimple6_amp:5.10'.
 	self
-		assert: tmp_wmROgOcWzR6 view
+		assert: tmp_S4jbHUElV86 view
 		equals: nil
 		description: 'testSimple6_amp:5.11'.
 	self
-		assert: tmp_wmROgOcWzR6 fromElements class
+		assert: tmp_S4jbHUElV86 fromElements class
 		equals: Array
 		description: 'testSimple6_amp:5.12'.
 	self
-		assert: tmp_wmROgOcWzR6 fromElements size
+		assert: tmp_S4jbHUElV86 fromElements size
 		equals: 0
 		description: 'testSimple6_amp:5.13'.
 	self
-		assert: tmp_wmROgOcWzR6 fromObjects class
+		assert: tmp_S4jbHUElV86 fromObjects class
 		equals: Array
 		description: 'testSimple6_amp:5.14'.
 	self
-		assert: tmp_wmROgOcWzR6 fromObjects size
+		assert: tmp_S4jbHUElV86 fromObjects size
 		equals: 0
 		description: 'testSimple6_amp:5.15'.
 	self
-		assert: tmp_wmROgOcWzR6 viewElements class
+		assert: tmp_S4jbHUElV86 viewElements class
 		equals: Array
 		description: 'testSimple6_amp:5.16'.
 	self
-		assert: tmp_wmROgOcWzR6 viewElements size
+		assert: tmp_S4jbHUElV86 viewElements size
 		equals: 0
 		description: 'testSimple6_amp:5.17'.
-	tmp_4YagdRm4CS1 := tmp_wmROgOcWzR6
+	tmp_Z6bdGjPDGF1 := tmp_S4jbHUElV86
 		connectFromAll: (Array with: 2)
 		to: 3.
 	self
-		assert: tmp_wmROgOcWzR6 class
+		assert: tmp_S4jbHUElV86 class
 		equals: RSEdgeBuilder
 		description: 'testSimple6_amp:6.1'.
 	self
-		assert: tmp_wmROgOcWzR6 isBidirectional class
+		assert: tmp_S4jbHUElV86 isBidirectional class
 		equals: True
 		description: 'testSimple6_amp:6.2'.
 	self
-		assert: tmp_wmROgOcWzR6 isBidirectional
+		assert: tmp_S4jbHUElV86 isBidirectional
 		equals: true
 		description: 'testSimple6_amp:6.3'.
 	self
-		assert: tmp_wmROgOcWzR6 toObjects class
+		assert: tmp_S4jbHUElV86 toObjects class
 		equals: Array
 		description: 'testSimple6_amp:6.4'.
 	self
-		assert: tmp_wmROgOcWzR6 toObjects size
+		assert: tmp_S4jbHUElV86 toObjects size
 		equals: 0
 		description: 'testSimple6_amp:6.5'.
 	self
-		assert: tmp_wmROgOcWzR6 controlPoints class
+		assert: tmp_S4jbHUElV86 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple6_amp:6.6'.
 	self
-		assert: tmp_wmROgOcWzR6 controlPoints
+		assert: tmp_S4jbHUElV86 controlPoints
 		equals: nil
 		description: 'testSimple6_amp:6.7'.
 	self
-		assert: tmp_wmROgOcWzR6 toElements class
+		assert: tmp_S4jbHUElV86 toElements class
 		equals: Array
 		description: 'testSimple6_amp:6.8'.
 	self
-		assert: tmp_wmROgOcWzR6 toElements size
+		assert: tmp_S4jbHUElV86 toElements size
 		equals: 0
 		description: 'testSimple6_amp:6.9'.
 	self
-		assert: tmp_wmROgOcWzR6 view class
+		assert: tmp_S4jbHUElV86 view class
 		equals: UndefinedObject
 		description: 'testSimple6_amp:6.10'.
 	self
-		assert: tmp_wmROgOcWzR6 view
+		assert: tmp_S4jbHUElV86 view
 		equals: nil
 		description: 'testSimple6_amp:6.11'.
 	self
-		assert: tmp_wmROgOcWzR6 fromElements class
+		assert: tmp_S4jbHUElV86 fromElements class
 		equals: Array
 		description: 'testSimple6_amp:6.12'.
 	self
-		assert: tmp_wmROgOcWzR6 fromElements size
+		assert: tmp_S4jbHUElV86 fromElements size
 		equals: 0
 		description: 'testSimple6_amp:6.13'.
 	self
-		assert: tmp_wmROgOcWzR6 fromObjects class
+		assert: tmp_S4jbHUElV86 fromObjects class
 		equals: Array
 		description: 'testSimple6_amp:6.14'.
 	self
-		assert: tmp_wmROgOcWzR6 fromObjects size
+		assert: tmp_S4jbHUElV86 fromObjects size
 		equals: 0
 		description: 'testSimple6_amp:6.15'.
 	self
-		assert: tmp_wmROgOcWzR6 viewElements class
+		assert: tmp_S4jbHUElV86 viewElements class
 		equals: Array
 		description: 'testSimple6_amp:6.16'.
 	self
-		assert: tmp_wmROgOcWzR6 viewElements size
+		assert: tmp_S4jbHUElV86 viewElements size
 		equals: 0
 		description: 'testSimple6_amp:6.17'.
 	self
-		assert: tmp_4YagdRm4CS1 class
+		assert: tmp_Z6bdGjPDGF1 class
 		equals: TSGroup
 		description: 'testSimple6_amp:6.1'.
 	self
-		assert: tmp_4YagdRm4CS1 size
+		assert: tmp_Z6bdGjPDGF1 size
 		equals: 0
 		description: 'testSimple6_amp:6.2'
 ]
@@ -7097,366 +7097,366 @@ RSEdgeBuilderTestAmpTest >> testSimple6_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testSimple7_amp [
 	<madeBySmallAmp>
-	| tmp_D7BFbWahZ63 tmp_IOvaMcRHXu5 tmp_Z5iIrwAmuV7 tmp_7R9xPRwWHz8 |
-	tmp_D7BFbWahZ63 := RSEdgeBuilder line.
+	| tmp_w3JsIYSJd03 tmp_T4tXHYPm2Y5 tmp_pAL4zZal7L7 tmp_W3NqHRmWRZ8 |
+	tmp_w3JsIYSJd03 := RSEdgeBuilder line.
 	self
-		assert: tmp_D7BFbWahZ63 class
+		assert: tmp_w3JsIYSJd03 class
 		equals: RSEdgeBuilder
 		description: 'testSimple7_amp:1.1'.
 	self
-		assert: tmp_D7BFbWahZ63 isBidirectional class
+		assert: tmp_w3JsIYSJd03 isBidirectional class
 		equals: True
 		description: 'testSimple7_amp:1.2'.
 	self
-		assert: tmp_D7BFbWahZ63 isBidirectional
+		assert: tmp_w3JsIYSJd03 isBidirectional
 		equals: true
 		description: 'testSimple7_amp:1.3'.
 	self
-		assert: tmp_D7BFbWahZ63 toObjects class
+		assert: tmp_w3JsIYSJd03 toObjects class
 		equals: Array
 		description: 'testSimple7_amp:1.4'.
 	self
-		assert: tmp_D7BFbWahZ63 toObjects size
+		assert: tmp_w3JsIYSJd03 toObjects size
 		equals: 0
 		description: 'testSimple7_amp:1.5'.
 	self
-		assert: tmp_D7BFbWahZ63 controlPoints class
+		assert: tmp_w3JsIYSJd03 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple7_amp:1.6'.
 	self
-		assert: tmp_D7BFbWahZ63 controlPoints
+		assert: tmp_w3JsIYSJd03 controlPoints
 		equals: nil
 		description: 'testSimple7_amp:1.7'.
 	self
-		assert: tmp_D7BFbWahZ63 toElements class
+		assert: tmp_w3JsIYSJd03 toElements class
 		equals: Array
 		description: 'testSimple7_amp:1.8'.
 	self
-		assert: tmp_D7BFbWahZ63 toElements size
+		assert: tmp_w3JsIYSJd03 toElements size
 		equals: 0
 		description: 'testSimple7_amp:1.9'.
 	self
-		assert: tmp_D7BFbWahZ63 view class
+		assert: tmp_w3JsIYSJd03 view class
 		equals: UndefinedObject
 		description: 'testSimple7_amp:1.10'.
 	self
-		assert: tmp_D7BFbWahZ63 view
+		assert: tmp_w3JsIYSJd03 view
 		equals: nil
 		description: 'testSimple7_amp:1.11'.
 	self
-		assert: tmp_D7BFbWahZ63 fromElements class
+		assert: tmp_w3JsIYSJd03 fromElements class
 		equals: Array
 		description: 'testSimple7_amp:1.12'.
 	self
-		assert: tmp_D7BFbWahZ63 fromElements size
+		assert: tmp_w3JsIYSJd03 fromElements size
 		equals: 0
 		description: 'testSimple7_amp:1.13'.
 	self
-		assert: tmp_D7BFbWahZ63 fromObjects class
+		assert: tmp_w3JsIYSJd03 fromObjects class
 		equals: Array
 		description: 'testSimple7_amp:1.14'.
 	self
-		assert: tmp_D7BFbWahZ63 fromObjects size
+		assert: tmp_w3JsIYSJd03 fromObjects size
 		equals: 0
 		description: 'testSimple7_amp:1.15'.
 	self
-		assert: tmp_D7BFbWahZ63 viewElements class
+		assert: tmp_w3JsIYSJd03 viewElements class
 		equals: Array
 		description: 'testSimple7_amp:1.16'.
 	self
-		assert: tmp_D7BFbWahZ63 viewElements size
+		assert: tmp_w3JsIYSJd03 viewElements size
 		equals: 0
 		description: 'testSimple7_amp:1.17'.
-	tmp_D7BFbWahZ63 view: view.
+	tmp_w3JsIYSJd03 view: view.
 	self
-		assert: tmp_D7BFbWahZ63 class
+		assert: tmp_w3JsIYSJd03 class
 		equals: RSEdgeBuilder
 		description: 'testSimple7_amp:2.1'.
 	self
-		assert: tmp_D7BFbWahZ63 isBidirectional class
+		assert: tmp_w3JsIYSJd03 isBidirectional class
 		equals: True
 		description: 'testSimple7_amp:2.2'.
 	self
-		assert: tmp_D7BFbWahZ63 isBidirectional
+		assert: tmp_w3JsIYSJd03 isBidirectional
 		equals: true
 		description: 'testSimple7_amp:2.3'.
 	self
-		assert: tmp_D7BFbWahZ63 toObjects class
+		assert: tmp_w3JsIYSJd03 toObjects class
 		equals: TSGroup
 		description: 'testSimple7_amp:2.4'.
 	self
-		assert: tmp_D7BFbWahZ63 toObjects size
+		assert: tmp_w3JsIYSJd03 toObjects size
 		equals: 10
 		description: 'testSimple7_amp:2.5'.
 	self
-		assert: tmp_D7BFbWahZ63 controlPoints class
+		assert: tmp_w3JsIYSJd03 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple7_amp:2.6'.
 	self
-		assert: tmp_D7BFbWahZ63 controlPoints
+		assert: tmp_w3JsIYSJd03 controlPoints
 		equals: nil
 		description: 'testSimple7_amp:2.7'.
 	self
-		assert: tmp_D7BFbWahZ63 toElements class
+		assert: tmp_w3JsIYSJd03 toElements class
 		equals: TSGroup
 		description: 'testSimple7_amp:2.8'.
 	self
-		assert: tmp_D7BFbWahZ63 toElements size
+		assert: tmp_w3JsIYSJd03 toElements size
 		equals: 10
 		description: 'testSimple7_amp:2.9'.
 	self
-		assert: tmp_D7BFbWahZ63 view class
+		assert: tmp_w3JsIYSJd03 view class
 		equals: RSView
 		description: 'testSimple7_amp:2.10'.
 	self
-		assert: tmp_D7BFbWahZ63 view numberOfEdges class
+		assert: tmp_w3JsIYSJd03 view numberOfEdges class
 		equals: SmallInteger
 		description: 'testSimple7_amp:2.11'.
 	self
-		assert: tmp_D7BFbWahZ63 view numberOfEdges
+		assert: tmp_w3JsIYSJd03 view numberOfEdges
 		equals: 0
 		description: 'testSimple7_amp:2.12'.
 	self
-		assert: tmp_D7BFbWahZ63 fromElements class
+		assert: tmp_w3JsIYSJd03 fromElements class
 		equals: TSGroup
 		description: 'testSimple7_amp:2.13'.
 	self
-		assert: tmp_D7BFbWahZ63 fromElements size
+		assert: tmp_w3JsIYSJd03 fromElements size
 		equals: 10
 		description: 'testSimple7_amp:2.14'.
 	self
-		assert: tmp_D7BFbWahZ63 fromObjects class
+		assert: tmp_w3JsIYSJd03 fromObjects class
 		equals: TSGroup
 		description: 'testSimple7_amp:2.15'.
 	self
-		assert: tmp_D7BFbWahZ63 fromObjects size
+		assert: tmp_w3JsIYSJd03 fromObjects size
 		equals: 10
 		description: 'testSimple7_amp:2.16'.
 	self
-		assert: tmp_D7BFbWahZ63 viewElements class
+		assert: tmp_w3JsIYSJd03 viewElements class
 		equals: TSGroup
 		description: 'testSimple7_amp:2.17'.
 	self
-		assert: tmp_D7BFbWahZ63 viewElements size
+		assert: tmp_w3JsIYSJd03 viewElements size
 		equals: 10
 		description: 'testSimple7_amp:2.18'.
-	tmp_IOvaMcRHXu5 := RSEdgeBuilder line.
+	tmp_T4tXHYPm2Y5 := RSEdgeBuilder line.
 	self
-		assert: tmp_IOvaMcRHXu5 class
+		assert: tmp_T4tXHYPm2Y5 class
 		equals: RSEdgeBuilder
 		description: 'testSimple7_amp:3.1'.
 	self
-		assert: tmp_IOvaMcRHXu5 isBidirectional class
+		assert: tmp_T4tXHYPm2Y5 isBidirectional class
 		equals: True
 		description: 'testSimple7_amp:3.2'.
 	self
-		assert: tmp_IOvaMcRHXu5 isBidirectional
+		assert: tmp_T4tXHYPm2Y5 isBidirectional
 		equals: true
 		description: 'testSimple7_amp:3.3'.
 	self
-		assert: tmp_IOvaMcRHXu5 toObjects class
+		assert: tmp_T4tXHYPm2Y5 toObjects class
 		equals: Array
 		description: 'testSimple7_amp:3.4'.
 	self
-		assert: tmp_IOvaMcRHXu5 toObjects size
+		assert: tmp_T4tXHYPm2Y5 toObjects size
 		equals: 0
 		description: 'testSimple7_amp:3.5'.
 	self
-		assert: tmp_IOvaMcRHXu5 controlPoints class
+		assert: tmp_T4tXHYPm2Y5 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple7_amp:3.6'.
 	self
-		assert: tmp_IOvaMcRHXu5 controlPoints
+		assert: tmp_T4tXHYPm2Y5 controlPoints
 		equals: nil
 		description: 'testSimple7_amp:3.7'.
 	self
-		assert: tmp_IOvaMcRHXu5 toElements class
+		assert: tmp_T4tXHYPm2Y5 toElements class
 		equals: Array
 		description: 'testSimple7_amp:3.8'.
 	self
-		assert: tmp_IOvaMcRHXu5 toElements size
+		assert: tmp_T4tXHYPm2Y5 toElements size
 		equals: 0
 		description: 'testSimple7_amp:3.9'.
 	self
-		assert: tmp_IOvaMcRHXu5 view class
+		assert: tmp_T4tXHYPm2Y5 view class
 		equals: UndefinedObject
 		description: 'testSimple7_amp:3.10'.
 	self
-		assert: tmp_IOvaMcRHXu5 view
+		assert: tmp_T4tXHYPm2Y5 view
 		equals: nil
 		description: 'testSimple7_amp:3.11'.
 	self
-		assert: tmp_IOvaMcRHXu5 fromElements class
+		assert: tmp_T4tXHYPm2Y5 fromElements class
 		equals: Array
 		description: 'testSimple7_amp:3.12'.
 	self
-		assert: tmp_IOvaMcRHXu5 fromElements size
+		assert: tmp_T4tXHYPm2Y5 fromElements size
 		equals: 0
 		description: 'testSimple7_amp:3.13'.
 	self
-		assert: tmp_IOvaMcRHXu5 fromObjects class
+		assert: tmp_T4tXHYPm2Y5 fromObjects class
 		equals: Array
 		description: 'testSimple7_amp:3.14'.
 	self
-		assert: tmp_IOvaMcRHXu5 fromObjects size
+		assert: tmp_T4tXHYPm2Y5 fromObjects size
 		equals: 0
 		description: 'testSimple7_amp:3.15'.
 	self
-		assert: tmp_IOvaMcRHXu5 viewElements class
+		assert: tmp_T4tXHYPm2Y5 viewElements class
 		equals: Array
 		description: 'testSimple7_amp:3.16'.
 	self
-		assert: tmp_IOvaMcRHXu5 viewElements size
+		assert: tmp_T4tXHYPm2Y5 viewElements size
 		equals: 0
 		description: 'testSimple7_amp:3.17'.
 	self
-		should: [ tmp_IOvaMcRHXu5 useAssociation: 1 -> 2 ]
+		should: [ tmp_T4tXHYPm2Y5 useAssociation: 1 -> 2 ]
 		raise: MessageNotUnderstood
 		description: 'testSimple7_amp:4.1'.
-	tmp_Z5iIrwAmuV7 := RSEdgeBuilder line.
+	tmp_pAL4zZal7L7 := RSEdgeBuilder line.
 	self
-		assert: tmp_Z5iIrwAmuV7 class
+		assert: tmp_pAL4zZal7L7 class
 		equals: RSEdgeBuilder
 		description: 'testSimple7_amp:5.1'.
 	self
-		assert: tmp_Z5iIrwAmuV7 isBidirectional class
+		assert: tmp_pAL4zZal7L7 isBidirectional class
 		equals: True
 		description: 'testSimple7_amp:5.2'.
 	self
-		assert: tmp_Z5iIrwAmuV7 isBidirectional
+		assert: tmp_pAL4zZal7L7 isBidirectional
 		equals: true
 		description: 'testSimple7_amp:5.3'.
 	self
-		assert: tmp_Z5iIrwAmuV7 toObjects class
+		assert: tmp_pAL4zZal7L7 toObjects class
 		equals: Array
 		description: 'testSimple7_amp:5.4'.
 	self
-		assert: tmp_Z5iIrwAmuV7 toObjects size
+		assert: tmp_pAL4zZal7L7 toObjects size
 		equals: 0
 		description: 'testSimple7_amp:5.5'.
 	self
-		assert: tmp_Z5iIrwAmuV7 controlPoints class
+		assert: tmp_pAL4zZal7L7 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple7_amp:5.6'.
 	self
-		assert: tmp_Z5iIrwAmuV7 controlPoints
+		assert: tmp_pAL4zZal7L7 controlPoints
 		equals: nil
 		description: 'testSimple7_amp:5.7'.
 	self
-		assert: tmp_Z5iIrwAmuV7 toElements class
+		assert: tmp_pAL4zZal7L7 toElements class
 		equals: Array
 		description: 'testSimple7_amp:5.8'.
 	self
-		assert: tmp_Z5iIrwAmuV7 toElements size
+		assert: tmp_pAL4zZal7L7 toElements size
 		equals: 0
 		description: 'testSimple7_amp:5.9'.
 	self
-		assert: tmp_Z5iIrwAmuV7 view class
+		assert: tmp_pAL4zZal7L7 view class
 		equals: UndefinedObject
 		description: 'testSimple7_amp:5.10'.
 	self
-		assert: tmp_Z5iIrwAmuV7 view
+		assert: tmp_pAL4zZal7L7 view
 		equals: nil
 		description: 'testSimple7_amp:5.11'.
 	self
-		assert: tmp_Z5iIrwAmuV7 fromElements class
+		assert: tmp_pAL4zZal7L7 fromElements class
 		equals: Array
 		description: 'testSimple7_amp:5.12'.
 	self
-		assert: tmp_Z5iIrwAmuV7 fromElements size
+		assert: tmp_pAL4zZal7L7 fromElements size
 		equals: 0
 		description: 'testSimple7_amp:5.13'.
 	self
-		assert: tmp_Z5iIrwAmuV7 fromObjects class
+		assert: tmp_pAL4zZal7L7 fromObjects class
 		equals: Array
 		description: 'testSimple7_amp:5.14'.
 	self
-		assert: tmp_Z5iIrwAmuV7 fromObjects size
+		assert: tmp_pAL4zZal7L7 fromObjects size
 		equals: 0
 		description: 'testSimple7_amp:5.15'.
 	self
-		assert: tmp_Z5iIrwAmuV7 viewElements class
+		assert: tmp_pAL4zZal7L7 viewElements class
 		equals: Array
 		description: 'testSimple7_amp:5.16'.
 	self
-		assert: tmp_Z5iIrwAmuV7 viewElements size
+		assert: tmp_pAL4zZal7L7 viewElements size
 		equals: 0
 		description: 'testSimple7_amp:5.17'.
 	self
-		should: [ tmp_Z5iIrwAmuV7 useAssociation: 2 -> 3 ]
+		should: [ tmp_pAL4zZal7L7 useAssociation: 2 -> 3 ]
 		raise: MessageNotUnderstood
 		description: 'testSimple7_amp:6.1'.
-	tmp_7R9xPRwWHz8 := RSEdgeBuilder line.
+	tmp_W3NqHRmWRZ8 := RSEdgeBuilder line.
 	self
-		assert: tmp_7R9xPRwWHz8 class
+		assert: tmp_W3NqHRmWRZ8 class
 		equals: RSEdgeBuilder
 		description: 'testSimple7_amp:7.1'.
 	self
-		assert: tmp_7R9xPRwWHz8 isBidirectional class
+		assert: tmp_W3NqHRmWRZ8 isBidirectional class
 		equals: True
 		description: 'testSimple7_amp:7.2'.
 	self
-		assert: tmp_7R9xPRwWHz8 isBidirectional
+		assert: tmp_W3NqHRmWRZ8 isBidirectional
 		equals: true
 		description: 'testSimple7_amp:7.3'.
 	self
-		assert: tmp_7R9xPRwWHz8 toObjects class
+		assert: tmp_W3NqHRmWRZ8 toObjects class
 		equals: Array
 		description: 'testSimple7_amp:7.4'.
 	self
-		assert: tmp_7R9xPRwWHz8 toObjects size
+		assert: tmp_W3NqHRmWRZ8 toObjects size
 		equals: 0
 		description: 'testSimple7_amp:7.5'.
 	self
-		assert: tmp_7R9xPRwWHz8 controlPoints class
+		assert: tmp_W3NqHRmWRZ8 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple7_amp:7.6'.
 	self
-		assert: tmp_7R9xPRwWHz8 controlPoints
+		assert: tmp_W3NqHRmWRZ8 controlPoints
 		equals: nil
 		description: 'testSimple7_amp:7.7'.
 	self
-		assert: tmp_7R9xPRwWHz8 toElements class
+		assert: tmp_W3NqHRmWRZ8 toElements class
 		equals: Array
 		description: 'testSimple7_amp:7.8'.
 	self
-		assert: tmp_7R9xPRwWHz8 toElements size
+		assert: tmp_W3NqHRmWRZ8 toElements size
 		equals: 0
 		description: 'testSimple7_amp:7.9'.
 	self
-		assert: tmp_7R9xPRwWHz8 view class
+		assert: tmp_W3NqHRmWRZ8 view class
 		equals: UndefinedObject
 		description: 'testSimple7_amp:7.10'.
 	self
-		assert: tmp_7R9xPRwWHz8 view
+		assert: tmp_W3NqHRmWRZ8 view
 		equals: nil
 		description: 'testSimple7_amp:7.11'.
 	self
-		assert: tmp_7R9xPRwWHz8 fromElements class
+		assert: tmp_W3NqHRmWRZ8 fromElements class
 		equals: Array
 		description: 'testSimple7_amp:7.12'.
 	self
-		assert: tmp_7R9xPRwWHz8 fromElements size
+		assert: tmp_W3NqHRmWRZ8 fromElements size
 		equals: 0
 		description: 'testSimple7_amp:7.13'.
 	self
-		assert: tmp_7R9xPRwWHz8 fromObjects class
+		assert: tmp_W3NqHRmWRZ8 fromObjects class
 		equals: Array
 		description: 'testSimple7_amp:7.14'.
 	self
-		assert: tmp_7R9xPRwWHz8 fromObjects size
+		assert: tmp_W3NqHRmWRZ8 fromObjects size
 		equals: 0
 		description: 'testSimple7_amp:7.15'.
 	self
-		assert: tmp_7R9xPRwWHz8 viewElements class
+		assert: tmp_W3NqHRmWRZ8 viewElements class
 		equals: Array
 		description: 'testSimple7_amp:7.16'.
 	self
-		assert: tmp_7R9xPRwWHz8 viewElements size
+		assert: tmp_W3NqHRmWRZ8 viewElements size
 		equals: 0
 		description: 'testSimple7_amp:7.17'.
 	self
-		should: [ tmp_7R9xPRwWHz8 useAssociation: 5 -> 6 ]
+		should: [ tmp_W3NqHRmWRZ8 useAssociation: 5 -> 6 ]
 		raise: MessageNotUnderstood
 		description: 'testSimple7_amp:8.1'
 ]
@@ -7464,289 +7464,289 @@ RSEdgeBuilderTestAmpTest >> testSimple7_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testSimple_amp [
 	<madeBySmallAmp>
-	| tmp_rZJQ8232Pm3 tmp_2xOcd1Jemu4 |
-	tmp_rZJQ8232Pm3 := RSEdgeBuilder line.
+	| tmp_XIUy1W08vc3 tmp_szWSOnQSmv4 |
+	tmp_XIUy1W08vc3 := RSEdgeBuilder line.
 	self
-		assert: tmp_rZJQ8232Pm3 class
+		assert: tmp_XIUy1W08vc3 class
 		equals: RSEdgeBuilder
 		description: 'testSimple_amp:1.1'.
 	self
-		assert: tmp_rZJQ8232Pm3 isBidirectional class
+		assert: tmp_XIUy1W08vc3 isBidirectional class
 		equals: True
 		description: 'testSimple_amp:1.2'.
 	self
-		assert: tmp_rZJQ8232Pm3 isBidirectional
+		assert: tmp_XIUy1W08vc3 isBidirectional
 		equals: true
 		description: 'testSimple_amp:1.3'.
 	self
-		assert: tmp_rZJQ8232Pm3 toObjects class
+		assert: tmp_XIUy1W08vc3 toObjects class
 		equals: Array
 		description: 'testSimple_amp:1.4'.
 	self
-		assert: tmp_rZJQ8232Pm3 toObjects size
+		assert: tmp_XIUy1W08vc3 toObjects size
 		equals: 0
 		description: 'testSimple_amp:1.5'.
 	self
-		assert: tmp_rZJQ8232Pm3 controlPoints class
+		assert: tmp_XIUy1W08vc3 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple_amp:1.6'.
 	self
-		assert: tmp_rZJQ8232Pm3 controlPoints
+		assert: tmp_XIUy1W08vc3 controlPoints
 		equals: nil
 		description: 'testSimple_amp:1.7'.
 	self
-		assert: tmp_rZJQ8232Pm3 toElements class
+		assert: tmp_XIUy1W08vc3 toElements class
 		equals: Array
 		description: 'testSimple_amp:1.8'.
 	self
-		assert: tmp_rZJQ8232Pm3 toElements size
+		assert: tmp_XIUy1W08vc3 toElements size
 		equals: 0
 		description: 'testSimple_amp:1.9'.
 	self
-		assert: tmp_rZJQ8232Pm3 view class
+		assert: tmp_XIUy1W08vc3 view class
 		equals: UndefinedObject
 		description: 'testSimple_amp:1.10'.
 	self
-		assert: tmp_rZJQ8232Pm3 view
+		assert: tmp_XIUy1W08vc3 view
 		equals: nil
 		description: 'testSimple_amp:1.11'.
 	self
-		assert: tmp_rZJQ8232Pm3 fromElements class
+		assert: tmp_XIUy1W08vc3 fromElements class
 		equals: Array
 		description: 'testSimple_amp:1.12'.
 	self
-		assert: tmp_rZJQ8232Pm3 fromElements size
+		assert: tmp_XIUy1W08vc3 fromElements size
 		equals: 0
 		description: 'testSimple_amp:1.13'.
 	self
-		assert: tmp_rZJQ8232Pm3 fromObjects class
+		assert: tmp_XIUy1W08vc3 fromObjects class
 		equals: Array
 		description: 'testSimple_amp:1.14'.
 	self
-		assert: tmp_rZJQ8232Pm3 fromObjects size
+		assert: tmp_XIUy1W08vc3 fromObjects size
 		equals: 0
 		description: 'testSimple_amp:1.15'.
 	self
-		assert: tmp_rZJQ8232Pm3 viewElements class
+		assert: tmp_XIUy1W08vc3 viewElements class
 		equals: Array
 		description: 'testSimple_amp:1.16'.
 	self
-		assert: tmp_rZJQ8232Pm3 viewElements size
+		assert: tmp_XIUy1W08vc3 viewElements size
 		equals: 0
 		description: 'testSimple_amp:1.17'.
-	tmp_rZJQ8232Pm3 view: view.
+	tmp_XIUy1W08vc3 view: view.
 	self
-		assert: tmp_rZJQ8232Pm3 class
+		assert: tmp_XIUy1W08vc3 class
 		equals: RSEdgeBuilder
 		description: 'testSimple_amp:2.1'.
 	self
-		assert: tmp_rZJQ8232Pm3 isBidirectional class
+		assert: tmp_XIUy1W08vc3 isBidirectional class
 		equals: True
 		description: 'testSimple_amp:2.2'.
 	self
-		assert: tmp_rZJQ8232Pm3 isBidirectional
+		assert: tmp_XIUy1W08vc3 isBidirectional
 		equals: true
 		description: 'testSimple_amp:2.3'.
 	self
-		assert: tmp_rZJQ8232Pm3 toObjects class
+		assert: tmp_XIUy1W08vc3 toObjects class
 		equals: TSGroup
 		description: 'testSimple_amp:2.4'.
 	self
-		assert: tmp_rZJQ8232Pm3 toObjects size
+		assert: tmp_XIUy1W08vc3 toObjects size
 		equals: 10
 		description: 'testSimple_amp:2.5'.
 	self
-		assert: tmp_rZJQ8232Pm3 controlPoints class
+		assert: tmp_XIUy1W08vc3 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple_amp:2.6'.
 	self
-		assert: tmp_rZJQ8232Pm3 controlPoints
+		assert: tmp_XIUy1W08vc3 controlPoints
 		equals: nil
 		description: 'testSimple_amp:2.7'.
 	self
-		assert: tmp_rZJQ8232Pm3 toElements class
+		assert: tmp_XIUy1W08vc3 toElements class
 		equals: TSGroup
 		description: 'testSimple_amp:2.8'.
 	self
-		assert: tmp_rZJQ8232Pm3 toElements size
+		assert: tmp_XIUy1W08vc3 toElements size
 		equals: 10
 		description: 'testSimple_amp:2.9'.
 	self
-		assert: tmp_rZJQ8232Pm3 view class
+		assert: tmp_XIUy1W08vc3 view class
 		equals: RSView
 		description: 'testSimple_amp:2.10'.
 	self
-		assert: tmp_rZJQ8232Pm3 view numberOfEdges class
+		assert: tmp_XIUy1W08vc3 view numberOfEdges class
 		equals: SmallInteger
 		description: 'testSimple_amp:2.11'.
 	self
-		assert: tmp_rZJQ8232Pm3 view numberOfEdges
+		assert: tmp_XIUy1W08vc3 view numberOfEdges
 		equals: 0
 		description: 'testSimple_amp:2.12'.
 	self
-		assert: tmp_rZJQ8232Pm3 fromElements class
+		assert: tmp_XIUy1W08vc3 fromElements class
 		equals: TSGroup
 		description: 'testSimple_amp:2.13'.
 	self
-		assert: tmp_rZJQ8232Pm3 fromElements size
+		assert: tmp_XIUy1W08vc3 fromElements size
 		equals: 10
 		description: 'testSimple_amp:2.14'.
 	self
-		assert: tmp_rZJQ8232Pm3 fromObjects class
+		assert: tmp_XIUy1W08vc3 fromObjects class
 		equals: TSGroup
 		description: 'testSimple_amp:2.15'.
 	self
-		assert: tmp_rZJQ8232Pm3 fromObjects size
+		assert: tmp_XIUy1W08vc3 fromObjects size
 		equals: 10
 		description: 'testSimple_amp:2.16'.
 	self
-		assert: tmp_rZJQ8232Pm3 viewElements class
+		assert: tmp_XIUy1W08vc3 viewElements class
 		equals: TSGroup
 		description: 'testSimple_amp:2.17'.
 	self
-		assert: tmp_rZJQ8232Pm3 viewElements size
+		assert: tmp_XIUy1W08vc3 viewElements size
 		equals: 10
 		description: 'testSimple_amp:2.18'.
-	tmp_2xOcd1Jemu4 := RSEdgeBuilder line.
+	tmp_szWSOnQSmv4 := RSEdgeBuilder line.
 	self
-		assert: tmp_2xOcd1Jemu4 class
+		assert: tmp_szWSOnQSmv4 class
 		equals: RSEdgeBuilder
 		description: 'testSimple_amp:3.1'.
 	self
-		assert: tmp_2xOcd1Jemu4 isBidirectional class
+		assert: tmp_szWSOnQSmv4 isBidirectional class
 		equals: True
 		description: 'testSimple_amp:3.2'.
 	self
-		assert: tmp_2xOcd1Jemu4 isBidirectional
+		assert: tmp_szWSOnQSmv4 isBidirectional
 		equals: true
 		description: 'testSimple_amp:3.3'.
 	self
-		assert: tmp_2xOcd1Jemu4 toObjects class
+		assert: tmp_szWSOnQSmv4 toObjects class
 		equals: Array
 		description: 'testSimple_amp:3.4'.
 	self
-		assert: tmp_2xOcd1Jemu4 toObjects size
+		assert: tmp_szWSOnQSmv4 toObjects size
 		equals: 0
 		description: 'testSimple_amp:3.5'.
 	self
-		assert: tmp_2xOcd1Jemu4 controlPoints class
+		assert: tmp_szWSOnQSmv4 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple_amp:3.6'.
 	self
-		assert: tmp_2xOcd1Jemu4 controlPoints
+		assert: tmp_szWSOnQSmv4 controlPoints
 		equals: nil
 		description: 'testSimple_amp:3.7'.
 	self
-		assert: tmp_2xOcd1Jemu4 toElements class
+		assert: tmp_szWSOnQSmv4 toElements class
 		equals: Array
 		description: 'testSimple_amp:3.8'.
 	self
-		assert: tmp_2xOcd1Jemu4 toElements size
+		assert: tmp_szWSOnQSmv4 toElements size
 		equals: 0
 		description: 'testSimple_amp:3.9'.
 	self
-		assert: tmp_2xOcd1Jemu4 view class
+		assert: tmp_szWSOnQSmv4 view class
 		equals: UndefinedObject
 		description: 'testSimple_amp:3.10'.
 	self
-		assert: tmp_2xOcd1Jemu4 view
+		assert: tmp_szWSOnQSmv4 view
 		equals: nil
 		description: 'testSimple_amp:3.11'.
 	self
-		assert: tmp_2xOcd1Jemu4 fromElements class
+		assert: tmp_szWSOnQSmv4 fromElements class
 		equals: Array
 		description: 'testSimple_amp:3.12'.
 	self
-		assert: tmp_2xOcd1Jemu4 fromElements size
+		assert: tmp_szWSOnQSmv4 fromElements size
 		equals: 0
 		description: 'testSimple_amp:3.13'.
 	self
-		assert: tmp_2xOcd1Jemu4 fromObjects class
+		assert: tmp_szWSOnQSmv4 fromObjects class
 		equals: Array
 		description: 'testSimple_amp:3.14'.
 	self
-		assert: tmp_2xOcd1Jemu4 fromObjects size
+		assert: tmp_szWSOnQSmv4 fromObjects size
 		equals: 0
 		description: 'testSimple_amp:3.15'.
 	self
-		assert: tmp_2xOcd1Jemu4 viewElements class
+		assert: tmp_szWSOnQSmv4 viewElements class
 		equals: Array
 		description: 'testSimple_amp:3.16'.
 	self
-		assert: tmp_2xOcd1Jemu4 viewElements size
+		assert: tmp_szWSOnQSmv4 viewElements size
 		equals: 0
 		description: 'testSimple_amp:3.17'.
-	tmp_2xOcd1Jemu4
+	tmp_szWSOnQSmv4
 		useElementAssociations:
 			(Array
 				with: elements first -> elements second
 				with: elements second -> elements third).
 	self
-		assert: tmp_2xOcd1Jemu4 class
+		assert: tmp_szWSOnQSmv4 class
 		equals: RSEdgeBuilder
 		description: 'testSimple_amp:4.1'.
 	self
-		assert: tmp_2xOcd1Jemu4 isBidirectional class
+		assert: tmp_szWSOnQSmv4 isBidirectional class
 		equals: True
 		description: 'testSimple_amp:4.2'.
 	self
-		assert: tmp_2xOcd1Jemu4 isBidirectional
+		assert: tmp_szWSOnQSmv4 isBidirectional
 		equals: true
 		description: 'testSimple_amp:4.3'.
 	self
-		assert: tmp_2xOcd1Jemu4 toObjects class
+		assert: tmp_szWSOnQSmv4 toObjects class
 		equals: Array
 		description: 'testSimple_amp:4.4'.
 	self
-		assert: tmp_2xOcd1Jemu4 toObjects size
+		assert: tmp_szWSOnQSmv4 toObjects size
 		equals: 0
 		description: 'testSimple_amp:4.5'.
 	self
-		assert: tmp_2xOcd1Jemu4 controlPoints class
+		assert: tmp_szWSOnQSmv4 controlPoints class
 		equals: UndefinedObject
 		description: 'testSimple_amp:4.6'.
 	self
-		assert: tmp_2xOcd1Jemu4 controlPoints
+		assert: tmp_szWSOnQSmv4 controlPoints
 		equals: nil
 		description: 'testSimple_amp:4.7'.
 	self
-		assert: tmp_2xOcd1Jemu4 toElements class
+		assert: tmp_szWSOnQSmv4 toElements class
 		equals: Array
 		description: 'testSimple_amp:4.8'.
 	self
-		assert: tmp_2xOcd1Jemu4 toElements size
+		assert: tmp_szWSOnQSmv4 toElements size
 		equals: 0
 		description: 'testSimple_amp:4.9'.
 	self
-		assert: tmp_2xOcd1Jemu4 view class
+		assert: tmp_szWSOnQSmv4 view class
 		equals: UndefinedObject
 		description: 'testSimple_amp:4.10'.
 	self
-		assert: tmp_2xOcd1Jemu4 view
+		assert: tmp_szWSOnQSmv4 view
 		equals: nil
 		description: 'testSimple_amp:4.11'.
 	self
-		assert: tmp_2xOcd1Jemu4 fromElements class
+		assert: tmp_szWSOnQSmv4 fromElements class
 		equals: Array
 		description: 'testSimple_amp:4.12'.
 	self
-		assert: tmp_2xOcd1Jemu4 fromElements size
+		assert: tmp_szWSOnQSmv4 fromElements size
 		equals: 0
 		description: 'testSimple_amp:4.13'.
 	self
-		assert: tmp_2xOcd1Jemu4 fromObjects class
+		assert: tmp_szWSOnQSmv4 fromObjects class
 		equals: Array
 		description: 'testSimple_amp:4.14'.
 	self
-		assert: tmp_2xOcd1Jemu4 fromObjects size
+		assert: tmp_szWSOnQSmv4 fromObjects size
 		equals: 0
 		description: 'testSimple_amp:4.15'.
 	self
-		assert: tmp_2xOcd1Jemu4 viewElements class
+		assert: tmp_szWSOnQSmv4 viewElements class
 		equals: Array
 		description: 'testSimple_amp:4.16'.
 	self
-		assert: tmp_2xOcd1Jemu4 viewElements size
+		assert: tmp_szWSOnQSmv4 viewElements size
 		equals: 0
 		description: 'testSimple_amp:4.17'
 ]
@@ -7754,7 +7754,7 @@ RSEdgeBuilderTestAmpTest >> testSimple_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testSource_amp [
 	<madeBySmallAmp>
-	| v es eb c tmp_3ZxTA6axFL4 tmp_FzGhZk2bLb5 tmp_Y3rRT4Raa86 |
+	| v es eb c tmp_85HGeJ9p9Q4 tmp_YMg7vslTOS5 tmp_xVckvdjllI6 |
 	v := RSView new.
 	self assert: v class equals: RSView description: 'testSource_amp:1.1'.
 	self
@@ -8064,43 +8064,43 @@ RSEdgeBuilderTestAmpTest >> testSource_amp [
 		equals: OrderedCollection
 		description: 'testSource_amp:6.1'.
 	self assert: c size equals: 0 description: 'testSource_amp:6.2'.
-	tmp_3ZxTA6axFL4 := c add: 1 -> 2.
+	tmp_85HGeJ9p9Q4 := c add: 1 -> 2.
 	self
 		assert: c class
 		equals: OrderedCollection
 		description: 'testSource_amp:7.1'.
 	self assert: c size equals: 1 description: 'testSource_amp:7.2'.
 	self
-		assert: tmp_3ZxTA6axFL4 class
+		assert: tmp_85HGeJ9p9Q4 class
 		equals: Association
 		description: 'testSource_amp:7.1'.
 	self
-		assert: tmp_3ZxTA6axFL4 needsFullDefinition class
+		assert: tmp_85HGeJ9p9Q4 needsFullDefinition class
 		equals: False
 		description: 'testSource_amp:7.2'.
 	self
-		assert: tmp_3ZxTA6axFL4 needsFullDefinition
+		assert: tmp_85HGeJ9p9Q4 needsFullDefinition
 		equals: false
 		description: 'testSource_amp:7.3'.
-	tmp_FzGhZk2bLb5 := c add: 3 -> 1.
+	tmp_YMg7vslTOS5 := c add: 3 -> 1.
 	self
 		assert: c class
 		equals: OrderedCollection
 		description: 'testSource_amp:8.1'.
 	self assert: c size equals: 2 description: 'testSource_amp:8.2'.
 	self
-		assert: tmp_FzGhZk2bLb5 class
+		assert: tmp_YMg7vslTOS5 class
 		equals: Association
 		description: 'testSource_amp:8.1'.
 	self
-		assert: tmp_FzGhZk2bLb5 needsFullDefinition class
+		assert: tmp_YMg7vslTOS5 needsFullDefinition class
 		equals: False
 		description: 'testSource_amp:8.2'.
 	self
-		assert: tmp_FzGhZk2bLb5 needsFullDefinition
+		assert: tmp_YMg7vslTOS5 needsFullDefinition
 		equals: false
 		description: 'testSource_amp:8.3'.
-	tmp_Y3rRT4Raa86 := eb source: c connectFrom: #key to: #value.
+	tmp_xVckvdjllI6 := eb source: c connectFrom: #key to: #value.
 	self
 		assert: eb class
 		equals: RSEdgeBuilder
@@ -8174,11 +8174,11 @@ RSEdgeBuilderTestAmpTest >> testSource_amp [
 		equals: 3
 		description: 'testSource_amp:9.18'.
 	self
-		assert: tmp_Y3rRT4Raa86 class
+		assert: tmp_xVckvdjllI6 class
 		equals: TSGroup
 		description: 'testSource_amp:9.1'.
 	self
-		assert: tmp_Y3rRT4Raa86 size
+		assert: tmp_xVckvdjllI6 size
 		equals: 2
 		description: 'testSource_amp:9.2'
 ]
@@ -8192,7 +8192,7 @@ RSEdgeBuilderTestAmpTest >> testToObjects_amp [
 	b := RTEdgeBuilder new."
 
 	<madeBySmallAmp>
-	| tmp_tcYKJr4Ug33 |
+	| tmp_yC5bIoUte43 |
 	b view: view.
 	self
 		assert: b class
@@ -8339,7 +8339,7 @@ RSEdgeBuilderTestAmpTest >> testToObjects_amp [
 		assert: b viewElements size
 		equals: 10
 		description: 'testToObjects_amp:2.18'.
-	tmp_tcYKJr4Ug33 := b connectFrom: #yourself to: 10.
+	tmp_yC5bIoUte43 := b connectFrom: #yourself to: 10.
 	self
 		assert: b class
 		equals: RSEdgeBuilder
@@ -8413,11 +8413,11 @@ RSEdgeBuilderTestAmpTest >> testToObjects_amp [
 		equals: 10
 		description: 'testToObjects_amp:3.18'.
 	self
-		assert: tmp_tcYKJr4Ug33 class
+		assert: tmp_yC5bIoUte43 class
 		equals: TSGroup
 		description: 'testToObjects_amp:3.1'.
 	self
-		assert: tmp_tcYKJr4Ug33 size
+		assert: tmp_yC5bIoUte43 size
 		equals: 0
 		description: 'testToObjects_amp:3.2'
 ]
@@ -8425,7 +8425,7 @@ RSEdgeBuilderTestAmpTest >> testToObjects_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testUseInLayoutDefault_amp [
 	<madeBySmallAmp>
-	| tmp_vyMRKyiX2R3 |
+	| tmp_BUZj7xdbuT3 |
 	b view: view.
 	self
 		assert: b class
@@ -8499,13 +8499,13 @@ RSEdgeBuilderTestAmpTest >> testUseInLayoutDefault_amp [
 		assert: b viewElements size
 		equals: 10
 		description: 'testUseInLayoutDefault_amp:1.18'.
-	tmp_vyMRKyiX2R3 := TSTreeLayout on: view elements.
+	tmp_BUZj7xdbuT3 := TSTreeLayout on: view elements.
 	self
-		assert: tmp_vyMRKyiX2R3 class
+		assert: tmp_BUZj7xdbuT3 class
 		equals: TSGroup
 		description: 'testUseInLayoutDefault_amp:2.1'.
 	self
-		assert: tmp_vyMRKyiX2R3 size
+		assert: tmp_BUZj7xdbuT3 size
 		equals: 10
 		description: 'testUseInLayoutDefault_amp:2.2'.
 	TSTreeLayout on: view elements
@@ -8514,7 +8514,7 @@ RSEdgeBuilderTestAmpTest >> testUseInLayoutDefault_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testUseInLayout_amp [
 	<madeBySmallAmp>
-	| tmp_dzanWwFg8o1 tmp_PiXEByf5nt4 |
+	| tmp_guIsFEWVrH1 tmp_RLGc2ZYvIu4 |
 	b view: view.
 	self
 		assert: b class
@@ -8588,16 +8588,16 @@ RSEdgeBuilderTestAmpTest >> testUseInLayout_amp [
 		assert: b viewElements size
 		equals: 10
 		description: 'testUseInLayout_amp:1.18'.
-	tmp_PiXEByf5nt4 := TSTreeLayout on: view elements.
+	tmp_RLGc2ZYvIu4 := TSTreeLayout on: view elements.
 	self
-		assert: tmp_PiXEByf5nt4 class
+		assert: tmp_RLGc2ZYvIu4 class
 		equals: TSGroup
 		description: 'testUseInLayout_amp:2.1'.
 	self
-		assert: tmp_PiXEByf5nt4 size
+		assert: tmp_RLGc2ZYvIu4 size
 		equals: 10
 		description: 'testUseInLayout_amp:2.2'.
-	tmp_dzanWwFg8o1 := b connectTo: [ :v | v + 1 ].
+	tmp_guIsFEWVrH1 := b connectTo: [ :v | v + 1 ].
 	self
 		assert: b class
 		equals: RSEdgeBuilder
@@ -8671,11 +8671,11 @@ RSEdgeBuilderTestAmpTest >> testUseInLayout_amp [
 		equals: 10
 		description: 'testUseInLayout_amp:3.18'.
 	self
-		assert: tmp_dzanWwFg8o1 class
+		assert: tmp_guIsFEWVrH1 class
 		equals: TSGroup
 		description: 'testUseInLayout_amp:3.1'.
 	self
-		assert: tmp_dzanWwFg8o1 size
+		assert: tmp_guIsFEWVrH1 size
 		equals: 9
 		description: 'testUseInLayout_amp:3.2'.
 	TSTreeLayout on: view elements
@@ -8684,431 +8684,431 @@ RSEdgeBuilderTestAmpTest >> testUseInLayout_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testWithMoveBehind02_amp [
 	<madeBySmallAmp>
-	| tmp_O2TJWFzoFV1 tmp_4FqkRZ82CC3 tmp_AM5oH1sSAO5 tmp_tgBItK1WH56 |
-	tmp_4FqkRZ82CC3 := RSEdgeBuilder new.
+	| tmp_t1lFohyNLM1 tmp_A1BKQgaVYy3 tmp_UmzDPTiJdm5 tmp_gia9r2bN596 |
+	tmp_A1BKQgaVYy3 := RSEdgeBuilder new.
 	self
-		assert: tmp_4FqkRZ82CC3 class
+		assert: tmp_A1BKQgaVYy3 class
 		equals: RSEdgeBuilder
 		description: 'testWithMoveBehind02_amp:1.1'.
 	self
-		assert: tmp_4FqkRZ82CC3 isBidirectional class
+		assert: tmp_A1BKQgaVYy3 isBidirectional class
 		equals: True
 		description: 'testWithMoveBehind02_amp:1.2'.
 	self
-		assert: tmp_4FqkRZ82CC3 isBidirectional
+		assert: tmp_A1BKQgaVYy3 isBidirectional
 		equals: true
 		description: 'testWithMoveBehind02_amp:1.3'.
 	self
-		assert: tmp_4FqkRZ82CC3 toObjects class
+		assert: tmp_A1BKQgaVYy3 toObjects class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:1.4'.
 	self
-		assert: tmp_4FqkRZ82CC3 toObjects size
+		assert: tmp_A1BKQgaVYy3 toObjects size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:1.5'.
 	self
-		assert: tmp_4FqkRZ82CC3 controlPoints class
+		assert: tmp_A1BKQgaVYy3 controlPoints class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind02_amp:1.6'.
 	self
-		assert: tmp_4FqkRZ82CC3 controlPoints
+		assert: tmp_A1BKQgaVYy3 controlPoints
 		equals: nil
 		description: 'testWithMoveBehind02_amp:1.7'.
 	self
-		assert: tmp_4FqkRZ82CC3 toElements class
+		assert: tmp_A1BKQgaVYy3 toElements class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:1.8'.
 	self
-		assert: tmp_4FqkRZ82CC3 toElements size
+		assert: tmp_A1BKQgaVYy3 toElements size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:1.9'.
 	self
-		assert: tmp_4FqkRZ82CC3 view class
+		assert: tmp_A1BKQgaVYy3 view class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind02_amp:1.10'.
 	self
-		assert: tmp_4FqkRZ82CC3 view
+		assert: tmp_A1BKQgaVYy3 view
 		equals: nil
 		description: 'testWithMoveBehind02_amp:1.11'.
 	self
-		assert: tmp_4FqkRZ82CC3 fromElements class
+		assert: tmp_A1BKQgaVYy3 fromElements class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:1.12'.
 	self
-		assert: tmp_4FqkRZ82CC3 fromElements size
+		assert: tmp_A1BKQgaVYy3 fromElements size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:1.13'.
 	self
-		assert: tmp_4FqkRZ82CC3 fromObjects class
+		assert: tmp_A1BKQgaVYy3 fromObjects class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:1.14'.
 	self
-		assert: tmp_4FqkRZ82CC3 fromObjects size
+		assert: tmp_A1BKQgaVYy3 fromObjects size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:1.15'.
 	self
-		assert: tmp_4FqkRZ82CC3 viewElements class
+		assert: tmp_A1BKQgaVYy3 viewElements class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:1.16'.
 	self
-		assert: tmp_4FqkRZ82CC3 viewElements size
+		assert: tmp_A1BKQgaVYy3 viewElements size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:1.17'.
-	tmp_4FqkRZ82CC3 view: view.
+	tmp_A1BKQgaVYy3 view: view.
 	self
-		assert: tmp_4FqkRZ82CC3 class
+		assert: tmp_A1BKQgaVYy3 class
 		equals: RSEdgeBuilder
 		description: 'testWithMoveBehind02_amp:2.1'.
 	self
-		assert: tmp_4FqkRZ82CC3 isBidirectional class
+		assert: tmp_A1BKQgaVYy3 isBidirectional class
 		equals: True
 		description: 'testWithMoveBehind02_amp:2.2'.
 	self
-		assert: tmp_4FqkRZ82CC3 isBidirectional
+		assert: tmp_A1BKQgaVYy3 isBidirectional
 		equals: true
 		description: 'testWithMoveBehind02_amp:2.3'.
 	self
-		assert: tmp_4FqkRZ82CC3 toObjects class
+		assert: tmp_A1BKQgaVYy3 toObjects class
 		equals: TSGroup
 		description: 'testWithMoveBehind02_amp:2.4'.
 	self
-		assert: tmp_4FqkRZ82CC3 toObjects size
+		assert: tmp_A1BKQgaVYy3 toObjects size
 		equals: 10
 		description: 'testWithMoveBehind02_amp:2.5'.
 	self
-		assert: tmp_4FqkRZ82CC3 controlPoints class
+		assert: tmp_A1BKQgaVYy3 controlPoints class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind02_amp:2.6'.
 	self
-		assert: tmp_4FqkRZ82CC3 controlPoints
+		assert: tmp_A1BKQgaVYy3 controlPoints
 		equals: nil
 		description: 'testWithMoveBehind02_amp:2.7'.
 	self
-		assert: tmp_4FqkRZ82CC3 toElements class
+		assert: tmp_A1BKQgaVYy3 toElements class
 		equals: TSGroup
 		description: 'testWithMoveBehind02_amp:2.8'.
 	self
-		assert: tmp_4FqkRZ82CC3 toElements size
+		assert: tmp_A1BKQgaVYy3 toElements size
 		equals: 10
 		description: 'testWithMoveBehind02_amp:2.9'.
 	self
-		assert: tmp_4FqkRZ82CC3 view class
+		assert: tmp_A1BKQgaVYy3 view class
 		equals: RSView
 		description: 'testWithMoveBehind02_amp:2.10'.
 	self
-		assert: tmp_4FqkRZ82CC3 view numberOfEdges class
+		assert: tmp_A1BKQgaVYy3 view numberOfEdges class
 		equals: SmallInteger
 		description: 'testWithMoveBehind02_amp:2.11'.
 	self
-		assert: tmp_4FqkRZ82CC3 view numberOfEdges
+		assert: tmp_A1BKQgaVYy3 view numberOfEdges
 		equals: 0
 		description: 'testWithMoveBehind02_amp:2.12'.
 	self
-		assert: tmp_4FqkRZ82CC3 fromElements class
+		assert: tmp_A1BKQgaVYy3 fromElements class
 		equals: TSGroup
 		description: 'testWithMoveBehind02_amp:2.13'.
 	self
-		assert: tmp_4FqkRZ82CC3 fromElements size
+		assert: tmp_A1BKQgaVYy3 fromElements size
 		equals: 10
 		description: 'testWithMoveBehind02_amp:2.14'.
 	self
-		assert: tmp_4FqkRZ82CC3 fromObjects class
+		assert: tmp_A1BKQgaVYy3 fromObjects class
 		equals: TSGroup
 		description: 'testWithMoveBehind02_amp:2.15'.
 	self
-		assert: tmp_4FqkRZ82CC3 fromObjects size
+		assert: tmp_A1BKQgaVYy3 fromObjects size
 		equals: 10
 		description: 'testWithMoveBehind02_amp:2.16'.
 	self
-		assert: tmp_4FqkRZ82CC3 viewElements class
+		assert: tmp_A1BKQgaVYy3 viewElements class
 		equals: TSGroup
 		description: 'testWithMoveBehind02_amp:2.17'.
 	self
-		assert: tmp_4FqkRZ82CC3 viewElements size
+		assert: tmp_A1BKQgaVYy3 viewElements size
 		equals: 10
 		description: 'testWithMoveBehind02_amp:2.18'.
-	tmp_AM5oH1sSAO5 := RSEdgeBuilder new.
+	tmp_UmzDPTiJdm5 := RSEdgeBuilder new.
 	self
-		assert: tmp_AM5oH1sSAO5 class
+		assert: tmp_UmzDPTiJdm5 class
 		equals: RSEdgeBuilder
 		description: 'testWithMoveBehind02_amp:3.1'.
 	self
-		assert: tmp_AM5oH1sSAO5 isBidirectional class
+		assert: tmp_UmzDPTiJdm5 isBidirectional class
 		equals: True
 		description: 'testWithMoveBehind02_amp:3.2'.
 	self
-		assert: tmp_AM5oH1sSAO5 isBidirectional
+		assert: tmp_UmzDPTiJdm5 isBidirectional
 		equals: true
 		description: 'testWithMoveBehind02_amp:3.3'.
 	self
-		assert: tmp_AM5oH1sSAO5 toObjects class
+		assert: tmp_UmzDPTiJdm5 toObjects class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:3.4'.
 	self
-		assert: tmp_AM5oH1sSAO5 toObjects size
+		assert: tmp_UmzDPTiJdm5 toObjects size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:3.5'.
 	self
-		assert: tmp_AM5oH1sSAO5 controlPoints class
+		assert: tmp_UmzDPTiJdm5 controlPoints class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind02_amp:3.6'.
 	self
-		assert: tmp_AM5oH1sSAO5 controlPoints
+		assert: tmp_UmzDPTiJdm5 controlPoints
 		equals: nil
 		description: 'testWithMoveBehind02_amp:3.7'.
 	self
-		assert: tmp_AM5oH1sSAO5 toElements class
+		assert: tmp_UmzDPTiJdm5 toElements class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:3.8'.
 	self
-		assert: tmp_AM5oH1sSAO5 toElements size
+		assert: tmp_UmzDPTiJdm5 toElements size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:3.9'.
 	self
-		assert: tmp_AM5oH1sSAO5 view class
+		assert: tmp_UmzDPTiJdm5 view class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind02_amp:3.10'.
 	self
-		assert: tmp_AM5oH1sSAO5 view
+		assert: tmp_UmzDPTiJdm5 view
 		equals: nil
 		description: 'testWithMoveBehind02_amp:3.11'.
 	self
-		assert: tmp_AM5oH1sSAO5 fromElements class
+		assert: tmp_UmzDPTiJdm5 fromElements class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:3.12'.
 	self
-		assert: tmp_AM5oH1sSAO5 fromElements size
+		assert: tmp_UmzDPTiJdm5 fromElements size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:3.13'.
 	self
-		assert: tmp_AM5oH1sSAO5 fromObjects class
+		assert: tmp_UmzDPTiJdm5 fromObjects class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:3.14'.
 	self
-		assert: tmp_AM5oH1sSAO5 fromObjects size
+		assert: tmp_UmzDPTiJdm5 fromObjects size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:3.15'.
 	self
-		assert: tmp_AM5oH1sSAO5 viewElements class
+		assert: tmp_UmzDPTiJdm5 viewElements class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:3.16'.
 	self
-		assert: tmp_AM5oH1sSAO5 viewElements size
+		assert: tmp_UmzDPTiJdm5 viewElements size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:3.17'.
-	tmp_AM5oH1sSAO5 moveBehind.
+	tmp_UmzDPTiJdm5 moveBehind.
 	self
-		assert: tmp_AM5oH1sSAO5 class
+		assert: tmp_UmzDPTiJdm5 class
 		equals: RSEdgeBuilder
 		description: 'testWithMoveBehind02_amp:4.1'.
 	self
-		assert: tmp_AM5oH1sSAO5 isBidirectional class
+		assert: tmp_UmzDPTiJdm5 isBidirectional class
 		equals: True
 		description: 'testWithMoveBehind02_amp:4.2'.
 	self
-		assert: tmp_AM5oH1sSAO5 isBidirectional
+		assert: tmp_UmzDPTiJdm5 isBidirectional
 		equals: true
 		description: 'testWithMoveBehind02_amp:4.3'.
 	self
-		assert: tmp_AM5oH1sSAO5 toObjects class
+		assert: tmp_UmzDPTiJdm5 toObjects class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:4.4'.
 	self
-		assert: tmp_AM5oH1sSAO5 toObjects size
+		assert: tmp_UmzDPTiJdm5 toObjects size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:4.5'.
 	self
-		assert: tmp_AM5oH1sSAO5 controlPoints class
+		assert: tmp_UmzDPTiJdm5 controlPoints class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind02_amp:4.6'.
 	self
-		assert: tmp_AM5oH1sSAO5 controlPoints
+		assert: tmp_UmzDPTiJdm5 controlPoints
 		equals: nil
 		description: 'testWithMoveBehind02_amp:4.7'.
 	self
-		assert: tmp_AM5oH1sSAO5 toElements class
+		assert: tmp_UmzDPTiJdm5 toElements class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:4.8'.
 	self
-		assert: tmp_AM5oH1sSAO5 toElements size
+		assert: tmp_UmzDPTiJdm5 toElements size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:4.9'.
 	self
-		assert: tmp_AM5oH1sSAO5 view class
+		assert: tmp_UmzDPTiJdm5 view class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind02_amp:4.10'.
 	self
-		assert: tmp_AM5oH1sSAO5 view
+		assert: tmp_UmzDPTiJdm5 view
 		equals: nil
 		description: 'testWithMoveBehind02_amp:4.11'.
 	self
-		assert: tmp_AM5oH1sSAO5 fromElements class
+		assert: tmp_UmzDPTiJdm5 fromElements class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:4.12'.
 	self
-		assert: tmp_AM5oH1sSAO5 fromElements size
+		assert: tmp_UmzDPTiJdm5 fromElements size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:4.13'.
 	self
-		assert: tmp_AM5oH1sSAO5 fromObjects class
+		assert: tmp_UmzDPTiJdm5 fromObjects class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:4.14'.
 	self
-		assert: tmp_AM5oH1sSAO5 fromObjects size
+		assert: tmp_UmzDPTiJdm5 fromObjects size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:4.15'.
 	self
-		assert: tmp_AM5oH1sSAO5 viewElements class
+		assert: tmp_UmzDPTiJdm5 viewElements class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:4.16'.
 	self
-		assert: tmp_AM5oH1sSAO5 viewElements size
+		assert: tmp_UmzDPTiJdm5 viewElements size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:4.17'.
-	tmp_tgBItK1WH56 := RSEdgeBuilder new.
+	tmp_gia9r2bN596 := RSEdgeBuilder new.
 	self
-		assert: tmp_tgBItK1WH56 class
+		assert: tmp_gia9r2bN596 class
 		equals: RSEdgeBuilder
 		description: 'testWithMoveBehind02_amp:5.1'.
 	self
-		assert: tmp_tgBItK1WH56 isBidirectional class
+		assert: tmp_gia9r2bN596 isBidirectional class
 		equals: True
 		description: 'testWithMoveBehind02_amp:5.2'.
 	self
-		assert: tmp_tgBItK1WH56 isBidirectional
+		assert: tmp_gia9r2bN596 isBidirectional
 		equals: true
 		description: 'testWithMoveBehind02_amp:5.3'.
 	self
-		assert: tmp_tgBItK1WH56 toObjects class
+		assert: tmp_gia9r2bN596 toObjects class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:5.4'.
 	self
-		assert: tmp_tgBItK1WH56 toObjects size
+		assert: tmp_gia9r2bN596 toObjects size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:5.5'.
 	self
-		assert: tmp_tgBItK1WH56 controlPoints class
+		assert: tmp_gia9r2bN596 controlPoints class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind02_amp:5.6'.
 	self
-		assert: tmp_tgBItK1WH56 controlPoints
+		assert: tmp_gia9r2bN596 controlPoints
 		equals: nil
 		description: 'testWithMoveBehind02_amp:5.7'.
 	self
-		assert: tmp_tgBItK1WH56 toElements class
+		assert: tmp_gia9r2bN596 toElements class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:5.8'.
 	self
-		assert: tmp_tgBItK1WH56 toElements size
+		assert: tmp_gia9r2bN596 toElements size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:5.9'.
 	self
-		assert: tmp_tgBItK1WH56 view class
+		assert: tmp_gia9r2bN596 view class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind02_amp:5.10'.
 	self
-		assert: tmp_tgBItK1WH56 view
+		assert: tmp_gia9r2bN596 view
 		equals: nil
 		description: 'testWithMoveBehind02_amp:5.11'.
 	self
-		assert: tmp_tgBItK1WH56 fromElements class
+		assert: tmp_gia9r2bN596 fromElements class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:5.12'.
 	self
-		assert: tmp_tgBItK1WH56 fromElements size
+		assert: tmp_gia9r2bN596 fromElements size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:5.13'.
 	self
-		assert: tmp_tgBItK1WH56 fromObjects class
+		assert: tmp_gia9r2bN596 fromObjects class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:5.14'.
 	self
-		assert: tmp_tgBItK1WH56 fromObjects size
+		assert: tmp_gia9r2bN596 fromObjects size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:5.15'.
 	self
-		assert: tmp_tgBItK1WH56 viewElements class
+		assert: tmp_gia9r2bN596 viewElements class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:5.16'.
 	self
-		assert: tmp_tgBItK1WH56 viewElements size
+		assert: tmp_gia9r2bN596 viewElements size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:5.17'.
-	tmp_O2TJWFzoFV1 := tmp_tgBItK1WH56 connectFrom: [ :v | v - 1 ].
+	tmp_t1lFohyNLM1 := tmp_gia9r2bN596 connectFrom: [ :v | v - 1 ].
 	self
-		assert: tmp_tgBItK1WH56 class
+		assert: tmp_gia9r2bN596 class
 		equals: RSEdgeBuilder
 		description: 'testWithMoveBehind02_amp:6.1'.
 	self
-		assert: tmp_tgBItK1WH56 isBidirectional class
+		assert: tmp_gia9r2bN596 isBidirectional class
 		equals: True
 		description: 'testWithMoveBehind02_amp:6.2'.
 	self
-		assert: tmp_tgBItK1WH56 isBidirectional
+		assert: tmp_gia9r2bN596 isBidirectional
 		equals: true
 		description: 'testWithMoveBehind02_amp:6.3'.
 	self
-		assert: tmp_tgBItK1WH56 toObjects class
+		assert: tmp_gia9r2bN596 toObjects class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:6.4'.
 	self
-		assert: tmp_tgBItK1WH56 toObjects size
+		assert: tmp_gia9r2bN596 toObjects size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:6.5'.
 	self
-		assert: tmp_tgBItK1WH56 controlPoints class
+		assert: tmp_gia9r2bN596 controlPoints class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind02_amp:6.6'.
 	self
-		assert: tmp_tgBItK1WH56 controlPoints
+		assert: tmp_gia9r2bN596 controlPoints
 		equals: nil
 		description: 'testWithMoveBehind02_amp:6.7'.
 	self
-		assert: tmp_tgBItK1WH56 toElements class
+		assert: tmp_gia9r2bN596 toElements class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:6.8'.
 	self
-		assert: tmp_tgBItK1WH56 toElements size
+		assert: tmp_gia9r2bN596 toElements size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:6.9'.
 	self
-		assert: tmp_tgBItK1WH56 view class
+		assert: tmp_gia9r2bN596 view class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind02_amp:6.10'.
 	self
-		assert: tmp_tgBItK1WH56 view
+		assert: tmp_gia9r2bN596 view
 		equals: nil
 		description: 'testWithMoveBehind02_amp:6.11'.
 	self
-		assert: tmp_tgBItK1WH56 fromElements class
+		assert: tmp_gia9r2bN596 fromElements class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:6.12'.
 	self
-		assert: tmp_tgBItK1WH56 fromElements size
+		assert: tmp_gia9r2bN596 fromElements size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:6.13'.
 	self
-		assert: tmp_tgBItK1WH56 fromObjects class
+		assert: tmp_gia9r2bN596 fromObjects class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:6.14'.
 	self
-		assert: tmp_tgBItK1WH56 fromObjects size
+		assert: tmp_gia9r2bN596 fromObjects size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:6.15'.
 	self
-		assert: tmp_tgBItK1WH56 viewElements class
+		assert: tmp_gia9r2bN596 viewElements class
 		equals: Array
 		description: 'testWithMoveBehind02_amp:6.16'.
 	self
-		assert: tmp_tgBItK1WH56 viewElements size
+		assert: tmp_gia9r2bN596 viewElements size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:6.17'.
 	self
-		assert: tmp_O2TJWFzoFV1 class
+		assert: tmp_t1lFohyNLM1 class
 		equals: TSGroup
 		description: 'testWithMoveBehind02_amp:6.1'.
 	self
-		assert: tmp_O2TJWFzoFV1 size
+		assert: tmp_t1lFohyNLM1 size
 		equals: 0
 		description: 'testWithMoveBehind02_amp:6.2'
 ]
@@ -9116,358 +9116,358 @@ RSEdgeBuilderTestAmpTest >> testWithMoveBehind02_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestAmpTest >> testWithMoveBehind_amp [
 	<madeBySmallAmp>
-	| tmp_GBfPgnFcHz3 tmp_WjtgVwlifB5 tmp_GAlMpej6Kv6 |
-	tmp_GBfPgnFcHz3 := RSEdgeBuilder new.
+	| tmp_q756OLWhHF3 tmp_uu2p9ZzD535 tmp_xkbytoEg1o6 |
+	tmp_q756OLWhHF3 := RSEdgeBuilder new.
 	self
-		assert: tmp_GBfPgnFcHz3 class
+		assert: tmp_q756OLWhHF3 class
 		equals: RSEdgeBuilder
 		description: 'testWithMoveBehind_amp:1.1'.
 	self
-		assert: tmp_GBfPgnFcHz3 isBidirectional class
+		assert: tmp_q756OLWhHF3 isBidirectional class
 		equals: True
 		description: 'testWithMoveBehind_amp:1.2'.
 	self
-		assert: tmp_GBfPgnFcHz3 isBidirectional
+		assert: tmp_q756OLWhHF3 isBidirectional
 		equals: true
 		description: 'testWithMoveBehind_amp:1.3'.
 	self
-		assert: tmp_GBfPgnFcHz3 toObjects class
+		assert: tmp_q756OLWhHF3 toObjects class
 		equals: Array
 		description: 'testWithMoveBehind_amp:1.4'.
 	self
-		assert: tmp_GBfPgnFcHz3 toObjects size
+		assert: tmp_q756OLWhHF3 toObjects size
 		equals: 0
 		description: 'testWithMoveBehind_amp:1.5'.
 	self
-		assert: tmp_GBfPgnFcHz3 controlPoints class
+		assert: tmp_q756OLWhHF3 controlPoints class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind_amp:1.6'.
 	self
-		assert: tmp_GBfPgnFcHz3 controlPoints
+		assert: tmp_q756OLWhHF3 controlPoints
 		equals: nil
 		description: 'testWithMoveBehind_amp:1.7'.
 	self
-		assert: tmp_GBfPgnFcHz3 toElements class
+		assert: tmp_q756OLWhHF3 toElements class
 		equals: Array
 		description: 'testWithMoveBehind_amp:1.8'.
 	self
-		assert: tmp_GBfPgnFcHz3 toElements size
+		assert: tmp_q756OLWhHF3 toElements size
 		equals: 0
 		description: 'testWithMoveBehind_amp:1.9'.
 	self
-		assert: tmp_GBfPgnFcHz3 view class
+		assert: tmp_q756OLWhHF3 view class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind_amp:1.10'.
 	self
-		assert: tmp_GBfPgnFcHz3 view
+		assert: tmp_q756OLWhHF3 view
 		equals: nil
 		description: 'testWithMoveBehind_amp:1.11'.
 	self
-		assert: tmp_GBfPgnFcHz3 fromElements class
+		assert: tmp_q756OLWhHF3 fromElements class
 		equals: Array
 		description: 'testWithMoveBehind_amp:1.12'.
 	self
-		assert: tmp_GBfPgnFcHz3 fromElements size
+		assert: tmp_q756OLWhHF3 fromElements size
 		equals: 0
 		description: 'testWithMoveBehind_amp:1.13'.
 	self
-		assert: tmp_GBfPgnFcHz3 fromObjects class
+		assert: tmp_q756OLWhHF3 fromObjects class
 		equals: Array
 		description: 'testWithMoveBehind_amp:1.14'.
 	self
-		assert: tmp_GBfPgnFcHz3 fromObjects size
+		assert: tmp_q756OLWhHF3 fromObjects size
 		equals: 0
 		description: 'testWithMoveBehind_amp:1.15'.
 	self
-		assert: tmp_GBfPgnFcHz3 viewElements class
+		assert: tmp_q756OLWhHF3 viewElements class
 		equals: Array
 		description: 'testWithMoveBehind_amp:1.16'.
 	self
-		assert: tmp_GBfPgnFcHz3 viewElements size
+		assert: tmp_q756OLWhHF3 viewElements size
 		equals: 0
 		description: 'testWithMoveBehind_amp:1.17'.
-	tmp_GBfPgnFcHz3 view: view.
+	tmp_q756OLWhHF3 view: view.
 	self
-		assert: tmp_GBfPgnFcHz3 class
+		assert: tmp_q756OLWhHF3 class
 		equals: RSEdgeBuilder
 		description: 'testWithMoveBehind_amp:2.1'.
 	self
-		assert: tmp_GBfPgnFcHz3 isBidirectional class
+		assert: tmp_q756OLWhHF3 isBidirectional class
 		equals: True
 		description: 'testWithMoveBehind_amp:2.2'.
 	self
-		assert: tmp_GBfPgnFcHz3 isBidirectional
+		assert: tmp_q756OLWhHF3 isBidirectional
 		equals: true
 		description: 'testWithMoveBehind_amp:2.3'.
 	self
-		assert: tmp_GBfPgnFcHz3 toObjects class
+		assert: tmp_q756OLWhHF3 toObjects class
 		equals: TSGroup
 		description: 'testWithMoveBehind_amp:2.4'.
 	self
-		assert: tmp_GBfPgnFcHz3 toObjects size
+		assert: tmp_q756OLWhHF3 toObjects size
 		equals: 10
 		description: 'testWithMoveBehind_amp:2.5'.
 	self
-		assert: tmp_GBfPgnFcHz3 controlPoints class
+		assert: tmp_q756OLWhHF3 controlPoints class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind_amp:2.6'.
 	self
-		assert: tmp_GBfPgnFcHz3 controlPoints
+		assert: tmp_q756OLWhHF3 controlPoints
 		equals: nil
 		description: 'testWithMoveBehind_amp:2.7'.
 	self
-		assert: tmp_GBfPgnFcHz3 toElements class
+		assert: tmp_q756OLWhHF3 toElements class
 		equals: TSGroup
 		description: 'testWithMoveBehind_amp:2.8'.
 	self
-		assert: tmp_GBfPgnFcHz3 toElements size
+		assert: tmp_q756OLWhHF3 toElements size
 		equals: 10
 		description: 'testWithMoveBehind_amp:2.9'.
 	self
-		assert: tmp_GBfPgnFcHz3 view class
+		assert: tmp_q756OLWhHF3 view class
 		equals: RSView
 		description: 'testWithMoveBehind_amp:2.10'.
 	self
-		assert: tmp_GBfPgnFcHz3 view numberOfEdges class
+		assert: tmp_q756OLWhHF3 view numberOfEdges class
 		equals: SmallInteger
 		description: 'testWithMoveBehind_amp:2.11'.
 	self
-		assert: tmp_GBfPgnFcHz3 view numberOfEdges
+		assert: tmp_q756OLWhHF3 view numberOfEdges
 		equals: 0
 		description: 'testWithMoveBehind_amp:2.12'.
 	self
-		assert: tmp_GBfPgnFcHz3 fromElements class
+		assert: tmp_q756OLWhHF3 fromElements class
 		equals: TSGroup
 		description: 'testWithMoveBehind_amp:2.13'.
 	self
-		assert: tmp_GBfPgnFcHz3 fromElements size
+		assert: tmp_q756OLWhHF3 fromElements size
 		equals: 10
 		description: 'testWithMoveBehind_amp:2.14'.
 	self
-		assert: tmp_GBfPgnFcHz3 fromObjects class
+		assert: tmp_q756OLWhHF3 fromObjects class
 		equals: TSGroup
 		description: 'testWithMoveBehind_amp:2.15'.
 	self
-		assert: tmp_GBfPgnFcHz3 fromObjects size
+		assert: tmp_q756OLWhHF3 fromObjects size
 		equals: 10
 		description: 'testWithMoveBehind_amp:2.16'.
 	self
-		assert: tmp_GBfPgnFcHz3 viewElements class
+		assert: tmp_q756OLWhHF3 viewElements class
 		equals: TSGroup
 		description: 'testWithMoveBehind_amp:2.17'.
 	self
-		assert: tmp_GBfPgnFcHz3 viewElements size
+		assert: tmp_q756OLWhHF3 viewElements size
 		equals: 10
 		description: 'testWithMoveBehind_amp:2.18'.
-	tmp_WjtgVwlifB5 := RSEdgeBuilder new.
+	tmp_uu2p9ZzD535 := RSEdgeBuilder new.
 	self
-		assert: tmp_WjtgVwlifB5 class
+		assert: tmp_uu2p9ZzD535 class
 		equals: RSEdgeBuilder
 		description: 'testWithMoveBehind_amp:3.1'.
 	self
-		assert: tmp_WjtgVwlifB5 isBidirectional class
+		assert: tmp_uu2p9ZzD535 isBidirectional class
 		equals: True
 		description: 'testWithMoveBehind_amp:3.2'.
 	self
-		assert: tmp_WjtgVwlifB5 isBidirectional
+		assert: tmp_uu2p9ZzD535 isBidirectional
 		equals: true
 		description: 'testWithMoveBehind_amp:3.3'.
 	self
-		assert: tmp_WjtgVwlifB5 toObjects class
+		assert: tmp_uu2p9ZzD535 toObjects class
 		equals: Array
 		description: 'testWithMoveBehind_amp:3.4'.
 	self
-		assert: tmp_WjtgVwlifB5 toObjects size
+		assert: tmp_uu2p9ZzD535 toObjects size
 		equals: 0
 		description: 'testWithMoveBehind_amp:3.5'.
 	self
-		assert: tmp_WjtgVwlifB5 controlPoints class
+		assert: tmp_uu2p9ZzD535 controlPoints class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind_amp:3.6'.
 	self
-		assert: tmp_WjtgVwlifB5 controlPoints
+		assert: tmp_uu2p9ZzD535 controlPoints
 		equals: nil
 		description: 'testWithMoveBehind_amp:3.7'.
 	self
-		assert: tmp_WjtgVwlifB5 toElements class
+		assert: tmp_uu2p9ZzD535 toElements class
 		equals: Array
 		description: 'testWithMoveBehind_amp:3.8'.
 	self
-		assert: tmp_WjtgVwlifB5 toElements size
+		assert: tmp_uu2p9ZzD535 toElements size
 		equals: 0
 		description: 'testWithMoveBehind_amp:3.9'.
 	self
-		assert: tmp_WjtgVwlifB5 view class
+		assert: tmp_uu2p9ZzD535 view class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind_amp:3.10'.
 	self
-		assert: tmp_WjtgVwlifB5 view
+		assert: tmp_uu2p9ZzD535 view
 		equals: nil
 		description: 'testWithMoveBehind_amp:3.11'.
 	self
-		assert: tmp_WjtgVwlifB5 fromElements class
+		assert: tmp_uu2p9ZzD535 fromElements class
 		equals: Array
 		description: 'testWithMoveBehind_amp:3.12'.
 	self
-		assert: tmp_WjtgVwlifB5 fromElements size
+		assert: tmp_uu2p9ZzD535 fromElements size
 		equals: 0
 		description: 'testWithMoveBehind_amp:3.13'.
 	self
-		assert: tmp_WjtgVwlifB5 fromObjects class
+		assert: tmp_uu2p9ZzD535 fromObjects class
 		equals: Array
 		description: 'testWithMoveBehind_amp:3.14'.
 	self
-		assert: tmp_WjtgVwlifB5 fromObjects size
+		assert: tmp_uu2p9ZzD535 fromObjects size
 		equals: 0
 		description: 'testWithMoveBehind_amp:3.15'.
 	self
-		assert: tmp_WjtgVwlifB5 viewElements class
+		assert: tmp_uu2p9ZzD535 viewElements class
 		equals: Array
 		description: 'testWithMoveBehind_amp:3.16'.
 	self
-		assert: tmp_WjtgVwlifB5 viewElements size
+		assert: tmp_uu2p9ZzD535 viewElements size
 		equals: 0
 		description: 'testWithMoveBehind_amp:3.17'.
-	tmp_WjtgVwlifB5 moveBehind.
+	tmp_uu2p9ZzD535 moveBehind.
 	self
-		assert: tmp_WjtgVwlifB5 class
+		assert: tmp_uu2p9ZzD535 class
 		equals: RSEdgeBuilder
 		description: 'testWithMoveBehind_amp:4.1'.
 	self
-		assert: tmp_WjtgVwlifB5 isBidirectional class
+		assert: tmp_uu2p9ZzD535 isBidirectional class
 		equals: True
 		description: 'testWithMoveBehind_amp:4.2'.
 	self
-		assert: tmp_WjtgVwlifB5 isBidirectional
+		assert: tmp_uu2p9ZzD535 isBidirectional
 		equals: true
 		description: 'testWithMoveBehind_amp:4.3'.
 	self
-		assert: tmp_WjtgVwlifB5 toObjects class
+		assert: tmp_uu2p9ZzD535 toObjects class
 		equals: Array
 		description: 'testWithMoveBehind_amp:4.4'.
 	self
-		assert: tmp_WjtgVwlifB5 toObjects size
+		assert: tmp_uu2p9ZzD535 toObjects size
 		equals: 0
 		description: 'testWithMoveBehind_amp:4.5'.
 	self
-		assert: tmp_WjtgVwlifB5 controlPoints class
+		assert: tmp_uu2p9ZzD535 controlPoints class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind_amp:4.6'.
 	self
-		assert: tmp_WjtgVwlifB5 controlPoints
+		assert: tmp_uu2p9ZzD535 controlPoints
 		equals: nil
 		description: 'testWithMoveBehind_amp:4.7'.
 	self
-		assert: tmp_WjtgVwlifB5 toElements class
+		assert: tmp_uu2p9ZzD535 toElements class
 		equals: Array
 		description: 'testWithMoveBehind_amp:4.8'.
 	self
-		assert: tmp_WjtgVwlifB5 toElements size
+		assert: tmp_uu2p9ZzD535 toElements size
 		equals: 0
 		description: 'testWithMoveBehind_amp:4.9'.
 	self
-		assert: tmp_WjtgVwlifB5 view class
+		assert: tmp_uu2p9ZzD535 view class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind_amp:4.10'.
 	self
-		assert: tmp_WjtgVwlifB5 view
+		assert: tmp_uu2p9ZzD535 view
 		equals: nil
 		description: 'testWithMoveBehind_amp:4.11'.
 	self
-		assert: tmp_WjtgVwlifB5 fromElements class
+		assert: tmp_uu2p9ZzD535 fromElements class
 		equals: Array
 		description: 'testWithMoveBehind_amp:4.12'.
 	self
-		assert: tmp_WjtgVwlifB5 fromElements size
+		assert: tmp_uu2p9ZzD535 fromElements size
 		equals: 0
 		description: 'testWithMoveBehind_amp:4.13'.
 	self
-		assert: tmp_WjtgVwlifB5 fromObjects class
+		assert: tmp_uu2p9ZzD535 fromObjects class
 		equals: Array
 		description: 'testWithMoveBehind_amp:4.14'.
 	self
-		assert: tmp_WjtgVwlifB5 fromObjects size
+		assert: tmp_uu2p9ZzD535 fromObjects size
 		equals: 0
 		description: 'testWithMoveBehind_amp:4.15'.
 	self
-		assert: tmp_WjtgVwlifB5 viewElements class
+		assert: tmp_uu2p9ZzD535 viewElements class
 		equals: Array
 		description: 'testWithMoveBehind_amp:4.16'.
 	self
-		assert: tmp_WjtgVwlifB5 viewElements size
+		assert: tmp_uu2p9ZzD535 viewElements size
 		equals: 0
 		description: 'testWithMoveBehind_amp:4.17'.
-	tmp_GAlMpej6Kv6 := RSEdgeBuilder new.
+	tmp_xkbytoEg1o6 := RSEdgeBuilder new.
 	self
-		assert: tmp_GAlMpej6Kv6 class
+		assert: tmp_xkbytoEg1o6 class
 		equals: RSEdgeBuilder
 		description: 'testWithMoveBehind_amp:5.1'.
 	self
-		assert: tmp_GAlMpej6Kv6 isBidirectional class
+		assert: tmp_xkbytoEg1o6 isBidirectional class
 		equals: True
 		description: 'testWithMoveBehind_amp:5.2'.
 	self
-		assert: tmp_GAlMpej6Kv6 isBidirectional
+		assert: tmp_xkbytoEg1o6 isBidirectional
 		equals: true
 		description: 'testWithMoveBehind_amp:5.3'.
 	self
-		assert: tmp_GAlMpej6Kv6 toObjects class
+		assert: tmp_xkbytoEg1o6 toObjects class
 		equals: Array
 		description: 'testWithMoveBehind_amp:5.4'.
 	self
-		assert: tmp_GAlMpej6Kv6 toObjects size
+		assert: tmp_xkbytoEg1o6 toObjects size
 		equals: 0
 		description: 'testWithMoveBehind_amp:5.5'.
 	self
-		assert: tmp_GAlMpej6Kv6 controlPoints class
+		assert: tmp_xkbytoEg1o6 controlPoints class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind_amp:5.6'.
 	self
-		assert: tmp_GAlMpej6Kv6 controlPoints
+		assert: tmp_xkbytoEg1o6 controlPoints
 		equals: nil
 		description: 'testWithMoveBehind_amp:5.7'.
 	self
-		assert: tmp_GAlMpej6Kv6 toElements class
+		assert: tmp_xkbytoEg1o6 toElements class
 		equals: Array
 		description: 'testWithMoveBehind_amp:5.8'.
 	self
-		assert: tmp_GAlMpej6Kv6 toElements size
+		assert: tmp_xkbytoEg1o6 toElements size
 		equals: 0
 		description: 'testWithMoveBehind_amp:5.9'.
 	self
-		assert: tmp_GAlMpej6Kv6 view class
+		assert: tmp_xkbytoEg1o6 view class
 		equals: UndefinedObject
 		description: 'testWithMoveBehind_amp:5.10'.
 	self
-		assert: tmp_GAlMpej6Kv6 view
+		assert: tmp_xkbytoEg1o6 view
 		equals: nil
 		description: 'testWithMoveBehind_amp:5.11'.
 	self
-		assert: tmp_GAlMpej6Kv6 fromElements class
+		assert: tmp_xkbytoEg1o6 fromElements class
 		equals: Array
 		description: 'testWithMoveBehind_amp:5.12'.
 	self
-		assert: tmp_GAlMpej6Kv6 fromElements size
+		assert: tmp_xkbytoEg1o6 fromElements size
 		equals: 0
 		description: 'testWithMoveBehind_amp:5.13'.
 	self
-		assert: tmp_GAlMpej6Kv6 fromObjects class
+		assert: tmp_xkbytoEg1o6 fromObjects class
 		equals: Array
 		description: 'testWithMoveBehind_amp:5.14'.
 	self
-		assert: tmp_GAlMpej6Kv6 fromObjects size
+		assert: tmp_xkbytoEg1o6 fromObjects size
 		equals: 0
 		description: 'testWithMoveBehind_amp:5.15'.
 	self
-		assert: tmp_GAlMpej6Kv6 viewElements class
+		assert: tmp_xkbytoEg1o6 viewElements class
 		equals: Array
 		description: 'testWithMoveBehind_amp:5.16'.
 	self
-		assert: tmp_GAlMpej6Kv6 viewElements size
+		assert: tmp_xkbytoEg1o6 viewElements size
 		equals: 0
 		description: 'testWithMoveBehind_amp:5.17'.
 	self
-		should: [ tmp_GAlMpej6Kv6
+		should: [ tmp_xkbytoEg1o6
 				useAssociations: (Array with: 1 -> 2 with: 2 -> 3 with: 5 -> 6) ]
 		raise: MessageNotUnderstood
 		description: 'testWithMoveBehind_amp:6.1'

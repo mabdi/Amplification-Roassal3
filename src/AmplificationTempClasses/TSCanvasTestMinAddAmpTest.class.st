@@ -83,7 +83,7 @@ TSCanvasTestMinAddAmpTest >> testDrawCanvasWithGroup [
 { #category : #'as yet unclassified' }
 TSCanvasTestMinAddAmpTest >> testDrawCanvasWithGroup_amp [
 	<madeBySmallAmp>
-	| g tmp_C81dg3r4CM5 |
+	| g tmp_RjMWFht2Ro5 |
 	g := TSComposite new.
 	g
 		add:
@@ -97,14 +97,14 @@ TSCanvasTestMinAddAmpTest >> testDrawCanvasWithGroup_amp [
 				extent: 100 @ 100;
 				yourself).
 	c addShape: g.
-	tmp_C81dg3r4CM5 := c createMorph.
+	tmp_RjMWFht2Ro5 := c createMorph.
 	self assert: c class equals: TSCanvas.
 	self assert: c morph wantsSteps class equals: False.
-	self assert: tmp_C81dg3r4CM5 class equals: TSAthensMorph.
+	self assert: tmp_RjMWFht2Ro5 class equals: TSAthensMorph.
 	self
-		assert: tmp_C81dg3r4CM5 canvas view class
+		assert: tmp_RjMWFht2Ro5 canvas view class
 		equals: UndefinedObject.
-	tmp_C81dg3r4CM5 drawOnMockCanvas
+	tmp_RjMWFht2Ro5 drawOnMockCanvas
 ]
 
 { #category : #'as yet unclassified' }
@@ -131,7 +131,7 @@ TSCanvasTestMinAddAmpTest >> testDrawFixed [
 { #category : #'as yet unclassified' }
 TSCanvasTestMinAddAmpTest >> testDrawFixed_amp [
 	<madeBySmallAmp>
-	| box tmp_T8gT1umE4112 |
+	| box tmp_hIIhNLqwP412 |
 	box := TSBox new
 		extent: 100 @ 100;
 		yourself.
@@ -142,9 +142,9 @@ TSCanvasTestMinAddAmpTest >> testDrawFixed_amp [
 		yourself.
 	c addShape: box.
 	box setAsFixed.
-	tmp_T8gT1umE4112 := c createMorph.
+	tmp_hIIhNLqwP412 := c createMorph.
 	self assert: c parent numberOfShapes equals: 0.
-	tmp_T8gT1umE4112 drawOnMockCanvas
+	tmp_hIIhNLqwP412 drawOnMockCanvas
 ]
 
 { #category : #'as yet unclassified' }
@@ -208,11 +208,11 @@ TSCanvasTestMinAddAmpTest >> testOpening [
 { #category : #'as yet unclassified' }
 TSCanvasTestMinAddAmpTest >> testOpening_amp [
 	<madeBySmallAmp>
-	| tmp_NRRzW2MuQf2 |
-	tmp_NRRzW2MuQf2 := c open.
+	| tmp_KCrj86y5Cz2 |
+	tmp_KCrj86y5Cz2 := c open.
 	self assert: c class equals: TSCanvas.
-	self assert: tmp_NRRzW2MuQf2 class equals: SystemWindow.
-	tmp_NRRzW2MuQf2 delete
+	self assert: tmp_KCrj86y5Cz2 class equals: SystemWindow.
+	tmp_KCrj86y5Cz2 delete
 ]
 
 { #category : #'as yet unclassified' }

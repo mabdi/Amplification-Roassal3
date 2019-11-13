@@ -21,7 +21,7 @@ RSEdgeBuilderTestMinAmpTest >> setUp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestMinAmpTest >> testAllowRepetitionAndUseAssociations_amp [
 	<madeBySmallAmp>
-	| v eb tmp_YovJF7oads5 tmp_p1G9j8Bazg6 |
+	| v eb tmp_bbf5HEYoXX5 tmp_CNd0FUiWrj6 |
 	v := RSView new.
 	v addAll: (RSShapeBuilder box elementsOn: (1 to: 3)).
 	eb := RSEdgeBuilder line.
@@ -35,39 +35,39 @@ RSEdgeBuilderTestMinAmpTest >> testAllowRepetitionAndUseAssociations_amp [
 	eb view: v.
 	eb color: (Color red alpha: 0.5).
 	eb noRepetition.
-	tmp_YovJF7oads5 := eb
+	tmp_bbf5HEYoXX5 := eb
 		useAssociations: (Array with: 1 -> 2 with: 2 -> 3 with: 1 -> 2).
 	self assert: eb class equals: RSEdgeBuilder.
 	self assert: eb view numberOfEdges equals: 2.
-	self assert: tmp_YovJF7oads5 class equals: TSGroup.
-	tmp_p1G9j8Bazg6 := TSGridLayout on: v elements
+	self assert: tmp_bbf5HEYoXX5 class equals: TSGroup.
+	tmp_CNd0FUiWrj6 := TSGridLayout on: v elements
 ]
 
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestMinAmpTest >> testConnectFrom_amp [
 	<madeBySmallAmp>
-	| e tmp_gvKJXALbUL3 |
+	| e tmp_VqT2Ilt5H53 |
 	b view: view.
 	b objects: #(1 2).
 	self assert: b fromElements class equals: TSGroup.
-	tmp_gvKJXALbUL3 := b connectFrom: [ :v | v - 1 ].
+	tmp_VqT2Ilt5H53 := b connectFrom: [ :v | v - 1 ].
 	self assert: b class equals: RSEdgeBuilder.
 	self assert: b view numberOfEdges equals: 1.
-	self assert: tmp_gvKJXALbUL3 class equals: TSGroup.
+	self assert: tmp_VqT2Ilt5H53 class equals: TSGroup.
 	e := view edges anyOne
 ]
 
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestMinAmpTest >> testConnectToAll_amp [
 	<madeBySmallAmp>
-	| eFrom eTo tmp_ng2sDHs5133 |
+	| eFrom eTo tmp_h6q7XIJ87V3 |
 	b view: view.
 	b objects: #(1 2 3).
-	tmp_ng2sDHs5133 := b
+	tmp_h6q7XIJ87V3 := b
 		connectToAll: [ :v | Array with: v - 1 with: v - 2 ].
 	self assert: b class equals: RSEdgeBuilder.
 	self assert: b view numberOfEdges equals: 3.
-	self assert: tmp_ng2sDHs5133 class equals: TSGroup.
+	self assert: tmp_h6q7XIJ87V3 class equals: TSGroup.
 	eFrom := (view edges collect: [ :edge | edge from model ]) sorted
 		asArray.
 	eTo := (view edges collect: [ :edge | edge to model ]) sorted asArray
@@ -76,31 +76,31 @@ RSEdgeBuilderTestMinAmpTest >> testConnectToAll_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestMinAmpTest >> testConnectTo_amp [
 	<madeBySmallAmp>
-	| e tmp_UL3xK3i3Vi3 |
+	| e tmp_VyMpNzMWxR3 |
 	b view: view.
 	b objects: #(1 2).
-	tmp_UL3xK3i3Vi3 := b connectTo: [ :v | v - 1 ].
+	tmp_VyMpNzMWxR3 := b connectTo: [ :v | v - 1 ].
 	self assert: b class equals: RSEdgeBuilder.
-	self assert: tmp_UL3xK3i3Vi3 class equals: TSGroup.
+	self assert: tmp_VyMpNzMWxR3 class equals: TSGroup.
 	e := view edges anyOne
 ]
 
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestMinAmpTest >> testFromAll_amp [
 	<madeBySmallAmp>
-	| v es tmp_MAkLlVRCnI4 tmp_HSGNGVtBeI6 tmp_UF0iQjg0zJ8 tmp_nJf6EL8QAW9 tmp_Pli53kceem10 |
+	| v es tmp_V3HLESOJqS4 tmp_vuuJlYs8hG6 tmp_Yx5JIciIoV8 tmp_8xiyVuZw5o9 tmp_UUa8MLqecR10 |
 	v := RSView new.
 	es := (RSShapeBuilder circle size: 20) elementsOn: (1 to: 2).
 	v addAll: es.
-	tmp_HSGNGVtBeI6 := RSEdgeBuilder new.
-	tmp_Pli53kceem10 := TSTreeLayout on: es.
-	tmp_UF0iQjg0zJ8 := RSEdgeBuilder new.
-	tmp_nJf6EL8QAW9 := RSEdgeBuilder new.
-	tmp_MAkLlVRCnI4 := tmp_nJf6EL8QAW9
+	tmp_vuuJlYs8hG6 := RSEdgeBuilder new.
+	tmp_UUa8MLqecR10 := TSTreeLayout on: es.
+	tmp_Yx5JIciIoV8 := RSEdgeBuilder new.
+	tmp_8xiyVuZw5o9 := RSEdgeBuilder new.
+	tmp_V3HLESOJqS4 := tmp_8xiyVuZw5o9
 		connectFromAll: (Array with: 1)
 		to: 2.
-	self assert: tmp_nJf6EL8QAW9 class equals: RSEdgeBuilder.
-	self assert: tmp_MAkLlVRCnI4 class equals: TSGroup.
+	self assert: tmp_8xiyVuZw5o9 class equals: RSEdgeBuilder.
+	self assert: tmp_V3HLESOJqS4 class equals: TSGroup.
 	TSTreeLayout on: es
 ]
 
@@ -116,11 +116,11 @@ RSEdgeBuilderTestMinAmpTest >> testObjects02_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestMinAmpTest >> testShouldAllowBidirection_amp [
 	<madeBySmallAmp>
-	| tmp_MoUgspPvsn4 |
+	| tmp_GD4YB9Plzu4 |
 	b view: view.
 	b noBidirectional.
 	b objects: #(1 2).
-	tmp_MoUgspPvsn4 := b
+	tmp_GD4YB9Plzu4 := b
 		useAssociations: (Array with: 1 -> 2 with: 2 -> 1).
 	self assert: b view numberOfEdges equals: 1.
 	elements := view elementsFromModels: #(1 2)
@@ -129,33 +129,33 @@ RSEdgeBuilderTestMinAmpTest >> testShouldAllowBidirection_amp [
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestMinAmpTest >> testSimple5_amp [
 	<madeBySmallAmp>
-	| tmp_4bxiPnh2z11 tmp_yLSoCOHTuY3 tmp_EvHZFgNPIP5 tmp_VPZ9w5oi8L6 |
-	tmp_yLSoCOHTuY3 := RSEdgeBuilder line.
-	tmp_yLSoCOHTuY3 view: view.
-	tmp_EvHZFgNPIP5 := RSEdgeBuilder line.
-	tmp_VPZ9w5oi8L6 := RSEdgeBuilder line.
-	tmp_4bxiPnh2z11 := tmp_VPZ9w5oi8L6
+	| tmp_dZOEXlAz681 tmp_lbWjN333w53 tmp_TBBQylm1re5 tmp_3evenUevuN6 |
+	tmp_lbWjN333w53 := RSEdgeBuilder line.
+	tmp_lbWjN333w53 view: view.
+	tmp_TBBQylm1re5 := RSEdgeBuilder line.
+	tmp_3evenUevuN6 := RSEdgeBuilder line.
+	tmp_dZOEXlAz681 := tmp_3evenUevuN6
 		connectFrom: #yourself
 		toAll: [ :v | Array with: v + 1 with: v + 2 ].
-	self assert: tmp_VPZ9w5oi8L6 class equals: RSEdgeBuilder.
-	self assert: tmp_4bxiPnh2z11 class equals: TSGroup
+	self assert: tmp_3evenUevuN6 class equals: RSEdgeBuilder.
+	self assert: tmp_dZOEXlAz681 class equals: TSGroup
 ]
 
 { #category : #'as yet unclassified' }
 RSEdgeBuilderTestMinAmpTest >> testSource_amp [
 	<madeBySmallAmp>
-	| v es eb c tmp_3ZxTA6axFL4 tmp_FzGhZk2bLb5 tmp_Y3rRT4Raa86 |
+	| v es eb c tmp_85HGeJ9p9Q4 tmp_YMg7vslTOS5 tmp_xVckvdjllI6 |
 	v := RSView new.
 	es := RSShapeBuilder box elementsOn: #(1 2 3).
 	v addAll: es.
 	eb := RSEdgeBuilder line.
 	eb view: v.
 	c := OrderedCollection new.
-	tmp_3ZxTA6axFL4 := c add: 1 -> 2.
-	tmp_FzGhZk2bLb5 := c add: 3 -> 1.
-	tmp_Y3rRT4Raa86 := eb source: c connectFrom: #key to: #value.
+	tmp_85HGeJ9p9Q4 := c add: 1 -> 2.
+	tmp_YMg7vslTOS5 := c add: 3 -> 1.
+	tmp_xVckvdjllI6 := eb source: c connectFrom: #key to: #value.
 	self assert: eb class equals: RSEdgeBuilder.
-	self assert: tmp_Y3rRT4Raa86 class equals: TSGroup
+	self assert: tmp_xVckvdjllI6 class equals: TSGroup
 ]
 
 { #category : #'as yet unclassified' }

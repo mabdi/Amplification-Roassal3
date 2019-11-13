@@ -71,7 +71,7 @@ RSEdgeTestAmpTest >> should: aBlock takeMoreThan: aDuration description: descrip
 { #category : #'as yet unclassified' }
 RSEdgeTestAmpTest >> testAddingEdgeAndGroup_amp [
 	<madeBySmallAmp>
-	| v g tmp_YTwudHpD7n1 tmp_mYCcfSgX382 |
+	| v g tmp_caRzCHuRpY1 tmp_bgzU7XkwId2 |
 	v := RSView new.
 	self
 		assert: v class
@@ -166,7 +166,7 @@ RSEdgeTestAmpTest >> testAddingEdgeAndGroup_amp [
 		assert: g size
 		equals: 0
 		description: 'testAddingEdgeAndGroup_amp:2.2'.
-	tmp_mYCcfSgX382 := g add: el1.
+	tmp_bgzU7XkwId2 := g add: el1.
 	self
 		assert: g class
 		equals: TSGroup
@@ -176,15 +176,15 @@ RSEdgeTestAmpTest >> testAddingEdgeAndGroup_amp [
 		equals: 1
 		description: 'testAddingEdgeAndGroup_amp:3.2'.
 	self
-		assert: tmp_mYCcfSgX382 class
+		assert: tmp_bgzU7XkwId2 class
 		equals: RSElement
 		description: 'testAddingEdgeAndGroup_amp:3.1'.
 	self
-		assert: tmp_mYCcfSgX382 hasChildren class
+		assert: tmp_bgzU7XkwId2 hasChildren class
 		equals: False
 		description: 'testAddingEdgeAndGroup_amp:3.2'.
 	self
-		assert: tmp_mYCcfSgX382 hasChildren
+		assert: tmp_bgzU7XkwId2 hasChildren
 		equals: false
 		description: 'testAddingEdgeAndGroup_amp:3.3'.
 	v addAll: g.
@@ -272,7 +272,7 @@ RSEdgeTestAmpTest >> testAddingEdgeAndGroup_amp [
 		assert: v elements size
 		equals: 1
 		description: 'testAddingEdgeAndGroup_amp:4.21'.
-	tmp_YTwudHpD7n1 := g add: edge.
+	tmp_caRzCHuRpY1 := g add: edge.
 	self
 		assert: g class
 		equals: TSGroup
@@ -282,51 +282,51 @@ RSEdgeTestAmpTest >> testAddingEdgeAndGroup_amp [
 		equals: 2
 		description: 'testAddingEdgeAndGroup_amp:5.2'.
 	self
-		assert: tmp_YTwudHpD7n1 class
+		assert: tmp_caRzCHuRpY1 class
 		equals: RSEdge
 		description: 'testAddingEdgeAndGroup_amp:5.1'.
 	self
-		assert: tmp_YTwudHpD7n1 isEdge class
+		assert: tmp_caRzCHuRpY1 isEdge class
 		equals: True
 		description: 'testAddingEdgeAndGroup_amp:5.2'.
 	self
-		assert: tmp_YTwudHpD7n1 isEdge
+		assert: tmp_caRzCHuRpY1 isEdge
 		equals: true
 		description: 'testAddingEdgeAndGroup_amp:5.3'.
 	self
-		assert: tmp_YTwudHpD7n1 controlPoints class
+		assert: tmp_caRzCHuRpY1 controlPoints class
 		equals: UndefinedObject
 		description: 'testAddingEdgeAndGroup_amp:5.4'.
 	self
-		assert: tmp_YTwudHpD7n1 controlPoints
+		assert: tmp_caRzCHuRpY1 controlPoints
 		equals: nil
 		description: 'testAddingEdgeAndGroup_amp:5.5'.
 	self
-		assert: tmp_YTwudHpD7n1 to class
+		assert: tmp_caRzCHuRpY1 to class
 		equals: RSElement
 		description: 'testAddingEdgeAndGroup_amp:5.6'.
 	self
-		assert: tmp_YTwudHpD7n1 to hasChildren class
+		assert: tmp_caRzCHuRpY1 to hasChildren class
 		equals: False
 		description: 'testAddingEdgeAndGroup_amp:5.7'.
 	self
-		assert: tmp_YTwudHpD7n1 to hasChildren
+		assert: tmp_caRzCHuRpY1 to hasChildren
 		equals: false
 		description: 'testAddingEdgeAndGroup_amp:5.8'.
 	self
-		assert: tmp_YTwudHpD7n1 from class
+		assert: tmp_caRzCHuRpY1 from class
 		equals: RSElement
 		description: 'testAddingEdgeAndGroup_amp:5.9'.
 	self
-		assert: tmp_YTwudHpD7n1 from hasChildren class
+		assert: tmp_caRzCHuRpY1 from hasChildren class
 		equals: False
 		description: 'testAddingEdgeAndGroup_amp:5.10'.
 	self
-		assert: tmp_YTwudHpD7n1 from hasChildren
+		assert: tmp_caRzCHuRpY1 from hasChildren
 		equals: false
 		description: 'testAddingEdgeAndGroup_amp:5.11'.
 	self
-		assert: tmp_YTwudHpD7n1 attachPoint class
+		assert: tmp_caRzCHuRpY1 attachPoint class
 		equals: TSCenteredAttachPoint
 		description: 'testAddingEdgeAndGroup_amp:5.12'.
 	v addAll: g

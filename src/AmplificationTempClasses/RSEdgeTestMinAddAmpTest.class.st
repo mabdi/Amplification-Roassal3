@@ -43,21 +43,21 @@ RSEdgeTestMinAddAmpTest >> testAddingEdgeAndGroup [
 { #category : #'as yet unclassified' }
 RSEdgeTestMinAddAmpTest >> testAddingEdgeAndGroup_amp [
 	<madeBySmallAmp>
-	| v g tmp_YTwudHpD7n1 tmp_mYCcfSgX382 |
+	| v g tmp_caRzCHuRpY1 tmp_bgzU7XkwId2 |
 	v := RSView new.
 	g := TSGroup new.
-	tmp_mYCcfSgX382 := g add: el1.
+	tmp_bgzU7XkwId2 := g add: el1.
 	v addAll: g.
-	tmp_YTwudHpD7n1 := g add: edge.
+	tmp_caRzCHuRpY1 := g add: edge.
 	self assert: g size equals: 2.
-	self assert: tmp_YTwudHpD7n1 isEdge class equals: True.
+	self assert: tmp_caRzCHuRpY1 isEdge class equals: True.
 	self
-		assert: tmp_YTwudHpD7n1 controlPoints class
+		assert: tmp_caRzCHuRpY1 controlPoints class
 		equals: UndefinedObject.
-	self assert: tmp_YTwudHpD7n1 to class equals: RSElement.
-	self assert: tmp_YTwudHpD7n1 from class equals: RSElement.
+	self assert: tmp_caRzCHuRpY1 to class equals: RSElement.
+	self assert: tmp_caRzCHuRpY1 from class equals: RSElement.
 	self
-		assert: tmp_YTwudHpD7n1 attachPoint class
+		assert: tmp_caRzCHuRpY1 attachPoint class
 		equals: TSCenteredAttachPoint.
 	v addAll: g
 ]

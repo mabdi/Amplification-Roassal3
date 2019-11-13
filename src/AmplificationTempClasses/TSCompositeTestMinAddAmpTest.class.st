@@ -32,18 +32,18 @@ TSCompositeTestMinAddAmpTest >> testPaddingOkay_amp [
 	"No error should be raised"
 
 	<madeBySmallAmp>
-	| tmp_nYuFETSDtH3 tmp_ms8PU69c2Q4 tmp_UiSbjzBQl67 tmp_dZ4TleXttf8 tmp_HtqxKcLAM811 tmp_ckJtycLE3D12 |
-	tmp_nYuFETSDtH3 := TSComposite new.
-	self assert: tmp_nYuFETSDtH3 shapes class equals: TSGroup.
-	tmp_UiSbjzBQl67 := TSComposite new.
-	tmp_HtqxKcLAM811 := TSComposite new.
-	tmp_HtqxKcLAM811 shapes: TSGroup new.
-	tmp_ckJtycLE3D12 := TSComposite new.
-	tmp_ckJtycLE3D12 padding: 5.
-	tmp_dZ4TleXttf8 := TSComposite new.
-	tmp_dZ4TleXttf8 padding: 5.
-	tmp_ms8PU69c2Q4 := TSComposite new.
-	tmp_ms8PU69c2Q4 padding: 5.
+	| tmp_vGn3HMoc9Z3 tmp_ZLBsfcyftr4 tmp_X5GUtd6lvA7 tmp_536N40p0nH8 tmp_n1ZSZeABfk11 tmp_cyhOEIjup812 |
+	tmp_vGn3HMoc9Z3 := TSComposite new.
+	self assert: tmp_vGn3HMoc9Z3 shapes class equals: TSGroup.
+	tmp_X5GUtd6lvA7 := TSComposite new.
+	tmp_n1ZSZeABfk11 := TSComposite new.
+	tmp_n1ZSZeABfk11 shapes: TSGroup new.
+	tmp_cyhOEIjup812 := TSComposite new.
+	tmp_cyhOEIjup812 padding: 5.
+	tmp_536N40p0nH8 := TSComposite new.
+	tmp_536N40p0nH8 padding: 5.
+	tmp_ZLBsfcyftr4 := TSComposite new.
+	tmp_ZLBsfcyftr4 padding: 5.
 	TSComposite new
 		shapes:
 			(TSGroup new

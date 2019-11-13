@@ -50,37 +50,37 @@ TSGroupTestAmpTest >> should: aBlock takeMoreThan: aDuration description: descri
 { #category : #'as yet unclassified' }
 TSGroupTestAmpTest >> testAddShape_amp [
 	<madeBySmallAmp>
-	| g tmp_fgnehuAhAL1 |
+	| g tmp_WZZlnWM6Gi1 |
 	g := TSGroup new.
 	self
 		assert: g class
 		equals: TSGroup
 		description: 'testAddShape_amp:1.1'.
 	self assert: g size equals: 0 description: 'testAddShape_amp:1.2'.
-	tmp_fgnehuAhAL1 := g add: TSBox new.
+	tmp_WZZlnWM6Gi1 := g add: TSBox new.
 	self
 		assert: g class
 		equals: TSGroup
 		description: 'testAddShape_amp:2.1'.
 	self assert: g size equals: 1 description: 'testAddShape_amp:2.2'.
 	self
-		assert: tmp_fgnehuAhAL1 class
+		assert: tmp_WZZlnWM6Gi1 class
 		equals: TSBox
 		description: 'testAddShape_amp:2.1'.
 	self
-		assert: tmp_fgnehuAhAL1 cornerRadius class
+		assert: tmp_WZZlnWM6Gi1 cornerRadius class
 		equals: UndefinedObject
 		description: 'testAddShape_amp:2.2'.
 	self
-		assert: tmp_fgnehuAhAL1 cornerRadius
+		assert: tmp_WZZlnWM6Gi1 cornerRadius
 		equals: nil
 		description: 'testAddShape_amp:2.3'.
 	self
-		assert: tmp_fgnehuAhAL1 hasCornerRadius class
+		assert: tmp_WZZlnWM6Gi1 hasCornerRadius class
 		equals: False
 		description: 'testAddShape_amp:2.4'.
 	self
-		assert: tmp_fgnehuAhAL1 hasCornerRadius
+		assert: tmp_WZZlnWM6Gi1 hasCornerRadius
 		equals: false
 		description: 'testAddShape_amp:2.5'
 ]
@@ -108,7 +108,7 @@ TSGroupTestAmpTest >> testAsGroup_amp [
 { #category : #'as yet unclassified' }
 TSGroupTestAmpTest >> testDrawGroup_amp [
 	<madeBySmallAmp>
-	| g c com tmp_m2HVOPKelx1 tmp_upIkxEDht95 |
+	| g c com tmp_RC8UcyLJns1 tmp_N3NTkWtZkn5 |
 	c := TSCanvas new.
 	self
 		assert: c class
@@ -721,30 +721,30 @@ TSGroupTestAmpTest >> testDrawGroup_amp [
 		equals: TSGroup
 		description: 'testDrawGroup_amp:2.1'.
 	self assert: g size equals: 0 description: 'testDrawGroup_amp:2.2'.
-	tmp_m2HVOPKelx1 := g add: TSBox new.
+	tmp_RC8UcyLJns1 := g add: TSBox new.
 	self
 		assert: g class
 		equals: TSGroup
 		description: 'testDrawGroup_amp:3.1'.
 	self assert: g size equals: 1 description: 'testDrawGroup_amp:3.2'.
 	self
-		assert: tmp_m2HVOPKelx1 class
+		assert: tmp_RC8UcyLJns1 class
 		equals: TSBox
 		description: 'testDrawGroup_amp:3.1'.
 	self
-		assert: tmp_m2HVOPKelx1 cornerRadius class
+		assert: tmp_RC8UcyLJns1 cornerRadius class
 		equals: UndefinedObject
 		description: 'testDrawGroup_amp:3.2'.
 	self
-		assert: tmp_m2HVOPKelx1 cornerRadius
+		assert: tmp_RC8UcyLJns1 cornerRadius
 		equals: nil
 		description: 'testDrawGroup_amp:3.3'.
 	self
-		assert: tmp_m2HVOPKelx1 hasCornerRadius class
+		assert: tmp_RC8UcyLJns1 hasCornerRadius class
 		equals: False
 		description: 'testDrawGroup_amp:3.4'.
 	self
-		assert: tmp_m2HVOPKelx1 hasCornerRadius
+		assert: tmp_RC8UcyLJns1 hasCornerRadius
 		equals: false
 		description: 'testDrawGroup_amp:3.5'.
 	com := TSComposite new shapes: g.
@@ -1366,7 +1366,7 @@ TSGroupTestAmpTest >> testDrawGroup_amp [
 		assert: c clearBackground
 		equals: true
 		description: 'testDrawGroup_amp:5.152'.
-	tmp_upIkxEDht95 := c createMorph.
+	tmp_N3NTkWtZkn5 := c createMorph.
 	self
 		assert: c class
 		equals: TSCanvas
@@ -1969,380 +1969,380 @@ TSGroupTestAmpTest >> testDrawGroup_amp [
 		equals: true
 		description: 'testDrawGroup_amp:6.151'.
 	self
-		assert: tmp_upIkxEDht95 class
+		assert: tmp_N3NTkWtZkn5 class
 		equals: TSAthensMorph
 		description: 'testDrawGroup_amp:6.1'.
 	self
-		assert: tmp_upIkxEDht95 isDrawing class
+		assert: tmp_N3NTkWtZkn5 isDrawing class
 		equals: False
 		description: 'testDrawGroup_amp:6.2'.
 	self
-		assert: tmp_upIkxEDht95 isDrawing
+		assert: tmp_N3NTkWtZkn5 isDrawing
 		equals: false
 		description: 'testDrawGroup_amp:6.3'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas class
+		assert: tmp_N3NTkWtZkn5 trachelCanvas class
 		equals: TSCanvas
 		description: 'testDrawGroup_amp:6.4'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas showRectangles class
+		assert: tmp_N3NTkWtZkn5 trachelCanvas showRectangles class
 		equals: False
 		description: 'testDrawGroup_amp:6.5'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas showRectangles
+		assert: tmp_N3NTkWtZkn5 trachelCanvas showRectangles
 		equals: false
 		description: 'testDrawGroup_amp:6.6'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas numberOfFixedShapes class
+		assert: tmp_N3NTkWtZkn5 trachelCanvas numberOfFixedShapes class
 		equals: SmallInteger
 		description: 'testDrawGroup_amp:6.7'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas numberOfFixedShapes
+		assert: tmp_N3NTkWtZkn5 trachelCanvas numberOfFixedShapes
 		equals: 0
 		description: 'testDrawGroup_amp:6.8'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas view class
+		assert: tmp_N3NTkWtZkn5 trachelCanvas view class
 		equals: UndefinedObject
 		description: 'testDrawGroup_amp:6.9'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas view
+		assert: tmp_N3NTkWtZkn5 trachelCanvas view
 		equals: nil
 		description: 'testDrawGroup_amp:6.10'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas isShape class
+		assert: tmp_N3NTkWtZkn5 trachelCanvas isShape class
 		equals: False
 		description: 'testDrawGroup_amp:6.11'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas isShape
+		assert: tmp_N3NTkWtZkn5 trachelCanvas isShape
 		equals: false
 		description: 'testDrawGroup_amp:6.12'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas numberOfShapes class
+		assert: tmp_N3NTkWtZkn5 trachelCanvas numberOfShapes class
 		equals: SmallInteger
 		description: 'testDrawGroup_amp:6.13'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas numberOfShapes
+		assert: tmp_N3NTkWtZkn5 trachelCanvas numberOfShapes
 		equals: 1
 		description: 'testDrawGroup_amp:6.14'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas clearBackground class
+		assert: tmp_N3NTkWtZkn5 trachelCanvas clearBackground class
 		equals: True
 		description: 'testDrawGroup_amp:6.15'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas clearBackground
+		assert: tmp_N3NTkWtZkn5 trachelCanvas clearBackground
 		equals: true
 		description: 'testDrawGroup_amp:6.16'.
 	self
-		assert: tmp_upIkxEDht95 renderer class
+		assert: tmp_N3NTkWtZkn5 renderer class
 		equals: TSAthensRenderer
 		description: 'testDrawGroup_amp:6.17'.
 	self
-		assert: tmp_upIkxEDht95 renderer builder class
+		assert: tmp_N3NTkWtZkn5 renderer builder class
 		equals: UndefinedObject
 		description: 'testDrawGroup_amp:6.18'.
 	self
-		assert: tmp_upIkxEDht95 renderer builder
+		assert: tmp_N3NTkWtZkn5 renderer builder
 		equals: nil
 		description: 'testDrawGroup_amp:6.19'.
 	self
-		assert: tmp_upIkxEDht95 surface class
+		assert: tmp_N3NTkWtZkn5 surface class
 		equals: AthensCairoSurface
 		description: 'testDrawGroup_amp:6.20'.
 	self
-		assert: tmp_upIkxEDht95 surface status class
+		assert: tmp_N3NTkWtZkn5 surface status class
 		equals: SmallInteger
 		description: 'testDrawGroup_amp:6.21'.
 	self
-		assert: tmp_upIkxEDht95 surface status
+		assert: tmp_N3NTkWtZkn5 surface status
 		equals: 0
 		description: 'testDrawGroup_amp:6.22'.
 	self
-		assert: tmp_upIkxEDht95 surface width class
+		assert: tmp_N3NTkWtZkn5 surface width class
 		equals: SmallInteger
 		description: 'testDrawGroup_amp:6.23'.
 	self
-		assert: tmp_upIkxEDht95 surface width
+		assert: tmp_N3NTkWtZkn5 surface width
 		equals: 50
 		description: 'testDrawGroup_amp:6.24'.
 	self
-		assert: tmp_upIkxEDht95 surface height class
+		assert: tmp_N3NTkWtZkn5 surface height class
 		equals: SmallInteger
 		description: 'testDrawGroup_amp:6.25'.
 	self
-		assert: tmp_upIkxEDht95 surface height
+		assert: tmp_N3NTkWtZkn5 surface height
 		equals: 40
 		description: 'testDrawGroup_amp:6.26'.
 	self
-		assert: tmp_upIkxEDht95 surface isSuccess class
+		assert: tmp_N3NTkWtZkn5 surface isSuccess class
 		equals: True
 		description: 'testDrawGroup_amp:6.27'.
 	self
-		assert: tmp_upIkxEDht95 surface isSuccess
+		assert: tmp_N3NTkWtZkn5 surface isSuccess
 		equals: true
 		description: 'testDrawGroup_amp:6.28'.
 	self
-		assert: tmp_upIkxEDht95 surface stride class
+		assert: tmp_N3NTkWtZkn5 surface stride class
 		equals: SmallInteger
 		description: 'testDrawGroup_amp:6.29'.
 	self
-		assert: tmp_upIkxEDht95 surface stride
+		assert: tmp_N3NTkWtZkn5 surface stride
 		equals: 200
 		description: 'testDrawGroup_amp:6.30'.
 	self
-		assert: tmp_upIkxEDht95 canvas class
+		assert: tmp_N3NTkWtZkn5 canvas class
 		equals: TSCanvas
 		description: 'testDrawGroup_amp:6.31'.
 	self
-		assert: tmp_upIkxEDht95 canvas showRectangles class
+		assert: tmp_N3NTkWtZkn5 canvas showRectangles class
 		equals: False
 		description: 'testDrawGroup_amp:6.32'.
 	self
-		assert: tmp_upIkxEDht95 canvas showRectangles
+		assert: tmp_N3NTkWtZkn5 canvas showRectangles
 		equals: false
 		description: 'testDrawGroup_amp:6.33'.
 	self
-		assert: tmp_upIkxEDht95 canvas numberOfFixedShapes class
+		assert: tmp_N3NTkWtZkn5 canvas numberOfFixedShapes class
 		equals: SmallInteger
 		description: 'testDrawGroup_amp:6.34'.
 	self
-		assert: tmp_upIkxEDht95 canvas numberOfFixedShapes
+		assert: tmp_N3NTkWtZkn5 canvas numberOfFixedShapes
 		equals: 0
 		description: 'testDrawGroup_amp:6.35'.
 	self
-		assert: tmp_upIkxEDht95 canvas view class
+		assert: tmp_N3NTkWtZkn5 canvas view class
 		equals: UndefinedObject
 		description: 'testDrawGroup_amp:6.36'.
 	self
-		assert: tmp_upIkxEDht95 canvas view
+		assert: tmp_N3NTkWtZkn5 canvas view
 		equals: nil
 		description: 'testDrawGroup_amp:6.37'.
 	self
-		assert: tmp_upIkxEDht95 canvas isShape class
+		assert: tmp_N3NTkWtZkn5 canvas isShape class
 		equals: False
 		description: 'testDrawGroup_amp:6.38'.
 	self
-		assert: tmp_upIkxEDht95 canvas isShape
+		assert: tmp_N3NTkWtZkn5 canvas isShape
 		equals: false
 		description: 'testDrawGroup_amp:6.39'.
 	self
-		assert: tmp_upIkxEDht95 canvas numberOfShapes class
+		assert: tmp_N3NTkWtZkn5 canvas numberOfShapes class
 		equals: SmallInteger
 		description: 'testDrawGroup_amp:6.40'.
 	self
-		assert: tmp_upIkxEDht95 canvas numberOfShapes
+		assert: tmp_N3NTkWtZkn5 canvas numberOfShapes
 		equals: 1
 		description: 'testDrawGroup_amp:6.41'.
 	self
-		assert: tmp_upIkxEDht95 canvas clearBackground class
+		assert: tmp_N3NTkWtZkn5 canvas clearBackground class
 		equals: True
 		description: 'testDrawGroup_amp:6.42'.
 	self
-		assert: tmp_upIkxEDht95 canvas clearBackground
+		assert: tmp_N3NTkWtZkn5 canvas clearBackground
 		equals: true
 		description: 'testDrawGroup_amp:6.43'.
 	self
-		assert: tmp_upIkxEDht95 wantsSteps class
+		assert: tmp_N3NTkWtZkn5 wantsSteps class
 		equals: False
 		description: 'testDrawGroup_amp:6.44'.
 	self
-		assert: tmp_upIkxEDht95 wantsSteps
+		assert: tmp_N3NTkWtZkn5 wantsSteps
 		equals: false
 		description: 'testDrawGroup_amp:6.45'.
 	self
-		assert: tmp_upIkxEDht95 isDragging class
+		assert: tmp_N3NTkWtZkn5 isDragging class
 		equals: False
 		description: 'testDrawGroup_amp:6.46'.
 	self
-		assert: tmp_upIkxEDht95 isDragging
+		assert: tmp_N3NTkWtZkn5 isDragging
 		equals: false
 		description: 'testDrawGroup_amp:6.47'.
-	tmp_upIkxEDht95 drawOnMockCanvas.
+	tmp_N3NTkWtZkn5 drawOnMockCanvas.
 	self
-		assert: tmp_upIkxEDht95 class
+		assert: tmp_N3NTkWtZkn5 class
 		equals: TSAthensMorph
 		description: 'testDrawGroup_amp:7.1'.
 	self
-		assert: tmp_upIkxEDht95 isDrawing class
+		assert: tmp_N3NTkWtZkn5 isDrawing class
 		equals: False
 		description: 'testDrawGroup_amp:7.2'.
 	self
-		assert: tmp_upIkxEDht95 isDrawing
+		assert: tmp_N3NTkWtZkn5 isDrawing
 		equals: false
 		description: 'testDrawGroup_amp:7.3'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas class
+		assert: tmp_N3NTkWtZkn5 trachelCanvas class
 		equals: TSCanvas
 		description: 'testDrawGroup_amp:7.4'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas showRectangles class
+		assert: tmp_N3NTkWtZkn5 trachelCanvas showRectangles class
 		equals: False
 		description: 'testDrawGroup_amp:7.5'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas showRectangles
+		assert: tmp_N3NTkWtZkn5 trachelCanvas showRectangles
 		equals: false
 		description: 'testDrawGroup_amp:7.6'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas numberOfFixedShapes class
+		assert: tmp_N3NTkWtZkn5 trachelCanvas numberOfFixedShapes class
 		equals: SmallInteger
 		description: 'testDrawGroup_amp:7.7'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas numberOfFixedShapes
+		assert: tmp_N3NTkWtZkn5 trachelCanvas numberOfFixedShapes
 		equals: 0
 		description: 'testDrawGroup_amp:7.8'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas view class
+		assert: tmp_N3NTkWtZkn5 trachelCanvas view class
 		equals: UndefinedObject
 		description: 'testDrawGroup_amp:7.9'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas view
+		assert: tmp_N3NTkWtZkn5 trachelCanvas view
 		equals: nil
 		description: 'testDrawGroup_amp:7.10'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas isShape class
+		assert: tmp_N3NTkWtZkn5 trachelCanvas isShape class
 		equals: False
 		description: 'testDrawGroup_amp:7.11'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas isShape
+		assert: tmp_N3NTkWtZkn5 trachelCanvas isShape
 		equals: false
 		description: 'testDrawGroup_amp:7.12'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas numberOfShapes class
+		assert: tmp_N3NTkWtZkn5 trachelCanvas numberOfShapes class
 		equals: SmallInteger
 		description: 'testDrawGroup_amp:7.13'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas numberOfShapes
+		assert: tmp_N3NTkWtZkn5 trachelCanvas numberOfShapes
 		equals: 1
 		description: 'testDrawGroup_amp:7.14'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas clearBackground class
+		assert: tmp_N3NTkWtZkn5 trachelCanvas clearBackground class
 		equals: True
 		description: 'testDrawGroup_amp:7.15'.
 	self
-		assert: tmp_upIkxEDht95 trachelCanvas clearBackground
+		assert: tmp_N3NTkWtZkn5 trachelCanvas clearBackground
 		equals: true
 		description: 'testDrawGroup_amp:7.16'.
 	self
-		assert: tmp_upIkxEDht95 renderer class
+		assert: tmp_N3NTkWtZkn5 renderer class
 		equals: TSAthensRenderer
 		description: 'testDrawGroup_amp:7.17'.
 	self
-		assert: tmp_upIkxEDht95 renderer builder class
+		assert: tmp_N3NTkWtZkn5 renderer builder class
 		equals: UndefinedObject
 		description: 'testDrawGroup_amp:7.18'.
 	self
-		assert: tmp_upIkxEDht95 renderer builder
+		assert: tmp_N3NTkWtZkn5 renderer builder
 		equals: nil
 		description: 'testDrawGroup_amp:7.19'.
 	self
-		assert: tmp_upIkxEDht95 surface class
+		assert: tmp_N3NTkWtZkn5 surface class
 		equals: AthensCairoSurface
 		description: 'testDrawGroup_amp:7.20'.
 	self
-		assert: tmp_upIkxEDht95 surface status class
+		assert: tmp_N3NTkWtZkn5 surface status class
 		equals: SmallInteger
 		description: 'testDrawGroup_amp:7.21'.
 	self
-		assert: tmp_upIkxEDht95 surface status
+		assert: tmp_N3NTkWtZkn5 surface status
 		equals: 0
 		description: 'testDrawGroup_amp:7.22'.
 	self
-		assert: tmp_upIkxEDht95 surface width class
+		assert: tmp_N3NTkWtZkn5 surface width class
 		equals: SmallInteger
 		description: 'testDrawGroup_amp:7.23'.
 	self
-		assert: tmp_upIkxEDht95 surface width
+		assert: tmp_N3NTkWtZkn5 surface width
 		equals: 50
 		description: 'testDrawGroup_amp:7.24'.
 	self
-		assert: tmp_upIkxEDht95 surface height class
+		assert: tmp_N3NTkWtZkn5 surface height class
 		equals: SmallInteger
 		description: 'testDrawGroup_amp:7.25'.
 	self
-		assert: tmp_upIkxEDht95 surface height
+		assert: tmp_N3NTkWtZkn5 surface height
 		equals: 40
 		description: 'testDrawGroup_amp:7.26'.
 	self
-		assert: tmp_upIkxEDht95 surface isSuccess class
+		assert: tmp_N3NTkWtZkn5 surface isSuccess class
 		equals: True
 		description: 'testDrawGroup_amp:7.27'.
 	self
-		assert: tmp_upIkxEDht95 surface isSuccess
+		assert: tmp_N3NTkWtZkn5 surface isSuccess
 		equals: true
 		description: 'testDrawGroup_amp:7.28'.
 	self
-		assert: tmp_upIkxEDht95 surface stride class
+		assert: tmp_N3NTkWtZkn5 surface stride class
 		equals: SmallInteger
 		description: 'testDrawGroup_amp:7.29'.
 	self
-		assert: tmp_upIkxEDht95 surface stride
+		assert: tmp_N3NTkWtZkn5 surface stride
 		equals: 200
 		description: 'testDrawGroup_amp:7.30'.
 	self
-		assert: tmp_upIkxEDht95 canvas class
+		assert: tmp_N3NTkWtZkn5 canvas class
 		equals: TSCanvas
 		description: 'testDrawGroup_amp:7.31'.
 	self
-		assert: tmp_upIkxEDht95 canvas showRectangles class
+		assert: tmp_N3NTkWtZkn5 canvas showRectangles class
 		equals: False
 		description: 'testDrawGroup_amp:7.32'.
 	self
-		assert: tmp_upIkxEDht95 canvas showRectangles
+		assert: tmp_N3NTkWtZkn5 canvas showRectangles
 		equals: false
 		description: 'testDrawGroup_amp:7.33'.
 	self
-		assert: tmp_upIkxEDht95 canvas numberOfFixedShapes class
+		assert: tmp_N3NTkWtZkn5 canvas numberOfFixedShapes class
 		equals: SmallInteger
 		description: 'testDrawGroup_amp:7.34'.
 	self
-		assert: tmp_upIkxEDht95 canvas numberOfFixedShapes
+		assert: tmp_N3NTkWtZkn5 canvas numberOfFixedShapes
 		equals: 0
 		description: 'testDrawGroup_amp:7.35'.
 	self
-		assert: tmp_upIkxEDht95 canvas view class
+		assert: tmp_N3NTkWtZkn5 canvas view class
 		equals: UndefinedObject
 		description: 'testDrawGroup_amp:7.36'.
 	self
-		assert: tmp_upIkxEDht95 canvas view
+		assert: tmp_N3NTkWtZkn5 canvas view
 		equals: nil
 		description: 'testDrawGroup_amp:7.37'.
 	self
-		assert: tmp_upIkxEDht95 canvas isShape class
+		assert: tmp_N3NTkWtZkn5 canvas isShape class
 		equals: False
 		description: 'testDrawGroup_amp:7.38'.
 	self
-		assert: tmp_upIkxEDht95 canvas isShape
+		assert: tmp_N3NTkWtZkn5 canvas isShape
 		equals: false
 		description: 'testDrawGroup_amp:7.39'.
 	self
-		assert: tmp_upIkxEDht95 canvas numberOfShapes class
+		assert: tmp_N3NTkWtZkn5 canvas numberOfShapes class
 		equals: SmallInteger
 		description: 'testDrawGroup_amp:7.40'.
 	self
-		assert: tmp_upIkxEDht95 canvas numberOfShapes
+		assert: tmp_N3NTkWtZkn5 canvas numberOfShapes
 		equals: 1
 		description: 'testDrawGroup_amp:7.41'.
 	self
-		assert: tmp_upIkxEDht95 canvas clearBackground class
+		assert: tmp_N3NTkWtZkn5 canvas clearBackground class
 		equals: True
 		description: 'testDrawGroup_amp:7.42'.
 	self
-		assert: tmp_upIkxEDht95 canvas clearBackground
+		assert: tmp_N3NTkWtZkn5 canvas clearBackground
 		equals: true
 		description: 'testDrawGroup_amp:7.43'.
 	self
-		assert: tmp_upIkxEDht95 wantsSteps class
+		assert: tmp_N3NTkWtZkn5 wantsSteps class
 		equals: False
 		description: 'testDrawGroup_amp:7.44'.
 	self
-		assert: tmp_upIkxEDht95 wantsSteps
+		assert: tmp_N3NTkWtZkn5 wantsSteps
 		equals: false
 		description: 'testDrawGroup_amp:7.45'.
 	self
-		assert: tmp_upIkxEDht95 isDragging class
+		assert: tmp_N3NTkWtZkn5 isDragging class
 		equals: False
 		description: 'testDrawGroup_amp:7.46'.
 	self
-		assert: tmp_upIkxEDht95 isDragging
+		assert: tmp_N3NTkWtZkn5 isDragging
 		equals: false
 		description: 'testDrawGroup_amp:7.47'
 ]

@@ -22,30 +22,78 @@ TestAmplificationRoassel >> amplifyAndVisualize [
 
 { #category : #tests }
 TestAmplificationRoassel >> testTargtsMapping [
+	"generatedBy: `AmplificationHelper getStringPairsForPackagePrefix: 'Roassal.*'`"
+
 	| list |
 	list := OrderedCollection new.
-	"**** Roassal3-Scripting tests ***"
-	list add: RSViewTest -> RSView.
-	list add: RSShapeBuilderTest -> RSShapeBuilder.	"TODO termination instead of kills"
-	"list add: RSRoassalTest -> ??."
-	"list add: RSMenuActivableTest -> ??."
-	"list add: RSGroupTest -> ??."
-	list add: RSEdgeTest -> RSEdge.
-	list add: RSEdgeBuilderTest -> RSEdgeBuilder.	"Mutalk Error -> TODO check it"
-	"list add: RSCompositeElementTest -> ??."
-
-	"**** Roassal3-Animation tests ****"
-	"list add: TSSequentialAnimationTest -> TSSequentialAnimation."	"TODO timeout related"
-	"list add: TSTransitionAnimationTest -> TSTransitionAnimation."	"TODO timeout related"
-	list add: TSAnimationTest -> TSTransitionAnimation.
-
-	"***** Roassal3 tests ****"
-	list add: TSLinesTest -> TSCanvas.
-	list add: TSLabelTest -> TSCanvas.
-	"list add: TSBoundingTest -> TSCanvas."	"Segment fault!!!!!!!!"
-	list add: TSCanvasTest -> TSCanvas.
-	list add: TSGroupTest -> TSGroup.	"TODO minification problem"
-	list add: TSCompositeTest -> TSComposite.
+	list add: TSAnimationTest -> TSAnimation.
+	list add: TSSequentialAnimationTest -> TSSequentialAnimation.
+	"list add: TSTransitionAnimationTest -> TSTransitionAnimation."
+	"list add: TSExamplesTest->nil."
+	"list add: RSForceBasedLayoutTest->nil."
 	list add: TSAthensRendererTest -> TSAthensRenderer.
+	"list add: TSBoundingTest->nil."
+	"list add: TSLinesTest->nil."
+	list add: TSGroupTest -> TSGroup.
+	"list add: TSTest->nil."
+	list add: TSCanvasTest -> TSCanvas.
+	list add: TSLabelTest -> TSLabel.
+	list add: TSCompositeTest -> TSComposite.
+	"list add: RoassalSpecTest->nil."
+	"list add: TSControlsViewTest->nil."
+	list add: TSDraggableCanvasTest -> TSDraggableCanvas.
+	list add: TSPopupTest -> TSPopup.
+	"list add: TSNormalizerTest->nil."
+	list add: RSAlignmentTest -> RSAlignment.
+	list add: RSResizeTest -> RSResize.
+	"list add: RSLabelGeneratorTest -> RSLabelGenerator."	"Crashes"
+	"list add: RSMenuActivableTest->nil."
+	list add: RSShapeBuilderTest -> RSShapeBuilder.
+	list add: RSEdgeBuilderTest -> RSEdgeBuilder.
+	"list add: RSGroupTest->nil."
+	"list add: RSRoassalTest->nil."
+	list add: RSViewTest -> RSView.
+	"list add: RSCompositeElementTest->nil."
+	list add: RSEdgeTest -> RSEdge.
+	list add: RSUMLClassBuilderTest -> RSUMLClassBuilder.
+	^ list
+]
+
+{ #category : #tests }
+TestAmplificationRoassel >> testTargtsMappingx [
+	"generatedBy: `AmplificationHelper getStringPairsForPackagePrefix: 'Roassal.*'`"
+
+	| list |
+	list := OrderedCollection new.
+	list add: TSAnimationTest -> TSAnimation.
+	list add: TSSequentialAnimationTest -> TSSequentialAnimation.
+	"list add: TSTransitionAnimationTest -> TSTransitionAnimation."
+	"list add: TSExamplesTest->nil."
+	"list add: RSForceBasedLayoutTest->nil."
+	list add: TSAthensRendererTest -> TSAthensRenderer.
+	"list add: TSBoundingTest->nil."
+	"list add: TSLinesTest->nil."
+	list add: TSGroupTest -> TSGroup.
+	"list add: TSTest->nil."
+	list add: TSCanvasTest -> TSCanvas.
+	list add: TSLabelTest -> TSLabel.
+	list add: TSCompositeTest -> TSComposite.
+	"list add: RoassalSpecTest->nil."
+	"list add: TSControlsViewTest->nil."
+	list add: TSDraggableCanvasTest -> TSDraggableCanvas.
+	list add: TSPopupTest -> TSPopup.
+	"list add: TSNormalizerTest->nil."
+	list add: RSAlignmentTest -> RSAlignment.
+	list add: RSResizeTest -> RSResize.
+	"list add: RSLabelGeneratorTest -> RSLabelGenerator."	"Crashes"
+	"list add: RSMenuActivableTest->nil."
+	list add: RSShapeBuilderTest -> RSShapeBuilder.
+	list add: RSEdgeBuilderTest -> RSEdgeBuilder.
+	"list add: RSGroupTest->nil."
+	"list add: RSRoassalTest->nil."
+	list add: RSViewTest -> RSView.
+	"list add: RSCompositeElementTest->nil."
+	list add: RSEdgeTest -> RSEdge.
+	list add: RSUMLClassBuilderTest -> RSUMLClassBuilder.
 	^ list
 ]
