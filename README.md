@@ -1,12 +1,19 @@
 # Amplification-Roassal3
 
-Test Amplification for Roassal3
+Test Amplification for Roassal3 (works on the forked version: https://github.com/mabdi/Roassal3)
 
 ### Current status 
 
 - under development
 
 ## How to load
+
+Set the Bytecode Backend to `SistaV1` in the prefrence:
+
+![ByteCode Backend](screenshots/Screenshot&#32;2019-11-09&#32;at&#32;18.09.31.png)
+
+Then run the following code:
+
 ```smalltalk
 Metacello new
   baseline: 'AmplificationRoassal3';
@@ -39,3 +46,8 @@ Small-Amp uses a simple visualizing window. This window appears when the run of 
 6. Method after mutation for mutant selected in 4.
 7. List of methods for the class version selected in 2.
 8. Source code for the method selected in 7.
+
+## Coverage
+
+[coverage.md](coverage.md)
+
