@@ -7,6 +7,13 @@ Test Amplification for Roassal3
 - under development
 
 ## How to load
+
+Set the Bytecode Backend to `SistaV1` in the prefrence:
+
+![ByteCode Backend](screenshots/Screenshot&#32;2019-11-09&#32;at&#32;18.09.31.png)
+
+Then run the following code:
+
 ```smalltalk
 Metacello new
   baseline: 'AmplificationRoassal3';
