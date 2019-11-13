@@ -46,3 +46,8 @@ Small-Amp uses a simple visualizing window. This window appears when the run of 
 6. Method after mutation for mutant selected in 4.
 7. List of methods for the class version selected in 2.
 8. Source code for the method selected in 7.
+
+## Coverage
+
+[coverage.md](coverage.md)
+
