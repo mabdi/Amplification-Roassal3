@@ -48,20 +48,20 @@ TSAthensRendererTestAmpTest >> should: aBlock takeMoreThan: aDuration descriptio
 ]
 
 { #category : #'as yet unclassified' }
-TSAthensRendererTestAmpTest >> testArcCorner [
+TSAthensRendererTestAmpTest >> testArcCorner_amp [
 	<madeBySmallAmp>
 	| renderer |
 	renderer := TSAthensRenderer new.
 	self
 		assert: renderer class
 		equals: TSAthensRenderer
-		description: 'testArcCorner:1.1'.
+		description: 'testArcCorner_amp:1.1'.
 	self
 		assert: renderer builder class
 		equals: UndefinedObject
-		description: 'testArcCorner:1.2'.
+		description: 'testArcCorner_amp:1.2'.
 	self
 		assert: renderer builder
 		equals: nil
-		description: 'testArcCorner:1.3'
+		description: 'testArcCorner_amp:1.3'
 ]

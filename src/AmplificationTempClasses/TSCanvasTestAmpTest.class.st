@@ -57,2830 +57,636 @@ TSCanvasTestAmpTest >> should: aBlock takeMoreThan: aDuration description: descr
 ]
 
 { #category : #'as yet unclassified' }
-TSCanvasTestAmpTest >> testAddOneShape [
+TSCanvasTestAmpTest >> testAddOneShape_amp [
 	<madeBySmallAmp>
 	c addShape: TSBox new.
 	self
 		assert: c class
 		equals: TSCanvas
-		description: 'testAddOneShape:1.1'.
+		description: 'testAddOneShape_amp:1.1'.
 	self
 		assert: c fixedShapes class
 		equals: TSGroup
-		description: 'testAddOneShape:1.2'.
+		description: 'testAddOneShape_amp:1.2'.
 	self
 		assert: c fixedShapes size
 		equals: 0
-		description: 'testAddOneShape:1.3'.
+		description: 'testAddOneShape_amp:1.3'.
 	self
 		assert: c showRectangles class
 		equals: False
-		description: 'testAddOneShape:1.4'.
+		description: 'testAddOneShape_amp:1.4'.
 	self
 		assert: c showRectangles
 		equals: false
-		description: 'testAddOneShape:1.5'.
+		description: 'testAddOneShape_amp:1.5'.
 	self
 		assert: c color class
 		equals: Color
-		description: 'testAddOneShape:1.6'.
+		description: 'testAddOneShape_amp:1.6'.
 	self
 		assert: c color alpha class
 		equals: SmallFloat64
-		description: 'testAddOneShape:1.7'.
+		description: 'testAddOneShape_amp:1.7'.
 	self
 		assert: c color alpha
 		equals: 1.0
-		description: 'testAddOneShape:1.8'.
+		description: 'testAddOneShape_amp:1.8'.
 	self
 		assert: c color red class
 		equals: SmallFloat64
-		description: 'testAddOneShape:1.9'.
+		description: 'testAddOneShape_amp:1.9'.
 	self
 		assert: c color red
 		equals: 1.0
-		description: 'testAddOneShape:1.10'.
+		description: 'testAddOneShape_amp:1.10'.
 	self
 		assert: c color hsvSaturation class
 		equals: SmallFloat64
-		description: 'testAddOneShape:1.11'.
+		description: 'testAddOneShape_amp:1.11'.
 	self
 		assert: c color hsvSaturation
 		equals: 0.0
-		description: 'testAddOneShape:1.12'.
+		description: 'testAddOneShape_amp:1.12'.
 	self
 		assert: c color brightness class
 		equals: SmallFloat64
-		description: 'testAddOneShape:1.13'.
+		description: 'testAddOneShape_amp:1.13'.
 	self
 		assert: c color brightness
 		equals: 1.0
-		description: 'testAddOneShape:1.14'.
+		description: 'testAddOneShape_amp:1.14'.
 	self
 		assert: c color hue class
 		equals: SmallFloat64
-		description: 'testAddOneShape:1.15'.
+		description: 'testAddOneShape_amp:1.15'.
 	self
 		assert: c color hue
 		equals: 0.0
-		description: 'testAddOneShape:1.16'.
+		description: 'testAddOneShape_amp:1.16'.
 	self
 		assert: c color green class
 		equals: SmallFloat64
-		description: 'testAddOneShape:1.17'.
+		description: 'testAddOneShape_amp:1.17'.
 	self
 		assert: c color green
 		equals: 1.0
-		description: 'testAddOneShape:1.18'.
+		description: 'testAddOneShape_amp:1.18'.
 	self
 		assert: c color chroma class
 		equals: SmallFloat64
-		description: 'testAddOneShape:1.19'.
+		description: 'testAddOneShape_amp:1.19'.
 	self
 		assert: c color chroma
 		equals: 0.0
-		description: 'testAddOneShape:1.20'.
+		description: 'testAddOneShape_amp:1.20'.
 	self
 		assert: c color lightness class
 		equals: SmallFloat64
-		description: 'testAddOneShape:1.21'.
+		description: 'testAddOneShape_amp:1.21'.
 	self
 		assert: c color lightness
 		equals: 1.0
-		description: 'testAddOneShape:1.22'.
+		description: 'testAddOneShape_amp:1.22'.
 	self
 		assert: c color hslSaturation class
 		equals: SmallFloat64
-		description: 'testAddOneShape:1.23'.
+		description: 'testAddOneShape_amp:1.23'.
 	self
 		assert: c color hslSaturation
 		equals: 0.0
-		description: 'testAddOneShape:1.24'.
+		description: 'testAddOneShape_amp:1.24'.
 	self
 		assert: c color saturation class
 		equals: SmallFloat64
-		description: 'testAddOneShape:1.25'.
+		description: 'testAddOneShape_amp:1.25'.
 	self
 		assert: c color saturation
 		equals: 0.0
-		description: 'testAddOneShape:1.26'.
+		description: 'testAddOneShape_amp:1.26'.
 	self
 		assert: c color luminance class
 		equals: SmallFloat64
-		description: 'testAddOneShape:1.27'.
+		description: 'testAddOneShape_amp:1.27'.
 	self
 		assert: c color luminance
 		equals: 1.0
-		description: 'testAddOneShape:1.28'.
+		description: 'testAddOneShape_amp:1.28'.
 	self
 		assert: c color blue class
 		equals: SmallFloat64
-		description: 'testAddOneShape:1.29'.
+		description: 'testAddOneShape_amp:1.29'.
 	self
 		assert: c color blue
 		equals: 1.0
-		description: 'testAddOneShape:1.30'.
+		description: 'testAddOneShape_amp:1.30'.
 	self
 		assert: c numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testAddOneShape:1.31'.
+		description: 'testAddOneShape_amp:1.31'.
 	self
 		assert: c numberOfFixedShapes
 		equals: 0
-		description: 'testAddOneShape:1.32'.
+		description: 'testAddOneShape_amp:1.32'.
 	self
 		assert: c morph class
 		equals: UndefinedObject
-		description: 'testAddOneShape:1.33'.
-	self assert: c morph equals: nil description: 'testAddOneShape:1.34'.
+		description: 'testAddOneShape_amp:1.33'.
+	self
+		assert: c morph
+		equals: nil
+		description: 'testAddOneShape_amp:1.34'.
 	self
 		assert: c extent class
 		equals: Point
-		description: 'testAddOneShape:1.35'.
+		description: 'testAddOneShape_amp:1.35'.
 	self
 		assert: c extent isZero class
 		equals: False
-		description: 'testAddOneShape:1.36'.
+		description: 'testAddOneShape_amp:1.36'.
 	self
 		assert: c extent isZero
 		equals: false
-		description: 'testAddOneShape:1.37'.
+		description: 'testAddOneShape_amp:1.37'.
 	self
 		assert: c extent y class
 		equals: SmallInteger
-		description: 'testAddOneShape:1.38'.
+		description: 'testAddOneShape_amp:1.38'.
 	self
 		assert: c extent y
 		equals: 500
-		description: 'testAddOneShape:1.39'.
+		description: 'testAddOneShape_amp:1.39'.
 	self
 		assert: c extent isFloatPoint class
 		equals: False
-		description: 'testAddOneShape:1.40'.
+		description: 'testAddOneShape_amp:1.40'.
 	self
 		assert: c extent isFloatPoint
 		equals: false
-		description: 'testAddOneShape:1.41'.
+		description: 'testAddOneShape_amp:1.41'.
 	self
 		assert: c extent isIntegerPoint class
 		equals: True
-		description: 'testAddOneShape:1.42'.
+		description: 'testAddOneShape_amp:1.42'.
 	self
 		assert: c extent isIntegerPoint
 		equals: true
-		description: 'testAddOneShape:1.43'.
+		description: 'testAddOneShape_amp:1.43'.
 	self
 		assert: c extent x class
 		equals: SmallInteger
-		description: 'testAddOneShape:1.44'.
+		description: 'testAddOneShape_amp:1.44'.
 	self
 		assert: c extent x
 		equals: 500
-		description: 'testAddOneShape:1.45'.
+		description: 'testAddOneShape_amp:1.45'.
 	self
 		assert: c extent isPoint class
 		equals: True
-		description: 'testAddOneShape:1.46'.
+		description: 'testAddOneShape_amp:1.46'.
 	self
 		assert: c extent isPoint
 		equals: true
-		description: 'testAddOneShape:1.47'.
+		description: 'testAddOneShape_amp:1.47'.
 	self
 		assert: c parent class
 		equals: TSCanvas
-		description: 'testAddOneShape:1.48'.
+		description: 'testAddOneShape_amp:1.48'.
 	self
 		assert: c parent showRectangles class
 		equals: False
-		description: 'testAddOneShape:1.49'.
+		description: 'testAddOneShape_amp:1.49'.
 	self
 		assert: c parent showRectangles
 		equals: false
-		description: 'testAddOneShape:1.50'.
+		description: 'testAddOneShape_amp:1.50'.
 	self
 		assert: c parent numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testAddOneShape:1.51'.
+		description: 'testAddOneShape_amp:1.51'.
 	self
 		assert: c parent numberOfFixedShapes
 		equals: 0
-		description: 'testAddOneShape:1.52'.
+		description: 'testAddOneShape_amp:1.52'.
 	self
 		assert: c parent morph class
 		equals: UndefinedObject
-		description: 'testAddOneShape:1.53'.
+		description: 'testAddOneShape_amp:1.53'.
 	self
 		assert: c parent morph
 		equals: nil
-		description: 'testAddOneShape:1.54'.
+		description: 'testAddOneShape_amp:1.54'.
 	self
 		assert: c parent view class
 		equals: UndefinedObject
-		description: 'testAddOneShape:1.55'.
+		description: 'testAddOneShape_amp:1.55'.
 	self
 		assert: c parent view
 		equals: nil
-		description: 'testAddOneShape:1.56'.
+		description: 'testAddOneShape_amp:1.56'.
 	self
 		assert: c parent isShape class
 		equals: False
-		description: 'testAddOneShape:1.57'.
+		description: 'testAddOneShape_amp:1.57'.
 	self
 		assert: c parent isShape
 		equals: false
-		description: 'testAddOneShape:1.58'.
+		description: 'testAddOneShape_amp:1.58'.
 	self
 		assert: c parent numberOfShapes class
 		equals: SmallInteger
-		description: 'testAddOneShape:1.59'.
+		description: 'testAddOneShape_amp:1.59'.
 	self
 		assert: c parent numberOfShapes
 		equals: 1
-		description: 'testAddOneShape:1.60'.
+		description: 'testAddOneShape_amp:1.60'.
 	self
 		assert: c parent clearBackground class
 		equals: True
-		description: 'testAddOneShape:1.61'.
+		description: 'testAddOneShape_amp:1.61'.
 	self
 		assert: c parent clearBackground
 		equals: true
-		description: 'testAddOneShape:1.62'.
+		description: 'testAddOneShape_amp:1.62'.
 	self
 		assert: c shapes class
 		equals: TSGroup
-		description: 'testAddOneShape:1.63'.
+		description: 'testAddOneShape_amp:1.63'.
 	self
 		assert: c shapes size
 		equals: 1
-		description: 'testAddOneShape:1.64'.
+		description: 'testAddOneShape_amp:1.64'.
 	self
 		assert: c encompassingRectangle class
 		equals: Rectangle
-		description: 'testAddOneShape:1.65'.
+		description: 'testAddOneShape_amp:1.65'.
 	self
 		assert: c encompassingRectangle top class
 		equals: SmallFloat64
-		description: 'testAddOneShape:1.66'.
+		description: 'testAddOneShape_amp:1.66'.
 	self
 		assert: c encompassingRectangle top
 		equals: 0.0
-		description: 'testAddOneShape:1.67'.
+		description: 'testAddOneShape_amp:1.67'.
 	self
 		assert: c encompassingRectangle hasPositiveExtent class
 		equals: True
-		description: 'testAddOneShape:1.68'.
+		description: 'testAddOneShape_amp:1.68'.
 	self
 		assert: c encompassingRectangle hasPositiveExtent
 		equals: true
-		description: 'testAddOneShape:1.69'.
+		description: 'testAddOneShape_amp:1.69'.
 	self
 		assert: c encompassingRectangle area class
 		equals: SmallFloat64
-		description: 'testAddOneShape:1.70'.
+		description: 'testAddOneShape_amp:1.70'.
 	self
 		assert: c encompassingRectangle area
 		equals: 1.0
-		description: 'testAddOneShape:1.71'.
+		description: 'testAddOneShape_amp:1.71'.
 	self
 		assert: c encompassingRectangle isTall class
 		equals: False
-		description: 'testAddOneShape:1.72'.
+		description: 'testAddOneShape_amp:1.72'.
 	self
 		assert: c encompassingRectangle isTall
 		equals: false
-		description: 'testAddOneShape:1.73'.
+		description: 'testAddOneShape_amp:1.73'.
 	self
 		assert: c encompassingRectangle left class
 		equals: SmallFloat64
-		description: 'testAddOneShape:1.74'.
+		description: 'testAddOneShape_amp:1.74'.
 	self
 		assert: c encompassingRectangle left
 		equals: 0.0
-		description: 'testAddOneShape:1.75'.
+		description: 'testAddOneShape_amp:1.75'.
 	self
 		assert: c encompassingRectangle width class
 		equals: SmallFloat64
-		description: 'testAddOneShape:1.76'.
+		description: 'testAddOneShape_amp:1.76'.
 	self
 		assert: c encompassingRectangle width
 		equals: 1.0
-		description: 'testAddOneShape:1.77'.
+		description: 'testAddOneShape_amp:1.77'.
 	self
 		assert: c encompassingRectangle right class
 		equals: SmallFloat64
-		description: 'testAddOneShape:1.78'.
+		description: 'testAddOneShape_amp:1.78'.
 	self
 		assert: c encompassingRectangle right
 		equals: 1.0
-		description: 'testAddOneShape:1.79'.
+		description: 'testAddOneShape_amp:1.79'.
 	self
 		assert: c encompassingRectangle isZero class
 		equals: False
-		description: 'testAddOneShape:1.80'.
+		description: 'testAddOneShape_amp:1.80'.
 	self
 		assert: c encompassingRectangle isZero
 		equals: false
-		description: 'testAddOneShape:1.81'.
+		description: 'testAddOneShape_amp:1.81'.
 	self
 		assert: c encompassingRectangle isWide class
 		equals: False
-		description: 'testAddOneShape:1.82'.
+		description: 'testAddOneShape_amp:1.82'.
 	self
 		assert: c encompassingRectangle isWide
 		equals: false
-		description: 'testAddOneShape:1.83'.
+		description: 'testAddOneShape_amp:1.83'.
 	self
 		assert: c encompassingRectangle bottom class
 		equals: SmallFloat64
-		description: 'testAddOneShape:1.84'.
+		description: 'testAddOneShape_amp:1.84'.
 	self
 		assert: c encompassingRectangle bottom
 		equals: 1.0
-		description: 'testAddOneShape:1.85'.
+		description: 'testAddOneShape_amp:1.85'.
 	self
 		assert: c encompassingRectangle isRectangle class
 		equals: True
-		description: 'testAddOneShape:1.86'.
+		description: 'testAddOneShape_amp:1.86'.
 	self
 		assert: c encompassingRectangle isRectangle
 		equals: true
-		description: 'testAddOneShape:1.87'.
+		description: 'testAddOneShape_amp:1.87'.
 	self
 		assert: c encompassingRectangle height class
 		equals: SmallFloat64
-		description: 'testAddOneShape:1.88'.
+		description: 'testAddOneShape_amp:1.88'.
 	self
 		assert: c encompassingRectangle height
 		equals: 1.0
-		description: 'testAddOneShape:1.89'.
+		description: 'testAddOneShape_amp:1.89'.
 	self
 		assert: c view class
 		equals: UndefinedObject
-		description: 'testAddOneShape:1.90'.
-	self assert: c view equals: nil description: 'testAddOneShape:1.91'.
+		description: 'testAddOneShape_amp:1.90'.
+	self
+		assert: c view
+		equals: nil
+		description: 'testAddOneShape_amp:1.91'.
 	self
 		assert: c isShape class
 		equals: False
-		description: 'testAddOneShape:1.92'.
+		description: 'testAddOneShape_amp:1.92'.
 	self
 		assert: c isShape
 		equals: false
-		description: 'testAddOneShape:1.93'.
+		description: 'testAddOneShape_amp:1.93'.
 	self
 		assert: c basicRectangle class
 		equals: Rectangle
-		description: 'testAddOneShape:1.94'.
+		description: 'testAddOneShape_amp:1.94'.
 	self
 		assert: c basicRectangle top class
 		equals: SmallInteger
-		description: 'testAddOneShape:1.95'.
+		description: 'testAddOneShape_amp:1.95'.
 	self
 		assert: c basicRectangle top
 		equals: 0
-		description: 'testAddOneShape:1.96'.
+		description: 'testAddOneShape_amp:1.96'.
 	self
 		assert: c basicRectangle hasPositiveExtent class
 		equals: True
-		description: 'testAddOneShape:1.97'.
+		description: 'testAddOneShape_amp:1.97'.
 	self
 		assert: c basicRectangle hasPositiveExtent
 		equals: true
-		description: 'testAddOneShape:1.98'.
+		description: 'testAddOneShape_amp:1.98'.
 	self
 		assert: c basicRectangle area class
 		equals: SmallInteger
-		description: 'testAddOneShape:1.99'.
+		description: 'testAddOneShape_amp:1.99'.
 	self
 		assert: c basicRectangle area
 		equals: 250000
-		description: 'testAddOneShape:1.100'.
+		description: 'testAddOneShape_amp:1.100'.
 	self
 		assert: c basicRectangle isTall class
 		equals: False
-		description: 'testAddOneShape:1.101'.
+		description: 'testAddOneShape_amp:1.101'.
 	self
 		assert: c basicRectangle isTall
 		equals: false
-		description: 'testAddOneShape:1.102'.
+		description: 'testAddOneShape_amp:1.102'.
 	self
 		assert: c basicRectangle left class
 		equals: SmallInteger
-		description: 'testAddOneShape:1.103'.
+		description: 'testAddOneShape_amp:1.103'.
 	self
 		assert: c basicRectangle left
 		equals: 0
-		description: 'testAddOneShape:1.104'.
+		description: 'testAddOneShape_amp:1.104'.
 	self
 		assert: c basicRectangle width class
 		equals: SmallInteger
-		description: 'testAddOneShape:1.105'.
+		description: 'testAddOneShape_amp:1.105'.
 	self
 		assert: c basicRectangle width
 		equals: 500
-		description: 'testAddOneShape:1.106'.
+		description: 'testAddOneShape_amp:1.106'.
 	self
 		assert: c basicRectangle right class
 		equals: SmallInteger
-		description: 'testAddOneShape:1.107'.
+		description: 'testAddOneShape_amp:1.107'.
 	self
 		assert: c basicRectangle right
 		equals: 500
-		description: 'testAddOneShape:1.108'.
+		description: 'testAddOneShape_amp:1.108'.
 	self
 		assert: c basicRectangle isZero class
 		equals: False
-		description: 'testAddOneShape:1.109'.
+		description: 'testAddOneShape_amp:1.109'.
 	self
 		assert: c basicRectangle isZero
 		equals: false
-		description: 'testAddOneShape:1.110'.
+		description: 'testAddOneShape_amp:1.110'.
 	self
 		assert: c basicRectangle isWide class
 		equals: False
-		description: 'testAddOneShape:1.111'.
+		description: 'testAddOneShape_amp:1.111'.
 	self
 		assert: c basicRectangle isWide
 		equals: false
-		description: 'testAddOneShape:1.112'.
+		description: 'testAddOneShape_amp:1.112'.
 	self
 		assert: c basicRectangle bottom class
 		equals: SmallInteger
-		description: 'testAddOneShape:1.113'.
+		description: 'testAddOneShape_amp:1.113'.
 	self
 		assert: c basicRectangle bottom
 		equals: 500
-		description: 'testAddOneShape:1.114'.
+		description: 'testAddOneShape_amp:1.114'.
 	self
 		assert: c basicRectangle isRectangle class
 		equals: True
-		description: 'testAddOneShape:1.115'.
+		description: 'testAddOneShape_amp:1.115'.
 	self
 		assert: c basicRectangle isRectangle
 		equals: true
-		description: 'testAddOneShape:1.116'.
+		description: 'testAddOneShape_amp:1.116'.
 	self
 		assert: c basicRectangle height class
 		equals: SmallInteger
-		description: 'testAddOneShape:1.117'.
+		description: 'testAddOneShape_amp:1.117'.
 	self
 		assert: c basicRectangle height
 		equals: 500
-		description: 'testAddOneShape:1.118'.
+		description: 'testAddOneShape_amp:1.118'.
 	self
 		assert: c topParent class
 		equals: TSCanvas
-		description: 'testAddOneShape:1.119'.
+		description: 'testAddOneShape_amp:1.119'.
 	self
 		assert: c topParent showRectangles class
 		equals: False
-		description: 'testAddOneShape:1.120'.
+		description: 'testAddOneShape_amp:1.120'.
 	self
 		assert: c topParent showRectangles
 		equals: false
-		description: 'testAddOneShape:1.121'.
+		description: 'testAddOneShape_amp:1.121'.
 	self
 		assert: c topParent numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testAddOneShape:1.122'.
+		description: 'testAddOneShape_amp:1.122'.
 	self
 		assert: c topParent numberOfFixedShapes
 		equals: 0
-		description: 'testAddOneShape:1.123'.
+		description: 'testAddOneShape_amp:1.123'.
 	self
 		assert: c topParent morph class
 		equals: UndefinedObject
-		description: 'testAddOneShape:1.124'.
+		description: 'testAddOneShape_amp:1.124'.
 	self
 		assert: c topParent morph
 		equals: nil
-		description: 'testAddOneShape:1.125'.
+		description: 'testAddOneShape_amp:1.125'.
 	self
 		assert: c topParent view class
 		equals: UndefinedObject
-		description: 'testAddOneShape:1.126'.
+		description: 'testAddOneShape_amp:1.126'.
 	self
 		assert: c topParent view
 		equals: nil
-		description: 'testAddOneShape:1.127'.
+		description: 'testAddOneShape_amp:1.127'.
 	self
 		assert: c topParent isShape class
 		equals: False
-		description: 'testAddOneShape:1.128'.
+		description: 'testAddOneShape_amp:1.128'.
 	self
 		assert: c topParent isShape
 		equals: false
-		description: 'testAddOneShape:1.129'.
+		description: 'testAddOneShape_amp:1.129'.
 	self
 		assert: c topParent numberOfShapes class
 		equals: SmallInteger
-		description: 'testAddOneShape:1.130'.
+		description: 'testAddOneShape_amp:1.130'.
 	self
 		assert: c topParent numberOfShapes
 		equals: 1
-		description: 'testAddOneShape:1.131'.
+		description: 'testAddOneShape_amp:1.131'.
 	self
 		assert: c topParent clearBackground class
 		equals: True
-		description: 'testAddOneShape:1.132'.
+		description: 'testAddOneShape_amp:1.132'.
 	self
 		assert: c topParent clearBackground
 		equals: true
-		description: 'testAddOneShape:1.133'.
+		description: 'testAddOneShape_amp:1.133'.
 	self
 		assert: c numberOfShapes class
 		equals: SmallInteger
-		description: 'testAddOneShape:1.134'.
+		description: 'testAddOneShape_amp:1.134'.
 	self
 		assert: c numberOfShapes
 		equals: 1
-		description: 'testAddOneShape:1.135'.
+		description: 'testAddOneShape_amp:1.135'.
 	self
 		assert: c canvas class
 		equals: TSCanvas
-		description: 'testAddOneShape:1.136'.
+		description: 'testAddOneShape_amp:1.136'.
 	self
 		assert: c canvas showRectangles class
 		equals: False
-		description: 'testAddOneShape:1.137'.
+		description: 'testAddOneShape_amp:1.137'.
 	self
 		assert: c canvas showRectangles
 		equals: false
-		description: 'testAddOneShape:1.138'.
+		description: 'testAddOneShape_amp:1.138'.
 	self
 		assert: c canvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testAddOneShape:1.139'.
+		description: 'testAddOneShape_amp:1.139'.
 	self
 		assert: c canvas numberOfFixedShapes
 		equals: 0
-		description: 'testAddOneShape:1.140'.
+		description: 'testAddOneShape_amp:1.140'.
 	self
 		assert: c canvas morph class
 		equals: UndefinedObject
-		description: 'testAddOneShape:1.141'.
+		description: 'testAddOneShape_amp:1.141'.
 	self
 		assert: c canvas morph
 		equals: nil
-		description: 'testAddOneShape:1.142'.
+		description: 'testAddOneShape_amp:1.142'.
 	self
 		assert: c canvas view class
 		equals: UndefinedObject
-		description: 'testAddOneShape:1.143'.
+		description: 'testAddOneShape_amp:1.143'.
 	self
 		assert: c canvas view
 		equals: nil
-		description: 'testAddOneShape:1.144'.
+		description: 'testAddOneShape_amp:1.144'.
 	self
 		assert: c canvas isShape class
 		equals: False
-		description: 'testAddOneShape:1.145'.
+		description: 'testAddOneShape_amp:1.145'.
 	self
 		assert: c canvas isShape
 		equals: false
-		description: 'testAddOneShape:1.146'.
+		description: 'testAddOneShape_amp:1.146'.
 	self
 		assert: c canvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testAddOneShape:1.147'.
+		description: 'testAddOneShape_amp:1.147'.
 	self
 		assert: c canvas numberOfShapes
 		equals: 1
-		description: 'testAddOneShape:1.148'.
+		description: 'testAddOneShape_amp:1.148'.
 	self
 		assert: c canvas clearBackground class
 		equals: True
-		description: 'testAddOneShape:1.149'.
+		description: 'testAddOneShape_amp:1.149'.
 	self
 		assert: c canvas clearBackground
 		equals: true
-		description: 'testAddOneShape:1.150'.
+		description: 'testAddOneShape_amp:1.150'.
 	self
 		assert: c clearBackground class
 		equals: True
-		description: 'testAddOneShape:1.151'.
+		description: 'testAddOneShape_amp:1.151'.
 	self
 		assert: c clearBackground
 		equals: true
-		description: 'testAddOneShape:1.152'
+		description: 'testAddOneShape_amp:1.152'
 ]
 
 { #category : #'as yet unclassified' }
-TSCanvasTestAmpTest >> testDrawCanvas [
+TSCanvasTestAmpTest >> testDrawCanvasWithGroup_amp [
 	<madeBySmallAmp>
-	| tmp_M03YXq7Hba4 |
-	c
-		addShape:
-			(TSBox new
-				extent: 100 @ 100;
-				yourself).
-	self
-		assert: c class
-		equals: TSCanvas
-		description: 'testDrawCanvas:1.1'.
-	self
-		assert: c fixedShapes class
-		equals: TSGroup
-		description: 'testDrawCanvas:1.2'.
-	self
-		assert: c fixedShapes size
-		equals: 0
-		description: 'testDrawCanvas:1.3'.
-	self
-		assert: c showRectangles class
-		equals: False
-		description: 'testDrawCanvas:1.4'.
-	self
-		assert: c showRectangles
-		equals: false
-		description: 'testDrawCanvas:1.5'.
-	self
-		assert: c color class
-		equals: Color
-		description: 'testDrawCanvas:1.6'.
-	self
-		assert: c color alpha class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:1.7'.
-	self
-		assert: c color alpha
-		equals: 1.0
-		description: 'testDrawCanvas:1.8'.
-	self
-		assert: c color red class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:1.9'.
-	self
-		assert: c color red
-		equals: 1.0
-		description: 'testDrawCanvas:1.10'.
-	self
-		assert: c color hsvSaturation class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:1.11'.
-	self
-		assert: c color hsvSaturation
-		equals: 0.0
-		description: 'testDrawCanvas:1.12'.
-	self
-		assert: c color brightness class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:1.13'.
-	self
-		assert: c color brightness
-		equals: 1.0
-		description: 'testDrawCanvas:1.14'.
-	self
-		assert: c color hue class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:1.15'.
-	self
-		assert: c color hue
-		equals: 0.0
-		description: 'testDrawCanvas:1.16'.
-	self
-		assert: c color green class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:1.17'.
-	self
-		assert: c color green
-		equals: 1.0
-		description: 'testDrawCanvas:1.18'.
-	self
-		assert: c color chroma class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:1.19'.
-	self
-		assert: c color chroma
-		equals: 0.0
-		description: 'testDrawCanvas:1.20'.
-	self
-		assert: c color lightness class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:1.21'.
-	self
-		assert: c color lightness
-		equals: 1.0
-		description: 'testDrawCanvas:1.22'.
-	self
-		assert: c color hslSaturation class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:1.23'.
-	self
-		assert: c color hslSaturation
-		equals: 0.0
-		description: 'testDrawCanvas:1.24'.
-	self
-		assert: c color saturation class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:1.25'.
-	self
-		assert: c color saturation
-		equals: 0.0
-		description: 'testDrawCanvas:1.26'.
-	self
-		assert: c color luminance class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:1.27'.
-	self
-		assert: c color luminance
-		equals: 1.0
-		description: 'testDrawCanvas:1.28'.
-	self
-		assert: c color blue class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:1.29'.
-	self
-		assert: c color blue
-		equals: 1.0
-		description: 'testDrawCanvas:1.30'.
-	self
-		assert: c numberOfFixedShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:1.31'.
-	self
-		assert: c numberOfFixedShapes
-		equals: 0
-		description: 'testDrawCanvas:1.32'.
-	self
-		assert: c morph class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:1.33'.
-	self assert: c morph equals: nil description: 'testDrawCanvas:1.34'.
-	self
-		assert: c extent class
-		equals: Point
-		description: 'testDrawCanvas:1.35'.
-	self
-		assert: c extent isZero class
-		equals: False
-		description: 'testDrawCanvas:1.36'.
-	self
-		assert: c extent isZero
-		equals: false
-		description: 'testDrawCanvas:1.37'.
-	self
-		assert: c extent y class
-		equals: SmallInteger
-		description: 'testDrawCanvas:1.38'.
-	self
-		assert: c extent y
-		equals: 500
-		description: 'testDrawCanvas:1.39'.
-	self
-		assert: c extent isFloatPoint class
-		equals: False
-		description: 'testDrawCanvas:1.40'.
-	self
-		assert: c extent isFloatPoint
-		equals: false
-		description: 'testDrawCanvas:1.41'.
-	self
-		assert: c extent isIntegerPoint class
-		equals: True
-		description: 'testDrawCanvas:1.42'.
-	self
-		assert: c extent isIntegerPoint
-		equals: true
-		description: 'testDrawCanvas:1.43'.
-	self
-		assert: c extent x class
-		equals: SmallInteger
-		description: 'testDrawCanvas:1.44'.
-	self
-		assert: c extent x
-		equals: 500
-		description: 'testDrawCanvas:1.45'.
-	self
-		assert: c extent isPoint class
-		equals: True
-		description: 'testDrawCanvas:1.46'.
-	self
-		assert: c extent isPoint
-		equals: true
-		description: 'testDrawCanvas:1.47'.
-	self
-		assert: c parent class
-		equals: TSCanvas
-		description: 'testDrawCanvas:1.48'.
-	self
-		assert: c parent showRectangles class
-		equals: False
-		description: 'testDrawCanvas:1.49'.
-	self
-		assert: c parent showRectangles
-		equals: false
-		description: 'testDrawCanvas:1.50'.
-	self
-		assert: c parent numberOfFixedShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:1.51'.
-	self
-		assert: c parent numberOfFixedShapes
-		equals: 0
-		description: 'testDrawCanvas:1.52'.
-	self
-		assert: c parent morph class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:1.53'.
-	self
-		assert: c parent morph
-		equals: nil
-		description: 'testDrawCanvas:1.54'.
-	self
-		assert: c parent view class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:1.55'.
-	self
-		assert: c parent view
-		equals: nil
-		description: 'testDrawCanvas:1.56'.
-	self
-		assert: c parent isShape class
-		equals: False
-		description: 'testDrawCanvas:1.57'.
-	self
-		assert: c parent isShape
-		equals: false
-		description: 'testDrawCanvas:1.58'.
-	self
-		assert: c parent numberOfShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:1.59'.
-	self
-		assert: c parent numberOfShapes
-		equals: 1
-		description: 'testDrawCanvas:1.60'.
-	self
-		assert: c parent clearBackground class
-		equals: True
-		description: 'testDrawCanvas:1.61'.
-	self
-		assert: c parent clearBackground
-		equals: true
-		description: 'testDrawCanvas:1.62'.
-	self
-		assert: c shapes class
-		equals: TSGroup
-		description: 'testDrawCanvas:1.63'.
-	self
-		assert: c shapes size
-		equals: 1
-		description: 'testDrawCanvas:1.64'.
-	self
-		assert: c encompassingRectangle class
-		equals: Rectangle
-		description: 'testDrawCanvas:1.65'.
-	self
-		assert: c encompassingRectangle top class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:1.66'.
-	self
-		assert: c encompassingRectangle top
-		equals: -50.0
-		description: 'testDrawCanvas:1.67'.
-	self
-		assert: c encompassingRectangle hasPositiveExtent class
-		equals: True
-		description: 'testDrawCanvas:1.68'.
-	self
-		assert: c encompassingRectangle hasPositiveExtent
-		equals: true
-		description: 'testDrawCanvas:1.69'.
-	self
-		assert: c encompassingRectangle area class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:1.70'.
-	self
-		assert: c encompassingRectangle area
-		equals: 10000.0
-		description: 'testDrawCanvas:1.71'.
-	self
-		assert: c encompassingRectangle isTall class
-		equals: False
-		description: 'testDrawCanvas:1.72'.
-	self
-		assert: c encompassingRectangle isTall
-		equals: false
-		description: 'testDrawCanvas:1.73'.
-	self
-		assert: c encompassingRectangle left class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:1.74'.
-	self
-		assert: c encompassingRectangle left
-		equals: -50.0
-		description: 'testDrawCanvas:1.75'.
-	self
-		assert: c encompassingRectangle width class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:1.76'.
-	self
-		assert: c encompassingRectangle width
-		equals: 100.0
-		description: 'testDrawCanvas:1.77'.
-	self
-		assert: c encompassingRectangle right class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:1.78'.
-	self
-		assert: c encompassingRectangle right
-		equals: 50.0
-		description: 'testDrawCanvas:1.79'.
-	self
-		assert: c encompassingRectangle isZero class
-		equals: False
-		description: 'testDrawCanvas:1.80'.
-	self
-		assert: c encompassingRectangle isZero
-		equals: false
-		description: 'testDrawCanvas:1.81'.
-	self
-		assert: c encompassingRectangle isWide class
-		equals: False
-		description: 'testDrawCanvas:1.82'.
-	self
-		assert: c encompassingRectangle isWide
-		equals: false
-		description: 'testDrawCanvas:1.83'.
-	self
-		assert: c encompassingRectangle bottom class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:1.84'.
-	self
-		assert: c encompassingRectangle bottom
-		equals: 50.0
-		description: 'testDrawCanvas:1.85'.
-	self
-		assert: c encompassingRectangle isRectangle class
-		equals: True
-		description: 'testDrawCanvas:1.86'.
-	self
-		assert: c encompassingRectangle isRectangle
-		equals: true
-		description: 'testDrawCanvas:1.87'.
-	self
-		assert: c encompassingRectangle height class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:1.88'.
-	self
-		assert: c encompassingRectangle height
-		equals: 100.0
-		description: 'testDrawCanvas:1.89'.
-	self
-		assert: c view class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:1.90'.
-	self assert: c view equals: nil description: 'testDrawCanvas:1.91'.
-	self
-		assert: c isShape class
-		equals: False
-		description: 'testDrawCanvas:1.92'.
-	self
-		assert: c isShape
-		equals: false
-		description: 'testDrawCanvas:1.93'.
-	self
-		assert: c basicRectangle class
-		equals: Rectangle
-		description: 'testDrawCanvas:1.94'.
-	self
-		assert: c basicRectangle top class
-		equals: SmallInteger
-		description: 'testDrawCanvas:1.95'.
-	self
-		assert: c basicRectangle top
-		equals: 0
-		description: 'testDrawCanvas:1.96'.
-	self
-		assert: c basicRectangle hasPositiveExtent class
-		equals: True
-		description: 'testDrawCanvas:1.97'.
-	self
-		assert: c basicRectangle hasPositiveExtent
-		equals: true
-		description: 'testDrawCanvas:1.98'.
-	self
-		assert: c basicRectangle area class
-		equals: SmallInteger
-		description: 'testDrawCanvas:1.99'.
-	self
-		assert: c basicRectangle area
-		equals: 250000
-		description: 'testDrawCanvas:1.100'.
-	self
-		assert: c basicRectangle isTall class
-		equals: False
-		description: 'testDrawCanvas:1.101'.
-	self
-		assert: c basicRectangle isTall
-		equals: false
-		description: 'testDrawCanvas:1.102'.
-	self
-		assert: c basicRectangle left class
-		equals: SmallInteger
-		description: 'testDrawCanvas:1.103'.
-	self
-		assert: c basicRectangle left
-		equals: 0
-		description: 'testDrawCanvas:1.104'.
-	self
-		assert: c basicRectangle width class
-		equals: SmallInteger
-		description: 'testDrawCanvas:1.105'.
-	self
-		assert: c basicRectangle width
-		equals: 500
-		description: 'testDrawCanvas:1.106'.
-	self
-		assert: c basicRectangle right class
-		equals: SmallInteger
-		description: 'testDrawCanvas:1.107'.
-	self
-		assert: c basicRectangle right
-		equals: 500
-		description: 'testDrawCanvas:1.108'.
-	self
-		assert: c basicRectangle isZero class
-		equals: False
-		description: 'testDrawCanvas:1.109'.
-	self
-		assert: c basicRectangle isZero
-		equals: false
-		description: 'testDrawCanvas:1.110'.
-	self
-		assert: c basicRectangle isWide class
-		equals: False
-		description: 'testDrawCanvas:1.111'.
-	self
-		assert: c basicRectangle isWide
-		equals: false
-		description: 'testDrawCanvas:1.112'.
-	self
-		assert: c basicRectangle bottom class
-		equals: SmallInteger
-		description: 'testDrawCanvas:1.113'.
-	self
-		assert: c basicRectangle bottom
-		equals: 500
-		description: 'testDrawCanvas:1.114'.
-	self
-		assert: c basicRectangle isRectangle class
-		equals: True
-		description: 'testDrawCanvas:1.115'.
-	self
-		assert: c basicRectangle isRectangle
-		equals: true
-		description: 'testDrawCanvas:1.116'.
-	self
-		assert: c basicRectangle height class
-		equals: SmallInteger
-		description: 'testDrawCanvas:1.117'.
-	self
-		assert: c basicRectangle height
-		equals: 500
-		description: 'testDrawCanvas:1.118'.
-	self
-		assert: c topParent class
-		equals: TSCanvas
-		description: 'testDrawCanvas:1.119'.
-	self
-		assert: c topParent showRectangles class
-		equals: False
-		description: 'testDrawCanvas:1.120'.
-	self
-		assert: c topParent showRectangles
-		equals: false
-		description: 'testDrawCanvas:1.121'.
-	self
-		assert: c topParent numberOfFixedShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:1.122'.
-	self
-		assert: c topParent numberOfFixedShapes
-		equals: 0
-		description: 'testDrawCanvas:1.123'.
-	self
-		assert: c topParent morph class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:1.124'.
-	self
-		assert: c topParent morph
-		equals: nil
-		description: 'testDrawCanvas:1.125'.
-	self
-		assert: c topParent view class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:1.126'.
-	self
-		assert: c topParent view
-		equals: nil
-		description: 'testDrawCanvas:1.127'.
-	self
-		assert: c topParent isShape class
-		equals: False
-		description: 'testDrawCanvas:1.128'.
-	self
-		assert: c topParent isShape
-		equals: false
-		description: 'testDrawCanvas:1.129'.
-	self
-		assert: c topParent numberOfShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:1.130'.
-	self
-		assert: c topParent numberOfShapes
-		equals: 1
-		description: 'testDrawCanvas:1.131'.
-	self
-		assert: c topParent clearBackground class
-		equals: True
-		description: 'testDrawCanvas:1.132'.
-	self
-		assert: c topParent clearBackground
-		equals: true
-		description: 'testDrawCanvas:1.133'.
-	self
-		assert: c numberOfShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:1.134'.
-	self
-		assert: c numberOfShapes
-		equals: 1
-		description: 'testDrawCanvas:1.135'.
-	self
-		assert: c canvas class
-		equals: TSCanvas
-		description: 'testDrawCanvas:1.136'.
-	self
-		assert: c canvas showRectangles class
-		equals: False
-		description: 'testDrawCanvas:1.137'.
-	self
-		assert: c canvas showRectangles
-		equals: false
-		description: 'testDrawCanvas:1.138'.
-	self
-		assert: c canvas numberOfFixedShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:1.139'.
-	self
-		assert: c canvas numberOfFixedShapes
-		equals: 0
-		description: 'testDrawCanvas:1.140'.
-	self
-		assert: c canvas morph class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:1.141'.
-	self
-		assert: c canvas morph
-		equals: nil
-		description: 'testDrawCanvas:1.142'.
-	self
-		assert: c canvas view class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:1.143'.
-	self
-		assert: c canvas view
-		equals: nil
-		description: 'testDrawCanvas:1.144'.
-	self
-		assert: c canvas isShape class
-		equals: False
-		description: 'testDrawCanvas:1.145'.
-	self
-		assert: c canvas isShape
-		equals: false
-		description: 'testDrawCanvas:1.146'.
-	self
-		assert: c canvas numberOfShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:1.147'.
-	self
-		assert: c canvas numberOfShapes
-		equals: 1
-		description: 'testDrawCanvas:1.148'.
-	self
-		assert: c canvas clearBackground class
-		equals: True
-		description: 'testDrawCanvas:1.149'.
-	self
-		assert: c canvas clearBackground
-		equals: true
-		description: 'testDrawCanvas:1.150'.
-	self
-		assert: c clearBackground class
-		equals: True
-		description: 'testDrawCanvas:1.151'.
-	self
-		assert: c clearBackground
-		equals: true
-		description: 'testDrawCanvas:1.152'.
-	c
-		addShape:
-			(TSEllipse new
-				position: 100 @ 100;
-				extent: 100 @ 100;
-				yourself).
-	self
-		assert: c class
-		equals: TSCanvas
-		description: 'testDrawCanvas:2.1'.
-	self
-		assert: c fixedShapes class
-		equals: TSGroup
-		description: 'testDrawCanvas:2.2'.
-	self
-		assert: c fixedShapes size
-		equals: 0
-		description: 'testDrawCanvas:2.3'.
-	self
-		assert: c showRectangles class
-		equals: False
-		description: 'testDrawCanvas:2.4'.
-	self
-		assert: c showRectangles
-		equals: false
-		description: 'testDrawCanvas:2.5'.
-	self
-		assert: c color class
-		equals: Color
-		description: 'testDrawCanvas:2.6'.
-	self
-		assert: c color alpha class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:2.7'.
-	self
-		assert: c color alpha
-		equals: 1.0
-		description: 'testDrawCanvas:2.8'.
-	self
-		assert: c color red class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:2.9'.
-	self
-		assert: c color red
-		equals: 1.0
-		description: 'testDrawCanvas:2.10'.
-	self
-		assert: c color hsvSaturation class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:2.11'.
-	self
-		assert: c color hsvSaturation
-		equals: 0.0
-		description: 'testDrawCanvas:2.12'.
-	self
-		assert: c color brightness class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:2.13'.
-	self
-		assert: c color brightness
-		equals: 1.0
-		description: 'testDrawCanvas:2.14'.
-	self
-		assert: c color hue class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:2.15'.
-	self
-		assert: c color hue
-		equals: 0.0
-		description: 'testDrawCanvas:2.16'.
-	self
-		assert: c color green class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:2.17'.
-	self
-		assert: c color green
-		equals: 1.0
-		description: 'testDrawCanvas:2.18'.
-	self
-		assert: c color chroma class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:2.19'.
-	self
-		assert: c color chroma
-		equals: 0.0
-		description: 'testDrawCanvas:2.20'.
-	self
-		assert: c color lightness class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:2.21'.
-	self
-		assert: c color lightness
-		equals: 1.0
-		description: 'testDrawCanvas:2.22'.
-	self
-		assert: c color hslSaturation class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:2.23'.
-	self
-		assert: c color hslSaturation
-		equals: 0.0
-		description: 'testDrawCanvas:2.24'.
-	self
-		assert: c color saturation class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:2.25'.
-	self
-		assert: c color saturation
-		equals: 0.0
-		description: 'testDrawCanvas:2.26'.
-	self
-		assert: c color luminance class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:2.27'.
-	self
-		assert: c color luminance
-		equals: 1.0
-		description: 'testDrawCanvas:2.28'.
-	self
-		assert: c color blue class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:2.29'.
-	self
-		assert: c color blue
-		equals: 1.0
-		description: 'testDrawCanvas:2.30'.
-	self
-		assert: c numberOfFixedShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:2.31'.
-	self
-		assert: c numberOfFixedShapes
-		equals: 0
-		description: 'testDrawCanvas:2.32'.
-	self
-		assert: c morph class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:2.33'.
-	self assert: c morph equals: nil description: 'testDrawCanvas:2.34'.
-	self
-		assert: c extent class
-		equals: Point
-		description: 'testDrawCanvas:2.35'.
-	self
-		assert: c extent isZero class
-		equals: False
-		description: 'testDrawCanvas:2.36'.
-	self
-		assert: c extent isZero
-		equals: false
-		description: 'testDrawCanvas:2.37'.
-	self
-		assert: c extent y class
-		equals: SmallInteger
-		description: 'testDrawCanvas:2.38'.
-	self
-		assert: c extent y
-		equals: 500
-		description: 'testDrawCanvas:2.39'.
-	self
-		assert: c extent isFloatPoint class
-		equals: False
-		description: 'testDrawCanvas:2.40'.
-	self
-		assert: c extent isFloatPoint
-		equals: false
-		description: 'testDrawCanvas:2.41'.
-	self
-		assert: c extent isIntegerPoint class
-		equals: True
-		description: 'testDrawCanvas:2.42'.
-	self
-		assert: c extent isIntegerPoint
-		equals: true
-		description: 'testDrawCanvas:2.43'.
-	self
-		assert: c extent x class
-		equals: SmallInteger
-		description: 'testDrawCanvas:2.44'.
-	self
-		assert: c extent x
-		equals: 500
-		description: 'testDrawCanvas:2.45'.
-	self
-		assert: c extent isPoint class
-		equals: True
-		description: 'testDrawCanvas:2.46'.
-	self
-		assert: c extent isPoint
-		equals: true
-		description: 'testDrawCanvas:2.47'.
-	self
-		assert: c parent class
-		equals: TSCanvas
-		description: 'testDrawCanvas:2.48'.
-	self
-		assert: c parent showRectangles class
-		equals: False
-		description: 'testDrawCanvas:2.49'.
-	self
-		assert: c parent showRectangles
-		equals: false
-		description: 'testDrawCanvas:2.50'.
-	self
-		assert: c parent numberOfFixedShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:2.51'.
-	self
-		assert: c parent numberOfFixedShapes
-		equals: 0
-		description: 'testDrawCanvas:2.52'.
-	self
-		assert: c parent morph class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:2.53'.
-	self
-		assert: c parent morph
-		equals: nil
-		description: 'testDrawCanvas:2.54'.
-	self
-		assert: c parent view class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:2.55'.
-	self
-		assert: c parent view
-		equals: nil
-		description: 'testDrawCanvas:2.56'.
-	self
-		assert: c parent isShape class
-		equals: False
-		description: 'testDrawCanvas:2.57'.
-	self
-		assert: c parent isShape
-		equals: false
-		description: 'testDrawCanvas:2.58'.
-	self
-		assert: c parent numberOfShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:2.59'.
-	self
-		assert: c parent numberOfShapes
-		equals: 2
-		description: 'testDrawCanvas:2.60'.
-	self
-		assert: c parent clearBackground class
-		equals: True
-		description: 'testDrawCanvas:2.61'.
-	self
-		assert: c parent clearBackground
-		equals: true
-		description: 'testDrawCanvas:2.62'.
-	self
-		assert: c shapes class
-		equals: TSGroup
-		description: 'testDrawCanvas:2.63'.
-	self
-		assert: c shapes size
-		equals: 2
-		description: 'testDrawCanvas:2.64'.
-	self
-		assert: c encompassingRectangle class
-		equals: Rectangle
-		description: 'testDrawCanvas:2.65'.
-	self
-		assert: c encompassingRectangle top class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:2.66'.
-	self
-		assert: c encompassingRectangle top
-		equals: -50.0
-		description: 'testDrawCanvas:2.67'.
-	self
-		assert: c encompassingRectangle hasPositiveExtent class
-		equals: True
-		description: 'testDrawCanvas:2.68'.
-	self
-		assert: c encompassingRectangle hasPositiveExtent
-		equals: true
-		description: 'testDrawCanvas:2.69'.
-	self
-		assert: c encompassingRectangle area class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:2.70'.
-	self
-		assert: c encompassingRectangle area
-		equals: 40000.0
-		description: 'testDrawCanvas:2.71'.
-	self
-		assert: c encompassingRectangle isTall class
-		equals: False
-		description: 'testDrawCanvas:2.72'.
-	self
-		assert: c encompassingRectangle isTall
-		equals: false
-		description: 'testDrawCanvas:2.73'.
-	self
-		assert: c encompassingRectangle left class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:2.74'.
-	self
-		assert: c encompassingRectangle left
-		equals: -50.0
-		description: 'testDrawCanvas:2.75'.
-	self
-		assert: c encompassingRectangle width class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:2.76'.
-	self
-		assert: c encompassingRectangle width
-		equals: 200.0
-		description: 'testDrawCanvas:2.77'.
-	self
-		assert: c encompassingRectangle right class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:2.78'.
-	self
-		assert: c encompassingRectangle right
-		equals: 150.0
-		description: 'testDrawCanvas:2.79'.
-	self
-		assert: c encompassingRectangle isZero class
-		equals: False
-		description: 'testDrawCanvas:2.80'.
-	self
-		assert: c encompassingRectangle isZero
-		equals: false
-		description: 'testDrawCanvas:2.81'.
-	self
-		assert: c encompassingRectangle isWide class
-		equals: False
-		description: 'testDrawCanvas:2.82'.
-	self
-		assert: c encompassingRectangle isWide
-		equals: false
-		description: 'testDrawCanvas:2.83'.
-	self
-		assert: c encompassingRectangle bottom class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:2.84'.
-	self
-		assert: c encompassingRectangle bottom
-		equals: 150.0
-		description: 'testDrawCanvas:2.85'.
-	self
-		assert: c encompassingRectangle isRectangle class
-		equals: True
-		description: 'testDrawCanvas:2.86'.
-	self
-		assert: c encompassingRectangle isRectangle
-		equals: true
-		description: 'testDrawCanvas:2.87'.
-	self
-		assert: c encompassingRectangle height class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:2.88'.
-	self
-		assert: c encompassingRectangle height
-		equals: 200.0
-		description: 'testDrawCanvas:2.89'.
-	self
-		assert: c view class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:2.90'.
-	self assert: c view equals: nil description: 'testDrawCanvas:2.91'.
-	self
-		assert: c isShape class
-		equals: False
-		description: 'testDrawCanvas:2.92'.
-	self
-		assert: c isShape
-		equals: false
-		description: 'testDrawCanvas:2.93'.
-	self
-		assert: c basicRectangle class
-		equals: Rectangle
-		description: 'testDrawCanvas:2.94'.
-	self
-		assert: c basicRectangle top class
-		equals: SmallInteger
-		description: 'testDrawCanvas:2.95'.
-	self
-		assert: c basicRectangle top
-		equals: 0
-		description: 'testDrawCanvas:2.96'.
-	self
-		assert: c basicRectangle hasPositiveExtent class
-		equals: True
-		description: 'testDrawCanvas:2.97'.
-	self
-		assert: c basicRectangle hasPositiveExtent
-		equals: true
-		description: 'testDrawCanvas:2.98'.
-	self
-		assert: c basicRectangle area class
-		equals: SmallInteger
-		description: 'testDrawCanvas:2.99'.
-	self
-		assert: c basicRectangle area
-		equals: 250000
-		description: 'testDrawCanvas:2.100'.
-	self
-		assert: c basicRectangle isTall class
-		equals: False
-		description: 'testDrawCanvas:2.101'.
-	self
-		assert: c basicRectangle isTall
-		equals: false
-		description: 'testDrawCanvas:2.102'.
-	self
-		assert: c basicRectangle left class
-		equals: SmallInteger
-		description: 'testDrawCanvas:2.103'.
-	self
-		assert: c basicRectangle left
-		equals: 0
-		description: 'testDrawCanvas:2.104'.
-	self
-		assert: c basicRectangle width class
-		equals: SmallInteger
-		description: 'testDrawCanvas:2.105'.
-	self
-		assert: c basicRectangle width
-		equals: 500
-		description: 'testDrawCanvas:2.106'.
-	self
-		assert: c basicRectangle right class
-		equals: SmallInteger
-		description: 'testDrawCanvas:2.107'.
-	self
-		assert: c basicRectangle right
-		equals: 500
-		description: 'testDrawCanvas:2.108'.
-	self
-		assert: c basicRectangle isZero class
-		equals: False
-		description: 'testDrawCanvas:2.109'.
-	self
-		assert: c basicRectangle isZero
-		equals: false
-		description: 'testDrawCanvas:2.110'.
-	self
-		assert: c basicRectangle isWide class
-		equals: False
-		description: 'testDrawCanvas:2.111'.
-	self
-		assert: c basicRectangle isWide
-		equals: false
-		description: 'testDrawCanvas:2.112'.
-	self
-		assert: c basicRectangle bottom class
-		equals: SmallInteger
-		description: 'testDrawCanvas:2.113'.
-	self
-		assert: c basicRectangle bottom
-		equals: 500
-		description: 'testDrawCanvas:2.114'.
-	self
-		assert: c basicRectangle isRectangle class
-		equals: True
-		description: 'testDrawCanvas:2.115'.
-	self
-		assert: c basicRectangle isRectangle
-		equals: true
-		description: 'testDrawCanvas:2.116'.
-	self
-		assert: c basicRectangle height class
-		equals: SmallInteger
-		description: 'testDrawCanvas:2.117'.
-	self
-		assert: c basicRectangle height
-		equals: 500
-		description: 'testDrawCanvas:2.118'.
-	self
-		assert: c topParent class
-		equals: TSCanvas
-		description: 'testDrawCanvas:2.119'.
-	self
-		assert: c topParent showRectangles class
-		equals: False
-		description: 'testDrawCanvas:2.120'.
-	self
-		assert: c topParent showRectangles
-		equals: false
-		description: 'testDrawCanvas:2.121'.
-	self
-		assert: c topParent numberOfFixedShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:2.122'.
-	self
-		assert: c topParent numberOfFixedShapes
-		equals: 0
-		description: 'testDrawCanvas:2.123'.
-	self
-		assert: c topParent morph class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:2.124'.
-	self
-		assert: c topParent morph
-		equals: nil
-		description: 'testDrawCanvas:2.125'.
-	self
-		assert: c topParent view class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:2.126'.
-	self
-		assert: c topParent view
-		equals: nil
-		description: 'testDrawCanvas:2.127'.
-	self
-		assert: c topParent isShape class
-		equals: False
-		description: 'testDrawCanvas:2.128'.
-	self
-		assert: c topParent isShape
-		equals: false
-		description: 'testDrawCanvas:2.129'.
-	self
-		assert: c topParent numberOfShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:2.130'.
-	self
-		assert: c topParent numberOfShapes
-		equals: 2
-		description: 'testDrawCanvas:2.131'.
-	self
-		assert: c topParent clearBackground class
-		equals: True
-		description: 'testDrawCanvas:2.132'.
-	self
-		assert: c topParent clearBackground
-		equals: true
-		description: 'testDrawCanvas:2.133'.
-	self
-		assert: c numberOfShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:2.134'.
-	self
-		assert: c numberOfShapes
-		equals: 2
-		description: 'testDrawCanvas:2.135'.
-	self
-		assert: c canvas class
-		equals: TSCanvas
-		description: 'testDrawCanvas:2.136'.
-	self
-		assert: c canvas showRectangles class
-		equals: False
-		description: 'testDrawCanvas:2.137'.
-	self
-		assert: c canvas showRectangles
-		equals: false
-		description: 'testDrawCanvas:2.138'.
-	self
-		assert: c canvas numberOfFixedShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:2.139'.
-	self
-		assert: c canvas numberOfFixedShapes
-		equals: 0
-		description: 'testDrawCanvas:2.140'.
-	self
-		assert: c canvas morph class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:2.141'.
-	self
-		assert: c canvas morph
-		equals: nil
-		description: 'testDrawCanvas:2.142'.
-	self
-		assert: c canvas view class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:2.143'.
-	self
-		assert: c canvas view
-		equals: nil
-		description: 'testDrawCanvas:2.144'.
-	self
-		assert: c canvas isShape class
-		equals: False
-		description: 'testDrawCanvas:2.145'.
-	self
-		assert: c canvas isShape
-		equals: false
-		description: 'testDrawCanvas:2.146'.
-	self
-		assert: c canvas numberOfShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:2.147'.
-	self
-		assert: c canvas numberOfShapes
-		equals: 2
-		description: 'testDrawCanvas:2.148'.
-	self
-		assert: c canvas clearBackground class
-		equals: True
-		description: 'testDrawCanvas:2.149'.
-	self
-		assert: c canvas clearBackground
-		equals: true
-		description: 'testDrawCanvas:2.150'.
-	self
-		assert: c clearBackground class
-		equals: True
-		description: 'testDrawCanvas:2.151'.
-	self
-		assert: c clearBackground
-		equals: true
-		description: 'testDrawCanvas:2.152'.
-	tmp_M03YXq7Hba4 := c createMorph.
-	self
-		assert: c class
-		equals: TSCanvas
-		description: 'testDrawCanvas:3.1'.
-	self
-		assert: c fixedShapes class
-		equals: TSGroup
-		description: 'testDrawCanvas:3.2'.
-	self
-		assert: c fixedShapes size
-		equals: 0
-		description: 'testDrawCanvas:3.3'.
-	self
-		assert: c showRectangles class
-		equals: False
-		description: 'testDrawCanvas:3.4'.
-	self
-		assert: c showRectangles
-		equals: false
-		description: 'testDrawCanvas:3.5'.
-	self
-		assert: c color class
-		equals: Color
-		description: 'testDrawCanvas:3.6'.
-	self
-		assert: c color alpha class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:3.7'.
-	self
-		assert: c color alpha
-		equals: 1.0
-		description: 'testDrawCanvas:3.8'.
-	self
-		assert: c color red class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:3.9'.
-	self
-		assert: c color red
-		equals: 1.0
-		description: 'testDrawCanvas:3.10'.
-	self
-		assert: c color hsvSaturation class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:3.11'.
-	self
-		assert: c color hsvSaturation
-		equals: 0.0
-		description: 'testDrawCanvas:3.12'.
-	self
-		assert: c color brightness class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:3.13'.
-	self
-		assert: c color brightness
-		equals: 1.0
-		description: 'testDrawCanvas:3.14'.
-	self
-		assert: c color hue class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:3.15'.
-	self
-		assert: c color hue
-		equals: 0.0
-		description: 'testDrawCanvas:3.16'.
-	self
-		assert: c color green class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:3.17'.
-	self
-		assert: c color green
-		equals: 1.0
-		description: 'testDrawCanvas:3.18'.
-	self
-		assert: c color chroma class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:3.19'.
-	self
-		assert: c color chroma
-		equals: 0.0
-		description: 'testDrawCanvas:3.20'.
-	self
-		assert: c color lightness class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:3.21'.
-	self
-		assert: c color lightness
-		equals: 1.0
-		description: 'testDrawCanvas:3.22'.
-	self
-		assert: c color hslSaturation class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:3.23'.
-	self
-		assert: c color hslSaturation
-		equals: 0.0
-		description: 'testDrawCanvas:3.24'.
-	self
-		assert: c color saturation class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:3.25'.
-	self
-		assert: c color saturation
-		equals: 0.0
-		description: 'testDrawCanvas:3.26'.
-	self
-		assert: c color luminance class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:3.27'.
-	self
-		assert: c color luminance
-		equals: 1.0
-		description: 'testDrawCanvas:3.28'.
-	self
-		assert: c color blue class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:3.29'.
-	self
-		assert: c color blue
-		equals: 1.0
-		description: 'testDrawCanvas:3.30'.
-	self
-		assert: c numberOfFixedShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.31'.
-	self
-		assert: c numberOfFixedShapes
-		equals: 0
-		description: 'testDrawCanvas:3.32'.
-	self
-		assert: c morph class
-		equals: TSAthensMorph
-		description: 'testDrawCanvas:3.33'.
-	self
-		assert: c morph isDrawing class
-		equals: False
-		description: 'testDrawCanvas:3.34'.
-	self
-		assert: c morph isDrawing
-		equals: false
-		description: 'testDrawCanvas:3.35'.
-	self
-		assert: c morph wantsSteps class
-		equals: False
-		description: 'testDrawCanvas:3.36'.
-	self
-		assert: c morph wantsSteps
-		equals: false
-		description: 'testDrawCanvas:3.37'.
-	self
-		assert: c morph isDragging class
-		equals: False
-		description: 'testDrawCanvas:3.38'.
-	self
-		assert: c morph isDragging
-		equals: false
-		description: 'testDrawCanvas:3.39'.
-	self
-		assert: c extent class
-		equals: Point
-		description: 'testDrawCanvas:3.40'.
-	self
-		assert: c extent isZero class
-		equals: False
-		description: 'testDrawCanvas:3.41'.
-	self
-		assert: c extent isZero
-		equals: false
-		description: 'testDrawCanvas:3.42'.
-	self
-		assert: c extent y class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.43'.
-	self
-		assert: c extent y
-		equals: 500
-		description: 'testDrawCanvas:3.44'.
-	self
-		assert: c extent isFloatPoint class
-		equals: False
-		description: 'testDrawCanvas:3.45'.
-	self
-		assert: c extent isFloatPoint
-		equals: false
-		description: 'testDrawCanvas:3.46'.
-	self
-		assert: c extent isIntegerPoint class
-		equals: True
-		description: 'testDrawCanvas:3.47'.
-	self
-		assert: c extent isIntegerPoint
-		equals: true
-		description: 'testDrawCanvas:3.48'.
-	self
-		assert: c extent x class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.49'.
-	self
-		assert: c extent x
-		equals: 500
-		description: 'testDrawCanvas:3.50'.
-	self
-		assert: c extent isPoint class
-		equals: True
-		description: 'testDrawCanvas:3.51'.
-	self
-		assert: c extent isPoint
-		equals: true
-		description: 'testDrawCanvas:3.52'.
-	self
-		assert: c parent class
-		equals: TSCanvas
-		description: 'testDrawCanvas:3.53'.
-	self
-		assert: c parent showRectangles class
-		equals: False
-		description: 'testDrawCanvas:3.54'.
-	self
-		assert: c parent showRectangles
-		equals: false
-		description: 'testDrawCanvas:3.55'.
-	self
-		assert: c parent numberOfFixedShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.56'.
-	self
-		assert: c parent numberOfFixedShapes
-		equals: 0
-		description: 'testDrawCanvas:3.57'.
-	self
-		assert: c parent view class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:3.58'.
-	self
-		assert: c parent view
-		equals: nil
-		description: 'testDrawCanvas:3.59'.
-	self
-		assert: c parent isShape class
-		equals: False
-		description: 'testDrawCanvas:3.60'.
-	self
-		assert: c parent isShape
-		equals: false
-		description: 'testDrawCanvas:3.61'.
-	self
-		assert: c parent numberOfShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.62'.
-	self
-		assert: c parent numberOfShapes
-		equals: 2
-		description: 'testDrawCanvas:3.63'.
-	self
-		assert: c parent clearBackground class
-		equals: True
-		description: 'testDrawCanvas:3.64'.
-	self
-		assert: c parent clearBackground
-		equals: true
-		description: 'testDrawCanvas:3.65'.
-	self
-		assert: c shapes class
-		equals: TSGroup
-		description: 'testDrawCanvas:3.66'.
-	self
-		assert: c shapes size
-		equals: 2
-		description: 'testDrawCanvas:3.67'.
-	self
-		assert: c encompassingRectangle class
-		equals: Rectangle
-		description: 'testDrawCanvas:3.68'.
-	self
-		assert: c encompassingRectangle top class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:3.69'.
-	self
-		assert: c encompassingRectangle top
-		equals: -50.0
-		description: 'testDrawCanvas:3.70'.
-	self
-		assert: c encompassingRectangle hasPositiveExtent class
-		equals: True
-		description: 'testDrawCanvas:3.71'.
-	self
-		assert: c encompassingRectangle hasPositiveExtent
-		equals: true
-		description: 'testDrawCanvas:3.72'.
-	self
-		assert: c encompassingRectangle area class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:3.73'.
-	self
-		assert: c encompassingRectangle area
-		equals: 40000.0
-		description: 'testDrawCanvas:3.74'.
-	self
-		assert: c encompassingRectangle isTall class
-		equals: False
-		description: 'testDrawCanvas:3.75'.
-	self
-		assert: c encompassingRectangle isTall
-		equals: false
-		description: 'testDrawCanvas:3.76'.
-	self
-		assert: c encompassingRectangle left class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:3.77'.
-	self
-		assert: c encompassingRectangle left
-		equals: -50.0
-		description: 'testDrawCanvas:3.78'.
-	self
-		assert: c encompassingRectangle width class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:3.79'.
-	self
-		assert: c encompassingRectangle width
-		equals: 200.0
-		description: 'testDrawCanvas:3.80'.
-	self
-		assert: c encompassingRectangle right class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:3.81'.
-	self
-		assert: c encompassingRectangle right
-		equals: 150.0
-		description: 'testDrawCanvas:3.82'.
-	self
-		assert: c encompassingRectangle isZero class
-		equals: False
-		description: 'testDrawCanvas:3.83'.
-	self
-		assert: c encompassingRectangle isZero
-		equals: false
-		description: 'testDrawCanvas:3.84'.
-	self
-		assert: c encompassingRectangle isWide class
-		equals: False
-		description: 'testDrawCanvas:3.85'.
-	self
-		assert: c encompassingRectangle isWide
-		equals: false
-		description: 'testDrawCanvas:3.86'.
-	self
-		assert: c encompassingRectangle bottom class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:3.87'.
-	self
-		assert: c encompassingRectangle bottom
-		equals: 150.0
-		description: 'testDrawCanvas:3.88'.
-	self
-		assert: c encompassingRectangle isRectangle class
-		equals: True
-		description: 'testDrawCanvas:3.89'.
-	self
-		assert: c encompassingRectangle isRectangle
-		equals: true
-		description: 'testDrawCanvas:3.90'.
-	self
-		assert: c encompassingRectangle height class
-		equals: SmallFloat64
-		description: 'testDrawCanvas:3.91'.
-	self
-		assert: c encompassingRectangle height
-		equals: 200.0
-		description: 'testDrawCanvas:3.92'.
-	self
-		assert: c view class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:3.93'.
-	self assert: c view equals: nil description: 'testDrawCanvas:3.94'.
-	self
-		assert: c isShape class
-		equals: False
-		description: 'testDrawCanvas:3.95'.
-	self
-		assert: c isShape
-		equals: false
-		description: 'testDrawCanvas:3.96'.
-	self
-		assert: c basicRectangle class
-		equals: Rectangle
-		description: 'testDrawCanvas:3.97'.
-	self
-		assert: c basicRectangle top class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.98'.
-	self
-		assert: c basicRectangle top
-		equals: 0
-		description: 'testDrawCanvas:3.99'.
-	self
-		assert: c basicRectangle hasPositiveExtent class
-		equals: True
-		description: 'testDrawCanvas:3.100'.
-	self
-		assert: c basicRectangle hasPositiveExtent
-		equals: true
-		description: 'testDrawCanvas:3.101'.
-	self
-		assert: c basicRectangle area class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.102'.
-	self
-		assert: c basicRectangle area
-		equals: 250000
-		description: 'testDrawCanvas:3.103'.
-	self
-		assert: c basicRectangle isTall class
-		equals: False
-		description: 'testDrawCanvas:3.104'.
-	self
-		assert: c basicRectangle isTall
-		equals: false
-		description: 'testDrawCanvas:3.105'.
-	self
-		assert: c basicRectangle left class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.106'.
-	self
-		assert: c basicRectangle left
-		equals: 0
-		description: 'testDrawCanvas:3.107'.
-	self
-		assert: c basicRectangle width class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.108'.
-	self
-		assert: c basicRectangle width
-		equals: 500
-		description: 'testDrawCanvas:3.109'.
-	self
-		assert: c basicRectangle right class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.110'.
-	self
-		assert: c basicRectangle right
-		equals: 500
-		description: 'testDrawCanvas:3.111'.
-	self
-		assert: c basicRectangle isZero class
-		equals: False
-		description: 'testDrawCanvas:3.112'.
-	self
-		assert: c basicRectangle isZero
-		equals: false
-		description: 'testDrawCanvas:3.113'.
-	self
-		assert: c basicRectangle isWide class
-		equals: False
-		description: 'testDrawCanvas:3.114'.
-	self
-		assert: c basicRectangle isWide
-		equals: false
-		description: 'testDrawCanvas:3.115'.
-	self
-		assert: c basicRectangle bottom class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.116'.
-	self
-		assert: c basicRectangle bottom
-		equals: 500
-		description: 'testDrawCanvas:3.117'.
-	self
-		assert: c basicRectangle isRectangle class
-		equals: True
-		description: 'testDrawCanvas:3.118'.
-	self
-		assert: c basicRectangle isRectangle
-		equals: true
-		description: 'testDrawCanvas:3.119'.
-	self
-		assert: c basicRectangle height class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.120'.
-	self
-		assert: c basicRectangle height
-		equals: 500
-		description: 'testDrawCanvas:3.121'.
-	self
-		assert: c topParent class
-		equals: TSCanvas
-		description: 'testDrawCanvas:3.122'.
-	self
-		assert: c topParent showRectangles class
-		equals: False
-		description: 'testDrawCanvas:3.123'.
-	self
-		assert: c topParent showRectangles
-		equals: false
-		description: 'testDrawCanvas:3.124'.
-	self
-		assert: c topParent numberOfFixedShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.125'.
-	self
-		assert: c topParent numberOfFixedShapes
-		equals: 0
-		description: 'testDrawCanvas:3.126'.
-	self
-		assert: c topParent view class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:3.127'.
-	self
-		assert: c topParent view
-		equals: nil
-		description: 'testDrawCanvas:3.128'.
-	self
-		assert: c topParent isShape class
-		equals: False
-		description: 'testDrawCanvas:3.129'.
-	self
-		assert: c topParent isShape
-		equals: false
-		description: 'testDrawCanvas:3.130'.
-	self
-		assert: c topParent numberOfShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.131'.
-	self
-		assert: c topParent numberOfShapes
-		equals: 2
-		description: 'testDrawCanvas:3.132'.
-	self
-		assert: c topParent clearBackground class
-		equals: True
-		description: 'testDrawCanvas:3.133'.
-	self
-		assert: c topParent clearBackground
-		equals: true
-		description: 'testDrawCanvas:3.134'.
-	self
-		assert: c numberOfShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.135'.
-	self
-		assert: c numberOfShapes
-		equals: 2
-		description: 'testDrawCanvas:3.136'.
-	self
-		assert: c canvas class
-		equals: TSCanvas
-		description: 'testDrawCanvas:3.137'.
-	self
-		assert: c canvas showRectangles class
-		equals: False
-		description: 'testDrawCanvas:3.138'.
-	self
-		assert: c canvas showRectangles
-		equals: false
-		description: 'testDrawCanvas:3.139'.
-	self
-		assert: c canvas numberOfFixedShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.140'.
-	self
-		assert: c canvas numberOfFixedShapes
-		equals: 0
-		description: 'testDrawCanvas:3.141'.
-	self
-		assert: c canvas view class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:3.142'.
-	self
-		assert: c canvas view
-		equals: nil
-		description: 'testDrawCanvas:3.143'.
-	self
-		assert: c canvas isShape class
-		equals: False
-		description: 'testDrawCanvas:3.144'.
-	self
-		assert: c canvas isShape
-		equals: false
-		description: 'testDrawCanvas:3.145'.
-	self
-		assert: c canvas numberOfShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.146'.
-	self
-		assert: c canvas numberOfShapes
-		equals: 2
-		description: 'testDrawCanvas:3.147'.
-	self
-		assert: c canvas clearBackground class
-		equals: True
-		description: 'testDrawCanvas:3.148'.
-	self
-		assert: c canvas clearBackground
-		equals: true
-		description: 'testDrawCanvas:3.149'.
-	self
-		assert: c clearBackground class
-		equals: True
-		description: 'testDrawCanvas:3.150'.
-	self
-		assert: c clearBackground
-		equals: true
-		description: 'testDrawCanvas:3.151'.
-	self
-		assert: tmp_M03YXq7Hba4 class
-		equals: TSAthensMorph
-		description: 'testDrawCanvas:3.1'.
-	self
-		assert: tmp_M03YXq7Hba4 isDrawing class
-		equals: False
-		description: 'testDrawCanvas:3.2'.
-	self
-		assert: tmp_M03YXq7Hba4 isDrawing
-		equals: false
-		description: 'testDrawCanvas:3.3'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas class
-		equals: TSCanvas
-		description: 'testDrawCanvas:3.4'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas showRectangles class
-		equals: False
-		description: 'testDrawCanvas:3.5'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas showRectangles
-		equals: false
-		description: 'testDrawCanvas:3.6'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas numberOfFixedShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.7'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas numberOfFixedShapes
-		equals: 0
-		description: 'testDrawCanvas:3.8'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas view class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:3.9'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas view
-		equals: nil
-		description: 'testDrawCanvas:3.10'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas isShape class
-		equals: False
-		description: 'testDrawCanvas:3.11'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas isShape
-		equals: false
-		description: 'testDrawCanvas:3.12'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas numberOfShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.13'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas numberOfShapes
-		equals: 2
-		description: 'testDrawCanvas:3.14'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas clearBackground class
-		equals: True
-		description: 'testDrawCanvas:3.15'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas clearBackground
-		equals: true
-		description: 'testDrawCanvas:3.16'.
-	self
-		assert: tmp_M03YXq7Hba4 renderer class
-		equals: TSAthensRenderer
-		description: 'testDrawCanvas:3.17'.
-	self
-		assert: tmp_M03YXq7Hba4 renderer builder class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:3.18'.
-	self
-		assert: tmp_M03YXq7Hba4 renderer builder
-		equals: nil
-		description: 'testDrawCanvas:3.19'.
-	self
-		assert: tmp_M03YXq7Hba4 surface class
-		equals: AthensCairoSurface
-		description: 'testDrawCanvas:3.20'.
-	self
-		assert: tmp_M03YXq7Hba4 surface status class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.21'.
-	self
-		assert: tmp_M03YXq7Hba4 surface status
-		equals: 0
-		description: 'testDrawCanvas:3.22'.
-	self
-		assert: tmp_M03YXq7Hba4 surface width class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.23'.
-	self
-		assert: tmp_M03YXq7Hba4 surface width
-		equals: 50
-		description: 'testDrawCanvas:3.24'.
-	self
-		assert: tmp_M03YXq7Hba4 surface height class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.25'.
-	self
-		assert: tmp_M03YXq7Hba4 surface height
-		equals: 40
-		description: 'testDrawCanvas:3.26'.
-	self
-		assert: tmp_M03YXq7Hba4 surface isSuccess class
-		equals: True
-		description: 'testDrawCanvas:3.27'.
-	self
-		assert: tmp_M03YXq7Hba4 surface isSuccess
-		equals: true
-		description: 'testDrawCanvas:3.28'.
-	self
-		assert: tmp_M03YXq7Hba4 surface stride class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.29'.
-	self
-		assert: tmp_M03YXq7Hba4 surface stride
-		equals: 200
-		description: 'testDrawCanvas:3.30'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas class
-		equals: TSCanvas
-		description: 'testDrawCanvas:3.31'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas showRectangles class
-		equals: False
-		description: 'testDrawCanvas:3.32'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas showRectangles
-		equals: false
-		description: 'testDrawCanvas:3.33'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas numberOfFixedShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.34'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas numberOfFixedShapes
-		equals: 0
-		description: 'testDrawCanvas:3.35'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas view class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:3.36'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas view
-		equals: nil
-		description: 'testDrawCanvas:3.37'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas isShape class
-		equals: False
-		description: 'testDrawCanvas:3.38'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas isShape
-		equals: false
-		description: 'testDrawCanvas:3.39'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas numberOfShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:3.40'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas numberOfShapes
-		equals: 2
-		description: 'testDrawCanvas:3.41'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas clearBackground class
-		equals: True
-		description: 'testDrawCanvas:3.42'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas clearBackground
-		equals: true
-		description: 'testDrawCanvas:3.43'.
-	self
-		assert: tmp_M03YXq7Hba4 wantsSteps class
-		equals: False
-		description: 'testDrawCanvas:3.44'.
-	self
-		assert: tmp_M03YXq7Hba4 wantsSteps
-		equals: false
-		description: 'testDrawCanvas:3.45'.
-	self
-		assert: tmp_M03YXq7Hba4 isDragging class
-		equals: False
-		description: 'testDrawCanvas:3.46'.
-	self
-		assert: tmp_M03YXq7Hba4 isDragging
-		equals: false
-		description: 'testDrawCanvas:3.47'.
-	tmp_M03YXq7Hba4 drawOnMockCanvas.
-	self
-		assert: tmp_M03YXq7Hba4 class
-		equals: TSAthensMorph
-		description: 'testDrawCanvas:4.1'.
-	self
-		assert: tmp_M03YXq7Hba4 isDrawing class
-		equals: False
-		description: 'testDrawCanvas:4.2'.
-	self
-		assert: tmp_M03YXq7Hba4 isDrawing
-		equals: false
-		description: 'testDrawCanvas:4.3'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas class
-		equals: TSCanvas
-		description: 'testDrawCanvas:4.4'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas showRectangles class
-		equals: False
-		description: 'testDrawCanvas:4.5'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas showRectangles
-		equals: false
-		description: 'testDrawCanvas:4.6'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas numberOfFixedShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:4.7'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas numberOfFixedShapes
-		equals: 0
-		description: 'testDrawCanvas:4.8'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas view class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:4.9'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas view
-		equals: nil
-		description: 'testDrawCanvas:4.10'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas isShape class
-		equals: False
-		description: 'testDrawCanvas:4.11'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas isShape
-		equals: false
-		description: 'testDrawCanvas:4.12'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas numberOfShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:4.13'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas numberOfShapes
-		equals: 2
-		description: 'testDrawCanvas:4.14'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas clearBackground class
-		equals: True
-		description: 'testDrawCanvas:4.15'.
-	self
-		assert: tmp_M03YXq7Hba4 trachelCanvas clearBackground
-		equals: true
-		description: 'testDrawCanvas:4.16'.
-	self
-		assert: tmp_M03YXq7Hba4 renderer class
-		equals: TSAthensRenderer
-		description: 'testDrawCanvas:4.17'.
-	self
-		assert: tmp_M03YXq7Hba4 renderer builder class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:4.18'.
-	self
-		assert: tmp_M03YXq7Hba4 renderer builder
-		equals: nil
-		description: 'testDrawCanvas:4.19'.
-	self
-		assert: tmp_M03YXq7Hba4 surface class
-		equals: AthensCairoSurface
-		description: 'testDrawCanvas:4.20'.
-	self
-		assert: tmp_M03YXq7Hba4 surface status class
-		equals: SmallInteger
-		description: 'testDrawCanvas:4.21'.
-	self
-		assert: tmp_M03YXq7Hba4 surface status
-		equals: 0
-		description: 'testDrawCanvas:4.22'.
-	self
-		assert: tmp_M03YXq7Hba4 surface width class
-		equals: SmallInteger
-		description: 'testDrawCanvas:4.23'.
-	self
-		assert: tmp_M03YXq7Hba4 surface width
-		equals: 50
-		description: 'testDrawCanvas:4.24'.
-	self
-		assert: tmp_M03YXq7Hba4 surface height class
-		equals: SmallInteger
-		description: 'testDrawCanvas:4.25'.
-	self
-		assert: tmp_M03YXq7Hba4 surface height
-		equals: 40
-		description: 'testDrawCanvas:4.26'.
-	self
-		assert: tmp_M03YXq7Hba4 surface isSuccess class
-		equals: True
-		description: 'testDrawCanvas:4.27'.
-	self
-		assert: tmp_M03YXq7Hba4 surface isSuccess
-		equals: true
-		description: 'testDrawCanvas:4.28'.
-	self
-		assert: tmp_M03YXq7Hba4 surface stride class
-		equals: SmallInteger
-		description: 'testDrawCanvas:4.29'.
-	self
-		assert: tmp_M03YXq7Hba4 surface stride
-		equals: 200
-		description: 'testDrawCanvas:4.30'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas class
-		equals: TSCanvas
-		description: 'testDrawCanvas:4.31'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas showRectangles class
-		equals: False
-		description: 'testDrawCanvas:4.32'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas showRectangles
-		equals: false
-		description: 'testDrawCanvas:4.33'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas numberOfFixedShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:4.34'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas numberOfFixedShapes
-		equals: 0
-		description: 'testDrawCanvas:4.35'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas view class
-		equals: UndefinedObject
-		description: 'testDrawCanvas:4.36'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas view
-		equals: nil
-		description: 'testDrawCanvas:4.37'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas isShape class
-		equals: False
-		description: 'testDrawCanvas:4.38'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas isShape
-		equals: false
-		description: 'testDrawCanvas:4.39'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas numberOfShapes class
-		equals: SmallInteger
-		description: 'testDrawCanvas:4.40'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas numberOfShapes
-		equals: 2
-		description: 'testDrawCanvas:4.41'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas clearBackground class
-		equals: True
-		description: 'testDrawCanvas:4.42'.
-	self
-		assert: tmp_M03YXq7Hba4 canvas clearBackground
-		equals: true
-		description: 'testDrawCanvas:4.43'.
-	self
-		assert: tmp_M03YXq7Hba4 wantsSteps class
-		equals: False
-		description: 'testDrawCanvas:4.44'.
-	self
-		assert: tmp_M03YXq7Hba4 wantsSteps
-		equals: false
-		description: 'testDrawCanvas:4.45'.
-	self
-		assert: tmp_M03YXq7Hba4 isDragging class
-		equals: False
-		description: 'testDrawCanvas:4.46'.
-	self
-		assert: tmp_M03YXq7Hba4 isDragging
-		equals: false
-		description: 'testDrawCanvas:4.47'
-]
-
-{ #category : #'as yet unclassified' }
-TSCanvasTestAmpTest >> testDrawCanvasWithGroup [
-	<madeBySmallAmp>
-	| g tmp_LIMz3CzakV5 |
+	| g tmp_C81dg3r4CM5 |
 	g := TSComposite new.
 	self
 		assert: g class
 		equals: TSComposite
-		description: 'testDrawCanvasWithGroup:1.1'.
+		description: 'testDrawCanvasWithGroup_amp:1.1'.
 	self
 		assert: g shapes class
 		equals: TSGroup
-		description: 'testDrawCanvasWithGroup:1.2'.
+		description: 'testDrawCanvasWithGroup_amp:1.2'.
 	self
 		assert: g shapes size
 		equals: 0
-		description: 'testDrawCanvasWithGroup:1.3'.
+		description: 'testDrawCanvasWithGroup_amp:1.3'.
 	g
 		add:
 			(TSBox new
@@ -2889,15 +695,15 @@ TSCanvasTestAmpTest >> testDrawCanvasWithGroup [
 	self
 		assert: g class
 		equals: TSComposite
-		description: 'testDrawCanvasWithGroup:2.1'.
+		description: 'testDrawCanvasWithGroup_amp:2.1'.
 	self
 		assert: g shapes class
 		equals: TSGroup
-		description: 'testDrawCanvasWithGroup:2.2'.
+		description: 'testDrawCanvasWithGroup_amp:2.2'.
 	self
 		assert: g shapes size
 		equals: 1
-		description: 'testDrawCanvasWithGroup:2.3'.
+		description: 'testDrawCanvasWithGroup_amp:2.3'.
 	g
 		add:
 			(TSEllipse new
@@ -2907,6151 +713,8429 @@ TSCanvasTestAmpTest >> testDrawCanvasWithGroup [
 	self
 		assert: g class
 		equals: TSComposite
-		description: 'testDrawCanvasWithGroup:3.1'.
+		description: 'testDrawCanvasWithGroup_amp:3.1'.
 	self
 		assert: g shapes class
 		equals: TSGroup
-		description: 'testDrawCanvasWithGroup:3.2'.
+		description: 'testDrawCanvasWithGroup_amp:3.2'.
 	self
 		assert: g shapes size
 		equals: 2
-		description: 'testDrawCanvasWithGroup:3.3'.
+		description: 'testDrawCanvasWithGroup_amp:3.3'.
 	c addShape: g.
 	self
 		assert: c class
 		equals: TSCanvas
-		description: 'testDrawCanvasWithGroup:4.1'.
+		description: 'testDrawCanvasWithGroup_amp:4.1'.
 	self
 		assert: c fixedShapes class
 		equals: TSGroup
-		description: 'testDrawCanvasWithGroup:4.2'.
+		description: 'testDrawCanvasWithGroup_amp:4.2'.
 	self
 		assert: c fixedShapes size
 		equals: 0
-		description: 'testDrawCanvasWithGroup:4.3'.
+		description: 'testDrawCanvasWithGroup_amp:4.3'.
 	self
 		assert: c showRectangles class
 		equals: False
-		description: 'testDrawCanvasWithGroup:4.4'.
+		description: 'testDrawCanvasWithGroup_amp:4.4'.
 	self
 		assert: c showRectangles
 		equals: false
-		description: 'testDrawCanvasWithGroup:4.5'.
+		description: 'testDrawCanvasWithGroup_amp:4.5'.
 	self
 		assert: c color class
 		equals: Color
-		description: 'testDrawCanvasWithGroup:4.6'.
+		description: 'testDrawCanvasWithGroup_amp:4.6'.
 	self
 		assert: c color alpha class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:4.7'.
+		description: 'testDrawCanvasWithGroup_amp:4.7'.
 	self
 		assert: c color alpha
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:4.8'.
+		description: 'testDrawCanvasWithGroup_amp:4.8'.
 	self
 		assert: c color red class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:4.9'.
+		description: 'testDrawCanvasWithGroup_amp:4.9'.
 	self
 		assert: c color red
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:4.10'.
+		description: 'testDrawCanvasWithGroup_amp:4.10'.
 	self
 		assert: c color hsvSaturation class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:4.11'.
+		description: 'testDrawCanvasWithGroup_amp:4.11'.
 	self
 		assert: c color hsvSaturation
 		equals: 0.0
-		description: 'testDrawCanvasWithGroup:4.12'.
+		description: 'testDrawCanvasWithGroup_amp:4.12'.
 	self
 		assert: c color brightness class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:4.13'.
+		description: 'testDrawCanvasWithGroup_amp:4.13'.
 	self
 		assert: c color brightness
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:4.14'.
+		description: 'testDrawCanvasWithGroup_amp:4.14'.
 	self
 		assert: c color hue class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:4.15'.
+		description: 'testDrawCanvasWithGroup_amp:4.15'.
 	self
 		assert: c color hue
 		equals: 0.0
-		description: 'testDrawCanvasWithGroup:4.16'.
+		description: 'testDrawCanvasWithGroup_amp:4.16'.
 	self
 		assert: c color green class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:4.17'.
+		description: 'testDrawCanvasWithGroup_amp:4.17'.
 	self
 		assert: c color green
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:4.18'.
+		description: 'testDrawCanvasWithGroup_amp:4.18'.
 	self
 		assert: c color chroma class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:4.19'.
+		description: 'testDrawCanvasWithGroup_amp:4.19'.
 	self
 		assert: c color chroma
 		equals: 0.0
-		description: 'testDrawCanvasWithGroup:4.20'.
+		description: 'testDrawCanvasWithGroup_amp:4.20'.
 	self
 		assert: c color lightness class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:4.21'.
+		description: 'testDrawCanvasWithGroup_amp:4.21'.
 	self
 		assert: c color lightness
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:4.22'.
+		description: 'testDrawCanvasWithGroup_amp:4.22'.
 	self
 		assert: c color hslSaturation class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:4.23'.
+		description: 'testDrawCanvasWithGroup_amp:4.23'.
 	self
 		assert: c color hslSaturation
 		equals: 0.0
-		description: 'testDrawCanvasWithGroup:4.24'.
+		description: 'testDrawCanvasWithGroup_amp:4.24'.
 	self
 		assert: c color saturation class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:4.25'.
+		description: 'testDrawCanvasWithGroup_amp:4.25'.
 	self
 		assert: c color saturation
 		equals: 0.0
-		description: 'testDrawCanvasWithGroup:4.26'.
+		description: 'testDrawCanvasWithGroup_amp:4.26'.
 	self
 		assert: c color luminance class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:4.27'.
+		description: 'testDrawCanvasWithGroup_amp:4.27'.
 	self
 		assert: c color luminance
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:4.28'.
+		description: 'testDrawCanvasWithGroup_amp:4.28'.
 	self
 		assert: c color blue class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:4.29'.
+		description: 'testDrawCanvasWithGroup_amp:4.29'.
 	self
 		assert: c color blue
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:4.30'.
+		description: 'testDrawCanvasWithGroup_amp:4.30'.
 	self
 		assert: c numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:4.31'.
+		description: 'testDrawCanvasWithGroup_amp:4.31'.
 	self
 		assert: c numberOfFixedShapes
 		equals: 0
-		description: 'testDrawCanvasWithGroup:4.32'.
+		description: 'testDrawCanvasWithGroup_amp:4.32'.
 	self
 		assert: c morph class
 		equals: UndefinedObject
-		description: 'testDrawCanvasWithGroup:4.33'.
+		description: 'testDrawCanvasWithGroup_amp:4.33'.
 	self
 		assert: c morph
 		equals: nil
-		description: 'testDrawCanvasWithGroup:4.34'.
+		description: 'testDrawCanvasWithGroup_amp:4.34'.
 	self
 		assert: c extent class
 		equals: Point
-		description: 'testDrawCanvasWithGroup:4.35'.
+		description: 'testDrawCanvasWithGroup_amp:4.35'.
 	self
 		assert: c extent isZero class
 		equals: False
-		description: 'testDrawCanvasWithGroup:4.36'.
+		description: 'testDrawCanvasWithGroup_amp:4.36'.
 	self
 		assert: c extent isZero
 		equals: false
-		description: 'testDrawCanvasWithGroup:4.37'.
+		description: 'testDrawCanvasWithGroup_amp:4.37'.
 	self
 		assert: c extent y class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:4.38'.
+		description: 'testDrawCanvasWithGroup_amp:4.38'.
 	self
 		assert: c extent y
 		equals: 500
-		description: 'testDrawCanvasWithGroup:4.39'.
+		description: 'testDrawCanvasWithGroup_amp:4.39'.
 	self
 		assert: c extent isFloatPoint class
 		equals: False
-		description: 'testDrawCanvasWithGroup:4.40'.
+		description: 'testDrawCanvasWithGroup_amp:4.40'.
 	self
 		assert: c extent isFloatPoint
 		equals: false
-		description: 'testDrawCanvasWithGroup:4.41'.
+		description: 'testDrawCanvasWithGroup_amp:4.41'.
 	self
 		assert: c extent isIntegerPoint class
 		equals: True
-		description: 'testDrawCanvasWithGroup:4.42'.
+		description: 'testDrawCanvasWithGroup_amp:4.42'.
 	self
 		assert: c extent isIntegerPoint
 		equals: true
-		description: 'testDrawCanvasWithGroup:4.43'.
+		description: 'testDrawCanvasWithGroup_amp:4.43'.
 	self
 		assert: c extent x class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:4.44'.
+		description: 'testDrawCanvasWithGroup_amp:4.44'.
 	self
 		assert: c extent x
 		equals: 500
-		description: 'testDrawCanvasWithGroup:4.45'.
+		description: 'testDrawCanvasWithGroup_amp:4.45'.
 	self
 		assert: c extent isPoint class
 		equals: True
-		description: 'testDrawCanvasWithGroup:4.46'.
+		description: 'testDrawCanvasWithGroup_amp:4.46'.
 	self
 		assert: c extent isPoint
 		equals: true
-		description: 'testDrawCanvasWithGroup:4.47'.
+		description: 'testDrawCanvasWithGroup_amp:4.47'.
 	self
 		assert: c parent class
 		equals: TSCanvas
-		description: 'testDrawCanvasWithGroup:4.48'.
+		description: 'testDrawCanvasWithGroup_amp:4.48'.
 	self
 		assert: c parent showRectangles class
 		equals: False
-		description: 'testDrawCanvasWithGroup:4.49'.
+		description: 'testDrawCanvasWithGroup_amp:4.49'.
 	self
 		assert: c parent showRectangles
 		equals: false
-		description: 'testDrawCanvasWithGroup:4.50'.
+		description: 'testDrawCanvasWithGroup_amp:4.50'.
 	self
 		assert: c parent numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:4.51'.
+		description: 'testDrawCanvasWithGroup_amp:4.51'.
 	self
 		assert: c parent numberOfFixedShapes
 		equals: 0
-		description: 'testDrawCanvasWithGroup:4.52'.
+		description: 'testDrawCanvasWithGroup_amp:4.52'.
 	self
 		assert: c parent morph class
 		equals: UndefinedObject
-		description: 'testDrawCanvasWithGroup:4.53'.
+		description: 'testDrawCanvasWithGroup_amp:4.53'.
 	self
 		assert: c parent morph
 		equals: nil
-		description: 'testDrawCanvasWithGroup:4.54'.
+		description: 'testDrawCanvasWithGroup_amp:4.54'.
 	self
 		assert: c parent view class
 		equals: UndefinedObject
-		description: 'testDrawCanvasWithGroup:4.55'.
+		description: 'testDrawCanvasWithGroup_amp:4.55'.
 	self
 		assert: c parent view
 		equals: nil
-		description: 'testDrawCanvasWithGroup:4.56'.
+		description: 'testDrawCanvasWithGroup_amp:4.56'.
 	self
 		assert: c parent isShape class
 		equals: False
-		description: 'testDrawCanvasWithGroup:4.57'.
+		description: 'testDrawCanvasWithGroup_amp:4.57'.
 	self
 		assert: c parent isShape
 		equals: false
-		description: 'testDrawCanvasWithGroup:4.58'.
+		description: 'testDrawCanvasWithGroup_amp:4.58'.
 	self
 		assert: c parent numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:4.59'.
+		description: 'testDrawCanvasWithGroup_amp:4.59'.
 	self
 		assert: c parent numberOfShapes
 		equals: 1
-		description: 'testDrawCanvasWithGroup:4.60'.
+		description: 'testDrawCanvasWithGroup_amp:4.60'.
 	self
 		assert: c parent clearBackground class
 		equals: True
-		description: 'testDrawCanvasWithGroup:4.61'.
+		description: 'testDrawCanvasWithGroup_amp:4.61'.
 	self
 		assert: c parent clearBackground
 		equals: true
-		description: 'testDrawCanvasWithGroup:4.62'.
+		description: 'testDrawCanvasWithGroup_amp:4.62'.
 	self
 		assert: c shapes class
 		equals: TSGroup
-		description: 'testDrawCanvasWithGroup:4.63'.
+		description: 'testDrawCanvasWithGroup_amp:4.63'.
 	self
 		assert: c shapes size
 		equals: 1
-		description: 'testDrawCanvasWithGroup:4.64'.
+		description: 'testDrawCanvasWithGroup_amp:4.64'.
 	self
 		assert: c encompassingRectangle class
 		equals: Rectangle
-		description: 'testDrawCanvasWithGroup:4.65'.
+		description: 'testDrawCanvasWithGroup_amp:4.65'.
 	self
 		assert: c encompassingRectangle top class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:4.66'.
+		description: 'testDrawCanvasWithGroup_amp:4.66'.
 	self
 		assert: c encompassingRectangle top
 		equals: 0.0
-		description: 'testDrawCanvasWithGroup:4.67'.
+		description: 'testDrawCanvasWithGroup_amp:4.67'.
 	self
 		assert: c encompassingRectangle hasPositiveExtent class
 		equals: True
-		description: 'testDrawCanvasWithGroup:4.68'.
+		description: 'testDrawCanvasWithGroup_amp:4.68'.
 	self
 		assert: c encompassingRectangle hasPositiveExtent
 		equals: true
-		description: 'testDrawCanvasWithGroup:4.69'.
+		description: 'testDrawCanvasWithGroup_amp:4.69'.
 	self
 		assert: c encompassingRectangle area class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:4.70'.
+		description: 'testDrawCanvasWithGroup_amp:4.70'.
 	self
 		assert: c encompassingRectangle area
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:4.71'.
+		description: 'testDrawCanvasWithGroup_amp:4.71'.
 	self
 		assert: c encompassingRectangle isTall class
 		equals: False
-		description: 'testDrawCanvasWithGroup:4.72'.
+		description: 'testDrawCanvasWithGroup_amp:4.72'.
 	self
 		assert: c encompassingRectangle isTall
 		equals: false
-		description: 'testDrawCanvasWithGroup:4.73'.
+		description: 'testDrawCanvasWithGroup_amp:4.73'.
 	self
 		assert: c encompassingRectangle left class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:4.74'.
+		description: 'testDrawCanvasWithGroup_amp:4.74'.
 	self
 		assert: c encompassingRectangle left
 		equals: 0.0
-		description: 'testDrawCanvasWithGroup:4.75'.
+		description: 'testDrawCanvasWithGroup_amp:4.75'.
 	self
 		assert: c encompassingRectangle width class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:4.76'.
+		description: 'testDrawCanvasWithGroup_amp:4.76'.
 	self
 		assert: c encompassingRectangle width
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:4.77'.
+		description: 'testDrawCanvasWithGroup_amp:4.77'.
 	self
 		assert: c encompassingRectangle right class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:4.78'.
+		description: 'testDrawCanvasWithGroup_amp:4.78'.
 	self
 		assert: c encompassingRectangle right
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:4.79'.
+		description: 'testDrawCanvasWithGroup_amp:4.79'.
 	self
 		assert: c encompassingRectangle isZero class
 		equals: False
-		description: 'testDrawCanvasWithGroup:4.80'.
+		description: 'testDrawCanvasWithGroup_amp:4.80'.
 	self
 		assert: c encompassingRectangle isZero
 		equals: false
-		description: 'testDrawCanvasWithGroup:4.81'.
+		description: 'testDrawCanvasWithGroup_amp:4.81'.
 	self
 		assert: c encompassingRectangle isWide class
 		equals: False
-		description: 'testDrawCanvasWithGroup:4.82'.
+		description: 'testDrawCanvasWithGroup_amp:4.82'.
 	self
 		assert: c encompassingRectangle isWide
 		equals: false
-		description: 'testDrawCanvasWithGroup:4.83'.
+		description: 'testDrawCanvasWithGroup_amp:4.83'.
 	self
 		assert: c encompassingRectangle bottom class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:4.84'.
+		description: 'testDrawCanvasWithGroup_amp:4.84'.
 	self
 		assert: c encompassingRectangle bottom
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:4.85'.
+		description: 'testDrawCanvasWithGroup_amp:4.85'.
 	self
 		assert: c encompassingRectangle isRectangle class
 		equals: True
-		description: 'testDrawCanvasWithGroup:4.86'.
+		description: 'testDrawCanvasWithGroup_amp:4.86'.
 	self
 		assert: c encompassingRectangle isRectangle
 		equals: true
-		description: 'testDrawCanvasWithGroup:4.87'.
+		description: 'testDrawCanvasWithGroup_amp:4.87'.
 	self
 		assert: c encompassingRectangle height class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:4.88'.
+		description: 'testDrawCanvasWithGroup_amp:4.88'.
 	self
 		assert: c encompassingRectangle height
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:4.89'.
+		description: 'testDrawCanvasWithGroup_amp:4.89'.
 	self
 		assert: c view class
 		equals: UndefinedObject
-		description: 'testDrawCanvasWithGroup:4.90'.
+		description: 'testDrawCanvasWithGroup_amp:4.90'.
 	self
 		assert: c view
 		equals: nil
-		description: 'testDrawCanvasWithGroup:4.91'.
+		description: 'testDrawCanvasWithGroup_amp:4.91'.
 	self
 		assert: c isShape class
 		equals: False
-		description: 'testDrawCanvasWithGroup:4.92'.
+		description: 'testDrawCanvasWithGroup_amp:4.92'.
 	self
 		assert: c isShape
 		equals: false
-		description: 'testDrawCanvasWithGroup:4.93'.
+		description: 'testDrawCanvasWithGroup_amp:4.93'.
 	self
 		assert: c basicRectangle class
 		equals: Rectangle
-		description: 'testDrawCanvasWithGroup:4.94'.
+		description: 'testDrawCanvasWithGroup_amp:4.94'.
 	self
 		assert: c basicRectangle top class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:4.95'.
+		description: 'testDrawCanvasWithGroup_amp:4.95'.
 	self
 		assert: c basicRectangle top
 		equals: 0
-		description: 'testDrawCanvasWithGroup:4.96'.
+		description: 'testDrawCanvasWithGroup_amp:4.96'.
 	self
 		assert: c basicRectangle hasPositiveExtent class
 		equals: True
-		description: 'testDrawCanvasWithGroup:4.97'.
+		description: 'testDrawCanvasWithGroup_amp:4.97'.
 	self
 		assert: c basicRectangle hasPositiveExtent
 		equals: true
-		description: 'testDrawCanvasWithGroup:4.98'.
+		description: 'testDrawCanvasWithGroup_amp:4.98'.
 	self
 		assert: c basicRectangle area class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:4.99'.
+		description: 'testDrawCanvasWithGroup_amp:4.99'.
 	self
 		assert: c basicRectangle area
 		equals: 250000
-		description: 'testDrawCanvasWithGroup:4.100'.
+		description: 'testDrawCanvasWithGroup_amp:4.100'.
 	self
 		assert: c basicRectangle isTall class
 		equals: False
-		description: 'testDrawCanvasWithGroup:4.101'.
+		description: 'testDrawCanvasWithGroup_amp:4.101'.
 	self
 		assert: c basicRectangle isTall
 		equals: false
-		description: 'testDrawCanvasWithGroup:4.102'.
+		description: 'testDrawCanvasWithGroup_amp:4.102'.
 	self
 		assert: c basicRectangle left class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:4.103'.
+		description: 'testDrawCanvasWithGroup_amp:4.103'.
 	self
 		assert: c basicRectangle left
 		equals: 0
-		description: 'testDrawCanvasWithGroup:4.104'.
+		description: 'testDrawCanvasWithGroup_amp:4.104'.
 	self
 		assert: c basicRectangle width class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:4.105'.
+		description: 'testDrawCanvasWithGroup_amp:4.105'.
 	self
 		assert: c basicRectangle width
 		equals: 500
-		description: 'testDrawCanvasWithGroup:4.106'.
+		description: 'testDrawCanvasWithGroup_amp:4.106'.
 	self
 		assert: c basicRectangle right class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:4.107'.
+		description: 'testDrawCanvasWithGroup_amp:4.107'.
 	self
 		assert: c basicRectangle right
 		equals: 500
-		description: 'testDrawCanvasWithGroup:4.108'.
+		description: 'testDrawCanvasWithGroup_amp:4.108'.
 	self
 		assert: c basicRectangle isZero class
 		equals: False
-		description: 'testDrawCanvasWithGroup:4.109'.
+		description: 'testDrawCanvasWithGroup_amp:4.109'.
 	self
 		assert: c basicRectangle isZero
 		equals: false
-		description: 'testDrawCanvasWithGroup:4.110'.
+		description: 'testDrawCanvasWithGroup_amp:4.110'.
 	self
 		assert: c basicRectangle isWide class
 		equals: False
-		description: 'testDrawCanvasWithGroup:4.111'.
+		description: 'testDrawCanvasWithGroup_amp:4.111'.
 	self
 		assert: c basicRectangle isWide
 		equals: false
-		description: 'testDrawCanvasWithGroup:4.112'.
+		description: 'testDrawCanvasWithGroup_amp:4.112'.
 	self
 		assert: c basicRectangle bottom class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:4.113'.
+		description: 'testDrawCanvasWithGroup_amp:4.113'.
 	self
 		assert: c basicRectangle bottom
 		equals: 500
-		description: 'testDrawCanvasWithGroup:4.114'.
+		description: 'testDrawCanvasWithGroup_amp:4.114'.
 	self
 		assert: c basicRectangle isRectangle class
 		equals: True
-		description: 'testDrawCanvasWithGroup:4.115'.
+		description: 'testDrawCanvasWithGroup_amp:4.115'.
 	self
 		assert: c basicRectangle isRectangle
 		equals: true
-		description: 'testDrawCanvasWithGroup:4.116'.
+		description: 'testDrawCanvasWithGroup_amp:4.116'.
 	self
 		assert: c basicRectangle height class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:4.117'.
+		description: 'testDrawCanvasWithGroup_amp:4.117'.
 	self
 		assert: c basicRectangle height
 		equals: 500
-		description: 'testDrawCanvasWithGroup:4.118'.
+		description: 'testDrawCanvasWithGroup_amp:4.118'.
 	self
 		assert: c topParent class
 		equals: TSCanvas
-		description: 'testDrawCanvasWithGroup:4.119'.
+		description: 'testDrawCanvasWithGroup_amp:4.119'.
 	self
 		assert: c topParent showRectangles class
 		equals: False
-		description: 'testDrawCanvasWithGroup:4.120'.
+		description: 'testDrawCanvasWithGroup_amp:4.120'.
 	self
 		assert: c topParent showRectangles
 		equals: false
-		description: 'testDrawCanvasWithGroup:4.121'.
+		description: 'testDrawCanvasWithGroup_amp:4.121'.
 	self
 		assert: c topParent numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:4.122'.
+		description: 'testDrawCanvasWithGroup_amp:4.122'.
 	self
 		assert: c topParent numberOfFixedShapes
 		equals: 0
-		description: 'testDrawCanvasWithGroup:4.123'.
+		description: 'testDrawCanvasWithGroup_amp:4.123'.
 	self
 		assert: c topParent morph class
 		equals: UndefinedObject
-		description: 'testDrawCanvasWithGroup:4.124'.
+		description: 'testDrawCanvasWithGroup_amp:4.124'.
 	self
 		assert: c topParent morph
 		equals: nil
-		description: 'testDrawCanvasWithGroup:4.125'.
+		description: 'testDrawCanvasWithGroup_amp:4.125'.
 	self
 		assert: c topParent view class
 		equals: UndefinedObject
-		description: 'testDrawCanvasWithGroup:4.126'.
+		description: 'testDrawCanvasWithGroup_amp:4.126'.
 	self
 		assert: c topParent view
 		equals: nil
-		description: 'testDrawCanvasWithGroup:4.127'.
+		description: 'testDrawCanvasWithGroup_amp:4.127'.
 	self
 		assert: c topParent isShape class
 		equals: False
-		description: 'testDrawCanvasWithGroup:4.128'.
+		description: 'testDrawCanvasWithGroup_amp:4.128'.
 	self
 		assert: c topParent isShape
 		equals: false
-		description: 'testDrawCanvasWithGroup:4.129'.
+		description: 'testDrawCanvasWithGroup_amp:4.129'.
 	self
 		assert: c topParent numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:4.130'.
+		description: 'testDrawCanvasWithGroup_amp:4.130'.
 	self
 		assert: c topParent numberOfShapes
 		equals: 1
-		description: 'testDrawCanvasWithGroup:4.131'.
+		description: 'testDrawCanvasWithGroup_amp:4.131'.
 	self
 		assert: c topParent clearBackground class
 		equals: True
-		description: 'testDrawCanvasWithGroup:4.132'.
+		description: 'testDrawCanvasWithGroup_amp:4.132'.
 	self
 		assert: c topParent clearBackground
 		equals: true
-		description: 'testDrawCanvasWithGroup:4.133'.
+		description: 'testDrawCanvasWithGroup_amp:4.133'.
 	self
 		assert: c numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:4.134'.
+		description: 'testDrawCanvasWithGroup_amp:4.134'.
 	self
 		assert: c numberOfShapes
 		equals: 1
-		description: 'testDrawCanvasWithGroup:4.135'.
+		description: 'testDrawCanvasWithGroup_amp:4.135'.
 	self
 		assert: c canvas class
 		equals: TSCanvas
-		description: 'testDrawCanvasWithGroup:4.136'.
+		description: 'testDrawCanvasWithGroup_amp:4.136'.
 	self
 		assert: c canvas showRectangles class
 		equals: False
-		description: 'testDrawCanvasWithGroup:4.137'.
+		description: 'testDrawCanvasWithGroup_amp:4.137'.
 	self
 		assert: c canvas showRectangles
 		equals: false
-		description: 'testDrawCanvasWithGroup:4.138'.
+		description: 'testDrawCanvasWithGroup_amp:4.138'.
 	self
 		assert: c canvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:4.139'.
+		description: 'testDrawCanvasWithGroup_amp:4.139'.
 	self
 		assert: c canvas numberOfFixedShapes
 		equals: 0
-		description: 'testDrawCanvasWithGroup:4.140'.
+		description: 'testDrawCanvasWithGroup_amp:4.140'.
 	self
 		assert: c canvas morph class
 		equals: UndefinedObject
-		description: 'testDrawCanvasWithGroup:4.141'.
+		description: 'testDrawCanvasWithGroup_amp:4.141'.
 	self
 		assert: c canvas morph
 		equals: nil
-		description: 'testDrawCanvasWithGroup:4.142'.
+		description: 'testDrawCanvasWithGroup_amp:4.142'.
 	self
 		assert: c canvas view class
 		equals: UndefinedObject
-		description: 'testDrawCanvasWithGroup:4.143'.
+		description: 'testDrawCanvasWithGroup_amp:4.143'.
 	self
 		assert: c canvas view
 		equals: nil
-		description: 'testDrawCanvasWithGroup:4.144'.
+		description: 'testDrawCanvasWithGroup_amp:4.144'.
 	self
 		assert: c canvas isShape class
 		equals: False
-		description: 'testDrawCanvasWithGroup:4.145'.
+		description: 'testDrawCanvasWithGroup_amp:4.145'.
 	self
 		assert: c canvas isShape
 		equals: false
-		description: 'testDrawCanvasWithGroup:4.146'.
+		description: 'testDrawCanvasWithGroup_amp:4.146'.
 	self
 		assert: c canvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:4.147'.
+		description: 'testDrawCanvasWithGroup_amp:4.147'.
 	self
 		assert: c canvas numberOfShapes
 		equals: 1
-		description: 'testDrawCanvasWithGroup:4.148'.
+		description: 'testDrawCanvasWithGroup_amp:4.148'.
 	self
 		assert: c canvas clearBackground class
 		equals: True
-		description: 'testDrawCanvasWithGroup:4.149'.
+		description: 'testDrawCanvasWithGroup_amp:4.149'.
 	self
 		assert: c canvas clearBackground
 		equals: true
-		description: 'testDrawCanvasWithGroup:4.150'.
+		description: 'testDrawCanvasWithGroup_amp:4.150'.
 	self
 		assert: c clearBackground class
 		equals: True
-		description: 'testDrawCanvasWithGroup:4.151'.
+		description: 'testDrawCanvasWithGroup_amp:4.151'.
 	self
 		assert: c clearBackground
 		equals: true
-		description: 'testDrawCanvasWithGroup:4.152'.
-	tmp_LIMz3CzakV5 := c createMorph.
+		description: 'testDrawCanvasWithGroup_amp:4.152'.
+	tmp_C81dg3r4CM5 := c createMorph.
 	self
 		assert: c class
 		equals: TSCanvas
-		description: 'testDrawCanvasWithGroup:5.1'.
+		description: 'testDrawCanvasWithGroup_amp:5.1'.
 	self
 		assert: c fixedShapes class
 		equals: TSGroup
-		description: 'testDrawCanvasWithGroup:5.2'.
+		description: 'testDrawCanvasWithGroup_amp:5.2'.
 	self
 		assert: c fixedShapes size
 		equals: 0
-		description: 'testDrawCanvasWithGroup:5.3'.
+		description: 'testDrawCanvasWithGroup_amp:5.3'.
 	self
 		assert: c showRectangles class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.4'.
+		description: 'testDrawCanvasWithGroup_amp:5.4'.
 	self
 		assert: c showRectangles
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.5'.
+		description: 'testDrawCanvasWithGroup_amp:5.5'.
 	self
 		assert: c color class
 		equals: Color
-		description: 'testDrawCanvasWithGroup:5.6'.
+		description: 'testDrawCanvasWithGroup_amp:5.6'.
 	self
 		assert: c color alpha class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:5.7'.
+		description: 'testDrawCanvasWithGroup_amp:5.7'.
 	self
 		assert: c color alpha
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:5.8'.
+		description: 'testDrawCanvasWithGroup_amp:5.8'.
 	self
 		assert: c color red class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:5.9'.
+		description: 'testDrawCanvasWithGroup_amp:5.9'.
 	self
 		assert: c color red
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:5.10'.
+		description: 'testDrawCanvasWithGroup_amp:5.10'.
 	self
 		assert: c color hsvSaturation class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:5.11'.
+		description: 'testDrawCanvasWithGroup_amp:5.11'.
 	self
 		assert: c color hsvSaturation
 		equals: 0.0
-		description: 'testDrawCanvasWithGroup:5.12'.
+		description: 'testDrawCanvasWithGroup_amp:5.12'.
 	self
 		assert: c color brightness class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:5.13'.
+		description: 'testDrawCanvasWithGroup_amp:5.13'.
 	self
 		assert: c color brightness
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:5.14'.
+		description: 'testDrawCanvasWithGroup_amp:5.14'.
 	self
 		assert: c color hue class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:5.15'.
+		description: 'testDrawCanvasWithGroup_amp:5.15'.
 	self
 		assert: c color hue
 		equals: 0.0
-		description: 'testDrawCanvasWithGroup:5.16'.
+		description: 'testDrawCanvasWithGroup_amp:5.16'.
 	self
 		assert: c color green class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:5.17'.
+		description: 'testDrawCanvasWithGroup_amp:5.17'.
 	self
 		assert: c color green
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:5.18'.
+		description: 'testDrawCanvasWithGroup_amp:5.18'.
 	self
 		assert: c color chroma class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:5.19'.
+		description: 'testDrawCanvasWithGroup_amp:5.19'.
 	self
 		assert: c color chroma
 		equals: 0.0
-		description: 'testDrawCanvasWithGroup:5.20'.
+		description: 'testDrawCanvasWithGroup_amp:5.20'.
 	self
 		assert: c color lightness class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:5.21'.
+		description: 'testDrawCanvasWithGroup_amp:5.21'.
 	self
 		assert: c color lightness
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:5.22'.
+		description: 'testDrawCanvasWithGroup_amp:5.22'.
 	self
 		assert: c color hslSaturation class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:5.23'.
+		description: 'testDrawCanvasWithGroup_amp:5.23'.
 	self
 		assert: c color hslSaturation
 		equals: 0.0
-		description: 'testDrawCanvasWithGroup:5.24'.
+		description: 'testDrawCanvasWithGroup_amp:5.24'.
 	self
 		assert: c color saturation class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:5.25'.
+		description: 'testDrawCanvasWithGroup_amp:5.25'.
 	self
 		assert: c color saturation
 		equals: 0.0
-		description: 'testDrawCanvasWithGroup:5.26'.
+		description: 'testDrawCanvasWithGroup_amp:5.26'.
 	self
 		assert: c color luminance class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:5.27'.
+		description: 'testDrawCanvasWithGroup_amp:5.27'.
 	self
 		assert: c color luminance
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:5.28'.
+		description: 'testDrawCanvasWithGroup_amp:5.28'.
 	self
 		assert: c color blue class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:5.29'.
+		description: 'testDrawCanvasWithGroup_amp:5.29'.
 	self
 		assert: c color blue
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:5.30'.
+		description: 'testDrawCanvasWithGroup_amp:5.30'.
 	self
 		assert: c numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.31'.
+		description: 'testDrawCanvasWithGroup_amp:5.31'.
 	self
 		assert: c numberOfFixedShapes
 		equals: 0
-		description: 'testDrawCanvasWithGroup:5.32'.
+		description: 'testDrawCanvasWithGroup_amp:5.32'.
 	self
 		assert: c morph class
 		equals: TSAthensMorph
-		description: 'testDrawCanvasWithGroup:5.33'.
+		description: 'testDrawCanvasWithGroup_amp:5.33'.
 	self
 		assert: c morph isDrawing class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.34'.
+		description: 'testDrawCanvasWithGroup_amp:5.34'.
 	self
 		assert: c morph isDrawing
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.35'.
+		description: 'testDrawCanvasWithGroup_amp:5.35'.
 	self
 		assert: c morph wantsSteps class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.36'.
+		description: 'testDrawCanvasWithGroup_amp:5.36'.
 	self
 		assert: c morph wantsSteps
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.37'.
+		description: 'testDrawCanvasWithGroup_amp:5.37'.
 	self
 		assert: c morph isDragging class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.38'.
+		description: 'testDrawCanvasWithGroup_amp:5.38'.
 	self
 		assert: c morph isDragging
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.39'.
+		description: 'testDrawCanvasWithGroup_amp:5.39'.
 	self
 		assert: c extent class
 		equals: Point
-		description: 'testDrawCanvasWithGroup:5.40'.
+		description: 'testDrawCanvasWithGroup_amp:5.40'.
 	self
 		assert: c extent isZero class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.41'.
+		description: 'testDrawCanvasWithGroup_amp:5.41'.
 	self
 		assert: c extent isZero
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.42'.
+		description: 'testDrawCanvasWithGroup_amp:5.42'.
 	self
 		assert: c extent y class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.43'.
+		description: 'testDrawCanvasWithGroup_amp:5.43'.
 	self
 		assert: c extent y
 		equals: 500
-		description: 'testDrawCanvasWithGroup:5.44'.
+		description: 'testDrawCanvasWithGroup_amp:5.44'.
 	self
 		assert: c extent isFloatPoint class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.45'.
+		description: 'testDrawCanvasWithGroup_amp:5.45'.
 	self
 		assert: c extent isFloatPoint
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.46'.
+		description: 'testDrawCanvasWithGroup_amp:5.46'.
 	self
 		assert: c extent isIntegerPoint class
 		equals: True
-		description: 'testDrawCanvasWithGroup:5.47'.
+		description: 'testDrawCanvasWithGroup_amp:5.47'.
 	self
 		assert: c extent isIntegerPoint
 		equals: true
-		description: 'testDrawCanvasWithGroup:5.48'.
+		description: 'testDrawCanvasWithGroup_amp:5.48'.
 	self
 		assert: c extent x class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.49'.
+		description: 'testDrawCanvasWithGroup_amp:5.49'.
 	self
 		assert: c extent x
 		equals: 500
-		description: 'testDrawCanvasWithGroup:5.50'.
+		description: 'testDrawCanvasWithGroup_amp:5.50'.
 	self
 		assert: c extent isPoint class
 		equals: True
-		description: 'testDrawCanvasWithGroup:5.51'.
+		description: 'testDrawCanvasWithGroup_amp:5.51'.
 	self
 		assert: c extent isPoint
 		equals: true
-		description: 'testDrawCanvasWithGroup:5.52'.
+		description: 'testDrawCanvasWithGroup_amp:5.52'.
 	self
 		assert: c parent class
 		equals: TSCanvas
-		description: 'testDrawCanvasWithGroup:5.53'.
+		description: 'testDrawCanvasWithGroup_amp:5.53'.
 	self
 		assert: c parent showRectangles class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.54'.
+		description: 'testDrawCanvasWithGroup_amp:5.54'.
 	self
 		assert: c parent showRectangles
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.55'.
+		description: 'testDrawCanvasWithGroup_amp:5.55'.
 	self
 		assert: c parent numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.56'.
+		description: 'testDrawCanvasWithGroup_amp:5.56'.
 	self
 		assert: c parent numberOfFixedShapes
 		equals: 0
-		description: 'testDrawCanvasWithGroup:5.57'.
+		description: 'testDrawCanvasWithGroup_amp:5.57'.
 	self
 		assert: c parent view class
 		equals: UndefinedObject
-		description: 'testDrawCanvasWithGroup:5.58'.
+		description: 'testDrawCanvasWithGroup_amp:5.58'.
 	self
 		assert: c parent view
 		equals: nil
-		description: 'testDrawCanvasWithGroup:5.59'.
+		description: 'testDrawCanvasWithGroup_amp:5.59'.
 	self
 		assert: c parent isShape class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.60'.
+		description: 'testDrawCanvasWithGroup_amp:5.60'.
 	self
 		assert: c parent isShape
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.61'.
+		description: 'testDrawCanvasWithGroup_amp:5.61'.
 	self
 		assert: c parent numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.62'.
+		description: 'testDrawCanvasWithGroup_amp:5.62'.
 	self
 		assert: c parent numberOfShapes
 		equals: 1
-		description: 'testDrawCanvasWithGroup:5.63'.
+		description: 'testDrawCanvasWithGroup_amp:5.63'.
 	self
 		assert: c parent clearBackground class
 		equals: True
-		description: 'testDrawCanvasWithGroup:5.64'.
+		description: 'testDrawCanvasWithGroup_amp:5.64'.
 	self
 		assert: c parent clearBackground
 		equals: true
-		description: 'testDrawCanvasWithGroup:5.65'.
+		description: 'testDrawCanvasWithGroup_amp:5.65'.
 	self
 		assert: c shapes class
 		equals: TSGroup
-		description: 'testDrawCanvasWithGroup:5.66'.
+		description: 'testDrawCanvasWithGroup_amp:5.66'.
 	self
 		assert: c shapes size
 		equals: 1
-		description: 'testDrawCanvasWithGroup:5.67'.
+		description: 'testDrawCanvasWithGroup_amp:5.67'.
 	self
 		assert: c encompassingRectangle class
 		equals: Rectangle
-		description: 'testDrawCanvasWithGroup:5.68'.
+		description: 'testDrawCanvasWithGroup_amp:5.68'.
 	self
 		assert: c encompassingRectangle top class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:5.69'.
+		description: 'testDrawCanvasWithGroup_amp:5.69'.
 	self
 		assert: c encompassingRectangle top
 		equals: 0.0
-		description: 'testDrawCanvasWithGroup:5.70'.
+		description: 'testDrawCanvasWithGroup_amp:5.70'.
 	self
 		assert: c encompassingRectangle hasPositiveExtent class
 		equals: True
-		description: 'testDrawCanvasWithGroup:5.71'.
+		description: 'testDrawCanvasWithGroup_amp:5.71'.
 	self
 		assert: c encompassingRectangle hasPositiveExtent
 		equals: true
-		description: 'testDrawCanvasWithGroup:5.72'.
+		description: 'testDrawCanvasWithGroup_amp:5.72'.
 	self
 		assert: c encompassingRectangle area class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:5.73'.
+		description: 'testDrawCanvasWithGroup_amp:5.73'.
 	self
 		assert: c encompassingRectangle area
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:5.74'.
+		description: 'testDrawCanvasWithGroup_amp:5.74'.
 	self
 		assert: c encompassingRectangle isTall class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.75'.
+		description: 'testDrawCanvasWithGroup_amp:5.75'.
 	self
 		assert: c encompassingRectangle isTall
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.76'.
+		description: 'testDrawCanvasWithGroup_amp:5.76'.
 	self
 		assert: c encompassingRectangle left class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:5.77'.
+		description: 'testDrawCanvasWithGroup_amp:5.77'.
 	self
 		assert: c encompassingRectangle left
 		equals: 0.0
-		description: 'testDrawCanvasWithGroup:5.78'.
+		description: 'testDrawCanvasWithGroup_amp:5.78'.
 	self
 		assert: c encompassingRectangle width class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:5.79'.
+		description: 'testDrawCanvasWithGroup_amp:5.79'.
 	self
 		assert: c encompassingRectangle width
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:5.80'.
+		description: 'testDrawCanvasWithGroup_amp:5.80'.
 	self
 		assert: c encompassingRectangle right class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:5.81'.
+		description: 'testDrawCanvasWithGroup_amp:5.81'.
 	self
 		assert: c encompassingRectangle right
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:5.82'.
+		description: 'testDrawCanvasWithGroup_amp:5.82'.
 	self
 		assert: c encompassingRectangle isZero class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.83'.
+		description: 'testDrawCanvasWithGroup_amp:5.83'.
 	self
 		assert: c encompassingRectangle isZero
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.84'.
+		description: 'testDrawCanvasWithGroup_amp:5.84'.
 	self
 		assert: c encompassingRectangle isWide class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.85'.
+		description: 'testDrawCanvasWithGroup_amp:5.85'.
 	self
 		assert: c encompassingRectangle isWide
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.86'.
+		description: 'testDrawCanvasWithGroup_amp:5.86'.
 	self
 		assert: c encompassingRectangle bottom class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:5.87'.
+		description: 'testDrawCanvasWithGroup_amp:5.87'.
 	self
 		assert: c encompassingRectangle bottom
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:5.88'.
+		description: 'testDrawCanvasWithGroup_amp:5.88'.
 	self
 		assert: c encompassingRectangle isRectangle class
 		equals: True
-		description: 'testDrawCanvasWithGroup:5.89'.
+		description: 'testDrawCanvasWithGroup_amp:5.89'.
 	self
 		assert: c encompassingRectangle isRectangle
 		equals: true
-		description: 'testDrawCanvasWithGroup:5.90'.
+		description: 'testDrawCanvasWithGroup_amp:5.90'.
 	self
 		assert: c encompassingRectangle height class
 		equals: SmallFloat64
-		description: 'testDrawCanvasWithGroup:5.91'.
+		description: 'testDrawCanvasWithGroup_amp:5.91'.
 	self
 		assert: c encompassingRectangle height
 		equals: 1.0
-		description: 'testDrawCanvasWithGroup:5.92'.
+		description: 'testDrawCanvasWithGroup_amp:5.92'.
 	self
 		assert: c view class
 		equals: UndefinedObject
-		description: 'testDrawCanvasWithGroup:5.93'.
+		description: 'testDrawCanvasWithGroup_amp:5.93'.
 	self
 		assert: c view
 		equals: nil
-		description: 'testDrawCanvasWithGroup:5.94'.
+		description: 'testDrawCanvasWithGroup_amp:5.94'.
 	self
 		assert: c isShape class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.95'.
+		description: 'testDrawCanvasWithGroup_amp:5.95'.
 	self
 		assert: c isShape
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.96'.
+		description: 'testDrawCanvasWithGroup_amp:5.96'.
 	self
 		assert: c basicRectangle class
 		equals: Rectangle
-		description: 'testDrawCanvasWithGroup:5.97'.
+		description: 'testDrawCanvasWithGroup_amp:5.97'.
 	self
 		assert: c basicRectangle top class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.98'.
+		description: 'testDrawCanvasWithGroup_amp:5.98'.
 	self
 		assert: c basicRectangle top
 		equals: 0
-		description: 'testDrawCanvasWithGroup:5.99'.
+		description: 'testDrawCanvasWithGroup_amp:5.99'.
 	self
 		assert: c basicRectangle hasPositiveExtent class
 		equals: True
-		description: 'testDrawCanvasWithGroup:5.100'.
+		description: 'testDrawCanvasWithGroup_amp:5.100'.
 	self
 		assert: c basicRectangle hasPositiveExtent
 		equals: true
-		description: 'testDrawCanvasWithGroup:5.101'.
+		description: 'testDrawCanvasWithGroup_amp:5.101'.
 	self
 		assert: c basicRectangle area class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.102'.
+		description: 'testDrawCanvasWithGroup_amp:5.102'.
 	self
 		assert: c basicRectangle area
 		equals: 250000
-		description: 'testDrawCanvasWithGroup:5.103'.
+		description: 'testDrawCanvasWithGroup_amp:5.103'.
 	self
 		assert: c basicRectangle isTall class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.104'.
+		description: 'testDrawCanvasWithGroup_amp:5.104'.
 	self
 		assert: c basicRectangle isTall
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.105'.
+		description: 'testDrawCanvasWithGroup_amp:5.105'.
 	self
 		assert: c basicRectangle left class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.106'.
+		description: 'testDrawCanvasWithGroup_amp:5.106'.
 	self
 		assert: c basicRectangle left
 		equals: 0
-		description: 'testDrawCanvasWithGroup:5.107'.
+		description: 'testDrawCanvasWithGroup_amp:5.107'.
 	self
 		assert: c basicRectangle width class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.108'.
+		description: 'testDrawCanvasWithGroup_amp:5.108'.
 	self
 		assert: c basicRectangle width
 		equals: 500
-		description: 'testDrawCanvasWithGroup:5.109'.
+		description: 'testDrawCanvasWithGroup_amp:5.109'.
 	self
 		assert: c basicRectangle right class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.110'.
+		description: 'testDrawCanvasWithGroup_amp:5.110'.
 	self
 		assert: c basicRectangle right
 		equals: 500
-		description: 'testDrawCanvasWithGroup:5.111'.
+		description: 'testDrawCanvasWithGroup_amp:5.111'.
 	self
 		assert: c basicRectangle isZero class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.112'.
+		description: 'testDrawCanvasWithGroup_amp:5.112'.
 	self
 		assert: c basicRectangle isZero
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.113'.
+		description: 'testDrawCanvasWithGroup_amp:5.113'.
 	self
 		assert: c basicRectangle isWide class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.114'.
+		description: 'testDrawCanvasWithGroup_amp:5.114'.
 	self
 		assert: c basicRectangle isWide
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.115'.
+		description: 'testDrawCanvasWithGroup_amp:5.115'.
 	self
 		assert: c basicRectangle bottom class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.116'.
+		description: 'testDrawCanvasWithGroup_amp:5.116'.
 	self
 		assert: c basicRectangle bottom
 		equals: 500
-		description: 'testDrawCanvasWithGroup:5.117'.
+		description: 'testDrawCanvasWithGroup_amp:5.117'.
 	self
 		assert: c basicRectangle isRectangle class
 		equals: True
-		description: 'testDrawCanvasWithGroup:5.118'.
+		description: 'testDrawCanvasWithGroup_amp:5.118'.
 	self
 		assert: c basicRectangle isRectangle
 		equals: true
-		description: 'testDrawCanvasWithGroup:5.119'.
+		description: 'testDrawCanvasWithGroup_amp:5.119'.
 	self
 		assert: c basicRectangle height class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.120'.
+		description: 'testDrawCanvasWithGroup_amp:5.120'.
 	self
 		assert: c basicRectangle height
 		equals: 500
-		description: 'testDrawCanvasWithGroup:5.121'.
+		description: 'testDrawCanvasWithGroup_amp:5.121'.
 	self
 		assert: c topParent class
 		equals: TSCanvas
-		description: 'testDrawCanvasWithGroup:5.122'.
+		description: 'testDrawCanvasWithGroup_amp:5.122'.
 	self
 		assert: c topParent showRectangles class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.123'.
+		description: 'testDrawCanvasWithGroup_amp:5.123'.
 	self
 		assert: c topParent showRectangles
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.124'.
+		description: 'testDrawCanvasWithGroup_amp:5.124'.
 	self
 		assert: c topParent numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.125'.
+		description: 'testDrawCanvasWithGroup_amp:5.125'.
 	self
 		assert: c topParent numberOfFixedShapes
 		equals: 0
-		description: 'testDrawCanvasWithGroup:5.126'.
+		description: 'testDrawCanvasWithGroup_amp:5.126'.
 	self
 		assert: c topParent view class
 		equals: UndefinedObject
-		description: 'testDrawCanvasWithGroup:5.127'.
+		description: 'testDrawCanvasWithGroup_amp:5.127'.
 	self
 		assert: c topParent view
 		equals: nil
-		description: 'testDrawCanvasWithGroup:5.128'.
+		description: 'testDrawCanvasWithGroup_amp:5.128'.
 	self
 		assert: c topParent isShape class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.129'.
+		description: 'testDrawCanvasWithGroup_amp:5.129'.
 	self
 		assert: c topParent isShape
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.130'.
+		description: 'testDrawCanvasWithGroup_amp:5.130'.
 	self
 		assert: c topParent numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.131'.
+		description: 'testDrawCanvasWithGroup_amp:5.131'.
 	self
 		assert: c topParent numberOfShapes
 		equals: 1
-		description: 'testDrawCanvasWithGroup:5.132'.
+		description: 'testDrawCanvasWithGroup_amp:5.132'.
 	self
 		assert: c topParent clearBackground class
 		equals: True
-		description: 'testDrawCanvasWithGroup:5.133'.
+		description: 'testDrawCanvasWithGroup_amp:5.133'.
 	self
 		assert: c topParent clearBackground
 		equals: true
-		description: 'testDrawCanvasWithGroup:5.134'.
+		description: 'testDrawCanvasWithGroup_amp:5.134'.
 	self
 		assert: c numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.135'.
+		description: 'testDrawCanvasWithGroup_amp:5.135'.
 	self
 		assert: c numberOfShapes
 		equals: 1
-		description: 'testDrawCanvasWithGroup:5.136'.
+		description: 'testDrawCanvasWithGroup_amp:5.136'.
 	self
 		assert: c canvas class
 		equals: TSCanvas
-		description: 'testDrawCanvasWithGroup:5.137'.
+		description: 'testDrawCanvasWithGroup_amp:5.137'.
 	self
 		assert: c canvas showRectangles class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.138'.
+		description: 'testDrawCanvasWithGroup_amp:5.138'.
 	self
 		assert: c canvas showRectangles
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.139'.
+		description: 'testDrawCanvasWithGroup_amp:5.139'.
 	self
 		assert: c canvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.140'.
+		description: 'testDrawCanvasWithGroup_amp:5.140'.
 	self
 		assert: c canvas numberOfFixedShapes
 		equals: 0
-		description: 'testDrawCanvasWithGroup:5.141'.
+		description: 'testDrawCanvasWithGroup_amp:5.141'.
 	self
 		assert: c canvas view class
 		equals: UndefinedObject
-		description: 'testDrawCanvasWithGroup:5.142'.
+		description: 'testDrawCanvasWithGroup_amp:5.142'.
 	self
 		assert: c canvas view
 		equals: nil
-		description: 'testDrawCanvasWithGroup:5.143'.
+		description: 'testDrawCanvasWithGroup_amp:5.143'.
 	self
 		assert: c canvas isShape class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.144'.
+		description: 'testDrawCanvasWithGroup_amp:5.144'.
 	self
 		assert: c canvas isShape
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.145'.
+		description: 'testDrawCanvasWithGroup_amp:5.145'.
 	self
 		assert: c canvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.146'.
+		description: 'testDrawCanvasWithGroup_amp:5.146'.
 	self
 		assert: c canvas numberOfShapes
 		equals: 1
-		description: 'testDrawCanvasWithGroup:5.147'.
+		description: 'testDrawCanvasWithGroup_amp:5.147'.
 	self
 		assert: c canvas clearBackground class
 		equals: True
-		description: 'testDrawCanvasWithGroup:5.148'.
+		description: 'testDrawCanvasWithGroup_amp:5.148'.
 	self
 		assert: c canvas clearBackground
 		equals: true
-		description: 'testDrawCanvasWithGroup:5.149'.
+		description: 'testDrawCanvasWithGroup_amp:5.149'.
 	self
 		assert: c clearBackground class
 		equals: True
-		description: 'testDrawCanvasWithGroup:5.150'.
+		description: 'testDrawCanvasWithGroup_amp:5.150'.
 	self
 		assert: c clearBackground
 		equals: true
-		description: 'testDrawCanvasWithGroup:5.151'.
+		description: 'testDrawCanvasWithGroup_amp:5.151'.
 	self
-		assert: tmp_LIMz3CzakV5 class
+		assert: tmp_C81dg3r4CM5 class
 		equals: TSAthensMorph
-		description: 'testDrawCanvasWithGroup:5.1'.
+		description: 'testDrawCanvasWithGroup_amp:5.1'.
 	self
-		assert: tmp_LIMz3CzakV5 isDrawing class
+		assert: tmp_C81dg3r4CM5 isDrawing class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.2'.
+		description: 'testDrawCanvasWithGroup_amp:5.2'.
 	self
-		assert: tmp_LIMz3CzakV5 isDrawing
+		assert: tmp_C81dg3r4CM5 isDrawing
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.3'.
+		description: 'testDrawCanvasWithGroup_amp:5.3'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas class
+		assert: tmp_C81dg3r4CM5 trachelCanvas class
 		equals: TSCanvas
-		description: 'testDrawCanvasWithGroup:5.4'.
+		description: 'testDrawCanvasWithGroup_amp:5.4'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas showRectangles class
+		assert: tmp_C81dg3r4CM5 trachelCanvas showRectangles class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.5'.
+		description: 'testDrawCanvasWithGroup_amp:5.5'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas showRectangles
+		assert: tmp_C81dg3r4CM5 trachelCanvas showRectangles
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.6'.
+		description: 'testDrawCanvasWithGroup_amp:5.6'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas numberOfFixedShapes class
+		assert: tmp_C81dg3r4CM5 trachelCanvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.7'.
+		description: 'testDrawCanvasWithGroup_amp:5.7'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas numberOfFixedShapes
+		assert: tmp_C81dg3r4CM5 trachelCanvas numberOfFixedShapes
 		equals: 0
-		description: 'testDrawCanvasWithGroup:5.8'.
+		description: 'testDrawCanvasWithGroup_amp:5.8'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas view class
+		assert: tmp_C81dg3r4CM5 trachelCanvas view class
 		equals: UndefinedObject
-		description: 'testDrawCanvasWithGroup:5.9'.
+		description: 'testDrawCanvasWithGroup_amp:5.9'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas view
+		assert: tmp_C81dg3r4CM5 trachelCanvas view
 		equals: nil
-		description: 'testDrawCanvasWithGroup:5.10'.
+		description: 'testDrawCanvasWithGroup_amp:5.10'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas isShape class
+		assert: tmp_C81dg3r4CM5 trachelCanvas isShape class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.11'.
+		description: 'testDrawCanvasWithGroup_amp:5.11'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas isShape
+		assert: tmp_C81dg3r4CM5 trachelCanvas isShape
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.12'.
+		description: 'testDrawCanvasWithGroup_amp:5.12'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas numberOfShapes class
+		assert: tmp_C81dg3r4CM5 trachelCanvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.13'.
+		description: 'testDrawCanvasWithGroup_amp:5.13'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas numberOfShapes
+		assert: tmp_C81dg3r4CM5 trachelCanvas numberOfShapes
 		equals: 1
-		description: 'testDrawCanvasWithGroup:5.14'.
+		description: 'testDrawCanvasWithGroup_amp:5.14'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas clearBackground class
+		assert: tmp_C81dg3r4CM5 trachelCanvas clearBackground class
 		equals: True
-		description: 'testDrawCanvasWithGroup:5.15'.
+		description: 'testDrawCanvasWithGroup_amp:5.15'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas clearBackground
+		assert: tmp_C81dg3r4CM5 trachelCanvas clearBackground
 		equals: true
-		description: 'testDrawCanvasWithGroup:5.16'.
+		description: 'testDrawCanvasWithGroup_amp:5.16'.
 	self
-		assert: tmp_LIMz3CzakV5 renderer class
+		assert: tmp_C81dg3r4CM5 renderer class
 		equals: TSAthensRenderer
-		description: 'testDrawCanvasWithGroup:5.17'.
+		description: 'testDrawCanvasWithGroup_amp:5.17'.
 	self
-		assert: tmp_LIMz3CzakV5 renderer builder class
+		assert: tmp_C81dg3r4CM5 renderer builder class
 		equals: UndefinedObject
-		description: 'testDrawCanvasWithGroup:5.18'.
+		description: 'testDrawCanvasWithGroup_amp:5.18'.
 	self
-		assert: tmp_LIMz3CzakV5 renderer builder
+		assert: tmp_C81dg3r4CM5 renderer builder
 		equals: nil
-		description: 'testDrawCanvasWithGroup:5.19'.
+		description: 'testDrawCanvasWithGroup_amp:5.19'.
 	self
-		assert: tmp_LIMz3CzakV5 surface class
+		assert: tmp_C81dg3r4CM5 surface class
 		equals: AthensCairoSurface
-		description: 'testDrawCanvasWithGroup:5.20'.
+		description: 'testDrawCanvasWithGroup_amp:5.20'.
 	self
-		assert: tmp_LIMz3CzakV5 surface status class
+		assert: tmp_C81dg3r4CM5 surface status class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.21'.
+		description: 'testDrawCanvasWithGroup_amp:5.21'.
 	self
-		assert: tmp_LIMz3CzakV5 surface status
+		assert: tmp_C81dg3r4CM5 surface status
 		equals: 0
-		description: 'testDrawCanvasWithGroup:5.22'.
+		description: 'testDrawCanvasWithGroup_amp:5.22'.
 	self
-		assert: tmp_LIMz3CzakV5 surface width class
+		assert: tmp_C81dg3r4CM5 surface width class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.23'.
+		description: 'testDrawCanvasWithGroup_amp:5.23'.
 	self
-		assert: tmp_LIMz3CzakV5 surface width
+		assert: tmp_C81dg3r4CM5 surface width
 		equals: 50
-		description: 'testDrawCanvasWithGroup:5.24'.
+		description: 'testDrawCanvasWithGroup_amp:5.24'.
 	self
-		assert: tmp_LIMz3CzakV5 surface height class
+		assert: tmp_C81dg3r4CM5 surface height class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.25'.
+		description: 'testDrawCanvasWithGroup_amp:5.25'.
 	self
-		assert: tmp_LIMz3CzakV5 surface height
+		assert: tmp_C81dg3r4CM5 surface height
 		equals: 40
-		description: 'testDrawCanvasWithGroup:5.26'.
+		description: 'testDrawCanvasWithGroup_amp:5.26'.
 	self
-		assert: tmp_LIMz3CzakV5 surface isSuccess class
+		assert: tmp_C81dg3r4CM5 surface isSuccess class
 		equals: True
-		description: 'testDrawCanvasWithGroup:5.27'.
+		description: 'testDrawCanvasWithGroup_amp:5.27'.
 	self
-		assert: tmp_LIMz3CzakV5 surface isSuccess
+		assert: tmp_C81dg3r4CM5 surface isSuccess
 		equals: true
-		description: 'testDrawCanvasWithGroup:5.28'.
+		description: 'testDrawCanvasWithGroup_amp:5.28'.
 	self
-		assert: tmp_LIMz3CzakV5 surface stride class
+		assert: tmp_C81dg3r4CM5 surface stride class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.29'.
+		description: 'testDrawCanvasWithGroup_amp:5.29'.
 	self
-		assert: tmp_LIMz3CzakV5 surface stride
+		assert: tmp_C81dg3r4CM5 surface stride
 		equals: 200
-		description: 'testDrawCanvasWithGroup:5.30'.
+		description: 'testDrawCanvasWithGroup_amp:5.30'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas class
+		assert: tmp_C81dg3r4CM5 canvas class
 		equals: TSCanvas
-		description: 'testDrawCanvasWithGroup:5.31'.
+		description: 'testDrawCanvasWithGroup_amp:5.31'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas showRectangles class
+		assert: tmp_C81dg3r4CM5 canvas showRectangles class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.32'.
+		description: 'testDrawCanvasWithGroup_amp:5.32'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas showRectangles
+		assert: tmp_C81dg3r4CM5 canvas showRectangles
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.33'.
+		description: 'testDrawCanvasWithGroup_amp:5.33'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas numberOfFixedShapes class
+		assert: tmp_C81dg3r4CM5 canvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.34'.
+		description: 'testDrawCanvasWithGroup_amp:5.34'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas numberOfFixedShapes
+		assert: tmp_C81dg3r4CM5 canvas numberOfFixedShapes
 		equals: 0
-		description: 'testDrawCanvasWithGroup:5.35'.
+		description: 'testDrawCanvasWithGroup_amp:5.35'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas view class
+		assert: tmp_C81dg3r4CM5 canvas view class
 		equals: UndefinedObject
-		description: 'testDrawCanvasWithGroup:5.36'.
+		description: 'testDrawCanvasWithGroup_amp:5.36'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas view
+		assert: tmp_C81dg3r4CM5 canvas view
 		equals: nil
-		description: 'testDrawCanvasWithGroup:5.37'.
+		description: 'testDrawCanvasWithGroup_amp:5.37'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas isShape class
+		assert: tmp_C81dg3r4CM5 canvas isShape class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.38'.
+		description: 'testDrawCanvasWithGroup_amp:5.38'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas isShape
+		assert: tmp_C81dg3r4CM5 canvas isShape
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.39'.
+		description: 'testDrawCanvasWithGroup_amp:5.39'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas numberOfShapes class
+		assert: tmp_C81dg3r4CM5 canvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:5.40'.
+		description: 'testDrawCanvasWithGroup_amp:5.40'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas numberOfShapes
+		assert: tmp_C81dg3r4CM5 canvas numberOfShapes
 		equals: 1
-		description: 'testDrawCanvasWithGroup:5.41'.
+		description: 'testDrawCanvasWithGroup_amp:5.41'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas clearBackground class
+		assert: tmp_C81dg3r4CM5 canvas clearBackground class
 		equals: True
-		description: 'testDrawCanvasWithGroup:5.42'.
+		description: 'testDrawCanvasWithGroup_amp:5.42'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas clearBackground
+		assert: tmp_C81dg3r4CM5 canvas clearBackground
 		equals: true
-		description: 'testDrawCanvasWithGroup:5.43'.
+		description: 'testDrawCanvasWithGroup_amp:5.43'.
 	self
-		assert: tmp_LIMz3CzakV5 wantsSteps class
+		assert: tmp_C81dg3r4CM5 wantsSteps class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.44'.
+		description: 'testDrawCanvasWithGroup_amp:5.44'.
 	self
-		assert: tmp_LIMz3CzakV5 wantsSteps
+		assert: tmp_C81dg3r4CM5 wantsSteps
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.45'.
+		description: 'testDrawCanvasWithGroup_amp:5.45'.
 	self
-		assert: tmp_LIMz3CzakV5 isDragging class
+		assert: tmp_C81dg3r4CM5 isDragging class
 		equals: False
-		description: 'testDrawCanvasWithGroup:5.46'.
+		description: 'testDrawCanvasWithGroup_amp:5.46'.
 	self
-		assert: tmp_LIMz3CzakV5 isDragging
+		assert: tmp_C81dg3r4CM5 isDragging
 		equals: false
-		description: 'testDrawCanvasWithGroup:5.47'.
-	tmp_LIMz3CzakV5 drawOnMockCanvas.
+		description: 'testDrawCanvasWithGroup_amp:5.47'.
+	tmp_C81dg3r4CM5 drawOnMockCanvas.
 	self
-		assert: tmp_LIMz3CzakV5 class
+		assert: tmp_C81dg3r4CM5 class
 		equals: TSAthensMorph
-		description: 'testDrawCanvasWithGroup:6.1'.
+		description: 'testDrawCanvasWithGroup_amp:6.1'.
 	self
-		assert: tmp_LIMz3CzakV5 isDrawing class
+		assert: tmp_C81dg3r4CM5 isDrawing class
 		equals: False
-		description: 'testDrawCanvasWithGroup:6.2'.
+		description: 'testDrawCanvasWithGroup_amp:6.2'.
 	self
-		assert: tmp_LIMz3CzakV5 isDrawing
+		assert: tmp_C81dg3r4CM5 isDrawing
 		equals: false
-		description: 'testDrawCanvasWithGroup:6.3'.
+		description: 'testDrawCanvasWithGroup_amp:6.3'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas class
+		assert: tmp_C81dg3r4CM5 trachelCanvas class
 		equals: TSCanvas
-		description: 'testDrawCanvasWithGroup:6.4'.
+		description: 'testDrawCanvasWithGroup_amp:6.4'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas showRectangles class
+		assert: tmp_C81dg3r4CM5 trachelCanvas showRectangles class
 		equals: False
-		description: 'testDrawCanvasWithGroup:6.5'.
+		description: 'testDrawCanvasWithGroup_amp:6.5'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas showRectangles
+		assert: tmp_C81dg3r4CM5 trachelCanvas showRectangles
 		equals: false
-		description: 'testDrawCanvasWithGroup:6.6'.
+		description: 'testDrawCanvasWithGroup_amp:6.6'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas numberOfFixedShapes class
+		assert: tmp_C81dg3r4CM5 trachelCanvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:6.7'.
+		description: 'testDrawCanvasWithGroup_amp:6.7'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas numberOfFixedShapes
+		assert: tmp_C81dg3r4CM5 trachelCanvas numberOfFixedShapes
 		equals: 0
-		description: 'testDrawCanvasWithGroup:6.8'.
+		description: 'testDrawCanvasWithGroup_amp:6.8'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas view class
+		assert: tmp_C81dg3r4CM5 trachelCanvas view class
 		equals: UndefinedObject
-		description: 'testDrawCanvasWithGroup:6.9'.
+		description: 'testDrawCanvasWithGroup_amp:6.9'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas view
+		assert: tmp_C81dg3r4CM5 trachelCanvas view
 		equals: nil
-		description: 'testDrawCanvasWithGroup:6.10'.
+		description: 'testDrawCanvasWithGroup_amp:6.10'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas isShape class
+		assert: tmp_C81dg3r4CM5 trachelCanvas isShape class
 		equals: False
-		description: 'testDrawCanvasWithGroup:6.11'.
+		description: 'testDrawCanvasWithGroup_amp:6.11'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas isShape
+		assert: tmp_C81dg3r4CM5 trachelCanvas isShape
 		equals: false
-		description: 'testDrawCanvasWithGroup:6.12'.
+		description: 'testDrawCanvasWithGroup_amp:6.12'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas numberOfShapes class
+		assert: tmp_C81dg3r4CM5 trachelCanvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:6.13'.
+		description: 'testDrawCanvasWithGroup_amp:6.13'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas numberOfShapes
+		assert: tmp_C81dg3r4CM5 trachelCanvas numberOfShapes
 		equals: 1
-		description: 'testDrawCanvasWithGroup:6.14'.
+		description: 'testDrawCanvasWithGroup_amp:6.14'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas clearBackground class
+		assert: tmp_C81dg3r4CM5 trachelCanvas clearBackground class
 		equals: True
-		description: 'testDrawCanvasWithGroup:6.15'.
+		description: 'testDrawCanvasWithGroup_amp:6.15'.
 	self
-		assert: tmp_LIMz3CzakV5 trachelCanvas clearBackground
+		assert: tmp_C81dg3r4CM5 trachelCanvas clearBackground
 		equals: true
-		description: 'testDrawCanvasWithGroup:6.16'.
+		description: 'testDrawCanvasWithGroup_amp:6.16'.
 	self
-		assert: tmp_LIMz3CzakV5 renderer class
+		assert: tmp_C81dg3r4CM5 renderer class
 		equals: TSAthensRenderer
-		description: 'testDrawCanvasWithGroup:6.17'.
+		description: 'testDrawCanvasWithGroup_amp:6.17'.
 	self
-		assert: tmp_LIMz3CzakV5 renderer builder class
+		assert: tmp_C81dg3r4CM5 renderer builder class
 		equals: UndefinedObject
-		description: 'testDrawCanvasWithGroup:6.18'.
+		description: 'testDrawCanvasWithGroup_amp:6.18'.
 	self
-		assert: tmp_LIMz3CzakV5 renderer builder
+		assert: tmp_C81dg3r4CM5 renderer builder
 		equals: nil
-		description: 'testDrawCanvasWithGroup:6.19'.
+		description: 'testDrawCanvasWithGroup_amp:6.19'.
 	self
-		assert: tmp_LIMz3CzakV5 surface class
+		assert: tmp_C81dg3r4CM5 surface class
 		equals: AthensCairoSurface
-		description: 'testDrawCanvasWithGroup:6.20'.
+		description: 'testDrawCanvasWithGroup_amp:6.20'.
 	self
-		assert: tmp_LIMz3CzakV5 surface status class
+		assert: tmp_C81dg3r4CM5 surface status class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:6.21'.
+		description: 'testDrawCanvasWithGroup_amp:6.21'.
 	self
-		assert: tmp_LIMz3CzakV5 surface status
+		assert: tmp_C81dg3r4CM5 surface status
 		equals: 0
-		description: 'testDrawCanvasWithGroup:6.22'.
+		description: 'testDrawCanvasWithGroup_amp:6.22'.
 	self
-		assert: tmp_LIMz3CzakV5 surface width class
+		assert: tmp_C81dg3r4CM5 surface width class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:6.23'.
+		description: 'testDrawCanvasWithGroup_amp:6.23'.
 	self
-		assert: tmp_LIMz3CzakV5 surface width
+		assert: tmp_C81dg3r4CM5 surface width
 		equals: 50
-		description: 'testDrawCanvasWithGroup:6.24'.
+		description: 'testDrawCanvasWithGroup_amp:6.24'.
 	self
-		assert: tmp_LIMz3CzakV5 surface height class
+		assert: tmp_C81dg3r4CM5 surface height class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:6.25'.
+		description: 'testDrawCanvasWithGroup_amp:6.25'.
 	self
-		assert: tmp_LIMz3CzakV5 surface height
+		assert: tmp_C81dg3r4CM5 surface height
 		equals: 40
-		description: 'testDrawCanvasWithGroup:6.26'.
+		description: 'testDrawCanvasWithGroup_amp:6.26'.
 	self
-		assert: tmp_LIMz3CzakV5 surface isSuccess class
+		assert: tmp_C81dg3r4CM5 surface isSuccess class
 		equals: True
-		description: 'testDrawCanvasWithGroup:6.27'.
+		description: 'testDrawCanvasWithGroup_amp:6.27'.
 	self
-		assert: tmp_LIMz3CzakV5 surface isSuccess
+		assert: tmp_C81dg3r4CM5 surface isSuccess
 		equals: true
-		description: 'testDrawCanvasWithGroup:6.28'.
+		description: 'testDrawCanvasWithGroup_amp:6.28'.
 	self
-		assert: tmp_LIMz3CzakV5 surface stride class
+		assert: tmp_C81dg3r4CM5 surface stride class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:6.29'.
+		description: 'testDrawCanvasWithGroup_amp:6.29'.
 	self
-		assert: tmp_LIMz3CzakV5 surface stride
+		assert: tmp_C81dg3r4CM5 surface stride
 		equals: 200
-		description: 'testDrawCanvasWithGroup:6.30'.
+		description: 'testDrawCanvasWithGroup_amp:6.30'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas class
+		assert: tmp_C81dg3r4CM5 canvas class
 		equals: TSCanvas
-		description: 'testDrawCanvasWithGroup:6.31'.
+		description: 'testDrawCanvasWithGroup_amp:6.31'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas showRectangles class
+		assert: tmp_C81dg3r4CM5 canvas showRectangles class
 		equals: False
-		description: 'testDrawCanvasWithGroup:6.32'.
+		description: 'testDrawCanvasWithGroup_amp:6.32'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas showRectangles
+		assert: tmp_C81dg3r4CM5 canvas showRectangles
 		equals: false
-		description: 'testDrawCanvasWithGroup:6.33'.
+		description: 'testDrawCanvasWithGroup_amp:6.33'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas numberOfFixedShapes class
+		assert: tmp_C81dg3r4CM5 canvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:6.34'.
+		description: 'testDrawCanvasWithGroup_amp:6.34'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas numberOfFixedShapes
+		assert: tmp_C81dg3r4CM5 canvas numberOfFixedShapes
 		equals: 0
-		description: 'testDrawCanvasWithGroup:6.35'.
+		description: 'testDrawCanvasWithGroup_amp:6.35'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas view class
+		assert: tmp_C81dg3r4CM5 canvas view class
 		equals: UndefinedObject
-		description: 'testDrawCanvasWithGroup:6.36'.
+		description: 'testDrawCanvasWithGroup_amp:6.36'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas view
+		assert: tmp_C81dg3r4CM5 canvas view
 		equals: nil
-		description: 'testDrawCanvasWithGroup:6.37'.
+		description: 'testDrawCanvasWithGroup_amp:6.37'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas isShape class
+		assert: tmp_C81dg3r4CM5 canvas isShape class
 		equals: False
-		description: 'testDrawCanvasWithGroup:6.38'.
+		description: 'testDrawCanvasWithGroup_amp:6.38'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas isShape
+		assert: tmp_C81dg3r4CM5 canvas isShape
 		equals: false
-		description: 'testDrawCanvasWithGroup:6.39'.
+		description: 'testDrawCanvasWithGroup_amp:6.39'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas numberOfShapes class
+		assert: tmp_C81dg3r4CM5 canvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawCanvasWithGroup:6.40'.
+		description: 'testDrawCanvasWithGroup_amp:6.40'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas numberOfShapes
+		assert: tmp_C81dg3r4CM5 canvas numberOfShapes
 		equals: 1
-		description: 'testDrawCanvasWithGroup:6.41'.
+		description: 'testDrawCanvasWithGroup_amp:6.41'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas clearBackground class
+		assert: tmp_C81dg3r4CM5 canvas clearBackground class
 		equals: True
-		description: 'testDrawCanvasWithGroup:6.42'.
+		description: 'testDrawCanvasWithGroup_amp:6.42'.
 	self
-		assert: tmp_LIMz3CzakV5 canvas clearBackground
+		assert: tmp_C81dg3r4CM5 canvas clearBackground
 		equals: true
-		description: 'testDrawCanvasWithGroup:6.43'.
+		description: 'testDrawCanvasWithGroup_amp:6.43'.
 	self
-		assert: tmp_LIMz3CzakV5 wantsSteps class
+		assert: tmp_C81dg3r4CM5 wantsSteps class
 		equals: False
-		description: 'testDrawCanvasWithGroup:6.44'.
+		description: 'testDrawCanvasWithGroup_amp:6.44'.
 	self
-		assert: tmp_LIMz3CzakV5 wantsSteps
+		assert: tmp_C81dg3r4CM5 wantsSteps
 		equals: false
-		description: 'testDrawCanvasWithGroup:6.45'.
+		description: 'testDrawCanvasWithGroup_amp:6.45'.
 	self
-		assert: tmp_LIMz3CzakV5 isDragging class
+		assert: tmp_C81dg3r4CM5 isDragging class
 		equals: False
-		description: 'testDrawCanvasWithGroup:6.46'.
+		description: 'testDrawCanvasWithGroup_amp:6.46'.
 	self
-		assert: tmp_LIMz3CzakV5 isDragging
+		assert: tmp_C81dg3r4CM5 isDragging
 		equals: false
-		description: 'testDrawCanvasWithGroup:6.47'
+		description: 'testDrawCanvasWithGroup_amp:6.47'
 ]
 
 { #category : #'as yet unclassified' }
-TSCanvasTestAmpTest >> testDrawFixed [
+TSCanvasTestAmpTest >> testDrawCanvas_amp [
 	<madeBySmallAmp>
-	| box tmp_f1lbs83IzF12 |
+	| tmp_oFvg3Tsm0w4 |
+	c
+		addShape:
+			(TSBox new
+				extent: 100 @ 100;
+				yourself).
+	self
+		assert: c class
+		equals: TSCanvas
+		description: 'testDrawCanvas_amp:1.1'.
+	self
+		assert: c fixedShapes class
+		equals: TSGroup
+		description: 'testDrawCanvas_amp:1.2'.
+	self
+		assert: c fixedShapes size
+		equals: 0
+		description: 'testDrawCanvas_amp:1.3'.
+	self
+		assert: c showRectangles class
+		equals: False
+		description: 'testDrawCanvas_amp:1.4'.
+	self
+		assert: c showRectangles
+		equals: false
+		description: 'testDrawCanvas_amp:1.5'.
+	self
+		assert: c color class
+		equals: Color
+		description: 'testDrawCanvas_amp:1.6'.
+	self
+		assert: c color alpha class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:1.7'.
+	self
+		assert: c color alpha
+		equals: 1.0
+		description: 'testDrawCanvas_amp:1.8'.
+	self
+		assert: c color red class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:1.9'.
+	self
+		assert: c color red
+		equals: 1.0
+		description: 'testDrawCanvas_amp:1.10'.
+	self
+		assert: c color hsvSaturation class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:1.11'.
+	self
+		assert: c color hsvSaturation
+		equals: 0.0
+		description: 'testDrawCanvas_amp:1.12'.
+	self
+		assert: c color brightness class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:1.13'.
+	self
+		assert: c color brightness
+		equals: 1.0
+		description: 'testDrawCanvas_amp:1.14'.
+	self
+		assert: c color hue class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:1.15'.
+	self
+		assert: c color hue
+		equals: 0.0
+		description: 'testDrawCanvas_amp:1.16'.
+	self
+		assert: c color green class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:1.17'.
+	self
+		assert: c color green
+		equals: 1.0
+		description: 'testDrawCanvas_amp:1.18'.
+	self
+		assert: c color chroma class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:1.19'.
+	self
+		assert: c color chroma
+		equals: 0.0
+		description: 'testDrawCanvas_amp:1.20'.
+	self
+		assert: c color lightness class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:1.21'.
+	self
+		assert: c color lightness
+		equals: 1.0
+		description: 'testDrawCanvas_amp:1.22'.
+	self
+		assert: c color hslSaturation class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:1.23'.
+	self
+		assert: c color hslSaturation
+		equals: 0.0
+		description: 'testDrawCanvas_amp:1.24'.
+	self
+		assert: c color saturation class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:1.25'.
+	self
+		assert: c color saturation
+		equals: 0.0
+		description: 'testDrawCanvas_amp:1.26'.
+	self
+		assert: c color luminance class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:1.27'.
+	self
+		assert: c color luminance
+		equals: 1.0
+		description: 'testDrawCanvas_amp:1.28'.
+	self
+		assert: c color blue class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:1.29'.
+	self
+		assert: c color blue
+		equals: 1.0
+		description: 'testDrawCanvas_amp:1.30'.
+	self
+		assert: c numberOfFixedShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:1.31'.
+	self
+		assert: c numberOfFixedShapes
+		equals: 0
+		description: 'testDrawCanvas_amp:1.32'.
+	self
+		assert: c morph class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:1.33'.
+	self
+		assert: c morph
+		equals: nil
+		description: 'testDrawCanvas_amp:1.34'.
+	self
+		assert: c extent class
+		equals: Point
+		description: 'testDrawCanvas_amp:1.35'.
+	self
+		assert: c extent isZero class
+		equals: False
+		description: 'testDrawCanvas_amp:1.36'.
+	self
+		assert: c extent isZero
+		equals: false
+		description: 'testDrawCanvas_amp:1.37'.
+	self
+		assert: c extent y class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:1.38'.
+	self
+		assert: c extent y
+		equals: 500
+		description: 'testDrawCanvas_amp:1.39'.
+	self
+		assert: c extent isFloatPoint class
+		equals: False
+		description: 'testDrawCanvas_amp:1.40'.
+	self
+		assert: c extent isFloatPoint
+		equals: false
+		description: 'testDrawCanvas_amp:1.41'.
+	self
+		assert: c extent isIntegerPoint class
+		equals: True
+		description: 'testDrawCanvas_amp:1.42'.
+	self
+		assert: c extent isIntegerPoint
+		equals: true
+		description: 'testDrawCanvas_amp:1.43'.
+	self
+		assert: c extent x class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:1.44'.
+	self
+		assert: c extent x
+		equals: 500
+		description: 'testDrawCanvas_amp:1.45'.
+	self
+		assert: c extent isPoint class
+		equals: True
+		description: 'testDrawCanvas_amp:1.46'.
+	self
+		assert: c extent isPoint
+		equals: true
+		description: 'testDrawCanvas_amp:1.47'.
+	self
+		assert: c parent class
+		equals: TSCanvas
+		description: 'testDrawCanvas_amp:1.48'.
+	self
+		assert: c parent showRectangles class
+		equals: False
+		description: 'testDrawCanvas_amp:1.49'.
+	self
+		assert: c parent showRectangles
+		equals: false
+		description: 'testDrawCanvas_amp:1.50'.
+	self
+		assert: c parent numberOfFixedShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:1.51'.
+	self
+		assert: c parent numberOfFixedShapes
+		equals: 0
+		description: 'testDrawCanvas_amp:1.52'.
+	self
+		assert: c parent morph class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:1.53'.
+	self
+		assert: c parent morph
+		equals: nil
+		description: 'testDrawCanvas_amp:1.54'.
+	self
+		assert: c parent view class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:1.55'.
+	self
+		assert: c parent view
+		equals: nil
+		description: 'testDrawCanvas_amp:1.56'.
+	self
+		assert: c parent isShape class
+		equals: False
+		description: 'testDrawCanvas_amp:1.57'.
+	self
+		assert: c parent isShape
+		equals: false
+		description: 'testDrawCanvas_amp:1.58'.
+	self
+		assert: c parent numberOfShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:1.59'.
+	self
+		assert: c parent numberOfShapes
+		equals: 1
+		description: 'testDrawCanvas_amp:1.60'.
+	self
+		assert: c parent clearBackground class
+		equals: True
+		description: 'testDrawCanvas_amp:1.61'.
+	self
+		assert: c parent clearBackground
+		equals: true
+		description: 'testDrawCanvas_amp:1.62'.
+	self
+		assert: c shapes class
+		equals: TSGroup
+		description: 'testDrawCanvas_amp:1.63'.
+	self
+		assert: c shapes size
+		equals: 1
+		description: 'testDrawCanvas_amp:1.64'.
+	self
+		assert: c encompassingRectangle class
+		equals: Rectangle
+		description: 'testDrawCanvas_amp:1.65'.
+	self
+		assert: c encompassingRectangle top class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:1.66'.
+	self
+		assert: c encompassingRectangle top
+		equals: -50.0
+		description: 'testDrawCanvas_amp:1.67'.
+	self
+		assert: c encompassingRectangle hasPositiveExtent class
+		equals: True
+		description: 'testDrawCanvas_amp:1.68'.
+	self
+		assert: c encompassingRectangle hasPositiveExtent
+		equals: true
+		description: 'testDrawCanvas_amp:1.69'.
+	self
+		assert: c encompassingRectangle area class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:1.70'.
+	self
+		assert: c encompassingRectangle area
+		equals: 10000.0
+		description: 'testDrawCanvas_amp:1.71'.
+	self
+		assert: c encompassingRectangle isTall class
+		equals: False
+		description: 'testDrawCanvas_amp:1.72'.
+	self
+		assert: c encompassingRectangle isTall
+		equals: false
+		description: 'testDrawCanvas_amp:1.73'.
+	self
+		assert: c encompassingRectangle left class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:1.74'.
+	self
+		assert: c encompassingRectangle left
+		equals: -50.0
+		description: 'testDrawCanvas_amp:1.75'.
+	self
+		assert: c encompassingRectangle width class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:1.76'.
+	self
+		assert: c encompassingRectangle width
+		equals: 100.0
+		description: 'testDrawCanvas_amp:1.77'.
+	self
+		assert: c encompassingRectangle right class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:1.78'.
+	self
+		assert: c encompassingRectangle right
+		equals: 50.0
+		description: 'testDrawCanvas_amp:1.79'.
+	self
+		assert: c encompassingRectangle isZero class
+		equals: False
+		description: 'testDrawCanvas_amp:1.80'.
+	self
+		assert: c encompassingRectangle isZero
+		equals: false
+		description: 'testDrawCanvas_amp:1.81'.
+	self
+		assert: c encompassingRectangle isWide class
+		equals: False
+		description: 'testDrawCanvas_amp:1.82'.
+	self
+		assert: c encompassingRectangle isWide
+		equals: false
+		description: 'testDrawCanvas_amp:1.83'.
+	self
+		assert: c encompassingRectangle bottom class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:1.84'.
+	self
+		assert: c encompassingRectangle bottom
+		equals: 50.0
+		description: 'testDrawCanvas_amp:1.85'.
+	self
+		assert: c encompassingRectangle isRectangle class
+		equals: True
+		description: 'testDrawCanvas_amp:1.86'.
+	self
+		assert: c encompassingRectangle isRectangle
+		equals: true
+		description: 'testDrawCanvas_amp:1.87'.
+	self
+		assert: c encompassingRectangle height class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:1.88'.
+	self
+		assert: c encompassingRectangle height
+		equals: 100.0
+		description: 'testDrawCanvas_amp:1.89'.
+	self
+		assert: c view class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:1.90'.
+	self
+		assert: c view
+		equals: nil
+		description: 'testDrawCanvas_amp:1.91'.
+	self
+		assert: c isShape class
+		equals: False
+		description: 'testDrawCanvas_amp:1.92'.
+	self
+		assert: c isShape
+		equals: false
+		description: 'testDrawCanvas_amp:1.93'.
+	self
+		assert: c basicRectangle class
+		equals: Rectangle
+		description: 'testDrawCanvas_amp:1.94'.
+	self
+		assert: c basicRectangle top class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:1.95'.
+	self
+		assert: c basicRectangle top
+		equals: 0
+		description: 'testDrawCanvas_amp:1.96'.
+	self
+		assert: c basicRectangle hasPositiveExtent class
+		equals: True
+		description: 'testDrawCanvas_amp:1.97'.
+	self
+		assert: c basicRectangle hasPositiveExtent
+		equals: true
+		description: 'testDrawCanvas_amp:1.98'.
+	self
+		assert: c basicRectangle area class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:1.99'.
+	self
+		assert: c basicRectangle area
+		equals: 250000
+		description: 'testDrawCanvas_amp:1.100'.
+	self
+		assert: c basicRectangle isTall class
+		equals: False
+		description: 'testDrawCanvas_amp:1.101'.
+	self
+		assert: c basicRectangle isTall
+		equals: false
+		description: 'testDrawCanvas_amp:1.102'.
+	self
+		assert: c basicRectangle left class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:1.103'.
+	self
+		assert: c basicRectangle left
+		equals: 0
+		description: 'testDrawCanvas_amp:1.104'.
+	self
+		assert: c basicRectangle width class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:1.105'.
+	self
+		assert: c basicRectangle width
+		equals: 500
+		description: 'testDrawCanvas_amp:1.106'.
+	self
+		assert: c basicRectangle right class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:1.107'.
+	self
+		assert: c basicRectangle right
+		equals: 500
+		description: 'testDrawCanvas_amp:1.108'.
+	self
+		assert: c basicRectangle isZero class
+		equals: False
+		description: 'testDrawCanvas_amp:1.109'.
+	self
+		assert: c basicRectangle isZero
+		equals: false
+		description: 'testDrawCanvas_amp:1.110'.
+	self
+		assert: c basicRectangle isWide class
+		equals: False
+		description: 'testDrawCanvas_amp:1.111'.
+	self
+		assert: c basicRectangle isWide
+		equals: false
+		description: 'testDrawCanvas_amp:1.112'.
+	self
+		assert: c basicRectangle bottom class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:1.113'.
+	self
+		assert: c basicRectangle bottom
+		equals: 500
+		description: 'testDrawCanvas_amp:1.114'.
+	self
+		assert: c basicRectangle isRectangle class
+		equals: True
+		description: 'testDrawCanvas_amp:1.115'.
+	self
+		assert: c basicRectangle isRectangle
+		equals: true
+		description: 'testDrawCanvas_amp:1.116'.
+	self
+		assert: c basicRectangle height class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:1.117'.
+	self
+		assert: c basicRectangle height
+		equals: 500
+		description: 'testDrawCanvas_amp:1.118'.
+	self
+		assert: c topParent class
+		equals: TSCanvas
+		description: 'testDrawCanvas_amp:1.119'.
+	self
+		assert: c topParent showRectangles class
+		equals: False
+		description: 'testDrawCanvas_amp:1.120'.
+	self
+		assert: c topParent showRectangles
+		equals: false
+		description: 'testDrawCanvas_amp:1.121'.
+	self
+		assert: c topParent numberOfFixedShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:1.122'.
+	self
+		assert: c topParent numberOfFixedShapes
+		equals: 0
+		description: 'testDrawCanvas_amp:1.123'.
+	self
+		assert: c topParent morph class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:1.124'.
+	self
+		assert: c topParent morph
+		equals: nil
+		description: 'testDrawCanvas_amp:1.125'.
+	self
+		assert: c topParent view class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:1.126'.
+	self
+		assert: c topParent view
+		equals: nil
+		description: 'testDrawCanvas_amp:1.127'.
+	self
+		assert: c topParent isShape class
+		equals: False
+		description: 'testDrawCanvas_amp:1.128'.
+	self
+		assert: c topParent isShape
+		equals: false
+		description: 'testDrawCanvas_amp:1.129'.
+	self
+		assert: c topParent numberOfShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:1.130'.
+	self
+		assert: c topParent numberOfShapes
+		equals: 1
+		description: 'testDrawCanvas_amp:1.131'.
+	self
+		assert: c topParent clearBackground class
+		equals: True
+		description: 'testDrawCanvas_amp:1.132'.
+	self
+		assert: c topParent clearBackground
+		equals: true
+		description: 'testDrawCanvas_amp:1.133'.
+	self
+		assert: c numberOfShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:1.134'.
+	self
+		assert: c numberOfShapes
+		equals: 1
+		description: 'testDrawCanvas_amp:1.135'.
+	self
+		assert: c canvas class
+		equals: TSCanvas
+		description: 'testDrawCanvas_amp:1.136'.
+	self
+		assert: c canvas showRectangles class
+		equals: False
+		description: 'testDrawCanvas_amp:1.137'.
+	self
+		assert: c canvas showRectangles
+		equals: false
+		description: 'testDrawCanvas_amp:1.138'.
+	self
+		assert: c canvas numberOfFixedShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:1.139'.
+	self
+		assert: c canvas numberOfFixedShapes
+		equals: 0
+		description: 'testDrawCanvas_amp:1.140'.
+	self
+		assert: c canvas morph class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:1.141'.
+	self
+		assert: c canvas morph
+		equals: nil
+		description: 'testDrawCanvas_amp:1.142'.
+	self
+		assert: c canvas view class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:1.143'.
+	self
+		assert: c canvas view
+		equals: nil
+		description: 'testDrawCanvas_amp:1.144'.
+	self
+		assert: c canvas isShape class
+		equals: False
+		description: 'testDrawCanvas_amp:1.145'.
+	self
+		assert: c canvas isShape
+		equals: false
+		description: 'testDrawCanvas_amp:1.146'.
+	self
+		assert: c canvas numberOfShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:1.147'.
+	self
+		assert: c canvas numberOfShapes
+		equals: 1
+		description: 'testDrawCanvas_amp:1.148'.
+	self
+		assert: c canvas clearBackground class
+		equals: True
+		description: 'testDrawCanvas_amp:1.149'.
+	self
+		assert: c canvas clearBackground
+		equals: true
+		description: 'testDrawCanvas_amp:1.150'.
+	self
+		assert: c clearBackground class
+		equals: True
+		description: 'testDrawCanvas_amp:1.151'.
+	self
+		assert: c clearBackground
+		equals: true
+		description: 'testDrawCanvas_amp:1.152'.
+	c
+		addShape:
+			(TSEllipse new
+				position: 100 @ 100;
+				extent: 100 @ 100;
+				yourself).
+	self
+		assert: c class
+		equals: TSCanvas
+		description: 'testDrawCanvas_amp:2.1'.
+	self
+		assert: c fixedShapes class
+		equals: TSGroup
+		description: 'testDrawCanvas_amp:2.2'.
+	self
+		assert: c fixedShapes size
+		equals: 0
+		description: 'testDrawCanvas_amp:2.3'.
+	self
+		assert: c showRectangles class
+		equals: False
+		description: 'testDrawCanvas_amp:2.4'.
+	self
+		assert: c showRectangles
+		equals: false
+		description: 'testDrawCanvas_amp:2.5'.
+	self
+		assert: c color class
+		equals: Color
+		description: 'testDrawCanvas_amp:2.6'.
+	self
+		assert: c color alpha class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:2.7'.
+	self
+		assert: c color alpha
+		equals: 1.0
+		description: 'testDrawCanvas_amp:2.8'.
+	self
+		assert: c color red class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:2.9'.
+	self
+		assert: c color red
+		equals: 1.0
+		description: 'testDrawCanvas_amp:2.10'.
+	self
+		assert: c color hsvSaturation class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:2.11'.
+	self
+		assert: c color hsvSaturation
+		equals: 0.0
+		description: 'testDrawCanvas_amp:2.12'.
+	self
+		assert: c color brightness class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:2.13'.
+	self
+		assert: c color brightness
+		equals: 1.0
+		description: 'testDrawCanvas_amp:2.14'.
+	self
+		assert: c color hue class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:2.15'.
+	self
+		assert: c color hue
+		equals: 0.0
+		description: 'testDrawCanvas_amp:2.16'.
+	self
+		assert: c color green class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:2.17'.
+	self
+		assert: c color green
+		equals: 1.0
+		description: 'testDrawCanvas_amp:2.18'.
+	self
+		assert: c color chroma class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:2.19'.
+	self
+		assert: c color chroma
+		equals: 0.0
+		description: 'testDrawCanvas_amp:2.20'.
+	self
+		assert: c color lightness class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:2.21'.
+	self
+		assert: c color lightness
+		equals: 1.0
+		description: 'testDrawCanvas_amp:2.22'.
+	self
+		assert: c color hslSaturation class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:2.23'.
+	self
+		assert: c color hslSaturation
+		equals: 0.0
+		description: 'testDrawCanvas_amp:2.24'.
+	self
+		assert: c color saturation class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:2.25'.
+	self
+		assert: c color saturation
+		equals: 0.0
+		description: 'testDrawCanvas_amp:2.26'.
+	self
+		assert: c color luminance class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:2.27'.
+	self
+		assert: c color luminance
+		equals: 1.0
+		description: 'testDrawCanvas_amp:2.28'.
+	self
+		assert: c color blue class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:2.29'.
+	self
+		assert: c color blue
+		equals: 1.0
+		description: 'testDrawCanvas_amp:2.30'.
+	self
+		assert: c numberOfFixedShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:2.31'.
+	self
+		assert: c numberOfFixedShapes
+		equals: 0
+		description: 'testDrawCanvas_amp:2.32'.
+	self
+		assert: c morph class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:2.33'.
+	self
+		assert: c morph
+		equals: nil
+		description: 'testDrawCanvas_amp:2.34'.
+	self
+		assert: c extent class
+		equals: Point
+		description: 'testDrawCanvas_amp:2.35'.
+	self
+		assert: c extent isZero class
+		equals: False
+		description: 'testDrawCanvas_amp:2.36'.
+	self
+		assert: c extent isZero
+		equals: false
+		description: 'testDrawCanvas_amp:2.37'.
+	self
+		assert: c extent y class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:2.38'.
+	self
+		assert: c extent y
+		equals: 500
+		description: 'testDrawCanvas_amp:2.39'.
+	self
+		assert: c extent isFloatPoint class
+		equals: False
+		description: 'testDrawCanvas_amp:2.40'.
+	self
+		assert: c extent isFloatPoint
+		equals: false
+		description: 'testDrawCanvas_amp:2.41'.
+	self
+		assert: c extent isIntegerPoint class
+		equals: True
+		description: 'testDrawCanvas_amp:2.42'.
+	self
+		assert: c extent isIntegerPoint
+		equals: true
+		description: 'testDrawCanvas_amp:2.43'.
+	self
+		assert: c extent x class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:2.44'.
+	self
+		assert: c extent x
+		equals: 500
+		description: 'testDrawCanvas_amp:2.45'.
+	self
+		assert: c extent isPoint class
+		equals: True
+		description: 'testDrawCanvas_amp:2.46'.
+	self
+		assert: c extent isPoint
+		equals: true
+		description: 'testDrawCanvas_amp:2.47'.
+	self
+		assert: c parent class
+		equals: TSCanvas
+		description: 'testDrawCanvas_amp:2.48'.
+	self
+		assert: c parent showRectangles class
+		equals: False
+		description: 'testDrawCanvas_amp:2.49'.
+	self
+		assert: c parent showRectangles
+		equals: false
+		description: 'testDrawCanvas_amp:2.50'.
+	self
+		assert: c parent numberOfFixedShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:2.51'.
+	self
+		assert: c parent numberOfFixedShapes
+		equals: 0
+		description: 'testDrawCanvas_amp:2.52'.
+	self
+		assert: c parent morph class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:2.53'.
+	self
+		assert: c parent morph
+		equals: nil
+		description: 'testDrawCanvas_amp:2.54'.
+	self
+		assert: c parent view class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:2.55'.
+	self
+		assert: c parent view
+		equals: nil
+		description: 'testDrawCanvas_amp:2.56'.
+	self
+		assert: c parent isShape class
+		equals: False
+		description: 'testDrawCanvas_amp:2.57'.
+	self
+		assert: c parent isShape
+		equals: false
+		description: 'testDrawCanvas_amp:2.58'.
+	self
+		assert: c parent numberOfShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:2.59'.
+	self
+		assert: c parent numberOfShapes
+		equals: 2
+		description: 'testDrawCanvas_amp:2.60'.
+	self
+		assert: c parent clearBackground class
+		equals: True
+		description: 'testDrawCanvas_amp:2.61'.
+	self
+		assert: c parent clearBackground
+		equals: true
+		description: 'testDrawCanvas_amp:2.62'.
+	self
+		assert: c shapes class
+		equals: TSGroup
+		description: 'testDrawCanvas_amp:2.63'.
+	self
+		assert: c shapes size
+		equals: 2
+		description: 'testDrawCanvas_amp:2.64'.
+	self
+		assert: c encompassingRectangle class
+		equals: Rectangle
+		description: 'testDrawCanvas_amp:2.65'.
+	self
+		assert: c encompassingRectangle top class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:2.66'.
+	self
+		assert: c encompassingRectangle top
+		equals: -50.0
+		description: 'testDrawCanvas_amp:2.67'.
+	self
+		assert: c encompassingRectangle hasPositiveExtent class
+		equals: True
+		description: 'testDrawCanvas_amp:2.68'.
+	self
+		assert: c encompassingRectangle hasPositiveExtent
+		equals: true
+		description: 'testDrawCanvas_amp:2.69'.
+	self
+		assert: c encompassingRectangle area class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:2.70'.
+	self
+		assert: c encompassingRectangle area
+		equals: 40000.0
+		description: 'testDrawCanvas_amp:2.71'.
+	self
+		assert: c encompassingRectangle isTall class
+		equals: False
+		description: 'testDrawCanvas_amp:2.72'.
+	self
+		assert: c encompassingRectangle isTall
+		equals: false
+		description: 'testDrawCanvas_amp:2.73'.
+	self
+		assert: c encompassingRectangle left class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:2.74'.
+	self
+		assert: c encompassingRectangle left
+		equals: -50.0
+		description: 'testDrawCanvas_amp:2.75'.
+	self
+		assert: c encompassingRectangle width class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:2.76'.
+	self
+		assert: c encompassingRectangle width
+		equals: 200.0
+		description: 'testDrawCanvas_amp:2.77'.
+	self
+		assert: c encompassingRectangle right class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:2.78'.
+	self
+		assert: c encompassingRectangle right
+		equals: 150.0
+		description: 'testDrawCanvas_amp:2.79'.
+	self
+		assert: c encompassingRectangle isZero class
+		equals: False
+		description: 'testDrawCanvas_amp:2.80'.
+	self
+		assert: c encompassingRectangle isZero
+		equals: false
+		description: 'testDrawCanvas_amp:2.81'.
+	self
+		assert: c encompassingRectangle isWide class
+		equals: False
+		description: 'testDrawCanvas_amp:2.82'.
+	self
+		assert: c encompassingRectangle isWide
+		equals: false
+		description: 'testDrawCanvas_amp:2.83'.
+	self
+		assert: c encompassingRectangle bottom class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:2.84'.
+	self
+		assert: c encompassingRectangle bottom
+		equals: 150.0
+		description: 'testDrawCanvas_amp:2.85'.
+	self
+		assert: c encompassingRectangle isRectangle class
+		equals: True
+		description: 'testDrawCanvas_amp:2.86'.
+	self
+		assert: c encompassingRectangle isRectangle
+		equals: true
+		description: 'testDrawCanvas_amp:2.87'.
+	self
+		assert: c encompassingRectangle height class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:2.88'.
+	self
+		assert: c encompassingRectangle height
+		equals: 200.0
+		description: 'testDrawCanvas_amp:2.89'.
+	self
+		assert: c view class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:2.90'.
+	self
+		assert: c view
+		equals: nil
+		description: 'testDrawCanvas_amp:2.91'.
+	self
+		assert: c isShape class
+		equals: False
+		description: 'testDrawCanvas_amp:2.92'.
+	self
+		assert: c isShape
+		equals: false
+		description: 'testDrawCanvas_amp:2.93'.
+	self
+		assert: c basicRectangle class
+		equals: Rectangle
+		description: 'testDrawCanvas_amp:2.94'.
+	self
+		assert: c basicRectangle top class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:2.95'.
+	self
+		assert: c basicRectangle top
+		equals: 0
+		description: 'testDrawCanvas_amp:2.96'.
+	self
+		assert: c basicRectangle hasPositiveExtent class
+		equals: True
+		description: 'testDrawCanvas_amp:2.97'.
+	self
+		assert: c basicRectangle hasPositiveExtent
+		equals: true
+		description: 'testDrawCanvas_amp:2.98'.
+	self
+		assert: c basicRectangle area class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:2.99'.
+	self
+		assert: c basicRectangle area
+		equals: 250000
+		description: 'testDrawCanvas_amp:2.100'.
+	self
+		assert: c basicRectangle isTall class
+		equals: False
+		description: 'testDrawCanvas_amp:2.101'.
+	self
+		assert: c basicRectangle isTall
+		equals: false
+		description: 'testDrawCanvas_amp:2.102'.
+	self
+		assert: c basicRectangle left class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:2.103'.
+	self
+		assert: c basicRectangle left
+		equals: 0
+		description: 'testDrawCanvas_amp:2.104'.
+	self
+		assert: c basicRectangle width class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:2.105'.
+	self
+		assert: c basicRectangle width
+		equals: 500
+		description: 'testDrawCanvas_amp:2.106'.
+	self
+		assert: c basicRectangle right class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:2.107'.
+	self
+		assert: c basicRectangle right
+		equals: 500
+		description: 'testDrawCanvas_amp:2.108'.
+	self
+		assert: c basicRectangle isZero class
+		equals: False
+		description: 'testDrawCanvas_amp:2.109'.
+	self
+		assert: c basicRectangle isZero
+		equals: false
+		description: 'testDrawCanvas_amp:2.110'.
+	self
+		assert: c basicRectangle isWide class
+		equals: False
+		description: 'testDrawCanvas_amp:2.111'.
+	self
+		assert: c basicRectangle isWide
+		equals: false
+		description: 'testDrawCanvas_amp:2.112'.
+	self
+		assert: c basicRectangle bottom class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:2.113'.
+	self
+		assert: c basicRectangle bottom
+		equals: 500
+		description: 'testDrawCanvas_amp:2.114'.
+	self
+		assert: c basicRectangle isRectangle class
+		equals: True
+		description: 'testDrawCanvas_amp:2.115'.
+	self
+		assert: c basicRectangle isRectangle
+		equals: true
+		description: 'testDrawCanvas_amp:2.116'.
+	self
+		assert: c basicRectangle height class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:2.117'.
+	self
+		assert: c basicRectangle height
+		equals: 500
+		description: 'testDrawCanvas_amp:2.118'.
+	self
+		assert: c topParent class
+		equals: TSCanvas
+		description: 'testDrawCanvas_amp:2.119'.
+	self
+		assert: c topParent showRectangles class
+		equals: False
+		description: 'testDrawCanvas_amp:2.120'.
+	self
+		assert: c topParent showRectangles
+		equals: false
+		description: 'testDrawCanvas_amp:2.121'.
+	self
+		assert: c topParent numberOfFixedShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:2.122'.
+	self
+		assert: c topParent numberOfFixedShapes
+		equals: 0
+		description: 'testDrawCanvas_amp:2.123'.
+	self
+		assert: c topParent morph class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:2.124'.
+	self
+		assert: c topParent morph
+		equals: nil
+		description: 'testDrawCanvas_amp:2.125'.
+	self
+		assert: c topParent view class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:2.126'.
+	self
+		assert: c topParent view
+		equals: nil
+		description: 'testDrawCanvas_amp:2.127'.
+	self
+		assert: c topParent isShape class
+		equals: False
+		description: 'testDrawCanvas_amp:2.128'.
+	self
+		assert: c topParent isShape
+		equals: false
+		description: 'testDrawCanvas_amp:2.129'.
+	self
+		assert: c topParent numberOfShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:2.130'.
+	self
+		assert: c topParent numberOfShapes
+		equals: 2
+		description: 'testDrawCanvas_amp:2.131'.
+	self
+		assert: c topParent clearBackground class
+		equals: True
+		description: 'testDrawCanvas_amp:2.132'.
+	self
+		assert: c topParent clearBackground
+		equals: true
+		description: 'testDrawCanvas_amp:2.133'.
+	self
+		assert: c numberOfShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:2.134'.
+	self
+		assert: c numberOfShapes
+		equals: 2
+		description: 'testDrawCanvas_amp:2.135'.
+	self
+		assert: c canvas class
+		equals: TSCanvas
+		description: 'testDrawCanvas_amp:2.136'.
+	self
+		assert: c canvas showRectangles class
+		equals: False
+		description: 'testDrawCanvas_amp:2.137'.
+	self
+		assert: c canvas showRectangles
+		equals: false
+		description: 'testDrawCanvas_amp:2.138'.
+	self
+		assert: c canvas numberOfFixedShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:2.139'.
+	self
+		assert: c canvas numberOfFixedShapes
+		equals: 0
+		description: 'testDrawCanvas_amp:2.140'.
+	self
+		assert: c canvas morph class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:2.141'.
+	self
+		assert: c canvas morph
+		equals: nil
+		description: 'testDrawCanvas_amp:2.142'.
+	self
+		assert: c canvas view class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:2.143'.
+	self
+		assert: c canvas view
+		equals: nil
+		description: 'testDrawCanvas_amp:2.144'.
+	self
+		assert: c canvas isShape class
+		equals: False
+		description: 'testDrawCanvas_amp:2.145'.
+	self
+		assert: c canvas isShape
+		equals: false
+		description: 'testDrawCanvas_amp:2.146'.
+	self
+		assert: c canvas numberOfShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:2.147'.
+	self
+		assert: c canvas numberOfShapes
+		equals: 2
+		description: 'testDrawCanvas_amp:2.148'.
+	self
+		assert: c canvas clearBackground class
+		equals: True
+		description: 'testDrawCanvas_amp:2.149'.
+	self
+		assert: c canvas clearBackground
+		equals: true
+		description: 'testDrawCanvas_amp:2.150'.
+	self
+		assert: c clearBackground class
+		equals: True
+		description: 'testDrawCanvas_amp:2.151'.
+	self
+		assert: c clearBackground
+		equals: true
+		description: 'testDrawCanvas_amp:2.152'.
+	tmp_oFvg3Tsm0w4 := c createMorph.
+	self
+		assert: c class
+		equals: TSCanvas
+		description: 'testDrawCanvas_amp:3.1'.
+	self
+		assert: c fixedShapes class
+		equals: TSGroup
+		description: 'testDrawCanvas_amp:3.2'.
+	self
+		assert: c fixedShapes size
+		equals: 0
+		description: 'testDrawCanvas_amp:3.3'.
+	self
+		assert: c showRectangles class
+		equals: False
+		description: 'testDrawCanvas_amp:3.4'.
+	self
+		assert: c showRectangles
+		equals: false
+		description: 'testDrawCanvas_amp:3.5'.
+	self
+		assert: c color class
+		equals: Color
+		description: 'testDrawCanvas_amp:3.6'.
+	self
+		assert: c color alpha class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:3.7'.
+	self
+		assert: c color alpha
+		equals: 1.0
+		description: 'testDrawCanvas_amp:3.8'.
+	self
+		assert: c color red class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:3.9'.
+	self
+		assert: c color red
+		equals: 1.0
+		description: 'testDrawCanvas_amp:3.10'.
+	self
+		assert: c color hsvSaturation class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:3.11'.
+	self
+		assert: c color hsvSaturation
+		equals: 0.0
+		description: 'testDrawCanvas_amp:3.12'.
+	self
+		assert: c color brightness class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:3.13'.
+	self
+		assert: c color brightness
+		equals: 1.0
+		description: 'testDrawCanvas_amp:3.14'.
+	self
+		assert: c color hue class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:3.15'.
+	self
+		assert: c color hue
+		equals: 0.0
+		description: 'testDrawCanvas_amp:3.16'.
+	self
+		assert: c color green class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:3.17'.
+	self
+		assert: c color green
+		equals: 1.0
+		description: 'testDrawCanvas_amp:3.18'.
+	self
+		assert: c color chroma class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:3.19'.
+	self
+		assert: c color chroma
+		equals: 0.0
+		description: 'testDrawCanvas_amp:3.20'.
+	self
+		assert: c color lightness class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:3.21'.
+	self
+		assert: c color lightness
+		equals: 1.0
+		description: 'testDrawCanvas_amp:3.22'.
+	self
+		assert: c color hslSaturation class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:3.23'.
+	self
+		assert: c color hslSaturation
+		equals: 0.0
+		description: 'testDrawCanvas_amp:3.24'.
+	self
+		assert: c color saturation class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:3.25'.
+	self
+		assert: c color saturation
+		equals: 0.0
+		description: 'testDrawCanvas_amp:3.26'.
+	self
+		assert: c color luminance class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:3.27'.
+	self
+		assert: c color luminance
+		equals: 1.0
+		description: 'testDrawCanvas_amp:3.28'.
+	self
+		assert: c color blue class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:3.29'.
+	self
+		assert: c color blue
+		equals: 1.0
+		description: 'testDrawCanvas_amp:3.30'.
+	self
+		assert: c numberOfFixedShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.31'.
+	self
+		assert: c numberOfFixedShapes
+		equals: 0
+		description: 'testDrawCanvas_amp:3.32'.
+	self
+		assert: c morph class
+		equals: TSAthensMorph
+		description: 'testDrawCanvas_amp:3.33'.
+	self
+		assert: c morph isDrawing class
+		equals: False
+		description: 'testDrawCanvas_amp:3.34'.
+	self
+		assert: c morph isDrawing
+		equals: false
+		description: 'testDrawCanvas_amp:3.35'.
+	self
+		assert: c morph wantsSteps class
+		equals: False
+		description: 'testDrawCanvas_amp:3.36'.
+	self
+		assert: c morph wantsSteps
+		equals: false
+		description: 'testDrawCanvas_amp:3.37'.
+	self
+		assert: c morph isDragging class
+		equals: False
+		description: 'testDrawCanvas_amp:3.38'.
+	self
+		assert: c morph isDragging
+		equals: false
+		description: 'testDrawCanvas_amp:3.39'.
+	self
+		assert: c extent class
+		equals: Point
+		description: 'testDrawCanvas_amp:3.40'.
+	self
+		assert: c extent isZero class
+		equals: False
+		description: 'testDrawCanvas_amp:3.41'.
+	self
+		assert: c extent isZero
+		equals: false
+		description: 'testDrawCanvas_amp:3.42'.
+	self
+		assert: c extent y class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.43'.
+	self
+		assert: c extent y
+		equals: 500
+		description: 'testDrawCanvas_amp:3.44'.
+	self
+		assert: c extent isFloatPoint class
+		equals: False
+		description: 'testDrawCanvas_amp:3.45'.
+	self
+		assert: c extent isFloatPoint
+		equals: false
+		description: 'testDrawCanvas_amp:3.46'.
+	self
+		assert: c extent isIntegerPoint class
+		equals: True
+		description: 'testDrawCanvas_amp:3.47'.
+	self
+		assert: c extent isIntegerPoint
+		equals: true
+		description: 'testDrawCanvas_amp:3.48'.
+	self
+		assert: c extent x class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.49'.
+	self
+		assert: c extent x
+		equals: 500
+		description: 'testDrawCanvas_amp:3.50'.
+	self
+		assert: c extent isPoint class
+		equals: True
+		description: 'testDrawCanvas_amp:3.51'.
+	self
+		assert: c extent isPoint
+		equals: true
+		description: 'testDrawCanvas_amp:3.52'.
+	self
+		assert: c parent class
+		equals: TSCanvas
+		description: 'testDrawCanvas_amp:3.53'.
+	self
+		assert: c parent showRectangles class
+		equals: False
+		description: 'testDrawCanvas_amp:3.54'.
+	self
+		assert: c parent showRectangles
+		equals: false
+		description: 'testDrawCanvas_amp:3.55'.
+	self
+		assert: c parent numberOfFixedShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.56'.
+	self
+		assert: c parent numberOfFixedShapes
+		equals: 0
+		description: 'testDrawCanvas_amp:3.57'.
+	self
+		assert: c parent view class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:3.58'.
+	self
+		assert: c parent view
+		equals: nil
+		description: 'testDrawCanvas_amp:3.59'.
+	self
+		assert: c parent isShape class
+		equals: False
+		description: 'testDrawCanvas_amp:3.60'.
+	self
+		assert: c parent isShape
+		equals: false
+		description: 'testDrawCanvas_amp:3.61'.
+	self
+		assert: c parent numberOfShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.62'.
+	self
+		assert: c parent numberOfShapes
+		equals: 2
+		description: 'testDrawCanvas_amp:3.63'.
+	self
+		assert: c parent clearBackground class
+		equals: True
+		description: 'testDrawCanvas_amp:3.64'.
+	self
+		assert: c parent clearBackground
+		equals: true
+		description: 'testDrawCanvas_amp:3.65'.
+	self
+		assert: c shapes class
+		equals: TSGroup
+		description: 'testDrawCanvas_amp:3.66'.
+	self
+		assert: c shapes size
+		equals: 2
+		description: 'testDrawCanvas_amp:3.67'.
+	self
+		assert: c encompassingRectangle class
+		equals: Rectangle
+		description: 'testDrawCanvas_amp:3.68'.
+	self
+		assert: c encompassingRectangle top class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:3.69'.
+	self
+		assert: c encompassingRectangle top
+		equals: -50.0
+		description: 'testDrawCanvas_amp:3.70'.
+	self
+		assert: c encompassingRectangle hasPositiveExtent class
+		equals: True
+		description: 'testDrawCanvas_amp:3.71'.
+	self
+		assert: c encompassingRectangle hasPositiveExtent
+		equals: true
+		description: 'testDrawCanvas_amp:3.72'.
+	self
+		assert: c encompassingRectangle area class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:3.73'.
+	self
+		assert: c encompassingRectangle area
+		equals: 40000.0
+		description: 'testDrawCanvas_amp:3.74'.
+	self
+		assert: c encompassingRectangle isTall class
+		equals: False
+		description: 'testDrawCanvas_amp:3.75'.
+	self
+		assert: c encompassingRectangle isTall
+		equals: false
+		description: 'testDrawCanvas_amp:3.76'.
+	self
+		assert: c encompassingRectangle left class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:3.77'.
+	self
+		assert: c encompassingRectangle left
+		equals: -50.0
+		description: 'testDrawCanvas_amp:3.78'.
+	self
+		assert: c encompassingRectangle width class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:3.79'.
+	self
+		assert: c encompassingRectangle width
+		equals: 200.0
+		description: 'testDrawCanvas_amp:3.80'.
+	self
+		assert: c encompassingRectangle right class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:3.81'.
+	self
+		assert: c encompassingRectangle right
+		equals: 150.0
+		description: 'testDrawCanvas_amp:3.82'.
+	self
+		assert: c encompassingRectangle isZero class
+		equals: False
+		description: 'testDrawCanvas_amp:3.83'.
+	self
+		assert: c encompassingRectangle isZero
+		equals: false
+		description: 'testDrawCanvas_amp:3.84'.
+	self
+		assert: c encompassingRectangle isWide class
+		equals: False
+		description: 'testDrawCanvas_amp:3.85'.
+	self
+		assert: c encompassingRectangle isWide
+		equals: false
+		description: 'testDrawCanvas_amp:3.86'.
+	self
+		assert: c encompassingRectangle bottom class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:3.87'.
+	self
+		assert: c encompassingRectangle bottom
+		equals: 150.0
+		description: 'testDrawCanvas_amp:3.88'.
+	self
+		assert: c encompassingRectangle isRectangle class
+		equals: True
+		description: 'testDrawCanvas_amp:3.89'.
+	self
+		assert: c encompassingRectangle isRectangle
+		equals: true
+		description: 'testDrawCanvas_amp:3.90'.
+	self
+		assert: c encompassingRectangle height class
+		equals: SmallFloat64
+		description: 'testDrawCanvas_amp:3.91'.
+	self
+		assert: c encompassingRectangle height
+		equals: 200.0
+		description: 'testDrawCanvas_amp:3.92'.
+	self
+		assert: c view class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:3.93'.
+	self
+		assert: c view
+		equals: nil
+		description: 'testDrawCanvas_amp:3.94'.
+	self
+		assert: c isShape class
+		equals: False
+		description: 'testDrawCanvas_amp:3.95'.
+	self
+		assert: c isShape
+		equals: false
+		description: 'testDrawCanvas_amp:3.96'.
+	self
+		assert: c basicRectangle class
+		equals: Rectangle
+		description: 'testDrawCanvas_amp:3.97'.
+	self
+		assert: c basicRectangle top class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.98'.
+	self
+		assert: c basicRectangle top
+		equals: 0
+		description: 'testDrawCanvas_amp:3.99'.
+	self
+		assert: c basicRectangle hasPositiveExtent class
+		equals: True
+		description: 'testDrawCanvas_amp:3.100'.
+	self
+		assert: c basicRectangle hasPositiveExtent
+		equals: true
+		description: 'testDrawCanvas_amp:3.101'.
+	self
+		assert: c basicRectangle area class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.102'.
+	self
+		assert: c basicRectangle area
+		equals: 250000
+		description: 'testDrawCanvas_amp:3.103'.
+	self
+		assert: c basicRectangle isTall class
+		equals: False
+		description: 'testDrawCanvas_amp:3.104'.
+	self
+		assert: c basicRectangle isTall
+		equals: false
+		description: 'testDrawCanvas_amp:3.105'.
+	self
+		assert: c basicRectangle left class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.106'.
+	self
+		assert: c basicRectangle left
+		equals: 0
+		description: 'testDrawCanvas_amp:3.107'.
+	self
+		assert: c basicRectangle width class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.108'.
+	self
+		assert: c basicRectangle width
+		equals: 500
+		description: 'testDrawCanvas_amp:3.109'.
+	self
+		assert: c basicRectangle right class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.110'.
+	self
+		assert: c basicRectangle right
+		equals: 500
+		description: 'testDrawCanvas_amp:3.111'.
+	self
+		assert: c basicRectangle isZero class
+		equals: False
+		description: 'testDrawCanvas_amp:3.112'.
+	self
+		assert: c basicRectangle isZero
+		equals: false
+		description: 'testDrawCanvas_amp:3.113'.
+	self
+		assert: c basicRectangle isWide class
+		equals: False
+		description: 'testDrawCanvas_amp:3.114'.
+	self
+		assert: c basicRectangle isWide
+		equals: false
+		description: 'testDrawCanvas_amp:3.115'.
+	self
+		assert: c basicRectangle bottom class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.116'.
+	self
+		assert: c basicRectangle bottom
+		equals: 500
+		description: 'testDrawCanvas_amp:3.117'.
+	self
+		assert: c basicRectangle isRectangle class
+		equals: True
+		description: 'testDrawCanvas_amp:3.118'.
+	self
+		assert: c basicRectangle isRectangle
+		equals: true
+		description: 'testDrawCanvas_amp:3.119'.
+	self
+		assert: c basicRectangle height class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.120'.
+	self
+		assert: c basicRectangle height
+		equals: 500
+		description: 'testDrawCanvas_amp:3.121'.
+	self
+		assert: c topParent class
+		equals: TSCanvas
+		description: 'testDrawCanvas_amp:3.122'.
+	self
+		assert: c topParent showRectangles class
+		equals: False
+		description: 'testDrawCanvas_amp:3.123'.
+	self
+		assert: c topParent showRectangles
+		equals: false
+		description: 'testDrawCanvas_amp:3.124'.
+	self
+		assert: c topParent numberOfFixedShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.125'.
+	self
+		assert: c topParent numberOfFixedShapes
+		equals: 0
+		description: 'testDrawCanvas_amp:3.126'.
+	self
+		assert: c topParent view class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:3.127'.
+	self
+		assert: c topParent view
+		equals: nil
+		description: 'testDrawCanvas_amp:3.128'.
+	self
+		assert: c topParent isShape class
+		equals: False
+		description: 'testDrawCanvas_amp:3.129'.
+	self
+		assert: c topParent isShape
+		equals: false
+		description: 'testDrawCanvas_amp:3.130'.
+	self
+		assert: c topParent numberOfShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.131'.
+	self
+		assert: c topParent numberOfShapes
+		equals: 2
+		description: 'testDrawCanvas_amp:3.132'.
+	self
+		assert: c topParent clearBackground class
+		equals: True
+		description: 'testDrawCanvas_amp:3.133'.
+	self
+		assert: c topParent clearBackground
+		equals: true
+		description: 'testDrawCanvas_amp:3.134'.
+	self
+		assert: c numberOfShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.135'.
+	self
+		assert: c numberOfShapes
+		equals: 2
+		description: 'testDrawCanvas_amp:3.136'.
+	self
+		assert: c canvas class
+		equals: TSCanvas
+		description: 'testDrawCanvas_amp:3.137'.
+	self
+		assert: c canvas showRectangles class
+		equals: False
+		description: 'testDrawCanvas_amp:3.138'.
+	self
+		assert: c canvas showRectangles
+		equals: false
+		description: 'testDrawCanvas_amp:3.139'.
+	self
+		assert: c canvas numberOfFixedShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.140'.
+	self
+		assert: c canvas numberOfFixedShapes
+		equals: 0
+		description: 'testDrawCanvas_amp:3.141'.
+	self
+		assert: c canvas view class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:3.142'.
+	self
+		assert: c canvas view
+		equals: nil
+		description: 'testDrawCanvas_amp:3.143'.
+	self
+		assert: c canvas isShape class
+		equals: False
+		description: 'testDrawCanvas_amp:3.144'.
+	self
+		assert: c canvas isShape
+		equals: false
+		description: 'testDrawCanvas_amp:3.145'.
+	self
+		assert: c canvas numberOfShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.146'.
+	self
+		assert: c canvas numberOfShapes
+		equals: 2
+		description: 'testDrawCanvas_amp:3.147'.
+	self
+		assert: c canvas clearBackground class
+		equals: True
+		description: 'testDrawCanvas_amp:3.148'.
+	self
+		assert: c canvas clearBackground
+		equals: true
+		description: 'testDrawCanvas_amp:3.149'.
+	self
+		assert: c clearBackground class
+		equals: True
+		description: 'testDrawCanvas_amp:3.150'.
+	self
+		assert: c clearBackground
+		equals: true
+		description: 'testDrawCanvas_amp:3.151'.
+	self
+		assert: tmp_oFvg3Tsm0w4 class
+		equals: TSAthensMorph
+		description: 'testDrawCanvas_amp:3.1'.
+	self
+		assert: tmp_oFvg3Tsm0w4 isDrawing class
+		equals: False
+		description: 'testDrawCanvas_amp:3.2'.
+	self
+		assert: tmp_oFvg3Tsm0w4 isDrawing
+		equals: false
+		description: 'testDrawCanvas_amp:3.3'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas class
+		equals: TSCanvas
+		description: 'testDrawCanvas_amp:3.4'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas showRectangles class
+		equals: False
+		description: 'testDrawCanvas_amp:3.5'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas showRectangles
+		equals: false
+		description: 'testDrawCanvas_amp:3.6'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas numberOfFixedShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.7'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas numberOfFixedShapes
+		equals: 0
+		description: 'testDrawCanvas_amp:3.8'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas view class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:3.9'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas view
+		equals: nil
+		description: 'testDrawCanvas_amp:3.10'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas isShape class
+		equals: False
+		description: 'testDrawCanvas_amp:3.11'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas isShape
+		equals: false
+		description: 'testDrawCanvas_amp:3.12'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas numberOfShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.13'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas numberOfShapes
+		equals: 2
+		description: 'testDrawCanvas_amp:3.14'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas clearBackground class
+		equals: True
+		description: 'testDrawCanvas_amp:3.15'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas clearBackground
+		equals: true
+		description: 'testDrawCanvas_amp:3.16'.
+	self
+		assert: tmp_oFvg3Tsm0w4 renderer class
+		equals: TSAthensRenderer
+		description: 'testDrawCanvas_amp:3.17'.
+	self
+		assert: tmp_oFvg3Tsm0w4 renderer builder class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:3.18'.
+	self
+		assert: tmp_oFvg3Tsm0w4 renderer builder
+		equals: nil
+		description: 'testDrawCanvas_amp:3.19'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface class
+		equals: AthensCairoSurface
+		description: 'testDrawCanvas_amp:3.20'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface status class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.21'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface status
+		equals: 0
+		description: 'testDrawCanvas_amp:3.22'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface width class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.23'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface width
+		equals: 50
+		description: 'testDrawCanvas_amp:3.24'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface height class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.25'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface height
+		equals: 40
+		description: 'testDrawCanvas_amp:3.26'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface isSuccess class
+		equals: True
+		description: 'testDrawCanvas_amp:3.27'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface isSuccess
+		equals: true
+		description: 'testDrawCanvas_amp:3.28'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface stride class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.29'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface stride
+		equals: 200
+		description: 'testDrawCanvas_amp:3.30'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas class
+		equals: TSCanvas
+		description: 'testDrawCanvas_amp:3.31'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas showRectangles class
+		equals: False
+		description: 'testDrawCanvas_amp:3.32'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas showRectangles
+		equals: false
+		description: 'testDrawCanvas_amp:3.33'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas numberOfFixedShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.34'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas numberOfFixedShapes
+		equals: 0
+		description: 'testDrawCanvas_amp:3.35'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas view class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:3.36'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas view
+		equals: nil
+		description: 'testDrawCanvas_amp:3.37'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas isShape class
+		equals: False
+		description: 'testDrawCanvas_amp:3.38'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas isShape
+		equals: false
+		description: 'testDrawCanvas_amp:3.39'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas numberOfShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:3.40'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas numberOfShapes
+		equals: 2
+		description: 'testDrawCanvas_amp:3.41'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas clearBackground class
+		equals: True
+		description: 'testDrawCanvas_amp:3.42'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas clearBackground
+		equals: true
+		description: 'testDrawCanvas_amp:3.43'.
+	self
+		assert: tmp_oFvg3Tsm0w4 wantsSteps class
+		equals: False
+		description: 'testDrawCanvas_amp:3.44'.
+	self
+		assert: tmp_oFvg3Tsm0w4 wantsSteps
+		equals: false
+		description: 'testDrawCanvas_amp:3.45'.
+	self
+		assert: tmp_oFvg3Tsm0w4 isDragging class
+		equals: False
+		description: 'testDrawCanvas_amp:3.46'.
+	self
+		assert: tmp_oFvg3Tsm0w4 isDragging
+		equals: false
+		description: 'testDrawCanvas_amp:3.47'.
+	tmp_oFvg3Tsm0w4 drawOnMockCanvas.
+	self
+		assert: tmp_oFvg3Tsm0w4 class
+		equals: TSAthensMorph
+		description: 'testDrawCanvas_amp:4.1'.
+	self
+		assert: tmp_oFvg3Tsm0w4 isDrawing class
+		equals: False
+		description: 'testDrawCanvas_amp:4.2'.
+	self
+		assert: tmp_oFvg3Tsm0w4 isDrawing
+		equals: false
+		description: 'testDrawCanvas_amp:4.3'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas class
+		equals: TSCanvas
+		description: 'testDrawCanvas_amp:4.4'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas showRectangles class
+		equals: False
+		description: 'testDrawCanvas_amp:4.5'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas showRectangles
+		equals: false
+		description: 'testDrawCanvas_amp:4.6'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas numberOfFixedShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:4.7'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas numberOfFixedShapes
+		equals: 0
+		description: 'testDrawCanvas_amp:4.8'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas view class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:4.9'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas view
+		equals: nil
+		description: 'testDrawCanvas_amp:4.10'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas isShape class
+		equals: False
+		description: 'testDrawCanvas_amp:4.11'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas isShape
+		equals: false
+		description: 'testDrawCanvas_amp:4.12'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas numberOfShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:4.13'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas numberOfShapes
+		equals: 2
+		description: 'testDrawCanvas_amp:4.14'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas clearBackground class
+		equals: True
+		description: 'testDrawCanvas_amp:4.15'.
+	self
+		assert: tmp_oFvg3Tsm0w4 trachelCanvas clearBackground
+		equals: true
+		description: 'testDrawCanvas_amp:4.16'.
+	self
+		assert: tmp_oFvg3Tsm0w4 renderer class
+		equals: TSAthensRenderer
+		description: 'testDrawCanvas_amp:4.17'.
+	self
+		assert: tmp_oFvg3Tsm0w4 renderer builder class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:4.18'.
+	self
+		assert: tmp_oFvg3Tsm0w4 renderer builder
+		equals: nil
+		description: 'testDrawCanvas_amp:4.19'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface class
+		equals: AthensCairoSurface
+		description: 'testDrawCanvas_amp:4.20'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface status class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:4.21'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface status
+		equals: 0
+		description: 'testDrawCanvas_amp:4.22'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface width class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:4.23'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface width
+		equals: 50
+		description: 'testDrawCanvas_amp:4.24'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface height class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:4.25'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface height
+		equals: 40
+		description: 'testDrawCanvas_amp:4.26'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface isSuccess class
+		equals: True
+		description: 'testDrawCanvas_amp:4.27'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface isSuccess
+		equals: true
+		description: 'testDrawCanvas_amp:4.28'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface stride class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:4.29'.
+	self
+		assert: tmp_oFvg3Tsm0w4 surface stride
+		equals: 200
+		description: 'testDrawCanvas_amp:4.30'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas class
+		equals: TSCanvas
+		description: 'testDrawCanvas_amp:4.31'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas showRectangles class
+		equals: False
+		description: 'testDrawCanvas_amp:4.32'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas showRectangles
+		equals: false
+		description: 'testDrawCanvas_amp:4.33'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas numberOfFixedShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:4.34'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas numberOfFixedShapes
+		equals: 0
+		description: 'testDrawCanvas_amp:4.35'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas view class
+		equals: UndefinedObject
+		description: 'testDrawCanvas_amp:4.36'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas view
+		equals: nil
+		description: 'testDrawCanvas_amp:4.37'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas isShape class
+		equals: False
+		description: 'testDrawCanvas_amp:4.38'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas isShape
+		equals: false
+		description: 'testDrawCanvas_amp:4.39'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas numberOfShapes class
+		equals: SmallInteger
+		description: 'testDrawCanvas_amp:4.40'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas numberOfShapes
+		equals: 2
+		description: 'testDrawCanvas_amp:4.41'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas clearBackground class
+		equals: True
+		description: 'testDrawCanvas_amp:4.42'.
+	self
+		assert: tmp_oFvg3Tsm0w4 canvas clearBackground
+		equals: true
+		description: 'testDrawCanvas_amp:4.43'.
+	self
+		assert: tmp_oFvg3Tsm0w4 wantsSteps class
+		equals: False
+		description: 'testDrawCanvas_amp:4.44'.
+	self
+		assert: tmp_oFvg3Tsm0w4 wantsSteps
+		equals: false
+		description: 'testDrawCanvas_amp:4.45'.
+	self
+		assert: tmp_oFvg3Tsm0w4 isDragging class
+		equals: False
+		description: 'testDrawCanvas_amp:4.46'.
+	self
+		assert: tmp_oFvg3Tsm0w4 isDragging
+		equals: false
+		description: 'testDrawCanvas_amp:4.47'
+]
+
+{ #category : #'as yet unclassified' }
+TSCanvasTestAmpTest >> testDrawFixed_amp [
+	<madeBySmallAmp>
+	| box tmp_T8gT1umE4112 |
 	box := TSBox new
 		extent: 100 @ 100;
 		yourself.
-	self assert: box class equals: TSBox description: 'testDrawFixed:1.1'.
+	self
+		assert: box class
+		equals: TSBox
+		description: 'testDrawFixed_amp:1.1'.
 	self
 		assert: box cornerRadius class
 		equals: UndefinedObject
-		description: 'testDrawFixed:1.2'.
+		description: 'testDrawFixed_amp:1.2'.
 	self
 		assert: box cornerRadius
 		equals: nil
-		description: 'testDrawFixed:1.3'.
+		description: 'testDrawFixed_amp:1.3'.
 	self
 		assert: box hasCornerRadius class
 		equals: False
-		description: 'testDrawFixed:1.4'.
+		description: 'testDrawFixed_amp:1.4'.
 	self
 		assert: box hasCornerRadius
 		equals: false
-		description: 'testDrawFixed:1.5'.
+		description: 'testDrawFixed_amp:1.5'.
 	box isFixed: true.
-	self assert: box class equals: TSBox description: 'testDrawFixed:2.1'.
+	self
+		assert: box class
+		equals: TSBox
+		description: 'testDrawFixed_amp:2.1'.
 	self
 		assert: box cornerRadius class
 		equals: UndefinedObject
-		description: 'testDrawFixed:2.2'.
+		description: 'testDrawFixed_amp:2.2'.
 	self
 		assert: box cornerRadius
 		equals: nil
-		description: 'testDrawFixed:2.3'.
+		description: 'testDrawFixed_amp:2.3'.
 	self
 		assert: box hasCornerRadius class
 		equals: False
-		description: 'testDrawFixed:2.4'.
+		description: 'testDrawFixed_amp:2.4'.
 	self
 		assert: box hasCornerRadius
 		equals: false
-		description: 'testDrawFixed:2.5'.
+		description: 'testDrawFixed_amp:2.5'.
 	c addShape: box.
 	self
 		assert: c class
 		equals: TSCanvas
-		description: 'testDrawFixed:3.1'.
+		description: 'testDrawFixed_amp:3.1'.
 	self
 		assert: c fixedShapes class
 		equals: TSGroup
-		description: 'testDrawFixed:3.2'.
+		description: 'testDrawFixed_amp:3.2'.
 	self
 		assert: c fixedShapes size
 		equals: 1
-		description: 'testDrawFixed:3.3'.
+		description: 'testDrawFixed_amp:3.3'.
 	self
 		assert: c showRectangles class
 		equals: False
-		description: 'testDrawFixed:3.4'.
+		description: 'testDrawFixed_amp:3.4'.
 	self
 		assert: c showRectangles
 		equals: false
-		description: 'testDrawFixed:3.5'.
+		description: 'testDrawFixed_amp:3.5'.
 	self
 		assert: c color class
 		equals: Color
-		description: 'testDrawFixed:3.6'.
+		description: 'testDrawFixed_amp:3.6'.
 	self
 		assert: c color alpha class
 		equals: SmallFloat64
-		description: 'testDrawFixed:3.7'.
+		description: 'testDrawFixed_amp:3.7'.
 	self
 		assert: c color alpha
 		equals: 1.0
-		description: 'testDrawFixed:3.8'.
+		description: 'testDrawFixed_amp:3.8'.
 	self
 		assert: c color red class
 		equals: SmallFloat64
-		description: 'testDrawFixed:3.9'.
+		description: 'testDrawFixed_amp:3.9'.
 	self
 		assert: c color red
 		equals: 1.0
-		description: 'testDrawFixed:3.10'.
+		description: 'testDrawFixed_amp:3.10'.
 	self
 		assert: c color hsvSaturation class
 		equals: SmallFloat64
-		description: 'testDrawFixed:3.11'.
+		description: 'testDrawFixed_amp:3.11'.
 	self
 		assert: c color hsvSaturation
 		equals: 0.0
-		description: 'testDrawFixed:3.12'.
+		description: 'testDrawFixed_amp:3.12'.
 	self
 		assert: c color brightness class
 		equals: SmallFloat64
-		description: 'testDrawFixed:3.13'.
+		description: 'testDrawFixed_amp:3.13'.
 	self
 		assert: c color brightness
 		equals: 1.0
-		description: 'testDrawFixed:3.14'.
+		description: 'testDrawFixed_amp:3.14'.
 	self
 		assert: c color hue class
 		equals: SmallFloat64
-		description: 'testDrawFixed:3.15'.
+		description: 'testDrawFixed_amp:3.15'.
 	self
 		assert: c color hue
 		equals: 0.0
-		description: 'testDrawFixed:3.16'.
+		description: 'testDrawFixed_amp:3.16'.
 	self
 		assert: c color green class
 		equals: SmallFloat64
-		description: 'testDrawFixed:3.17'.
+		description: 'testDrawFixed_amp:3.17'.
 	self
 		assert: c color green
 		equals: 1.0
-		description: 'testDrawFixed:3.18'.
+		description: 'testDrawFixed_amp:3.18'.
 	self
 		assert: c color chroma class
 		equals: SmallFloat64
-		description: 'testDrawFixed:3.19'.
+		description: 'testDrawFixed_amp:3.19'.
 	self
 		assert: c color chroma
 		equals: 0.0
-		description: 'testDrawFixed:3.20'.
+		description: 'testDrawFixed_amp:3.20'.
 	self
 		assert: c color lightness class
 		equals: SmallFloat64
-		description: 'testDrawFixed:3.21'.
+		description: 'testDrawFixed_amp:3.21'.
 	self
 		assert: c color lightness
 		equals: 1.0
-		description: 'testDrawFixed:3.22'.
+		description: 'testDrawFixed_amp:3.22'.
 	self
 		assert: c color hslSaturation class
 		equals: SmallFloat64
-		description: 'testDrawFixed:3.23'.
+		description: 'testDrawFixed_amp:3.23'.
 	self
 		assert: c color hslSaturation
 		equals: 0.0
-		description: 'testDrawFixed:3.24'.
+		description: 'testDrawFixed_amp:3.24'.
 	self
 		assert: c color saturation class
 		equals: SmallFloat64
-		description: 'testDrawFixed:3.25'.
+		description: 'testDrawFixed_amp:3.25'.
 	self
 		assert: c color saturation
 		equals: 0.0
-		description: 'testDrawFixed:3.26'.
+		description: 'testDrawFixed_amp:3.26'.
 	self
 		assert: c color luminance class
 		equals: SmallFloat64
-		description: 'testDrawFixed:3.27'.
+		description: 'testDrawFixed_amp:3.27'.
 	self
 		assert: c color luminance
 		equals: 1.0
-		description: 'testDrawFixed:3.28'.
+		description: 'testDrawFixed_amp:3.28'.
 	self
 		assert: c color blue class
 		equals: SmallFloat64
-		description: 'testDrawFixed:3.29'.
+		description: 'testDrawFixed_amp:3.29'.
 	self
 		assert: c color blue
 		equals: 1.0
-		description: 'testDrawFixed:3.30'.
+		description: 'testDrawFixed_amp:3.30'.
 	self
 		assert: c numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.31'.
+		description: 'testDrawFixed_amp:3.31'.
 	self
 		assert: c numberOfFixedShapes
 		equals: 1
-		description: 'testDrawFixed:3.32'.
+		description: 'testDrawFixed_amp:3.32'.
 	self
 		assert: c morph class
 		equals: UndefinedObject
-		description: 'testDrawFixed:3.33'.
-	self assert: c morph equals: nil description: 'testDrawFixed:3.34'.
+		description: 'testDrawFixed_amp:3.33'.
+	self
+		assert: c morph
+		equals: nil
+		description: 'testDrawFixed_amp:3.34'.
 	self
 		assert: c extent class
 		equals: Point
-		description: 'testDrawFixed:3.35'.
+		description: 'testDrawFixed_amp:3.35'.
 	self
 		assert: c extent isZero class
 		equals: False
-		description: 'testDrawFixed:3.36'.
+		description: 'testDrawFixed_amp:3.36'.
 	self
 		assert: c extent isZero
 		equals: false
-		description: 'testDrawFixed:3.37'.
+		description: 'testDrawFixed_amp:3.37'.
 	self
 		assert: c extent y class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.38'.
-	self assert: c extent y equals: 500 description: 'testDrawFixed:3.39'.
+		description: 'testDrawFixed_amp:3.38'.
+	self
+		assert: c extent y
+		equals: 500
+		description: 'testDrawFixed_amp:3.39'.
 	self
 		assert: c extent isFloatPoint class
 		equals: False
-		description: 'testDrawFixed:3.40'.
+		description: 'testDrawFixed_amp:3.40'.
 	self
 		assert: c extent isFloatPoint
 		equals: false
-		description: 'testDrawFixed:3.41'.
+		description: 'testDrawFixed_amp:3.41'.
 	self
 		assert: c extent isIntegerPoint class
 		equals: True
-		description: 'testDrawFixed:3.42'.
+		description: 'testDrawFixed_amp:3.42'.
 	self
 		assert: c extent isIntegerPoint
 		equals: true
-		description: 'testDrawFixed:3.43'.
+		description: 'testDrawFixed_amp:3.43'.
 	self
 		assert: c extent x class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.44'.
-	self assert: c extent x equals: 500 description: 'testDrawFixed:3.45'.
+		description: 'testDrawFixed_amp:3.44'.
+	self
+		assert: c extent x
+		equals: 500
+		description: 'testDrawFixed_amp:3.45'.
 	self
 		assert: c extent isPoint class
 		equals: True
-		description: 'testDrawFixed:3.46'.
+		description: 'testDrawFixed_amp:3.46'.
 	self
 		assert: c extent isPoint
 		equals: true
-		description: 'testDrawFixed:3.47'.
+		description: 'testDrawFixed_amp:3.47'.
 	self
 		assert: c parent class
 		equals: TSCanvas
-		description: 'testDrawFixed:3.48'.
+		description: 'testDrawFixed_amp:3.48'.
 	self
 		assert: c parent showRectangles class
 		equals: False
-		description: 'testDrawFixed:3.49'.
+		description: 'testDrawFixed_amp:3.49'.
 	self
 		assert: c parent showRectangles
 		equals: false
-		description: 'testDrawFixed:3.50'.
+		description: 'testDrawFixed_amp:3.50'.
 	self
 		assert: c parent numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.51'.
+		description: 'testDrawFixed_amp:3.51'.
 	self
 		assert: c parent numberOfFixedShapes
 		equals: 1
-		description: 'testDrawFixed:3.52'.
+		description: 'testDrawFixed_amp:3.52'.
 	self
 		assert: c parent morph class
 		equals: UndefinedObject
-		description: 'testDrawFixed:3.53'.
+		description: 'testDrawFixed_amp:3.53'.
 	self
 		assert: c parent morph
 		equals: nil
-		description: 'testDrawFixed:3.54'.
+		description: 'testDrawFixed_amp:3.54'.
 	self
 		assert: c parent view class
 		equals: UndefinedObject
-		description: 'testDrawFixed:3.55'.
+		description: 'testDrawFixed_amp:3.55'.
 	self
 		assert: c parent view
 		equals: nil
-		description: 'testDrawFixed:3.56'.
+		description: 'testDrawFixed_amp:3.56'.
 	self
 		assert: c parent isShape class
 		equals: False
-		description: 'testDrawFixed:3.57'.
+		description: 'testDrawFixed_amp:3.57'.
 	self
 		assert: c parent isShape
 		equals: false
-		description: 'testDrawFixed:3.58'.
+		description: 'testDrawFixed_amp:3.58'.
 	self
 		assert: c parent numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.59'.
+		description: 'testDrawFixed_amp:3.59'.
 	self
 		assert: c parent numberOfShapes
 		equals: 0
-		description: 'testDrawFixed:3.60'.
+		description: 'testDrawFixed_amp:3.60'.
 	self
 		assert: c parent clearBackground class
 		equals: True
-		description: 'testDrawFixed:3.61'.
+		description: 'testDrawFixed_amp:3.61'.
 	self
 		assert: c parent clearBackground
 		equals: true
-		description: 'testDrawFixed:3.62'.
+		description: 'testDrawFixed_amp:3.62'.
 	self
 		assert: c shapes class
 		equals: TSGroup
-		description: 'testDrawFixed:3.63'.
+		description: 'testDrawFixed_amp:3.63'.
 	self
 		assert: c shapes size
 		equals: 0
-		description: 'testDrawFixed:3.64'.
+		description: 'testDrawFixed_amp:3.64'.
 	self
 		assert: c encompassingRectangle class
 		equals: Rectangle
-		description: 'testDrawFixed:3.65'.
+		description: 'testDrawFixed_amp:3.65'.
 	self
 		assert: c encompassingRectangle top class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.66'.
+		description: 'testDrawFixed_amp:3.66'.
 	self
 		assert: c encompassingRectangle top
 		equals: 0
-		description: 'testDrawFixed:3.67'.
+		description: 'testDrawFixed_amp:3.67'.
 	self
 		assert: c encompassingRectangle hasPositiveExtent class
 		equals: True
-		description: 'testDrawFixed:3.68'.
+		description: 'testDrawFixed_amp:3.68'.
 	self
 		assert: c encompassingRectangle hasPositiveExtent
 		equals: true
-		description: 'testDrawFixed:3.69'.
+		description: 'testDrawFixed_amp:3.69'.
 	self
 		assert: c encompassingRectangle area class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.70'.
+		description: 'testDrawFixed_amp:3.70'.
 	self
 		assert: c encompassingRectangle area
 		equals: 1
-		description: 'testDrawFixed:3.71'.
+		description: 'testDrawFixed_amp:3.71'.
 	self
 		assert: c encompassingRectangle isTall class
 		equals: False
-		description: 'testDrawFixed:3.72'.
+		description: 'testDrawFixed_amp:3.72'.
 	self
 		assert: c encompassingRectangle isTall
 		equals: false
-		description: 'testDrawFixed:3.73'.
+		description: 'testDrawFixed_amp:3.73'.
 	self
 		assert: c encompassingRectangle left class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.74'.
+		description: 'testDrawFixed_amp:3.74'.
 	self
 		assert: c encompassingRectangle left
 		equals: 0
-		description: 'testDrawFixed:3.75'.
+		description: 'testDrawFixed_amp:3.75'.
 	self
 		assert: c encompassingRectangle width class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.76'.
+		description: 'testDrawFixed_amp:3.76'.
 	self
 		assert: c encompassingRectangle width
 		equals: 1
-		description: 'testDrawFixed:3.77'.
+		description: 'testDrawFixed_amp:3.77'.
 	self
 		assert: c encompassingRectangle right class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.78'.
+		description: 'testDrawFixed_amp:3.78'.
 	self
 		assert: c encompassingRectangle right
 		equals: 1
-		description: 'testDrawFixed:3.79'.
+		description: 'testDrawFixed_amp:3.79'.
 	self
 		assert: c encompassingRectangle isZero class
 		equals: False
-		description: 'testDrawFixed:3.80'.
+		description: 'testDrawFixed_amp:3.80'.
 	self
 		assert: c encompassingRectangle isZero
 		equals: false
-		description: 'testDrawFixed:3.81'.
+		description: 'testDrawFixed_amp:3.81'.
 	self
 		assert: c encompassingRectangle isWide class
 		equals: False
-		description: 'testDrawFixed:3.82'.
+		description: 'testDrawFixed_amp:3.82'.
 	self
 		assert: c encompassingRectangle isWide
 		equals: false
-		description: 'testDrawFixed:3.83'.
+		description: 'testDrawFixed_amp:3.83'.
 	self
 		assert: c encompassingRectangle bottom class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.84'.
+		description: 'testDrawFixed_amp:3.84'.
 	self
 		assert: c encompassingRectangle bottom
 		equals: 1
-		description: 'testDrawFixed:3.85'.
+		description: 'testDrawFixed_amp:3.85'.
 	self
 		assert: c encompassingRectangle isRectangle class
 		equals: True
-		description: 'testDrawFixed:3.86'.
+		description: 'testDrawFixed_amp:3.86'.
 	self
 		assert: c encompassingRectangle isRectangle
 		equals: true
-		description: 'testDrawFixed:3.87'.
+		description: 'testDrawFixed_amp:3.87'.
 	self
 		assert: c encompassingRectangle height class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.88'.
+		description: 'testDrawFixed_amp:3.88'.
 	self
 		assert: c encompassingRectangle height
 		equals: 1
-		description: 'testDrawFixed:3.89'.
+		description: 'testDrawFixed_amp:3.89'.
 	self
 		assert: c view class
 		equals: UndefinedObject
-		description: 'testDrawFixed:3.90'.
-	self assert: c view equals: nil description: 'testDrawFixed:3.91'.
+		description: 'testDrawFixed_amp:3.90'.
+	self assert: c view equals: nil description: 'testDrawFixed_amp:3.91'.
 	self
 		assert: c isShape class
 		equals: False
-		description: 'testDrawFixed:3.92'.
+		description: 'testDrawFixed_amp:3.92'.
 	self
 		assert: c isShape
 		equals: false
-		description: 'testDrawFixed:3.93'.
+		description: 'testDrawFixed_amp:3.93'.
 	self
 		assert: c basicRectangle class
 		equals: Rectangle
-		description: 'testDrawFixed:3.94'.
+		description: 'testDrawFixed_amp:3.94'.
 	self
 		assert: c basicRectangle top class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.95'.
+		description: 'testDrawFixed_amp:3.95'.
 	self
 		assert: c basicRectangle top
 		equals: 0
-		description: 'testDrawFixed:3.96'.
+		description: 'testDrawFixed_amp:3.96'.
 	self
 		assert: c basicRectangle hasPositiveExtent class
 		equals: True
-		description: 'testDrawFixed:3.97'.
+		description: 'testDrawFixed_amp:3.97'.
 	self
 		assert: c basicRectangle hasPositiveExtent
 		equals: true
-		description: 'testDrawFixed:3.98'.
+		description: 'testDrawFixed_amp:3.98'.
 	self
 		assert: c basicRectangle area class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.99'.
+		description: 'testDrawFixed_amp:3.99'.
 	self
 		assert: c basicRectangle area
 		equals: 250000
-		description: 'testDrawFixed:3.100'.
+		description: 'testDrawFixed_amp:3.100'.
 	self
 		assert: c basicRectangle isTall class
 		equals: False
-		description: 'testDrawFixed:3.101'.
+		description: 'testDrawFixed_amp:3.101'.
 	self
 		assert: c basicRectangle isTall
 		equals: false
-		description: 'testDrawFixed:3.102'.
+		description: 'testDrawFixed_amp:3.102'.
 	self
 		assert: c basicRectangle left class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.103'.
+		description: 'testDrawFixed_amp:3.103'.
 	self
 		assert: c basicRectangle left
 		equals: 0
-		description: 'testDrawFixed:3.104'.
+		description: 'testDrawFixed_amp:3.104'.
 	self
 		assert: c basicRectangle width class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.105'.
+		description: 'testDrawFixed_amp:3.105'.
 	self
 		assert: c basicRectangle width
 		equals: 500
-		description: 'testDrawFixed:3.106'.
+		description: 'testDrawFixed_amp:3.106'.
 	self
 		assert: c basicRectangle right class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.107'.
+		description: 'testDrawFixed_amp:3.107'.
 	self
 		assert: c basicRectangle right
 		equals: 500
-		description: 'testDrawFixed:3.108'.
+		description: 'testDrawFixed_amp:3.108'.
 	self
 		assert: c basicRectangle isZero class
 		equals: False
-		description: 'testDrawFixed:3.109'.
+		description: 'testDrawFixed_amp:3.109'.
 	self
 		assert: c basicRectangle isZero
 		equals: false
-		description: 'testDrawFixed:3.110'.
+		description: 'testDrawFixed_amp:3.110'.
 	self
 		assert: c basicRectangle isWide class
 		equals: False
-		description: 'testDrawFixed:3.111'.
+		description: 'testDrawFixed_amp:3.111'.
 	self
 		assert: c basicRectangle isWide
 		equals: false
-		description: 'testDrawFixed:3.112'.
+		description: 'testDrawFixed_amp:3.112'.
 	self
 		assert: c basicRectangle bottom class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.113'.
+		description: 'testDrawFixed_amp:3.113'.
 	self
 		assert: c basicRectangle bottom
 		equals: 500
-		description: 'testDrawFixed:3.114'.
+		description: 'testDrawFixed_amp:3.114'.
 	self
 		assert: c basicRectangle isRectangle class
 		equals: True
-		description: 'testDrawFixed:3.115'.
+		description: 'testDrawFixed_amp:3.115'.
 	self
 		assert: c basicRectangle isRectangle
 		equals: true
-		description: 'testDrawFixed:3.116'.
+		description: 'testDrawFixed_amp:3.116'.
 	self
 		assert: c basicRectangle height class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.117'.
+		description: 'testDrawFixed_amp:3.117'.
 	self
 		assert: c basicRectangle height
 		equals: 500
-		description: 'testDrawFixed:3.118'.
+		description: 'testDrawFixed_amp:3.118'.
 	self
 		assert: c topParent class
 		equals: TSCanvas
-		description: 'testDrawFixed:3.119'.
+		description: 'testDrawFixed_amp:3.119'.
 	self
 		assert: c topParent showRectangles class
 		equals: False
-		description: 'testDrawFixed:3.120'.
+		description: 'testDrawFixed_amp:3.120'.
 	self
 		assert: c topParent showRectangles
 		equals: false
-		description: 'testDrawFixed:3.121'.
+		description: 'testDrawFixed_amp:3.121'.
 	self
 		assert: c topParent numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.122'.
+		description: 'testDrawFixed_amp:3.122'.
 	self
 		assert: c topParent numberOfFixedShapes
 		equals: 1
-		description: 'testDrawFixed:3.123'.
+		description: 'testDrawFixed_amp:3.123'.
 	self
 		assert: c topParent morph class
 		equals: UndefinedObject
-		description: 'testDrawFixed:3.124'.
+		description: 'testDrawFixed_amp:3.124'.
 	self
 		assert: c topParent morph
 		equals: nil
-		description: 'testDrawFixed:3.125'.
+		description: 'testDrawFixed_amp:3.125'.
 	self
 		assert: c topParent view class
 		equals: UndefinedObject
-		description: 'testDrawFixed:3.126'.
+		description: 'testDrawFixed_amp:3.126'.
 	self
 		assert: c topParent view
 		equals: nil
-		description: 'testDrawFixed:3.127'.
+		description: 'testDrawFixed_amp:3.127'.
 	self
 		assert: c topParent isShape class
 		equals: False
-		description: 'testDrawFixed:3.128'.
+		description: 'testDrawFixed_amp:3.128'.
 	self
 		assert: c topParent isShape
 		equals: false
-		description: 'testDrawFixed:3.129'.
+		description: 'testDrawFixed_amp:3.129'.
 	self
 		assert: c topParent numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.130'.
+		description: 'testDrawFixed_amp:3.130'.
 	self
 		assert: c topParent numberOfShapes
 		equals: 0
-		description: 'testDrawFixed:3.131'.
+		description: 'testDrawFixed_amp:3.131'.
 	self
 		assert: c topParent clearBackground class
 		equals: True
-		description: 'testDrawFixed:3.132'.
+		description: 'testDrawFixed_amp:3.132'.
 	self
 		assert: c topParent clearBackground
 		equals: true
-		description: 'testDrawFixed:3.133'.
+		description: 'testDrawFixed_amp:3.133'.
 	self
 		assert: c numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.134'.
+		description: 'testDrawFixed_amp:3.134'.
 	self
 		assert: c numberOfShapes
 		equals: 0
-		description: 'testDrawFixed:3.135'.
+		description: 'testDrawFixed_amp:3.135'.
 	self
 		assert: c canvas class
 		equals: TSCanvas
-		description: 'testDrawFixed:3.136'.
+		description: 'testDrawFixed_amp:3.136'.
 	self
 		assert: c canvas showRectangles class
 		equals: False
-		description: 'testDrawFixed:3.137'.
+		description: 'testDrawFixed_amp:3.137'.
 	self
 		assert: c canvas showRectangles
 		equals: false
-		description: 'testDrawFixed:3.138'.
+		description: 'testDrawFixed_amp:3.138'.
 	self
 		assert: c canvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.139'.
+		description: 'testDrawFixed_amp:3.139'.
 	self
 		assert: c canvas numberOfFixedShapes
 		equals: 1
-		description: 'testDrawFixed:3.140'.
+		description: 'testDrawFixed_amp:3.140'.
 	self
 		assert: c canvas morph class
 		equals: UndefinedObject
-		description: 'testDrawFixed:3.141'.
+		description: 'testDrawFixed_amp:3.141'.
 	self
 		assert: c canvas morph
 		equals: nil
-		description: 'testDrawFixed:3.142'.
+		description: 'testDrawFixed_amp:3.142'.
 	self
 		assert: c canvas view class
 		equals: UndefinedObject
-		description: 'testDrawFixed:3.143'.
+		description: 'testDrawFixed_amp:3.143'.
 	self
 		assert: c canvas view
 		equals: nil
-		description: 'testDrawFixed:3.144'.
+		description: 'testDrawFixed_amp:3.144'.
 	self
 		assert: c canvas isShape class
 		equals: False
-		description: 'testDrawFixed:3.145'.
+		description: 'testDrawFixed_amp:3.145'.
 	self
 		assert: c canvas isShape
 		equals: false
-		description: 'testDrawFixed:3.146'.
+		description: 'testDrawFixed_amp:3.146'.
 	self
 		assert: c canvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:3.147'.
+		description: 'testDrawFixed_amp:3.147'.
 	self
 		assert: c canvas numberOfShapes
 		equals: 0
-		description: 'testDrawFixed:3.148'.
+		description: 'testDrawFixed_amp:3.148'.
 	self
 		assert: c canvas clearBackground class
 		equals: True
-		description: 'testDrawFixed:3.149'.
+		description: 'testDrawFixed_amp:3.149'.
 	self
 		assert: c canvas clearBackground
 		equals: true
-		description: 'testDrawFixed:3.150'.
+		description: 'testDrawFixed_amp:3.150'.
 	self
 		assert: c clearBackground class
 		equals: True
-		description: 'testDrawFixed:3.151'.
+		description: 'testDrawFixed_amp:3.151'.
 	self
 		assert: c clearBackground
 		equals: true
-		description: 'testDrawFixed:3.152'.
+		description: 'testDrawFixed_amp:3.152'.
 	box := TSBox new
 		extent: 100 @ 100;
 		yourself.
-	self assert: box class equals: TSBox description: 'testDrawFixed:4.1'.
+	self
+		assert: box class
+		equals: TSBox
+		description: 'testDrawFixed_amp:4.1'.
 	self
 		assert: box cornerRadius class
 		equals: UndefinedObject
-		description: 'testDrawFixed:4.2'.
+		description: 'testDrawFixed_amp:4.2'.
 	self
 		assert: box cornerRadius
 		equals: nil
-		description: 'testDrawFixed:4.3'.
+		description: 'testDrawFixed_amp:4.3'.
 	self
 		assert: box hasCornerRadius class
 		equals: False
-		description: 'testDrawFixed:4.4'.
+		description: 'testDrawFixed_amp:4.4'.
 	self
 		assert: box hasCornerRadius
 		equals: false
-		description: 'testDrawFixed:4.5'.
+		description: 'testDrawFixed_amp:4.5'.
 	c addShape: box.
 	box setAsFixed.
-	self assert: box class equals: TSBox description: 'testDrawFixed:6.1'.
+	self
+		assert: box class
+		equals: TSBox
+		description: 'testDrawFixed_amp:6.1'.
 	self
 		assert: box cornerRadius class
 		equals: UndefinedObject
-		description: 'testDrawFixed:6.2'.
+		description: 'testDrawFixed_amp:6.2'.
 	self
 		assert: box cornerRadius
 		equals: nil
-		description: 'testDrawFixed:6.3'.
+		description: 'testDrawFixed_amp:6.3'.
 	self
 		assert: box hasCornerRadius class
 		equals: False
-		description: 'testDrawFixed:6.4'.
+		description: 'testDrawFixed_amp:6.4'.
 	self
 		assert: box hasCornerRadius
 		equals: false
-		description: 'testDrawFixed:6.5'.
-	tmp_f1lbs83IzF12 := c createMorph.
+		description: 'testDrawFixed_amp:6.5'.
+	tmp_T8gT1umE4112 := c createMorph.
 	self
 		assert: c class
 		equals: TSCanvas
-		description: 'testDrawFixed:7.1'.
+		description: 'testDrawFixed_amp:7.1'.
 	self
 		assert: c fixedShapes class
 		equals: TSGroup
-		description: 'testDrawFixed:7.2'.
+		description: 'testDrawFixed_amp:7.2'.
 	self
 		assert: c fixedShapes size
 		equals: 2
-		description: 'testDrawFixed:7.3'.
+		description: 'testDrawFixed_amp:7.3'.
 	self
 		assert: c showRectangles class
 		equals: False
-		description: 'testDrawFixed:7.4'.
+		description: 'testDrawFixed_amp:7.4'.
 	self
 		assert: c showRectangles
 		equals: false
-		description: 'testDrawFixed:7.5'.
+		description: 'testDrawFixed_amp:7.5'.
 	self
 		assert: c color class
 		equals: Color
-		description: 'testDrawFixed:7.6'.
+		description: 'testDrawFixed_amp:7.6'.
 	self
 		assert: c color alpha class
 		equals: SmallFloat64
-		description: 'testDrawFixed:7.7'.
+		description: 'testDrawFixed_amp:7.7'.
 	self
 		assert: c color alpha
 		equals: 1.0
-		description: 'testDrawFixed:7.8'.
+		description: 'testDrawFixed_amp:7.8'.
 	self
 		assert: c color red class
 		equals: SmallFloat64
-		description: 'testDrawFixed:7.9'.
+		description: 'testDrawFixed_amp:7.9'.
 	self
 		assert: c color red
 		equals: 1.0
-		description: 'testDrawFixed:7.10'.
+		description: 'testDrawFixed_amp:7.10'.
 	self
 		assert: c color hsvSaturation class
 		equals: SmallFloat64
-		description: 'testDrawFixed:7.11'.
+		description: 'testDrawFixed_amp:7.11'.
 	self
 		assert: c color hsvSaturation
 		equals: 0.0
-		description: 'testDrawFixed:7.12'.
+		description: 'testDrawFixed_amp:7.12'.
 	self
 		assert: c color brightness class
 		equals: SmallFloat64
-		description: 'testDrawFixed:7.13'.
+		description: 'testDrawFixed_amp:7.13'.
 	self
 		assert: c color brightness
 		equals: 1.0
-		description: 'testDrawFixed:7.14'.
+		description: 'testDrawFixed_amp:7.14'.
 	self
 		assert: c color hue class
 		equals: SmallFloat64
-		description: 'testDrawFixed:7.15'.
+		description: 'testDrawFixed_amp:7.15'.
 	self
 		assert: c color hue
 		equals: 0.0
-		description: 'testDrawFixed:7.16'.
+		description: 'testDrawFixed_amp:7.16'.
 	self
 		assert: c color green class
 		equals: SmallFloat64
-		description: 'testDrawFixed:7.17'.
+		description: 'testDrawFixed_amp:7.17'.
 	self
 		assert: c color green
 		equals: 1.0
-		description: 'testDrawFixed:7.18'.
+		description: 'testDrawFixed_amp:7.18'.
 	self
 		assert: c color chroma class
 		equals: SmallFloat64
-		description: 'testDrawFixed:7.19'.
+		description: 'testDrawFixed_amp:7.19'.
 	self
 		assert: c color chroma
 		equals: 0.0
-		description: 'testDrawFixed:7.20'.
+		description: 'testDrawFixed_amp:7.20'.
 	self
 		assert: c color lightness class
 		equals: SmallFloat64
-		description: 'testDrawFixed:7.21'.
+		description: 'testDrawFixed_amp:7.21'.
 	self
 		assert: c color lightness
 		equals: 1.0
-		description: 'testDrawFixed:7.22'.
+		description: 'testDrawFixed_amp:7.22'.
 	self
 		assert: c color hslSaturation class
 		equals: SmallFloat64
-		description: 'testDrawFixed:7.23'.
+		description: 'testDrawFixed_amp:7.23'.
 	self
 		assert: c color hslSaturation
 		equals: 0.0
-		description: 'testDrawFixed:7.24'.
+		description: 'testDrawFixed_amp:7.24'.
 	self
 		assert: c color saturation class
 		equals: SmallFloat64
-		description: 'testDrawFixed:7.25'.
+		description: 'testDrawFixed_amp:7.25'.
 	self
 		assert: c color saturation
 		equals: 0.0
-		description: 'testDrawFixed:7.26'.
+		description: 'testDrawFixed_amp:7.26'.
 	self
 		assert: c color luminance class
 		equals: SmallFloat64
-		description: 'testDrawFixed:7.27'.
+		description: 'testDrawFixed_amp:7.27'.
 	self
 		assert: c color luminance
 		equals: 1.0
-		description: 'testDrawFixed:7.28'.
+		description: 'testDrawFixed_amp:7.28'.
 	self
 		assert: c color blue class
 		equals: SmallFloat64
-		description: 'testDrawFixed:7.29'.
+		description: 'testDrawFixed_amp:7.29'.
 	self
 		assert: c color blue
 		equals: 1.0
-		description: 'testDrawFixed:7.30'.
+		description: 'testDrawFixed_amp:7.30'.
 	self
 		assert: c numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.31'.
+		description: 'testDrawFixed_amp:7.31'.
 	self
 		assert: c numberOfFixedShapes
 		equals: 2
-		description: 'testDrawFixed:7.32'.
+		description: 'testDrawFixed_amp:7.32'.
 	self
 		assert: c morph class
 		equals: TSAthensMorph
-		description: 'testDrawFixed:7.33'.
+		description: 'testDrawFixed_amp:7.33'.
 	self
 		assert: c morph isDrawing class
 		equals: False
-		description: 'testDrawFixed:7.34'.
+		description: 'testDrawFixed_amp:7.34'.
 	self
 		assert: c morph isDrawing
 		equals: false
-		description: 'testDrawFixed:7.35'.
+		description: 'testDrawFixed_amp:7.35'.
 	self
 		assert: c morph wantsSteps class
 		equals: False
-		description: 'testDrawFixed:7.36'.
+		description: 'testDrawFixed_amp:7.36'.
 	self
 		assert: c morph wantsSteps
 		equals: false
-		description: 'testDrawFixed:7.37'.
+		description: 'testDrawFixed_amp:7.37'.
 	self
 		assert: c morph isDragging class
 		equals: False
-		description: 'testDrawFixed:7.38'.
+		description: 'testDrawFixed_amp:7.38'.
 	self
 		assert: c morph isDragging
 		equals: false
-		description: 'testDrawFixed:7.39'.
+		description: 'testDrawFixed_amp:7.39'.
 	self
 		assert: c extent class
 		equals: Point
-		description: 'testDrawFixed:7.40'.
+		description: 'testDrawFixed_amp:7.40'.
 	self
 		assert: c extent isZero class
 		equals: False
-		description: 'testDrawFixed:7.41'.
+		description: 'testDrawFixed_amp:7.41'.
 	self
 		assert: c extent isZero
 		equals: false
-		description: 'testDrawFixed:7.42'.
+		description: 'testDrawFixed_amp:7.42'.
 	self
 		assert: c extent y class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.43'.
-	self assert: c extent y equals: 500 description: 'testDrawFixed:7.44'.
+		description: 'testDrawFixed_amp:7.43'.
+	self
+		assert: c extent y
+		equals: 500
+		description: 'testDrawFixed_amp:7.44'.
 	self
 		assert: c extent isFloatPoint class
 		equals: False
-		description: 'testDrawFixed:7.45'.
+		description: 'testDrawFixed_amp:7.45'.
 	self
 		assert: c extent isFloatPoint
 		equals: false
-		description: 'testDrawFixed:7.46'.
+		description: 'testDrawFixed_amp:7.46'.
 	self
 		assert: c extent isIntegerPoint class
 		equals: True
-		description: 'testDrawFixed:7.47'.
+		description: 'testDrawFixed_amp:7.47'.
 	self
 		assert: c extent isIntegerPoint
 		equals: true
-		description: 'testDrawFixed:7.48'.
+		description: 'testDrawFixed_amp:7.48'.
 	self
 		assert: c extent x class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.49'.
-	self assert: c extent x equals: 500 description: 'testDrawFixed:7.50'.
+		description: 'testDrawFixed_amp:7.49'.
+	self
+		assert: c extent x
+		equals: 500
+		description: 'testDrawFixed_amp:7.50'.
 	self
 		assert: c extent isPoint class
 		equals: True
-		description: 'testDrawFixed:7.51'.
+		description: 'testDrawFixed_amp:7.51'.
 	self
 		assert: c extent isPoint
 		equals: true
-		description: 'testDrawFixed:7.52'.
+		description: 'testDrawFixed_amp:7.52'.
 	self
 		assert: c parent class
 		equals: TSCanvas
-		description: 'testDrawFixed:7.53'.
+		description: 'testDrawFixed_amp:7.53'.
 	self
 		assert: c parent showRectangles class
 		equals: False
-		description: 'testDrawFixed:7.54'.
+		description: 'testDrawFixed_amp:7.54'.
 	self
 		assert: c parent showRectangles
 		equals: false
-		description: 'testDrawFixed:7.55'.
+		description: 'testDrawFixed_amp:7.55'.
 	self
 		assert: c parent numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.56'.
+		description: 'testDrawFixed_amp:7.56'.
 	self
 		assert: c parent numberOfFixedShapes
 		equals: 2
-		description: 'testDrawFixed:7.57'.
+		description: 'testDrawFixed_amp:7.57'.
 	self
 		assert: c parent view class
 		equals: UndefinedObject
-		description: 'testDrawFixed:7.58'.
+		description: 'testDrawFixed_amp:7.58'.
 	self
 		assert: c parent view
 		equals: nil
-		description: 'testDrawFixed:7.59'.
+		description: 'testDrawFixed_amp:7.59'.
 	self
 		assert: c parent isShape class
 		equals: False
-		description: 'testDrawFixed:7.60'.
+		description: 'testDrawFixed_amp:7.60'.
 	self
 		assert: c parent isShape
 		equals: false
-		description: 'testDrawFixed:7.61'.
+		description: 'testDrawFixed_amp:7.61'.
 	self
 		assert: c parent numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.62'.
+		description: 'testDrawFixed_amp:7.62'.
 	self
 		assert: c parent numberOfShapes
 		equals: 0
-		description: 'testDrawFixed:7.63'.
+		description: 'testDrawFixed_amp:7.63'.
 	self
 		assert: c parent clearBackground class
 		equals: True
-		description: 'testDrawFixed:7.64'.
+		description: 'testDrawFixed_amp:7.64'.
 	self
 		assert: c parent clearBackground
 		equals: true
-		description: 'testDrawFixed:7.65'.
+		description: 'testDrawFixed_amp:7.65'.
 	self
 		assert: c shapes class
 		equals: TSGroup
-		description: 'testDrawFixed:7.66'.
+		description: 'testDrawFixed_amp:7.66'.
 	self
 		assert: c shapes size
 		equals: 0
-		description: 'testDrawFixed:7.67'.
+		description: 'testDrawFixed_amp:7.67'.
 	self
 		assert: c encompassingRectangle class
 		equals: Rectangle
-		description: 'testDrawFixed:7.68'.
+		description: 'testDrawFixed_amp:7.68'.
 	self
 		assert: c encompassingRectangle top class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.69'.
+		description: 'testDrawFixed_amp:7.69'.
 	self
 		assert: c encompassingRectangle top
 		equals: 0
-		description: 'testDrawFixed:7.70'.
+		description: 'testDrawFixed_amp:7.70'.
 	self
 		assert: c encompassingRectangle hasPositiveExtent class
 		equals: True
-		description: 'testDrawFixed:7.71'.
+		description: 'testDrawFixed_amp:7.71'.
 	self
 		assert: c encompassingRectangle hasPositiveExtent
 		equals: true
-		description: 'testDrawFixed:7.72'.
+		description: 'testDrawFixed_amp:7.72'.
 	self
 		assert: c encompassingRectangle area class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.73'.
+		description: 'testDrawFixed_amp:7.73'.
 	self
 		assert: c encompassingRectangle area
 		equals: 1
-		description: 'testDrawFixed:7.74'.
+		description: 'testDrawFixed_amp:7.74'.
 	self
 		assert: c encompassingRectangle isTall class
 		equals: False
-		description: 'testDrawFixed:7.75'.
+		description: 'testDrawFixed_amp:7.75'.
 	self
 		assert: c encompassingRectangle isTall
 		equals: false
-		description: 'testDrawFixed:7.76'.
+		description: 'testDrawFixed_amp:7.76'.
 	self
 		assert: c encompassingRectangle left class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.77'.
+		description: 'testDrawFixed_amp:7.77'.
 	self
 		assert: c encompassingRectangle left
 		equals: 0
-		description: 'testDrawFixed:7.78'.
+		description: 'testDrawFixed_amp:7.78'.
 	self
 		assert: c encompassingRectangle width class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.79'.
+		description: 'testDrawFixed_amp:7.79'.
 	self
 		assert: c encompassingRectangle width
 		equals: 1
-		description: 'testDrawFixed:7.80'.
+		description: 'testDrawFixed_amp:7.80'.
 	self
 		assert: c encompassingRectangle right class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.81'.
+		description: 'testDrawFixed_amp:7.81'.
 	self
 		assert: c encompassingRectangle right
 		equals: 1
-		description: 'testDrawFixed:7.82'.
+		description: 'testDrawFixed_amp:7.82'.
 	self
 		assert: c encompassingRectangle isZero class
 		equals: False
-		description: 'testDrawFixed:7.83'.
+		description: 'testDrawFixed_amp:7.83'.
 	self
 		assert: c encompassingRectangle isZero
 		equals: false
-		description: 'testDrawFixed:7.84'.
+		description: 'testDrawFixed_amp:7.84'.
 	self
 		assert: c encompassingRectangle isWide class
 		equals: False
-		description: 'testDrawFixed:7.85'.
+		description: 'testDrawFixed_amp:7.85'.
 	self
 		assert: c encompassingRectangle isWide
 		equals: false
-		description: 'testDrawFixed:7.86'.
+		description: 'testDrawFixed_amp:7.86'.
 	self
 		assert: c encompassingRectangle bottom class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.87'.
+		description: 'testDrawFixed_amp:7.87'.
 	self
 		assert: c encompassingRectangle bottom
 		equals: 1
-		description: 'testDrawFixed:7.88'.
+		description: 'testDrawFixed_amp:7.88'.
 	self
 		assert: c encompassingRectangle isRectangle class
 		equals: True
-		description: 'testDrawFixed:7.89'.
+		description: 'testDrawFixed_amp:7.89'.
 	self
 		assert: c encompassingRectangle isRectangle
 		equals: true
-		description: 'testDrawFixed:7.90'.
+		description: 'testDrawFixed_amp:7.90'.
 	self
 		assert: c encompassingRectangle height class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.91'.
+		description: 'testDrawFixed_amp:7.91'.
 	self
 		assert: c encompassingRectangle height
 		equals: 1
-		description: 'testDrawFixed:7.92'.
+		description: 'testDrawFixed_amp:7.92'.
 	self
 		assert: c view class
 		equals: UndefinedObject
-		description: 'testDrawFixed:7.93'.
-	self assert: c view equals: nil description: 'testDrawFixed:7.94'.
+		description: 'testDrawFixed_amp:7.93'.
+	self assert: c view equals: nil description: 'testDrawFixed_amp:7.94'.
 	self
 		assert: c isShape class
 		equals: False
-		description: 'testDrawFixed:7.95'.
+		description: 'testDrawFixed_amp:7.95'.
 	self
 		assert: c isShape
 		equals: false
-		description: 'testDrawFixed:7.96'.
+		description: 'testDrawFixed_amp:7.96'.
 	self
 		assert: c basicRectangle class
 		equals: Rectangle
-		description: 'testDrawFixed:7.97'.
+		description: 'testDrawFixed_amp:7.97'.
 	self
 		assert: c basicRectangle top class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.98'.
+		description: 'testDrawFixed_amp:7.98'.
 	self
 		assert: c basicRectangle top
 		equals: 0
-		description: 'testDrawFixed:7.99'.
+		description: 'testDrawFixed_amp:7.99'.
 	self
 		assert: c basicRectangle hasPositiveExtent class
 		equals: True
-		description: 'testDrawFixed:7.100'.
+		description: 'testDrawFixed_amp:7.100'.
 	self
 		assert: c basicRectangle hasPositiveExtent
 		equals: true
-		description: 'testDrawFixed:7.101'.
+		description: 'testDrawFixed_amp:7.101'.
 	self
 		assert: c basicRectangle area class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.102'.
+		description: 'testDrawFixed_amp:7.102'.
 	self
 		assert: c basicRectangle area
 		equals: 250000
-		description: 'testDrawFixed:7.103'.
+		description: 'testDrawFixed_amp:7.103'.
 	self
 		assert: c basicRectangle isTall class
 		equals: False
-		description: 'testDrawFixed:7.104'.
+		description: 'testDrawFixed_amp:7.104'.
 	self
 		assert: c basicRectangle isTall
 		equals: false
-		description: 'testDrawFixed:7.105'.
+		description: 'testDrawFixed_amp:7.105'.
 	self
 		assert: c basicRectangle left class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.106'.
+		description: 'testDrawFixed_amp:7.106'.
 	self
 		assert: c basicRectangle left
 		equals: 0
-		description: 'testDrawFixed:7.107'.
+		description: 'testDrawFixed_amp:7.107'.
 	self
 		assert: c basicRectangle width class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.108'.
+		description: 'testDrawFixed_amp:7.108'.
 	self
 		assert: c basicRectangle width
 		equals: 500
-		description: 'testDrawFixed:7.109'.
+		description: 'testDrawFixed_amp:7.109'.
 	self
 		assert: c basicRectangle right class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.110'.
+		description: 'testDrawFixed_amp:7.110'.
 	self
 		assert: c basicRectangle right
 		equals: 500
-		description: 'testDrawFixed:7.111'.
+		description: 'testDrawFixed_amp:7.111'.
 	self
 		assert: c basicRectangle isZero class
 		equals: False
-		description: 'testDrawFixed:7.112'.
+		description: 'testDrawFixed_amp:7.112'.
 	self
 		assert: c basicRectangle isZero
 		equals: false
-		description: 'testDrawFixed:7.113'.
+		description: 'testDrawFixed_amp:7.113'.
 	self
 		assert: c basicRectangle isWide class
 		equals: False
-		description: 'testDrawFixed:7.114'.
+		description: 'testDrawFixed_amp:7.114'.
 	self
 		assert: c basicRectangle isWide
 		equals: false
-		description: 'testDrawFixed:7.115'.
+		description: 'testDrawFixed_amp:7.115'.
 	self
 		assert: c basicRectangle bottom class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.116'.
+		description: 'testDrawFixed_amp:7.116'.
 	self
 		assert: c basicRectangle bottom
 		equals: 500
-		description: 'testDrawFixed:7.117'.
+		description: 'testDrawFixed_amp:7.117'.
 	self
 		assert: c basicRectangle isRectangle class
 		equals: True
-		description: 'testDrawFixed:7.118'.
+		description: 'testDrawFixed_amp:7.118'.
 	self
 		assert: c basicRectangle isRectangle
 		equals: true
-		description: 'testDrawFixed:7.119'.
+		description: 'testDrawFixed_amp:7.119'.
 	self
 		assert: c basicRectangle height class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.120'.
+		description: 'testDrawFixed_amp:7.120'.
 	self
 		assert: c basicRectangle height
 		equals: 500
-		description: 'testDrawFixed:7.121'.
+		description: 'testDrawFixed_amp:7.121'.
 	self
 		assert: c topParent class
 		equals: TSCanvas
-		description: 'testDrawFixed:7.122'.
+		description: 'testDrawFixed_amp:7.122'.
 	self
 		assert: c topParent showRectangles class
 		equals: False
-		description: 'testDrawFixed:7.123'.
+		description: 'testDrawFixed_amp:7.123'.
 	self
 		assert: c topParent showRectangles
 		equals: false
-		description: 'testDrawFixed:7.124'.
+		description: 'testDrawFixed_amp:7.124'.
 	self
 		assert: c topParent numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.125'.
+		description: 'testDrawFixed_amp:7.125'.
 	self
 		assert: c topParent numberOfFixedShapes
 		equals: 2
-		description: 'testDrawFixed:7.126'.
+		description: 'testDrawFixed_amp:7.126'.
 	self
 		assert: c topParent view class
 		equals: UndefinedObject
-		description: 'testDrawFixed:7.127'.
+		description: 'testDrawFixed_amp:7.127'.
 	self
 		assert: c topParent view
 		equals: nil
-		description: 'testDrawFixed:7.128'.
+		description: 'testDrawFixed_amp:7.128'.
 	self
 		assert: c topParent isShape class
 		equals: False
-		description: 'testDrawFixed:7.129'.
+		description: 'testDrawFixed_amp:7.129'.
 	self
 		assert: c topParent isShape
 		equals: false
-		description: 'testDrawFixed:7.130'.
+		description: 'testDrawFixed_amp:7.130'.
 	self
 		assert: c topParent numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.131'.
+		description: 'testDrawFixed_amp:7.131'.
 	self
 		assert: c topParent numberOfShapes
 		equals: 0
-		description: 'testDrawFixed:7.132'.
+		description: 'testDrawFixed_amp:7.132'.
 	self
 		assert: c topParent clearBackground class
 		equals: True
-		description: 'testDrawFixed:7.133'.
+		description: 'testDrawFixed_amp:7.133'.
 	self
 		assert: c topParent clearBackground
 		equals: true
-		description: 'testDrawFixed:7.134'.
+		description: 'testDrawFixed_amp:7.134'.
 	self
 		assert: c numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.135'.
+		description: 'testDrawFixed_amp:7.135'.
 	self
 		assert: c numberOfShapes
 		equals: 0
-		description: 'testDrawFixed:7.136'.
+		description: 'testDrawFixed_amp:7.136'.
 	self
 		assert: c canvas class
 		equals: TSCanvas
-		description: 'testDrawFixed:7.137'.
+		description: 'testDrawFixed_amp:7.137'.
 	self
 		assert: c canvas showRectangles class
 		equals: False
-		description: 'testDrawFixed:7.138'.
+		description: 'testDrawFixed_amp:7.138'.
 	self
 		assert: c canvas showRectangles
 		equals: false
-		description: 'testDrawFixed:7.139'.
+		description: 'testDrawFixed_amp:7.139'.
 	self
 		assert: c canvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.140'.
+		description: 'testDrawFixed_amp:7.140'.
 	self
 		assert: c canvas numberOfFixedShapes
 		equals: 2
-		description: 'testDrawFixed:7.141'.
+		description: 'testDrawFixed_amp:7.141'.
 	self
 		assert: c canvas view class
 		equals: UndefinedObject
-		description: 'testDrawFixed:7.142'.
+		description: 'testDrawFixed_amp:7.142'.
 	self
 		assert: c canvas view
 		equals: nil
-		description: 'testDrawFixed:7.143'.
+		description: 'testDrawFixed_amp:7.143'.
 	self
 		assert: c canvas isShape class
 		equals: False
-		description: 'testDrawFixed:7.144'.
+		description: 'testDrawFixed_amp:7.144'.
 	self
 		assert: c canvas isShape
 		equals: false
-		description: 'testDrawFixed:7.145'.
+		description: 'testDrawFixed_amp:7.145'.
 	self
 		assert: c canvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.146'.
+		description: 'testDrawFixed_amp:7.146'.
 	self
 		assert: c canvas numberOfShapes
 		equals: 0
-		description: 'testDrawFixed:7.147'.
+		description: 'testDrawFixed_amp:7.147'.
 	self
 		assert: c canvas clearBackground class
 		equals: True
-		description: 'testDrawFixed:7.148'.
+		description: 'testDrawFixed_amp:7.148'.
 	self
 		assert: c canvas clearBackground
 		equals: true
-		description: 'testDrawFixed:7.149'.
+		description: 'testDrawFixed_amp:7.149'.
 	self
 		assert: c clearBackground class
 		equals: True
-		description: 'testDrawFixed:7.150'.
+		description: 'testDrawFixed_amp:7.150'.
 	self
 		assert: c clearBackground
 		equals: true
-		description: 'testDrawFixed:7.151'.
+		description: 'testDrawFixed_amp:7.151'.
 	self
-		assert: tmp_f1lbs83IzF12 class
+		assert: tmp_T8gT1umE4112 class
 		equals: TSAthensMorph
-		description: 'testDrawFixed:7.1'.
+		description: 'testDrawFixed_amp:7.1'.
 	self
-		assert: tmp_f1lbs83IzF12 isDrawing class
+		assert: tmp_T8gT1umE4112 isDrawing class
 		equals: False
-		description: 'testDrawFixed:7.2'.
+		description: 'testDrawFixed_amp:7.2'.
 	self
-		assert: tmp_f1lbs83IzF12 isDrawing
+		assert: tmp_T8gT1umE4112 isDrawing
 		equals: false
-		description: 'testDrawFixed:7.3'.
+		description: 'testDrawFixed_amp:7.3'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas class
+		assert: tmp_T8gT1umE4112 trachelCanvas class
 		equals: TSCanvas
-		description: 'testDrawFixed:7.4'.
+		description: 'testDrawFixed_amp:7.4'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas showRectangles class
+		assert: tmp_T8gT1umE4112 trachelCanvas showRectangles class
 		equals: False
-		description: 'testDrawFixed:7.5'.
+		description: 'testDrawFixed_amp:7.5'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas showRectangles
+		assert: tmp_T8gT1umE4112 trachelCanvas showRectangles
 		equals: false
-		description: 'testDrawFixed:7.6'.
+		description: 'testDrawFixed_amp:7.6'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas numberOfFixedShapes class
+		assert: tmp_T8gT1umE4112 trachelCanvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.7'.
+		description: 'testDrawFixed_amp:7.7'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas numberOfFixedShapes
+		assert: tmp_T8gT1umE4112 trachelCanvas numberOfFixedShapes
 		equals: 2
-		description: 'testDrawFixed:7.8'.
+		description: 'testDrawFixed_amp:7.8'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas view class
+		assert: tmp_T8gT1umE4112 trachelCanvas view class
 		equals: UndefinedObject
-		description: 'testDrawFixed:7.9'.
+		description: 'testDrawFixed_amp:7.9'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas view
+		assert: tmp_T8gT1umE4112 trachelCanvas view
 		equals: nil
-		description: 'testDrawFixed:7.10'.
+		description: 'testDrawFixed_amp:7.10'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas isShape class
+		assert: tmp_T8gT1umE4112 trachelCanvas isShape class
 		equals: False
-		description: 'testDrawFixed:7.11'.
+		description: 'testDrawFixed_amp:7.11'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas isShape
+		assert: tmp_T8gT1umE4112 trachelCanvas isShape
 		equals: false
-		description: 'testDrawFixed:7.12'.
+		description: 'testDrawFixed_amp:7.12'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas numberOfShapes class
+		assert: tmp_T8gT1umE4112 trachelCanvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.13'.
+		description: 'testDrawFixed_amp:7.13'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas numberOfShapes
+		assert: tmp_T8gT1umE4112 trachelCanvas numberOfShapes
 		equals: 0
-		description: 'testDrawFixed:7.14'.
+		description: 'testDrawFixed_amp:7.14'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas clearBackground class
+		assert: tmp_T8gT1umE4112 trachelCanvas clearBackground class
 		equals: True
-		description: 'testDrawFixed:7.15'.
+		description: 'testDrawFixed_amp:7.15'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas clearBackground
+		assert: tmp_T8gT1umE4112 trachelCanvas clearBackground
 		equals: true
-		description: 'testDrawFixed:7.16'.
+		description: 'testDrawFixed_amp:7.16'.
 	self
-		assert: tmp_f1lbs83IzF12 renderer class
+		assert: tmp_T8gT1umE4112 renderer class
 		equals: TSAthensRenderer
-		description: 'testDrawFixed:7.17'.
+		description: 'testDrawFixed_amp:7.17'.
 	self
-		assert: tmp_f1lbs83IzF12 renderer builder class
+		assert: tmp_T8gT1umE4112 renderer builder class
 		equals: UndefinedObject
-		description: 'testDrawFixed:7.18'.
+		description: 'testDrawFixed_amp:7.18'.
 	self
-		assert: tmp_f1lbs83IzF12 renderer builder
+		assert: tmp_T8gT1umE4112 renderer builder
 		equals: nil
-		description: 'testDrawFixed:7.19'.
+		description: 'testDrawFixed_amp:7.19'.
 	self
-		assert: tmp_f1lbs83IzF12 surface class
+		assert: tmp_T8gT1umE4112 surface class
 		equals: AthensCairoSurface
-		description: 'testDrawFixed:7.20'.
+		description: 'testDrawFixed_amp:7.20'.
 	self
-		assert: tmp_f1lbs83IzF12 surface status class
+		assert: tmp_T8gT1umE4112 surface status class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.21'.
+		description: 'testDrawFixed_amp:7.21'.
 	self
-		assert: tmp_f1lbs83IzF12 surface status
+		assert: tmp_T8gT1umE4112 surface status
 		equals: 0
-		description: 'testDrawFixed:7.22'.
+		description: 'testDrawFixed_amp:7.22'.
 	self
-		assert: tmp_f1lbs83IzF12 surface width class
+		assert: tmp_T8gT1umE4112 surface width class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.23'.
+		description: 'testDrawFixed_amp:7.23'.
 	self
-		assert: tmp_f1lbs83IzF12 surface width
+		assert: tmp_T8gT1umE4112 surface width
 		equals: 50
-		description: 'testDrawFixed:7.24'.
+		description: 'testDrawFixed_amp:7.24'.
 	self
-		assert: tmp_f1lbs83IzF12 surface height class
+		assert: tmp_T8gT1umE4112 surface height class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.25'.
+		description: 'testDrawFixed_amp:7.25'.
 	self
-		assert: tmp_f1lbs83IzF12 surface height
+		assert: tmp_T8gT1umE4112 surface height
 		equals: 40
-		description: 'testDrawFixed:7.26'.
+		description: 'testDrawFixed_amp:7.26'.
 	self
-		assert: tmp_f1lbs83IzF12 surface isSuccess class
+		assert: tmp_T8gT1umE4112 surface isSuccess class
 		equals: True
-		description: 'testDrawFixed:7.27'.
+		description: 'testDrawFixed_amp:7.27'.
 	self
-		assert: tmp_f1lbs83IzF12 surface isSuccess
+		assert: tmp_T8gT1umE4112 surface isSuccess
 		equals: true
-		description: 'testDrawFixed:7.28'.
+		description: 'testDrawFixed_amp:7.28'.
 	self
-		assert: tmp_f1lbs83IzF12 surface stride class
+		assert: tmp_T8gT1umE4112 surface stride class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.29'.
+		description: 'testDrawFixed_amp:7.29'.
 	self
-		assert: tmp_f1lbs83IzF12 surface stride
+		assert: tmp_T8gT1umE4112 surface stride
 		equals: 200
-		description: 'testDrawFixed:7.30'.
+		description: 'testDrawFixed_amp:7.30'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas class
+		assert: tmp_T8gT1umE4112 canvas class
 		equals: TSCanvas
-		description: 'testDrawFixed:7.31'.
+		description: 'testDrawFixed_amp:7.31'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas showRectangles class
+		assert: tmp_T8gT1umE4112 canvas showRectangles class
 		equals: False
-		description: 'testDrawFixed:7.32'.
+		description: 'testDrawFixed_amp:7.32'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas showRectangles
+		assert: tmp_T8gT1umE4112 canvas showRectangles
 		equals: false
-		description: 'testDrawFixed:7.33'.
+		description: 'testDrawFixed_amp:7.33'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas numberOfFixedShapes class
+		assert: tmp_T8gT1umE4112 canvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.34'.
+		description: 'testDrawFixed_amp:7.34'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas numberOfFixedShapes
+		assert: tmp_T8gT1umE4112 canvas numberOfFixedShapes
 		equals: 2
-		description: 'testDrawFixed:7.35'.
+		description: 'testDrawFixed_amp:7.35'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas view class
+		assert: tmp_T8gT1umE4112 canvas view class
 		equals: UndefinedObject
-		description: 'testDrawFixed:7.36'.
+		description: 'testDrawFixed_amp:7.36'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas view
+		assert: tmp_T8gT1umE4112 canvas view
 		equals: nil
-		description: 'testDrawFixed:7.37'.
+		description: 'testDrawFixed_amp:7.37'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas isShape class
+		assert: tmp_T8gT1umE4112 canvas isShape class
 		equals: False
-		description: 'testDrawFixed:7.38'.
+		description: 'testDrawFixed_amp:7.38'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas isShape
+		assert: tmp_T8gT1umE4112 canvas isShape
 		equals: false
-		description: 'testDrawFixed:7.39'.
+		description: 'testDrawFixed_amp:7.39'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas numberOfShapes class
+		assert: tmp_T8gT1umE4112 canvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:7.40'.
+		description: 'testDrawFixed_amp:7.40'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas numberOfShapes
+		assert: tmp_T8gT1umE4112 canvas numberOfShapes
 		equals: 0
-		description: 'testDrawFixed:7.41'.
+		description: 'testDrawFixed_amp:7.41'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas clearBackground class
+		assert: tmp_T8gT1umE4112 canvas clearBackground class
 		equals: True
-		description: 'testDrawFixed:7.42'.
+		description: 'testDrawFixed_amp:7.42'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas clearBackground
+		assert: tmp_T8gT1umE4112 canvas clearBackground
 		equals: true
-		description: 'testDrawFixed:7.43'.
+		description: 'testDrawFixed_amp:7.43'.
 	self
-		assert: tmp_f1lbs83IzF12 wantsSteps class
+		assert: tmp_T8gT1umE4112 wantsSteps class
 		equals: False
-		description: 'testDrawFixed:7.44'.
+		description: 'testDrawFixed_amp:7.44'.
 	self
-		assert: tmp_f1lbs83IzF12 wantsSteps
+		assert: tmp_T8gT1umE4112 wantsSteps
 		equals: false
-		description: 'testDrawFixed:7.45'.
+		description: 'testDrawFixed_amp:7.45'.
 	self
-		assert: tmp_f1lbs83IzF12 isDragging class
+		assert: tmp_T8gT1umE4112 isDragging class
 		equals: False
-		description: 'testDrawFixed:7.46'.
+		description: 'testDrawFixed_amp:7.46'.
 	self
-		assert: tmp_f1lbs83IzF12 isDragging
+		assert: tmp_T8gT1umE4112 isDragging
 		equals: false
-		description: 'testDrawFixed:7.47'.
-	tmp_f1lbs83IzF12 drawOnMockCanvas.
+		description: 'testDrawFixed_amp:7.47'.
+	tmp_T8gT1umE4112 drawOnMockCanvas.
 	self
-		assert: tmp_f1lbs83IzF12 class
+		assert: tmp_T8gT1umE4112 class
 		equals: TSAthensMorph
-		description: 'testDrawFixed:8.1'.
+		description: 'testDrawFixed_amp:8.1'.
 	self
-		assert: tmp_f1lbs83IzF12 isDrawing class
+		assert: tmp_T8gT1umE4112 isDrawing class
 		equals: False
-		description: 'testDrawFixed:8.2'.
+		description: 'testDrawFixed_amp:8.2'.
 	self
-		assert: tmp_f1lbs83IzF12 isDrawing
+		assert: tmp_T8gT1umE4112 isDrawing
 		equals: false
-		description: 'testDrawFixed:8.3'.
+		description: 'testDrawFixed_amp:8.3'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas class
+		assert: tmp_T8gT1umE4112 trachelCanvas class
 		equals: TSCanvas
-		description: 'testDrawFixed:8.4'.
+		description: 'testDrawFixed_amp:8.4'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas showRectangles class
+		assert: tmp_T8gT1umE4112 trachelCanvas showRectangles class
 		equals: False
-		description: 'testDrawFixed:8.5'.
+		description: 'testDrawFixed_amp:8.5'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas showRectangles
+		assert: tmp_T8gT1umE4112 trachelCanvas showRectangles
 		equals: false
-		description: 'testDrawFixed:8.6'.
+		description: 'testDrawFixed_amp:8.6'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas numberOfFixedShapes class
+		assert: tmp_T8gT1umE4112 trachelCanvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:8.7'.
+		description: 'testDrawFixed_amp:8.7'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas numberOfFixedShapes
+		assert: tmp_T8gT1umE4112 trachelCanvas numberOfFixedShapes
 		equals: 2
-		description: 'testDrawFixed:8.8'.
+		description: 'testDrawFixed_amp:8.8'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas view class
+		assert: tmp_T8gT1umE4112 trachelCanvas view class
 		equals: UndefinedObject
-		description: 'testDrawFixed:8.9'.
+		description: 'testDrawFixed_amp:8.9'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas view
+		assert: tmp_T8gT1umE4112 trachelCanvas view
 		equals: nil
-		description: 'testDrawFixed:8.10'.
+		description: 'testDrawFixed_amp:8.10'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas isShape class
+		assert: tmp_T8gT1umE4112 trachelCanvas isShape class
 		equals: False
-		description: 'testDrawFixed:8.11'.
+		description: 'testDrawFixed_amp:8.11'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas isShape
+		assert: tmp_T8gT1umE4112 trachelCanvas isShape
 		equals: false
-		description: 'testDrawFixed:8.12'.
+		description: 'testDrawFixed_amp:8.12'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas numberOfShapes class
+		assert: tmp_T8gT1umE4112 trachelCanvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:8.13'.
+		description: 'testDrawFixed_amp:8.13'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas numberOfShapes
+		assert: tmp_T8gT1umE4112 trachelCanvas numberOfShapes
 		equals: 0
-		description: 'testDrawFixed:8.14'.
+		description: 'testDrawFixed_amp:8.14'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas clearBackground class
+		assert: tmp_T8gT1umE4112 trachelCanvas clearBackground class
 		equals: True
-		description: 'testDrawFixed:8.15'.
+		description: 'testDrawFixed_amp:8.15'.
 	self
-		assert: tmp_f1lbs83IzF12 trachelCanvas clearBackground
+		assert: tmp_T8gT1umE4112 trachelCanvas clearBackground
 		equals: true
-		description: 'testDrawFixed:8.16'.
+		description: 'testDrawFixed_amp:8.16'.
 	self
-		assert: tmp_f1lbs83IzF12 renderer class
+		assert: tmp_T8gT1umE4112 renderer class
 		equals: TSAthensRenderer
-		description: 'testDrawFixed:8.17'.
+		description: 'testDrawFixed_amp:8.17'.
 	self
-		assert: tmp_f1lbs83IzF12 renderer builder class
+		assert: tmp_T8gT1umE4112 renderer builder class
 		equals: UndefinedObject
-		description: 'testDrawFixed:8.18'.
+		description: 'testDrawFixed_amp:8.18'.
 	self
-		assert: tmp_f1lbs83IzF12 renderer builder
+		assert: tmp_T8gT1umE4112 renderer builder
 		equals: nil
-		description: 'testDrawFixed:8.19'.
+		description: 'testDrawFixed_amp:8.19'.
 	self
-		assert: tmp_f1lbs83IzF12 surface class
+		assert: tmp_T8gT1umE4112 surface class
 		equals: AthensCairoSurface
-		description: 'testDrawFixed:8.20'.
+		description: 'testDrawFixed_amp:8.20'.
 	self
-		assert: tmp_f1lbs83IzF12 surface status class
+		assert: tmp_T8gT1umE4112 surface status class
 		equals: SmallInteger
-		description: 'testDrawFixed:8.21'.
+		description: 'testDrawFixed_amp:8.21'.
 	self
-		assert: tmp_f1lbs83IzF12 surface status
+		assert: tmp_T8gT1umE4112 surface status
 		equals: 0
-		description: 'testDrawFixed:8.22'.
+		description: 'testDrawFixed_amp:8.22'.
 	self
-		assert: tmp_f1lbs83IzF12 surface width class
+		assert: tmp_T8gT1umE4112 surface width class
 		equals: SmallInteger
-		description: 'testDrawFixed:8.23'.
+		description: 'testDrawFixed_amp:8.23'.
 	self
-		assert: tmp_f1lbs83IzF12 surface width
+		assert: tmp_T8gT1umE4112 surface width
 		equals: 50
-		description: 'testDrawFixed:8.24'.
+		description: 'testDrawFixed_amp:8.24'.
 	self
-		assert: tmp_f1lbs83IzF12 surface height class
+		assert: tmp_T8gT1umE4112 surface height class
 		equals: SmallInteger
-		description: 'testDrawFixed:8.25'.
+		description: 'testDrawFixed_amp:8.25'.
 	self
-		assert: tmp_f1lbs83IzF12 surface height
+		assert: tmp_T8gT1umE4112 surface height
 		equals: 40
-		description: 'testDrawFixed:8.26'.
+		description: 'testDrawFixed_amp:8.26'.
 	self
-		assert: tmp_f1lbs83IzF12 surface isSuccess class
+		assert: tmp_T8gT1umE4112 surface isSuccess class
 		equals: True
-		description: 'testDrawFixed:8.27'.
+		description: 'testDrawFixed_amp:8.27'.
 	self
-		assert: tmp_f1lbs83IzF12 surface isSuccess
+		assert: tmp_T8gT1umE4112 surface isSuccess
 		equals: true
-		description: 'testDrawFixed:8.28'.
+		description: 'testDrawFixed_amp:8.28'.
 	self
-		assert: tmp_f1lbs83IzF12 surface stride class
+		assert: tmp_T8gT1umE4112 surface stride class
 		equals: SmallInteger
-		description: 'testDrawFixed:8.29'.
+		description: 'testDrawFixed_amp:8.29'.
 	self
-		assert: tmp_f1lbs83IzF12 surface stride
+		assert: tmp_T8gT1umE4112 surface stride
 		equals: 200
-		description: 'testDrawFixed:8.30'.
+		description: 'testDrawFixed_amp:8.30'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas class
+		assert: tmp_T8gT1umE4112 canvas class
 		equals: TSCanvas
-		description: 'testDrawFixed:8.31'.
+		description: 'testDrawFixed_amp:8.31'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas showRectangles class
+		assert: tmp_T8gT1umE4112 canvas showRectangles class
 		equals: False
-		description: 'testDrawFixed:8.32'.
+		description: 'testDrawFixed_amp:8.32'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas showRectangles
+		assert: tmp_T8gT1umE4112 canvas showRectangles
 		equals: false
-		description: 'testDrawFixed:8.33'.
+		description: 'testDrawFixed_amp:8.33'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas numberOfFixedShapes class
+		assert: tmp_T8gT1umE4112 canvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:8.34'.
+		description: 'testDrawFixed_amp:8.34'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas numberOfFixedShapes
+		assert: tmp_T8gT1umE4112 canvas numberOfFixedShapes
 		equals: 2
-		description: 'testDrawFixed:8.35'.
+		description: 'testDrawFixed_amp:8.35'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas view class
+		assert: tmp_T8gT1umE4112 canvas view class
 		equals: UndefinedObject
-		description: 'testDrawFixed:8.36'.
+		description: 'testDrawFixed_amp:8.36'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas view
+		assert: tmp_T8gT1umE4112 canvas view
 		equals: nil
-		description: 'testDrawFixed:8.37'.
+		description: 'testDrawFixed_amp:8.37'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas isShape class
+		assert: tmp_T8gT1umE4112 canvas isShape class
 		equals: False
-		description: 'testDrawFixed:8.38'.
+		description: 'testDrawFixed_amp:8.38'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas isShape
+		assert: tmp_T8gT1umE4112 canvas isShape
 		equals: false
-		description: 'testDrawFixed:8.39'.
+		description: 'testDrawFixed_amp:8.39'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas numberOfShapes class
+		assert: tmp_T8gT1umE4112 canvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testDrawFixed:8.40'.
+		description: 'testDrawFixed_amp:8.40'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas numberOfShapes
+		assert: tmp_T8gT1umE4112 canvas numberOfShapes
 		equals: 0
-		description: 'testDrawFixed:8.41'.
+		description: 'testDrawFixed_amp:8.41'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas clearBackground class
+		assert: tmp_T8gT1umE4112 canvas clearBackground class
 		equals: True
-		description: 'testDrawFixed:8.42'.
+		description: 'testDrawFixed_amp:8.42'.
 	self
-		assert: tmp_f1lbs83IzF12 canvas clearBackground
+		assert: tmp_T8gT1umE4112 canvas clearBackground
 		equals: true
-		description: 'testDrawFixed:8.43'.
+		description: 'testDrawFixed_amp:8.43'.
 	self
-		assert: tmp_f1lbs83IzF12 wantsSteps class
+		assert: tmp_T8gT1umE4112 wantsSteps class
 		equals: False
-		description: 'testDrawFixed:8.44'.
+		description: 'testDrawFixed_amp:8.44'.
 	self
-		assert: tmp_f1lbs83IzF12 wantsSteps
+		assert: tmp_T8gT1umE4112 wantsSteps
 		equals: false
-		description: 'testDrawFixed:8.45'.
+		description: 'testDrawFixed_amp:8.45'.
 	self
-		assert: tmp_f1lbs83IzF12 isDragging class
+		assert: tmp_T8gT1umE4112 isDragging class
 		equals: False
-		description: 'testDrawFixed:8.46'.
+		description: 'testDrawFixed_amp:8.46'.
 	self
-		assert: tmp_f1lbs83IzF12 isDragging
+		assert: tmp_T8gT1umE4112 isDragging
 		equals: false
-		description: 'testDrawFixed:8.47'
+		description: 'testDrawFixed_amp:8.47'
 ]
 
 { #category : #'as yet unclassified' }
-TSCanvasTestAmpTest >> testEmpty [
+TSCanvasTestAmpTest >> testEmpty_amp [
 	<madeBySmallAmp>
 	
 ]
 
 { #category : #'as yet unclassified' }
-TSCanvasTestAmpTest >> testEvent [
+TSCanvasTestAmpTest >> testEvent_amp [
 	<madeBySmallAmp>
 	| box |
 	box := TSBox new.
-	self assert: box class equals: TSBox description: 'testEvent:1.1'.
+	self assert: box class equals: TSBox description: 'testEvent_amp:1.1'.
 	self
 		assert: box cornerRadius class
 		equals: UndefinedObject
-		description: 'testEvent:1.2'.
+		description: 'testEvent_amp:1.2'.
 	self
 		assert: box cornerRadius
 		equals: nil
-		description: 'testEvent:1.3'.
+		description: 'testEvent_amp:1.3'.
 	self
 		assert: box hasCornerRadius class
 		equals: False
-		description: 'testEvent:1.4'.
+		description: 'testEvent_amp:1.4'.
 	self
 		assert: box hasCornerRadius
 		equals: false
-		description: 'testEvent:1.5'.
+		description: 'testEvent_amp:1.5'.
 	box when: TSMouseClick do: [ :evt |  ].
-	self assert: box class equals: TSBox description: 'testEvent:2.1'.
+	self assert: box class equals: TSBox description: 'testEvent_amp:2.1'.
 	self
 		assert: box cornerRadius class
 		equals: UndefinedObject
-		description: 'testEvent:2.2'.
+		description: 'testEvent_amp:2.2'.
 	self
 		assert: box cornerRadius
 		equals: nil
-		description: 'testEvent:2.3'.
+		description: 'testEvent_amp:2.3'.
 	self
 		assert: box hasCornerRadius class
 		equals: False
-		description: 'testEvent:2.4'.
+		description: 'testEvent_amp:2.4'.
 	self
 		assert: box hasCornerRadius
 		equals: false
-		description: 'testEvent:2.5'
+		description: 'testEvent_amp:2.5'
 ]
 
 { #category : #'as yet unclassified' }
-TSCanvasTestAmpTest >> testLowLevelEvent [
+TSCanvasTestAmpTest >> testLowLevelEvent_amp [
 	<madeBySmallAmp>
 	| box |
 	box := TSBox new size: 30.
 	self
 		assert: box class
 		equals: TSBox
-		description: 'testLowLevelEvent:1.1'.
+		description: 'testLowLevelEvent_amp:1.1'.
 	self
 		assert: box cornerRadius class
 		equals: UndefinedObject
-		description: 'testLowLevelEvent:1.2'.
+		description: 'testLowLevelEvent_amp:1.2'.
 	self
 		assert: box cornerRadius
 		equals: nil
-		description: 'testLowLevelEvent:1.3'.
+		description: 'testLowLevelEvent_amp:1.3'.
 	self
 		assert: box hasCornerRadius class
 		equals: False
-		description: 'testLowLevelEvent:1.4'.
+		description: 'testLowLevelEvent_amp:1.4'.
 	self
 		assert: box hasCornerRadius
 		equals: false
-		description: 'testLowLevelEvent:1.5'.
+		description: 'testLowLevelEvent_amp:1.5'.
 	box when: TSMouseDragging do: [ :evt | box ].
 	self
 		assert: box class
 		equals: TSBox
-		description: 'testLowLevelEvent:2.1'.
+		description: 'testLowLevelEvent_amp:2.1'.
 	self
 		assert: box cornerRadius class
 		equals: UndefinedObject
-		description: 'testLowLevelEvent:2.2'.
+		description: 'testLowLevelEvent_amp:2.2'.
 	self
 		assert: box cornerRadius
 		equals: nil
-		description: 'testLowLevelEvent:2.3'.
+		description: 'testLowLevelEvent_amp:2.3'.
 	self
 		assert: box hasCornerRadius class
 		equals: False
-		description: 'testLowLevelEvent:2.4'.
+		description: 'testLowLevelEvent_amp:2.4'.
 	self
 		assert: box hasCornerRadius
 		equals: false
-		description: 'testLowLevelEvent:2.5'.
+		description: 'testLowLevelEvent_amp:2.5'.
 	c addShape: box.
 	self
 		assert: c class
 		equals: TSCanvas
-		description: 'testLowLevelEvent:3.1'.
+		description: 'testLowLevelEvent_amp:3.1'.
 	self
 		assert: c fixedShapes class
 		equals: TSGroup
-		description: 'testLowLevelEvent:3.2'.
+		description: 'testLowLevelEvent_amp:3.2'.
 	self
 		assert: c fixedShapes size
 		equals: 0
-		description: 'testLowLevelEvent:3.3'.
+		description: 'testLowLevelEvent_amp:3.3'.
 	self
 		assert: c showRectangles class
 		equals: False
-		description: 'testLowLevelEvent:3.4'.
+		description: 'testLowLevelEvent_amp:3.4'.
 	self
 		assert: c showRectangles
 		equals: false
-		description: 'testLowLevelEvent:3.5'.
+		description: 'testLowLevelEvent_amp:3.5'.
 	self
 		assert: c color class
 		equals: Color
-		description: 'testLowLevelEvent:3.6'.
+		description: 'testLowLevelEvent_amp:3.6'.
 	self
 		assert: c color alpha class
 		equals: SmallFloat64
-		description: 'testLowLevelEvent:3.7'.
+		description: 'testLowLevelEvent_amp:3.7'.
 	self
 		assert: c color alpha
 		equals: 1.0
-		description: 'testLowLevelEvent:3.8'.
+		description: 'testLowLevelEvent_amp:3.8'.
 	self
 		assert: c color red class
 		equals: SmallFloat64
-		description: 'testLowLevelEvent:3.9'.
+		description: 'testLowLevelEvent_amp:3.9'.
 	self
 		assert: c color red
 		equals: 1.0
-		description: 'testLowLevelEvent:3.10'.
+		description: 'testLowLevelEvent_amp:3.10'.
 	self
 		assert: c color hsvSaturation class
 		equals: SmallFloat64
-		description: 'testLowLevelEvent:3.11'.
+		description: 'testLowLevelEvent_amp:3.11'.
 	self
 		assert: c color hsvSaturation
 		equals: 0.0
-		description: 'testLowLevelEvent:3.12'.
+		description: 'testLowLevelEvent_amp:3.12'.
 	self
 		assert: c color brightness class
 		equals: SmallFloat64
-		description: 'testLowLevelEvent:3.13'.
+		description: 'testLowLevelEvent_amp:3.13'.
 	self
 		assert: c color brightness
 		equals: 1.0
-		description: 'testLowLevelEvent:3.14'.
+		description: 'testLowLevelEvent_amp:3.14'.
 	self
 		assert: c color hue class
 		equals: SmallFloat64
-		description: 'testLowLevelEvent:3.15'.
+		description: 'testLowLevelEvent_amp:3.15'.
 	self
 		assert: c color hue
 		equals: 0.0
-		description: 'testLowLevelEvent:3.16'.
+		description: 'testLowLevelEvent_amp:3.16'.
 	self
 		assert: c color green class
 		equals: SmallFloat64
-		description: 'testLowLevelEvent:3.17'.
+		description: 'testLowLevelEvent_amp:3.17'.
 	self
 		assert: c color green
 		equals: 1.0
-		description: 'testLowLevelEvent:3.18'.
+		description: 'testLowLevelEvent_amp:3.18'.
 	self
 		assert: c color chroma class
 		equals: SmallFloat64
-		description: 'testLowLevelEvent:3.19'.
+		description: 'testLowLevelEvent_amp:3.19'.
 	self
 		assert: c color chroma
 		equals: 0.0
-		description: 'testLowLevelEvent:3.20'.
+		description: 'testLowLevelEvent_amp:3.20'.
 	self
 		assert: c color lightness class
 		equals: SmallFloat64
-		description: 'testLowLevelEvent:3.21'.
+		description: 'testLowLevelEvent_amp:3.21'.
 	self
 		assert: c color lightness
 		equals: 1.0
-		description: 'testLowLevelEvent:3.22'.
+		description: 'testLowLevelEvent_amp:3.22'.
 	self
 		assert: c color hslSaturation class
 		equals: SmallFloat64
-		description: 'testLowLevelEvent:3.23'.
+		description: 'testLowLevelEvent_amp:3.23'.
 	self
 		assert: c color hslSaturation
 		equals: 0.0
-		description: 'testLowLevelEvent:3.24'.
+		description: 'testLowLevelEvent_amp:3.24'.
 	self
 		assert: c color saturation class
 		equals: SmallFloat64
-		description: 'testLowLevelEvent:3.25'.
+		description: 'testLowLevelEvent_amp:3.25'.
 	self
 		assert: c color saturation
 		equals: 0.0
-		description: 'testLowLevelEvent:3.26'.
+		description: 'testLowLevelEvent_amp:3.26'.
 	self
 		assert: c color luminance class
 		equals: SmallFloat64
-		description: 'testLowLevelEvent:3.27'.
+		description: 'testLowLevelEvent_amp:3.27'.
 	self
 		assert: c color luminance
 		equals: 1.0
-		description: 'testLowLevelEvent:3.28'.
+		description: 'testLowLevelEvent_amp:3.28'.
 	self
 		assert: c color blue class
 		equals: SmallFloat64
-		description: 'testLowLevelEvent:3.29'.
+		description: 'testLowLevelEvent_amp:3.29'.
 	self
 		assert: c color blue
 		equals: 1.0
-		description: 'testLowLevelEvent:3.30'.
+		description: 'testLowLevelEvent_amp:3.30'.
 	self
 		assert: c numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testLowLevelEvent:3.31'.
+		description: 'testLowLevelEvent_amp:3.31'.
 	self
 		assert: c numberOfFixedShapes
 		equals: 0
-		description: 'testLowLevelEvent:3.32'.
+		description: 'testLowLevelEvent_amp:3.32'.
 	self
 		assert: c morph class
 		equals: UndefinedObject
-		description: 'testLowLevelEvent:3.33'.
+		description: 'testLowLevelEvent_amp:3.33'.
 	self
 		assert: c morph
 		equals: nil
-		description: 'testLowLevelEvent:3.34'.
+		description: 'testLowLevelEvent_amp:3.34'.
 	self
 		assert: c extent class
 		equals: Point
-		description: 'testLowLevelEvent:3.35'.
+		description: 'testLowLevelEvent_amp:3.35'.
 	self
 		assert: c extent isZero class
 		equals: False
-		description: 'testLowLevelEvent:3.36'.
+		description: 'testLowLevelEvent_amp:3.36'.
 	self
 		assert: c extent isZero
 		equals: false
-		description: 'testLowLevelEvent:3.37'.
+		description: 'testLowLevelEvent_amp:3.37'.
 	self
 		assert: c extent y class
 		equals: SmallInteger
-		description: 'testLowLevelEvent:3.38'.
+		description: 'testLowLevelEvent_amp:3.38'.
 	self
 		assert: c extent y
 		equals: 500
-		description: 'testLowLevelEvent:3.39'.
+		description: 'testLowLevelEvent_amp:3.39'.
 	self
 		assert: c extent isFloatPoint class
 		equals: False
-		description: 'testLowLevelEvent:3.40'.
+		description: 'testLowLevelEvent_amp:3.40'.
 	self
 		assert: c extent isFloatPoint
 		equals: false
-		description: 'testLowLevelEvent:3.41'.
+		description: 'testLowLevelEvent_amp:3.41'.
 	self
 		assert: c extent isIntegerPoint class
 		equals: True
-		description: 'testLowLevelEvent:3.42'.
+		description: 'testLowLevelEvent_amp:3.42'.
 	self
 		assert: c extent isIntegerPoint
 		equals: true
-		description: 'testLowLevelEvent:3.43'.
+		description: 'testLowLevelEvent_amp:3.43'.
 	self
 		assert: c extent x class
 		equals: SmallInteger
-		description: 'testLowLevelEvent:3.44'.
+		description: 'testLowLevelEvent_amp:3.44'.
 	self
 		assert: c extent x
 		equals: 500
-		description: 'testLowLevelEvent:3.45'.
+		description: 'testLowLevelEvent_amp:3.45'.
 	self
 		assert: c extent isPoint class
 		equals: True
-		description: 'testLowLevelEvent:3.46'.
+		description: 'testLowLevelEvent_amp:3.46'.
 	self
 		assert: c extent isPoint
 		equals: true
-		description: 'testLowLevelEvent:3.47'.
+		description: 'testLowLevelEvent_amp:3.47'.
 	self
 		assert: c parent class
 		equals: TSCanvas
-		description: 'testLowLevelEvent:3.48'.
+		description: 'testLowLevelEvent_amp:3.48'.
 	self
 		assert: c parent showRectangles class
 		equals: False
-		description: 'testLowLevelEvent:3.49'.
+		description: 'testLowLevelEvent_amp:3.49'.
 	self
 		assert: c parent showRectangles
 		equals: false
-		description: 'testLowLevelEvent:3.50'.
+		description: 'testLowLevelEvent_amp:3.50'.
 	self
 		assert: c parent numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testLowLevelEvent:3.51'.
+		description: 'testLowLevelEvent_amp:3.51'.
 	self
 		assert: c parent numberOfFixedShapes
 		equals: 0
-		description: 'testLowLevelEvent:3.52'.
+		description: 'testLowLevelEvent_amp:3.52'.
 	self
 		assert: c parent morph class
 		equals: UndefinedObject
-		description: 'testLowLevelEvent:3.53'.
+		description: 'testLowLevelEvent_amp:3.53'.
 	self
 		assert: c parent morph
 		equals: nil
-		description: 'testLowLevelEvent:3.54'.
+		description: 'testLowLevelEvent_amp:3.54'.
 	self
 		assert: c parent view class
 		equals: UndefinedObject
-		description: 'testLowLevelEvent:3.55'.
+		description: 'testLowLevelEvent_amp:3.55'.
 	self
 		assert: c parent view
 		equals: nil
-		description: 'testLowLevelEvent:3.56'.
+		description: 'testLowLevelEvent_amp:3.56'.
 	self
 		assert: c parent isShape class
 		equals: False
-		description: 'testLowLevelEvent:3.57'.
+		description: 'testLowLevelEvent_amp:3.57'.
 	self
 		assert: c parent isShape
 		equals: false
-		description: 'testLowLevelEvent:3.58'.
+		description: 'testLowLevelEvent_amp:3.58'.
 	self
 		assert: c parent numberOfShapes class
 		equals: SmallInteger
-		description: 'testLowLevelEvent:3.59'.
+		description: 'testLowLevelEvent_amp:3.59'.
 	self
 		assert: c parent numberOfShapes
 		equals: 1
-		description: 'testLowLevelEvent:3.60'.
+		description: 'testLowLevelEvent_amp:3.60'.
 	self
 		assert: c parent clearBackground class
 		equals: True
-		description: 'testLowLevelEvent:3.61'.
+		description: 'testLowLevelEvent_amp:3.61'.
 	self
 		assert: c parent clearBackground
 		equals: true
-		description: 'testLowLevelEvent:3.62'.
+		description: 'testLowLevelEvent_amp:3.62'.
 	self
 		assert: c shapes class
 		equals: TSGroup
-		description: 'testLowLevelEvent:3.63'.
+		description: 'testLowLevelEvent_amp:3.63'.
 	self
 		assert: c shapes size
 		equals: 1
-		description: 'testLowLevelEvent:3.64'.
+		description: 'testLowLevelEvent_amp:3.64'.
 	self
 		assert: c encompassingRectangle class
 		equals: Rectangle
-		description: 'testLowLevelEvent:3.65'.
+		description: 'testLowLevelEvent_amp:3.65'.
 	self
 		assert: c encompassingRectangle top class
 		equals: SmallFloat64
-		description: 'testLowLevelEvent:3.66'.
+		description: 'testLowLevelEvent_amp:3.66'.
 	self
 		assert: c encompassingRectangle top
 		equals: -15.0
-		description: 'testLowLevelEvent:3.67'.
+		description: 'testLowLevelEvent_amp:3.67'.
 	self
 		assert: c encompassingRectangle hasPositiveExtent class
 		equals: True
-		description: 'testLowLevelEvent:3.68'.
+		description: 'testLowLevelEvent_amp:3.68'.
 	self
 		assert: c encompassingRectangle hasPositiveExtent
 		equals: true
-		description: 'testLowLevelEvent:3.69'.
+		description: 'testLowLevelEvent_amp:3.69'.
 	self
 		assert: c encompassingRectangle area class
 		equals: SmallFloat64
-		description: 'testLowLevelEvent:3.70'.
+		description: 'testLowLevelEvent_amp:3.70'.
 	self
 		assert: c encompassingRectangle area
 		equals: 900.0
-		description: 'testLowLevelEvent:3.71'.
+		description: 'testLowLevelEvent_amp:3.71'.
 	self
 		assert: c encompassingRectangle isTall class
 		equals: False
-		description: 'testLowLevelEvent:3.72'.
+		description: 'testLowLevelEvent_amp:3.72'.
 	self
 		assert: c encompassingRectangle isTall
 		equals: false
-		description: 'testLowLevelEvent:3.73'.
+		description: 'testLowLevelEvent_amp:3.73'.
 	self
 		assert: c encompassingRectangle left class
 		equals: SmallFloat64
-		description: 'testLowLevelEvent:3.74'.
+		description: 'testLowLevelEvent_amp:3.74'.
 	self
 		assert: c encompassingRectangle left
 		equals: -15.0
-		description: 'testLowLevelEvent:3.75'.
+		description: 'testLowLevelEvent_amp:3.75'.
 	self
 		assert: c encompassingRectangle width class
 		equals: SmallFloat64
-		description: 'testLowLevelEvent:3.76'.
+		description: 'testLowLevelEvent_amp:3.76'.
 	self
 		assert: c encompassingRectangle width
 		equals: 30.0
-		description: 'testLowLevelEvent:3.77'.
+		description: 'testLowLevelEvent_amp:3.77'.
 	self
 		assert: c encompassingRectangle right class
 		equals: SmallFloat64
-		description: 'testLowLevelEvent:3.78'.
+		description: 'testLowLevelEvent_amp:3.78'.
 	self
 		assert: c encompassingRectangle right
 		equals: 15.0
-		description: 'testLowLevelEvent:3.79'.
+		description: 'testLowLevelEvent_amp:3.79'.
 	self
 		assert: c encompassingRectangle isZero class
 		equals: False
-		description: 'testLowLevelEvent:3.80'.
+		description: 'testLowLevelEvent_amp:3.80'.
 	self
 		assert: c encompassingRectangle isZero
 		equals: false
-		description: 'testLowLevelEvent:3.81'.
+		description: 'testLowLevelEvent_amp:3.81'.
 	self
 		assert: c encompassingRectangle isWide class
 		equals: False
-		description: 'testLowLevelEvent:3.82'.
+		description: 'testLowLevelEvent_amp:3.82'.
 	self
 		assert: c encompassingRectangle isWide
 		equals: false
-		description: 'testLowLevelEvent:3.83'.
+		description: 'testLowLevelEvent_amp:3.83'.
 	self
 		assert: c encompassingRectangle bottom class
 		equals: SmallFloat64
-		description: 'testLowLevelEvent:3.84'.
+		description: 'testLowLevelEvent_amp:3.84'.
 	self
 		assert: c encompassingRectangle bottom
 		equals: 15.0
-		description: 'testLowLevelEvent:3.85'.
+		description: 'testLowLevelEvent_amp:3.85'.
 	self
 		assert: c encompassingRectangle isRectangle class
 		equals: True
-		description: 'testLowLevelEvent:3.86'.
+		description: 'testLowLevelEvent_amp:3.86'.
 	self
 		assert: c encompassingRectangle isRectangle
 		equals: true
-		description: 'testLowLevelEvent:3.87'.
+		description: 'testLowLevelEvent_amp:3.87'.
 	self
 		assert: c encompassingRectangle height class
 		equals: SmallFloat64
-		description: 'testLowLevelEvent:3.88'.
+		description: 'testLowLevelEvent_amp:3.88'.
 	self
 		assert: c encompassingRectangle height
 		equals: 30.0
-		description: 'testLowLevelEvent:3.89'.
+		description: 'testLowLevelEvent_amp:3.89'.
 	self
 		assert: c view class
 		equals: UndefinedObject
-		description: 'testLowLevelEvent:3.90'.
-	self assert: c view equals: nil description: 'testLowLevelEvent:3.91'.
+		description: 'testLowLevelEvent_amp:3.90'.
+	self
+		assert: c view
+		equals: nil
+		description: 'testLowLevelEvent_amp:3.91'.
 	self
 		assert: c isShape class
 		equals: False
-		description: 'testLowLevelEvent:3.92'.
+		description: 'testLowLevelEvent_amp:3.92'.
 	self
 		assert: c isShape
 		equals: false
-		description: 'testLowLevelEvent:3.93'.
+		description: 'testLowLevelEvent_amp:3.93'.
 	self
 		assert: c basicRectangle class
 		equals: Rectangle
-		description: 'testLowLevelEvent:3.94'.
+		description: 'testLowLevelEvent_amp:3.94'.
 	self
 		assert: c basicRectangle top class
 		equals: SmallInteger
-		description: 'testLowLevelEvent:3.95'.
+		description: 'testLowLevelEvent_amp:3.95'.
 	self
 		assert: c basicRectangle top
 		equals: 0
-		description: 'testLowLevelEvent:3.96'.
+		description: 'testLowLevelEvent_amp:3.96'.
 	self
 		assert: c basicRectangle hasPositiveExtent class
 		equals: True
-		description: 'testLowLevelEvent:3.97'.
+		description: 'testLowLevelEvent_amp:3.97'.
 	self
 		assert: c basicRectangle hasPositiveExtent
 		equals: true
-		description: 'testLowLevelEvent:3.98'.
+		description: 'testLowLevelEvent_amp:3.98'.
 	self
 		assert: c basicRectangle area class
 		equals: SmallInteger
-		description: 'testLowLevelEvent:3.99'.
+		description: 'testLowLevelEvent_amp:3.99'.
 	self
 		assert: c basicRectangle area
 		equals: 250000
-		description: 'testLowLevelEvent:3.100'.
+		description: 'testLowLevelEvent_amp:3.100'.
 	self
 		assert: c basicRectangle isTall class
 		equals: False
-		description: 'testLowLevelEvent:3.101'.
+		description: 'testLowLevelEvent_amp:3.101'.
 	self
 		assert: c basicRectangle isTall
 		equals: false
-		description: 'testLowLevelEvent:3.102'.
+		description: 'testLowLevelEvent_amp:3.102'.
 	self
 		assert: c basicRectangle left class
 		equals: SmallInteger
-		description: 'testLowLevelEvent:3.103'.
+		description: 'testLowLevelEvent_amp:3.103'.
 	self
 		assert: c basicRectangle left
 		equals: 0
-		description: 'testLowLevelEvent:3.104'.
+		description: 'testLowLevelEvent_amp:3.104'.
 	self
 		assert: c basicRectangle width class
 		equals: SmallInteger
-		description: 'testLowLevelEvent:3.105'.
+		description: 'testLowLevelEvent_amp:3.105'.
 	self
 		assert: c basicRectangle width
 		equals: 500
-		description: 'testLowLevelEvent:3.106'.
+		description: 'testLowLevelEvent_amp:3.106'.
 	self
 		assert: c basicRectangle right class
 		equals: SmallInteger
-		description: 'testLowLevelEvent:3.107'.
+		description: 'testLowLevelEvent_amp:3.107'.
 	self
 		assert: c basicRectangle right
 		equals: 500
-		description: 'testLowLevelEvent:3.108'.
+		description: 'testLowLevelEvent_amp:3.108'.
 	self
 		assert: c basicRectangle isZero class
 		equals: False
-		description: 'testLowLevelEvent:3.109'.
+		description: 'testLowLevelEvent_amp:3.109'.
 	self
 		assert: c basicRectangle isZero
 		equals: false
-		description: 'testLowLevelEvent:3.110'.
+		description: 'testLowLevelEvent_amp:3.110'.
 	self
 		assert: c basicRectangle isWide class
 		equals: False
-		description: 'testLowLevelEvent:3.111'.
+		description: 'testLowLevelEvent_amp:3.111'.
 	self
 		assert: c basicRectangle isWide
 		equals: false
-		description: 'testLowLevelEvent:3.112'.
+		description: 'testLowLevelEvent_amp:3.112'.
 	self
 		assert: c basicRectangle bottom class
 		equals: SmallInteger
-		description: 'testLowLevelEvent:3.113'.
+		description: 'testLowLevelEvent_amp:3.113'.
 	self
 		assert: c basicRectangle bottom
 		equals: 500
-		description: 'testLowLevelEvent:3.114'.
+		description: 'testLowLevelEvent_amp:3.114'.
 	self
 		assert: c basicRectangle isRectangle class
 		equals: True
-		description: 'testLowLevelEvent:3.115'.
+		description: 'testLowLevelEvent_amp:3.115'.
 	self
 		assert: c basicRectangle isRectangle
 		equals: true
-		description: 'testLowLevelEvent:3.116'.
+		description: 'testLowLevelEvent_amp:3.116'.
 	self
 		assert: c basicRectangle height class
 		equals: SmallInteger
-		description: 'testLowLevelEvent:3.117'.
+		description: 'testLowLevelEvent_amp:3.117'.
 	self
 		assert: c basicRectangle height
 		equals: 500
-		description: 'testLowLevelEvent:3.118'.
+		description: 'testLowLevelEvent_amp:3.118'.
 	self
 		assert: c topParent class
 		equals: TSCanvas
-		description: 'testLowLevelEvent:3.119'.
+		description: 'testLowLevelEvent_amp:3.119'.
 	self
 		assert: c topParent showRectangles class
 		equals: False
-		description: 'testLowLevelEvent:3.120'.
+		description: 'testLowLevelEvent_amp:3.120'.
 	self
 		assert: c topParent showRectangles
 		equals: false
-		description: 'testLowLevelEvent:3.121'.
+		description: 'testLowLevelEvent_amp:3.121'.
 	self
 		assert: c topParent numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testLowLevelEvent:3.122'.
+		description: 'testLowLevelEvent_amp:3.122'.
 	self
 		assert: c topParent numberOfFixedShapes
 		equals: 0
-		description: 'testLowLevelEvent:3.123'.
+		description: 'testLowLevelEvent_amp:3.123'.
 	self
 		assert: c topParent morph class
 		equals: UndefinedObject
-		description: 'testLowLevelEvent:3.124'.
+		description: 'testLowLevelEvent_amp:3.124'.
 	self
 		assert: c topParent morph
 		equals: nil
-		description: 'testLowLevelEvent:3.125'.
+		description: 'testLowLevelEvent_amp:3.125'.
 	self
 		assert: c topParent view class
 		equals: UndefinedObject
-		description: 'testLowLevelEvent:3.126'.
+		description: 'testLowLevelEvent_amp:3.126'.
 	self
 		assert: c topParent view
 		equals: nil
-		description: 'testLowLevelEvent:3.127'.
+		description: 'testLowLevelEvent_amp:3.127'.
 	self
 		assert: c topParent isShape class
 		equals: False
-		description: 'testLowLevelEvent:3.128'.
+		description: 'testLowLevelEvent_amp:3.128'.
 	self
 		assert: c topParent isShape
 		equals: false
-		description: 'testLowLevelEvent:3.129'.
+		description: 'testLowLevelEvent_amp:3.129'.
 	self
 		assert: c topParent numberOfShapes class
 		equals: SmallInteger
-		description: 'testLowLevelEvent:3.130'.
+		description: 'testLowLevelEvent_amp:3.130'.
 	self
 		assert: c topParent numberOfShapes
 		equals: 1
-		description: 'testLowLevelEvent:3.131'.
+		description: 'testLowLevelEvent_amp:3.131'.
 	self
 		assert: c topParent clearBackground class
 		equals: True
-		description: 'testLowLevelEvent:3.132'.
+		description: 'testLowLevelEvent_amp:3.132'.
 	self
 		assert: c topParent clearBackground
 		equals: true
-		description: 'testLowLevelEvent:3.133'.
+		description: 'testLowLevelEvent_amp:3.133'.
 	self
 		assert: c numberOfShapes class
 		equals: SmallInteger
-		description: 'testLowLevelEvent:3.134'.
+		description: 'testLowLevelEvent_amp:3.134'.
 	self
 		assert: c numberOfShapes
 		equals: 1
-		description: 'testLowLevelEvent:3.135'.
+		description: 'testLowLevelEvent_amp:3.135'.
 	self
 		assert: c canvas class
 		equals: TSCanvas
-		description: 'testLowLevelEvent:3.136'.
+		description: 'testLowLevelEvent_amp:3.136'.
 	self
 		assert: c canvas showRectangles class
 		equals: False
-		description: 'testLowLevelEvent:3.137'.
+		description: 'testLowLevelEvent_amp:3.137'.
 	self
 		assert: c canvas showRectangles
 		equals: false
-		description: 'testLowLevelEvent:3.138'.
+		description: 'testLowLevelEvent_amp:3.138'.
 	self
 		assert: c canvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testLowLevelEvent:3.139'.
+		description: 'testLowLevelEvent_amp:3.139'.
 	self
 		assert: c canvas numberOfFixedShapes
 		equals: 0
-		description: 'testLowLevelEvent:3.140'.
+		description: 'testLowLevelEvent_amp:3.140'.
 	self
 		assert: c canvas morph class
 		equals: UndefinedObject
-		description: 'testLowLevelEvent:3.141'.
+		description: 'testLowLevelEvent_amp:3.141'.
 	self
 		assert: c canvas morph
 		equals: nil
-		description: 'testLowLevelEvent:3.142'.
+		description: 'testLowLevelEvent_amp:3.142'.
 	self
 		assert: c canvas view class
 		equals: UndefinedObject
-		description: 'testLowLevelEvent:3.143'.
+		description: 'testLowLevelEvent_amp:3.143'.
 	self
 		assert: c canvas view
 		equals: nil
-		description: 'testLowLevelEvent:3.144'.
+		description: 'testLowLevelEvent_amp:3.144'.
 	self
 		assert: c canvas isShape class
 		equals: False
-		description: 'testLowLevelEvent:3.145'.
+		description: 'testLowLevelEvent_amp:3.145'.
 	self
 		assert: c canvas isShape
 		equals: false
-		description: 'testLowLevelEvent:3.146'.
+		description: 'testLowLevelEvent_amp:3.146'.
 	self
 		assert: c canvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testLowLevelEvent:3.147'.
+		description: 'testLowLevelEvent_amp:3.147'.
 	self
 		assert: c canvas numberOfShapes
 		equals: 1
-		description: 'testLowLevelEvent:3.148'.
+		description: 'testLowLevelEvent_amp:3.148'.
 	self
 		assert: c canvas clearBackground class
 		equals: True
-		description: 'testLowLevelEvent:3.149'.
+		description: 'testLowLevelEvent_amp:3.149'.
 	self
 		assert: c canvas clearBackground
 		equals: true
-		description: 'testLowLevelEvent:3.150'.
+		description: 'testLowLevelEvent_amp:3.150'.
 	self
 		assert: c clearBackground class
 		equals: True
-		description: 'testLowLevelEvent:3.151'.
+		description: 'testLowLevelEvent_amp:3.151'.
 	self
 		assert: c clearBackground
 		equals: true
-		description: 'testLowLevelEvent:3.152'
+		description: 'testLowLevelEvent_amp:3.152'
 ]
 
 { #category : #'as yet unclassified' }
-TSCanvasTestAmpTest >> testNestedShape [
+TSCanvasTestAmpTest >> testNestedShapeNotAddedToACanvas_amp [
 	<madeBySmallAmp>
 	| shape innerShape |
 	shape := TSComposite new.
 	self
 		assert: shape class
 		equals: TSComposite
-		description: 'testNestedShape:1.1'.
+		description: 'testNestedShapeNotAddedToACanvas_amp:1.1'.
 	self
 		assert: shape shapes class
 		equals: TSGroup
-		description: 'testNestedShape:1.2'.
+		description: 'testNestedShapeNotAddedToACanvas_amp:1.2'.
 	self
 		assert: shape shapes size
 		equals: 0
-		description: 'testNestedShape:1.3'.
+		description: 'testNestedShapeNotAddedToACanvas_amp:1.3'.
+	innerShape := TSBox new.
+	self
+		assert: innerShape class
+		equals: TSBox
+		description: 'testNestedShapeNotAddedToACanvas_amp:2.1'.
+	self
+		assert: innerShape cornerRadius class
+		equals: UndefinedObject
+		description: 'testNestedShapeNotAddedToACanvas_amp:2.2'.
+	self
+		assert: innerShape cornerRadius
+		equals: nil
+		description: 'testNestedShapeNotAddedToACanvas_amp:2.3'.
+	self
+		assert: innerShape hasCornerRadius class
+		equals: False
+		description: 'testNestedShapeNotAddedToACanvas_amp:2.4'.
+	self
+		assert: innerShape hasCornerRadius
+		equals: false
+		description: 'testNestedShapeNotAddedToACanvas_amp:2.5'.
+	shape add: innerShape.
+	self
+		assert: shape class
+		equals: TSComposite
+		description: 'testNestedShapeNotAddedToACanvas_amp:3.1'.
+	self
+		assert: shape shapes class
+		equals: TSGroup
+		description: 'testNestedShapeNotAddedToACanvas_amp:3.2'.
+	self
+		assert: shape shapes size
+		equals: 1
+		description: 'testNestedShapeNotAddedToACanvas_amp:3.3'
+]
+
+{ #category : #'as yet unclassified' }
+TSCanvasTestAmpTest >> testNestedShape_amp [
+	<madeBySmallAmp>
+	| shape innerShape |
+	shape := TSComposite new.
+	self
+		assert: shape class
+		equals: TSComposite
+		description: 'testNestedShape_amp:1.1'.
+	self
+		assert: shape shapes class
+		equals: TSGroup
+		description: 'testNestedShape_amp:1.2'.
+	self
+		assert: shape shapes size
+		equals: 0
+		description: 'testNestedShape_amp:1.3'.
 	c addShape: shape.
 	self
 		assert: c class
 		equals: TSCanvas
-		description: 'testNestedShape:2.1'.
+		description: 'testNestedShape_amp:2.1'.
 	self
 		assert: c fixedShapes class
 		equals: TSGroup
-		description: 'testNestedShape:2.2'.
+		description: 'testNestedShape_amp:2.2'.
 	self
 		assert: c fixedShapes size
 		equals: 0
-		description: 'testNestedShape:2.3'.
+		description: 'testNestedShape_amp:2.3'.
 	self
 		assert: c showRectangles class
 		equals: False
-		description: 'testNestedShape:2.4'.
+		description: 'testNestedShape_amp:2.4'.
 	self
 		assert: c showRectangles
 		equals: false
-		description: 'testNestedShape:2.5'.
+		description: 'testNestedShape_amp:2.5'.
 	self
 		assert: c color class
 		equals: Color
-		description: 'testNestedShape:2.6'.
+		description: 'testNestedShape_amp:2.6'.
 	self
 		assert: c color alpha class
 		equals: SmallFloat64
-		description: 'testNestedShape:2.7'.
+		description: 'testNestedShape_amp:2.7'.
 	self
 		assert: c color alpha
 		equals: 1.0
-		description: 'testNestedShape:2.8'.
+		description: 'testNestedShape_amp:2.8'.
 	self
 		assert: c color red class
 		equals: SmallFloat64
-		description: 'testNestedShape:2.9'.
+		description: 'testNestedShape_amp:2.9'.
 	self
 		assert: c color red
 		equals: 1.0
-		description: 'testNestedShape:2.10'.
+		description: 'testNestedShape_amp:2.10'.
 	self
 		assert: c color hsvSaturation class
 		equals: SmallFloat64
-		description: 'testNestedShape:2.11'.
+		description: 'testNestedShape_amp:2.11'.
 	self
 		assert: c color hsvSaturation
 		equals: 0.0
-		description: 'testNestedShape:2.12'.
+		description: 'testNestedShape_amp:2.12'.
 	self
 		assert: c color brightness class
 		equals: SmallFloat64
-		description: 'testNestedShape:2.13'.
+		description: 'testNestedShape_amp:2.13'.
 	self
 		assert: c color brightness
 		equals: 1.0
-		description: 'testNestedShape:2.14'.
+		description: 'testNestedShape_amp:2.14'.
 	self
 		assert: c color hue class
 		equals: SmallFloat64
-		description: 'testNestedShape:2.15'.
+		description: 'testNestedShape_amp:2.15'.
 	self
 		assert: c color hue
 		equals: 0.0
-		description: 'testNestedShape:2.16'.
+		description: 'testNestedShape_amp:2.16'.
 	self
 		assert: c color green class
 		equals: SmallFloat64
-		description: 'testNestedShape:2.17'.
+		description: 'testNestedShape_amp:2.17'.
 	self
 		assert: c color green
 		equals: 1.0
-		description: 'testNestedShape:2.18'.
+		description: 'testNestedShape_amp:2.18'.
 	self
 		assert: c color chroma class
 		equals: SmallFloat64
-		description: 'testNestedShape:2.19'.
+		description: 'testNestedShape_amp:2.19'.
 	self
 		assert: c color chroma
 		equals: 0.0
-		description: 'testNestedShape:2.20'.
+		description: 'testNestedShape_amp:2.20'.
 	self
 		assert: c color lightness class
 		equals: SmallFloat64
-		description: 'testNestedShape:2.21'.
+		description: 'testNestedShape_amp:2.21'.
 	self
 		assert: c color lightness
 		equals: 1.0
-		description: 'testNestedShape:2.22'.
+		description: 'testNestedShape_amp:2.22'.
 	self
 		assert: c color hslSaturation class
 		equals: SmallFloat64
-		description: 'testNestedShape:2.23'.
+		description: 'testNestedShape_amp:2.23'.
 	self
 		assert: c color hslSaturation
 		equals: 0.0
-		description: 'testNestedShape:2.24'.
+		description: 'testNestedShape_amp:2.24'.
 	self
 		assert: c color saturation class
 		equals: SmallFloat64
-		description: 'testNestedShape:2.25'.
+		description: 'testNestedShape_amp:2.25'.
 	self
 		assert: c color saturation
 		equals: 0.0
-		description: 'testNestedShape:2.26'.
+		description: 'testNestedShape_amp:2.26'.
 	self
 		assert: c color luminance class
 		equals: SmallFloat64
-		description: 'testNestedShape:2.27'.
+		description: 'testNestedShape_amp:2.27'.
 	self
 		assert: c color luminance
 		equals: 1.0
-		description: 'testNestedShape:2.28'.
+		description: 'testNestedShape_amp:2.28'.
 	self
 		assert: c color blue class
 		equals: SmallFloat64
-		description: 'testNestedShape:2.29'.
+		description: 'testNestedShape_amp:2.29'.
 	self
 		assert: c color blue
 		equals: 1.0
-		description: 'testNestedShape:2.30'.
+		description: 'testNestedShape_amp:2.30'.
 	self
 		assert: c numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testNestedShape:2.31'.
+		description: 'testNestedShape_amp:2.31'.
 	self
 		assert: c numberOfFixedShapes
 		equals: 0
-		description: 'testNestedShape:2.32'.
+		description: 'testNestedShape_amp:2.32'.
 	self
 		assert: c morph class
 		equals: UndefinedObject
-		description: 'testNestedShape:2.33'.
-	self assert: c morph equals: nil description: 'testNestedShape:2.34'.
+		description: 'testNestedShape_amp:2.33'.
+	self
+		assert: c morph
+		equals: nil
+		description: 'testNestedShape_amp:2.34'.
 	self
 		assert: c extent class
 		equals: Point
-		description: 'testNestedShape:2.35'.
+		description: 'testNestedShape_amp:2.35'.
 	self
 		assert: c extent isZero class
 		equals: False
-		description: 'testNestedShape:2.36'.
+		description: 'testNestedShape_amp:2.36'.
 	self
 		assert: c extent isZero
 		equals: false
-		description: 'testNestedShape:2.37'.
+		description: 'testNestedShape_amp:2.37'.
 	self
 		assert: c extent y class
 		equals: SmallInteger
-		description: 'testNestedShape:2.38'.
+		description: 'testNestedShape_amp:2.38'.
 	self
 		assert: c extent y
 		equals: 500
-		description: 'testNestedShape:2.39'.
+		description: 'testNestedShape_amp:2.39'.
 	self
 		assert: c extent isFloatPoint class
 		equals: False
-		description: 'testNestedShape:2.40'.
+		description: 'testNestedShape_amp:2.40'.
 	self
 		assert: c extent isFloatPoint
 		equals: false
-		description: 'testNestedShape:2.41'.
+		description: 'testNestedShape_amp:2.41'.
 	self
 		assert: c extent isIntegerPoint class
 		equals: True
-		description: 'testNestedShape:2.42'.
+		description: 'testNestedShape_amp:2.42'.
 	self
 		assert: c extent isIntegerPoint
 		equals: true
-		description: 'testNestedShape:2.43'.
+		description: 'testNestedShape_amp:2.43'.
 	self
 		assert: c extent x class
 		equals: SmallInteger
-		description: 'testNestedShape:2.44'.
+		description: 'testNestedShape_amp:2.44'.
 	self
 		assert: c extent x
 		equals: 500
-		description: 'testNestedShape:2.45'.
+		description: 'testNestedShape_amp:2.45'.
 	self
 		assert: c extent isPoint class
 		equals: True
-		description: 'testNestedShape:2.46'.
+		description: 'testNestedShape_amp:2.46'.
 	self
 		assert: c extent isPoint
 		equals: true
-		description: 'testNestedShape:2.47'.
+		description: 'testNestedShape_amp:2.47'.
 	self
 		assert: c parent class
 		equals: TSCanvas
-		description: 'testNestedShape:2.48'.
+		description: 'testNestedShape_amp:2.48'.
 	self
 		assert: c parent showRectangles class
 		equals: False
-		description: 'testNestedShape:2.49'.
+		description: 'testNestedShape_amp:2.49'.
 	self
 		assert: c parent showRectangles
 		equals: false
-		description: 'testNestedShape:2.50'.
+		description: 'testNestedShape_amp:2.50'.
 	self
 		assert: c parent numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testNestedShape:2.51'.
+		description: 'testNestedShape_amp:2.51'.
 	self
 		assert: c parent numberOfFixedShapes
 		equals: 0
-		description: 'testNestedShape:2.52'.
+		description: 'testNestedShape_amp:2.52'.
 	self
 		assert: c parent morph class
 		equals: UndefinedObject
-		description: 'testNestedShape:2.53'.
+		description: 'testNestedShape_amp:2.53'.
 	self
 		assert: c parent morph
 		equals: nil
-		description: 'testNestedShape:2.54'.
+		description: 'testNestedShape_amp:2.54'.
 	self
 		assert: c parent view class
 		equals: UndefinedObject
-		description: 'testNestedShape:2.55'.
+		description: 'testNestedShape_amp:2.55'.
 	self
 		assert: c parent view
 		equals: nil
-		description: 'testNestedShape:2.56'.
+		description: 'testNestedShape_amp:2.56'.
 	self
 		assert: c parent isShape class
 		equals: False
-		description: 'testNestedShape:2.57'.
+		description: 'testNestedShape_amp:2.57'.
 	self
 		assert: c parent isShape
 		equals: false
-		description: 'testNestedShape:2.58'.
+		description: 'testNestedShape_amp:2.58'.
 	self
 		assert: c parent numberOfShapes class
 		equals: SmallInteger
-		description: 'testNestedShape:2.59'.
+		description: 'testNestedShape_amp:2.59'.
 	self
 		assert: c parent numberOfShapes
 		equals: 1
-		description: 'testNestedShape:2.60'.
+		description: 'testNestedShape_amp:2.60'.
 	self
 		assert: c parent clearBackground class
 		equals: True
-		description: 'testNestedShape:2.61'.
+		description: 'testNestedShape_amp:2.61'.
 	self
 		assert: c parent clearBackground
 		equals: true
-		description: 'testNestedShape:2.62'.
+		description: 'testNestedShape_amp:2.62'.
 	self
 		assert: c shapes class
 		equals: TSGroup
-		description: 'testNestedShape:2.63'.
+		description: 'testNestedShape_amp:2.63'.
 	self
 		assert: c shapes size
 		equals: 1
-		description: 'testNestedShape:2.64'.
+		description: 'testNestedShape_amp:2.64'.
 	self
 		assert: c encompassingRectangle class
 		equals: Rectangle
-		description: 'testNestedShape:2.65'.
+		description: 'testNestedShape_amp:2.65'.
 	self
 		assert: c encompassingRectangle top class
 		equals: SmallFloat64
-		description: 'testNestedShape:2.66'.
+		description: 'testNestedShape_amp:2.66'.
 	self
 		assert: c encompassingRectangle top
 		equals: 0.0
-		description: 'testNestedShape:2.67'.
+		description: 'testNestedShape_amp:2.67'.
 	self
 		assert: c encompassingRectangle hasPositiveExtent class
 		equals: True
-		description: 'testNestedShape:2.68'.
+		description: 'testNestedShape_amp:2.68'.
 	self
 		assert: c encompassingRectangle hasPositiveExtent
 		equals: true
-		description: 'testNestedShape:2.69'.
+		description: 'testNestedShape_amp:2.69'.
 	self
 		assert: c encompassingRectangle area class
 		equals: SmallFloat64
-		description: 'testNestedShape:2.70'.
+		description: 'testNestedShape_amp:2.70'.
 	self
 		assert: c encompassingRectangle area
 		equals: 1.0
-		description: 'testNestedShape:2.71'.
+		description: 'testNestedShape_amp:2.71'.
 	self
 		assert: c encompassingRectangle isTall class
 		equals: False
-		description: 'testNestedShape:2.72'.
+		description: 'testNestedShape_amp:2.72'.
 	self
 		assert: c encompassingRectangle isTall
 		equals: false
-		description: 'testNestedShape:2.73'.
+		description: 'testNestedShape_amp:2.73'.
 	self
 		assert: c encompassingRectangle left class
 		equals: SmallFloat64
-		description: 'testNestedShape:2.74'.
+		description: 'testNestedShape_amp:2.74'.
 	self
 		assert: c encompassingRectangle left
 		equals: 0.0
-		description: 'testNestedShape:2.75'.
+		description: 'testNestedShape_amp:2.75'.
 	self
 		assert: c encompassingRectangle width class
 		equals: SmallFloat64
-		description: 'testNestedShape:2.76'.
+		description: 'testNestedShape_amp:2.76'.
 	self
 		assert: c encompassingRectangle width
 		equals: 1.0
-		description: 'testNestedShape:2.77'.
+		description: 'testNestedShape_amp:2.77'.
 	self
 		assert: c encompassingRectangle right class
 		equals: SmallFloat64
-		description: 'testNestedShape:2.78'.
+		description: 'testNestedShape_amp:2.78'.
 	self
 		assert: c encompassingRectangle right
 		equals: 1.0
-		description: 'testNestedShape:2.79'.
+		description: 'testNestedShape_amp:2.79'.
 	self
 		assert: c encompassingRectangle isZero class
 		equals: False
-		description: 'testNestedShape:2.80'.
+		description: 'testNestedShape_amp:2.80'.
 	self
 		assert: c encompassingRectangle isZero
 		equals: false
-		description: 'testNestedShape:2.81'.
+		description: 'testNestedShape_amp:2.81'.
 	self
 		assert: c encompassingRectangle isWide class
 		equals: False
-		description: 'testNestedShape:2.82'.
+		description: 'testNestedShape_amp:2.82'.
 	self
 		assert: c encompassingRectangle isWide
 		equals: false
-		description: 'testNestedShape:2.83'.
+		description: 'testNestedShape_amp:2.83'.
 	self
 		assert: c encompassingRectangle bottom class
 		equals: SmallFloat64
-		description: 'testNestedShape:2.84'.
+		description: 'testNestedShape_amp:2.84'.
 	self
 		assert: c encompassingRectangle bottom
 		equals: 1.0
-		description: 'testNestedShape:2.85'.
+		description: 'testNestedShape_amp:2.85'.
 	self
 		assert: c encompassingRectangle isRectangle class
 		equals: True
-		description: 'testNestedShape:2.86'.
+		description: 'testNestedShape_amp:2.86'.
 	self
 		assert: c encompassingRectangle isRectangle
 		equals: true
-		description: 'testNestedShape:2.87'.
+		description: 'testNestedShape_amp:2.87'.
 	self
 		assert: c encompassingRectangle height class
 		equals: SmallFloat64
-		description: 'testNestedShape:2.88'.
+		description: 'testNestedShape_amp:2.88'.
 	self
 		assert: c encompassingRectangle height
 		equals: 1.0
-		description: 'testNestedShape:2.89'.
+		description: 'testNestedShape_amp:2.89'.
 	self
 		assert: c view class
 		equals: UndefinedObject
-		description: 'testNestedShape:2.90'.
-	self assert: c view equals: nil description: 'testNestedShape:2.91'.
+		description: 'testNestedShape_amp:2.90'.
+	self
+		assert: c view
+		equals: nil
+		description: 'testNestedShape_amp:2.91'.
 	self
 		assert: c isShape class
 		equals: False
-		description: 'testNestedShape:2.92'.
+		description: 'testNestedShape_amp:2.92'.
 	self
 		assert: c isShape
 		equals: false
-		description: 'testNestedShape:2.93'.
+		description: 'testNestedShape_amp:2.93'.
 	self
 		assert: c basicRectangle class
 		equals: Rectangle
-		description: 'testNestedShape:2.94'.
+		description: 'testNestedShape_amp:2.94'.
 	self
 		assert: c basicRectangle top class
 		equals: SmallInteger
-		description: 'testNestedShape:2.95'.
+		description: 'testNestedShape_amp:2.95'.
 	self
 		assert: c basicRectangle top
 		equals: 0
-		description: 'testNestedShape:2.96'.
+		description: 'testNestedShape_amp:2.96'.
 	self
 		assert: c basicRectangle hasPositiveExtent class
 		equals: True
-		description: 'testNestedShape:2.97'.
+		description: 'testNestedShape_amp:2.97'.
 	self
 		assert: c basicRectangle hasPositiveExtent
 		equals: true
-		description: 'testNestedShape:2.98'.
+		description: 'testNestedShape_amp:2.98'.
 	self
 		assert: c basicRectangle area class
 		equals: SmallInteger
-		description: 'testNestedShape:2.99'.
+		description: 'testNestedShape_amp:2.99'.
 	self
 		assert: c basicRectangle area
 		equals: 250000
-		description: 'testNestedShape:2.100'.
+		description: 'testNestedShape_amp:2.100'.
 	self
 		assert: c basicRectangle isTall class
 		equals: False
-		description: 'testNestedShape:2.101'.
+		description: 'testNestedShape_amp:2.101'.
 	self
 		assert: c basicRectangle isTall
 		equals: false
-		description: 'testNestedShape:2.102'.
+		description: 'testNestedShape_amp:2.102'.
 	self
 		assert: c basicRectangle left class
 		equals: SmallInteger
-		description: 'testNestedShape:2.103'.
+		description: 'testNestedShape_amp:2.103'.
 	self
 		assert: c basicRectangle left
 		equals: 0
-		description: 'testNestedShape:2.104'.
+		description: 'testNestedShape_amp:2.104'.
 	self
 		assert: c basicRectangle width class
 		equals: SmallInteger
-		description: 'testNestedShape:2.105'.
+		description: 'testNestedShape_amp:2.105'.
 	self
 		assert: c basicRectangle width
 		equals: 500
-		description: 'testNestedShape:2.106'.
+		description: 'testNestedShape_amp:2.106'.
 	self
 		assert: c basicRectangle right class
 		equals: SmallInteger
-		description: 'testNestedShape:2.107'.
+		description: 'testNestedShape_amp:2.107'.
 	self
 		assert: c basicRectangle right
 		equals: 500
-		description: 'testNestedShape:2.108'.
+		description: 'testNestedShape_amp:2.108'.
 	self
 		assert: c basicRectangle isZero class
 		equals: False
-		description: 'testNestedShape:2.109'.
+		description: 'testNestedShape_amp:2.109'.
 	self
 		assert: c basicRectangle isZero
 		equals: false
-		description: 'testNestedShape:2.110'.
+		description: 'testNestedShape_amp:2.110'.
 	self
 		assert: c basicRectangle isWide class
 		equals: False
-		description: 'testNestedShape:2.111'.
+		description: 'testNestedShape_amp:2.111'.
 	self
 		assert: c basicRectangle isWide
 		equals: false
-		description: 'testNestedShape:2.112'.
+		description: 'testNestedShape_amp:2.112'.
 	self
 		assert: c basicRectangle bottom class
 		equals: SmallInteger
-		description: 'testNestedShape:2.113'.
+		description: 'testNestedShape_amp:2.113'.
 	self
 		assert: c basicRectangle bottom
 		equals: 500
-		description: 'testNestedShape:2.114'.
+		description: 'testNestedShape_amp:2.114'.
 	self
 		assert: c basicRectangle isRectangle class
 		equals: True
-		description: 'testNestedShape:2.115'.
+		description: 'testNestedShape_amp:2.115'.
 	self
 		assert: c basicRectangle isRectangle
 		equals: true
-		description: 'testNestedShape:2.116'.
+		description: 'testNestedShape_amp:2.116'.
 	self
 		assert: c basicRectangle height class
 		equals: SmallInteger
-		description: 'testNestedShape:2.117'.
+		description: 'testNestedShape_amp:2.117'.
 	self
 		assert: c basicRectangle height
 		equals: 500
-		description: 'testNestedShape:2.118'.
+		description: 'testNestedShape_amp:2.118'.
 	self
 		assert: c topParent class
 		equals: TSCanvas
-		description: 'testNestedShape:2.119'.
+		description: 'testNestedShape_amp:2.119'.
 	self
 		assert: c topParent showRectangles class
 		equals: False
-		description: 'testNestedShape:2.120'.
+		description: 'testNestedShape_amp:2.120'.
 	self
 		assert: c topParent showRectangles
 		equals: false
-		description: 'testNestedShape:2.121'.
+		description: 'testNestedShape_amp:2.121'.
 	self
 		assert: c topParent numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testNestedShape:2.122'.
+		description: 'testNestedShape_amp:2.122'.
 	self
 		assert: c topParent numberOfFixedShapes
 		equals: 0
-		description: 'testNestedShape:2.123'.
+		description: 'testNestedShape_amp:2.123'.
 	self
 		assert: c topParent morph class
 		equals: UndefinedObject
-		description: 'testNestedShape:2.124'.
+		description: 'testNestedShape_amp:2.124'.
 	self
 		assert: c topParent morph
 		equals: nil
-		description: 'testNestedShape:2.125'.
+		description: 'testNestedShape_amp:2.125'.
 	self
 		assert: c topParent view class
 		equals: UndefinedObject
-		description: 'testNestedShape:2.126'.
+		description: 'testNestedShape_amp:2.126'.
 	self
 		assert: c topParent view
 		equals: nil
-		description: 'testNestedShape:2.127'.
+		description: 'testNestedShape_amp:2.127'.
 	self
 		assert: c topParent isShape class
 		equals: False
-		description: 'testNestedShape:2.128'.
+		description: 'testNestedShape_amp:2.128'.
 	self
 		assert: c topParent isShape
 		equals: false
-		description: 'testNestedShape:2.129'.
+		description: 'testNestedShape_amp:2.129'.
 	self
 		assert: c topParent numberOfShapes class
 		equals: SmallInteger
-		description: 'testNestedShape:2.130'.
+		description: 'testNestedShape_amp:2.130'.
 	self
 		assert: c topParent numberOfShapes
 		equals: 1
-		description: 'testNestedShape:2.131'.
+		description: 'testNestedShape_amp:2.131'.
 	self
 		assert: c topParent clearBackground class
 		equals: True
-		description: 'testNestedShape:2.132'.
+		description: 'testNestedShape_amp:2.132'.
 	self
 		assert: c topParent clearBackground
 		equals: true
-		description: 'testNestedShape:2.133'.
+		description: 'testNestedShape_amp:2.133'.
 	self
 		assert: c numberOfShapes class
 		equals: SmallInteger
-		description: 'testNestedShape:2.134'.
+		description: 'testNestedShape_amp:2.134'.
 	self
 		assert: c numberOfShapes
 		equals: 1
-		description: 'testNestedShape:2.135'.
+		description: 'testNestedShape_amp:2.135'.
 	self
 		assert: c canvas class
 		equals: TSCanvas
-		description: 'testNestedShape:2.136'.
+		description: 'testNestedShape_amp:2.136'.
 	self
 		assert: c canvas showRectangles class
 		equals: False
-		description: 'testNestedShape:2.137'.
+		description: 'testNestedShape_amp:2.137'.
 	self
 		assert: c canvas showRectangles
 		equals: false
-		description: 'testNestedShape:2.138'.
+		description: 'testNestedShape_amp:2.138'.
 	self
 		assert: c canvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testNestedShape:2.139'.
+		description: 'testNestedShape_amp:2.139'.
 	self
 		assert: c canvas numberOfFixedShapes
 		equals: 0
-		description: 'testNestedShape:2.140'.
+		description: 'testNestedShape_amp:2.140'.
 	self
 		assert: c canvas morph class
 		equals: UndefinedObject
-		description: 'testNestedShape:2.141'.
+		description: 'testNestedShape_amp:2.141'.
 	self
 		assert: c canvas morph
 		equals: nil
-		description: 'testNestedShape:2.142'.
+		description: 'testNestedShape_amp:2.142'.
 	self
 		assert: c canvas view class
 		equals: UndefinedObject
-		description: 'testNestedShape:2.143'.
+		description: 'testNestedShape_amp:2.143'.
 	self
 		assert: c canvas view
 		equals: nil
-		description: 'testNestedShape:2.144'.
+		description: 'testNestedShape_amp:2.144'.
 	self
 		assert: c canvas isShape class
 		equals: False
-		description: 'testNestedShape:2.145'.
+		description: 'testNestedShape_amp:2.145'.
 	self
 		assert: c canvas isShape
 		equals: false
-		description: 'testNestedShape:2.146'.
+		description: 'testNestedShape_amp:2.146'.
 	self
 		assert: c canvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testNestedShape:2.147'.
+		description: 'testNestedShape_amp:2.147'.
 	self
 		assert: c canvas numberOfShapes
 		equals: 1
-		description: 'testNestedShape:2.148'.
+		description: 'testNestedShape_amp:2.148'.
 	self
 		assert: c canvas clearBackground class
 		equals: True
-		description: 'testNestedShape:2.149'.
+		description: 'testNestedShape_amp:2.149'.
 	self
 		assert: c canvas clearBackground
 		equals: true
-		description: 'testNestedShape:2.150'.
+		description: 'testNestedShape_amp:2.150'.
 	self
 		assert: c clearBackground class
 		equals: True
-		description: 'testNestedShape:2.151'.
+		description: 'testNestedShape_amp:2.151'.
 	self
 		assert: c clearBackground
 		equals: true
-		description: 'testNestedShape:2.152'.
+		description: 'testNestedShape_amp:2.152'.
 	innerShape := TSBox new.
 	self
 		assert: innerShape class
 		equals: TSBox
-		description: 'testNestedShape:3.1'.
+		description: 'testNestedShape_amp:3.1'.
 	self
 		assert: innerShape cornerRadius class
 		equals: UndefinedObject
-		description: 'testNestedShape:3.2'.
+		description: 'testNestedShape_amp:3.2'.
 	self
 		assert: innerShape cornerRadius
 		equals: nil
-		description: 'testNestedShape:3.3'.
+		description: 'testNestedShape_amp:3.3'.
 	self
 		assert: innerShape hasCornerRadius class
 		equals: False
-		description: 'testNestedShape:3.4'.
+		description: 'testNestedShape_amp:3.4'.
 	self
 		assert: innerShape hasCornerRadius
 		equals: false
-		description: 'testNestedShape:3.5'.
+		description: 'testNestedShape_amp:3.5'.
 	shape add: innerShape.
 	self
 		assert: shape class
 		equals: TSComposite
-		description: 'testNestedShape:4.1'.
+		description: 'testNestedShape_amp:4.1'.
 	self
 		assert: shape shapes class
 		equals: TSGroup
-		description: 'testNestedShape:4.2'.
+		description: 'testNestedShape_amp:4.2'.
 	self
 		assert: shape shapes size
 		equals: 1
-		description: 'testNestedShape:4.3'.
+		description: 'testNestedShape_amp:4.3'.
 	self
 		assert: shape camera class
 		equals: TSCamera
-		description: 'testNestedShape:4.4'.
+		description: 'testNestedShape_amp:4.4'.
 	self
 		assert: shape camera scale class
 		equals: SmallFloat64
-		description: 'testNestedShape:4.5'.
+		description: 'testNestedShape_amp:4.5'.
 	self
 		assert: shape camera scale
 		equals: 1.0000001
-		description: 'testNestedShape:4.6'.
+		description: 'testNestedShape_amp:4.6'.
 	self
 		assert: shape view class
 		equals: UndefinedObject
-		description: 'testNestedShape:4.7'.
+		description: 'testNestedShape_amp:4.7'.
 	self
 		assert: shape view
 		equals: nil
-		description: 'testNestedShape:4.8'
+		description: 'testNestedShape_amp:4.8'
 ]
 
 { #category : #'as yet unclassified' }
-TSCanvasTestAmpTest >> testNestedShapeNotAddedToACanvas [
+TSCanvasTestAmpTest >> testOpening_amp [
 	<madeBySmallAmp>
-	| shape innerShape |
-	shape := TSComposite new.
+	| tmp_NRRzW2MuQf2 |
+	tmp_NRRzW2MuQf2 := c open.
 	self
-		assert: shape class
-		equals: TSComposite
-		description: 'testNestedShapeNotAddedToACanvas:1.1'.
-	self
-		assert: shape shapes class
-		equals: TSGroup
-		description: 'testNestedShapeNotAddedToACanvas:1.2'.
-	self
-		assert: shape shapes size
-		equals: 0
-		description: 'testNestedShapeNotAddedToACanvas:1.3'.
-	innerShape := TSBox new.
-	self
-		assert: innerShape class
-		equals: TSBox
-		description: 'testNestedShapeNotAddedToACanvas:2.1'.
-	self
-		assert: innerShape cornerRadius class
-		equals: UndefinedObject
-		description: 'testNestedShapeNotAddedToACanvas:2.2'.
-	self
-		assert: innerShape cornerRadius
-		equals: nil
-		description: 'testNestedShapeNotAddedToACanvas:2.3'.
-	self
-		assert: innerShape hasCornerRadius class
-		equals: False
-		description: 'testNestedShapeNotAddedToACanvas:2.4'.
-	self
-		assert: innerShape hasCornerRadius
-		equals: false
-		description: 'testNestedShapeNotAddedToACanvas:2.5'.
-	shape add: innerShape.
-	self
-		assert: shape class
-		equals: TSComposite
-		description: 'testNestedShapeNotAddedToACanvas:3.1'.
-	self
-		assert: shape shapes class
-		equals: TSGroup
-		description: 'testNestedShapeNotAddedToACanvas:3.2'.
-	self
-		assert: shape shapes size
-		equals: 1
-		description: 'testNestedShapeNotAddedToACanvas:3.3'
-]
-
-{ #category : #'as yet unclassified' }
-TSCanvasTestAmpTest >> testOpening [
-	<madeBySmallAmp>
-	| tmp_GDMzqKewMV2 |
-	tmp_GDMzqKewMV2 := c open.
-	self assert: c class equals: TSCanvas description: 'testOpening:1.1'.
+		assert: c class
+		equals: TSCanvas
+		description: 'testOpening_amp:1.1'.
 	self
 		assert: c fixedShapes class
 		equals: TSGroup
-		description: 'testOpening:1.2'.
+		description: 'testOpening_amp:1.2'.
 	self
 		assert: c fixedShapes size
 		equals: 0
-		description: 'testOpening:1.3'.
+		description: 'testOpening_amp:1.3'.
 	self
 		assert: c showRectangles class
 		equals: False
-		description: 'testOpening:1.4'.
+		description: 'testOpening_amp:1.4'.
 	self
 		assert: c showRectangles
 		equals: false
-		description: 'testOpening:1.5'.
+		description: 'testOpening_amp:1.5'.
 	self
 		assert: c color class
 		equals: Color
-		description: 'testOpening:1.6'.
+		description: 'testOpening_amp:1.6'.
 	self
 		assert: c color alpha class
 		equals: SmallFloat64
-		description: 'testOpening:1.7'.
-	self assert: c color alpha equals: 1.0 description: 'testOpening:1.8'.
+		description: 'testOpening_amp:1.7'.
+	self
+		assert: c color alpha
+		equals: 1.0
+		description: 'testOpening_amp:1.8'.
 	self
 		assert: c color red class
 		equals: SmallFloat64
-		description: 'testOpening:1.9'.
-	self assert: c color red equals: 1.0 description: 'testOpening:1.10'.
+		description: 'testOpening_amp:1.9'.
+	self
+		assert: c color red
+		equals: 1.0
+		description: 'testOpening_amp:1.10'.
 	self
 		assert: c color hsvSaturation class
 		equals: SmallFloat64
-		description: 'testOpening:1.11'.
+		description: 'testOpening_amp:1.11'.
 	self
 		assert: c color hsvSaturation
 		equals: 0.0
-		description: 'testOpening:1.12'.
+		description: 'testOpening_amp:1.12'.
 	self
 		assert: c color brightness class
 		equals: SmallFloat64
-		description: 'testOpening:1.13'.
+		description: 'testOpening_amp:1.13'.
 	self
 		assert: c color brightness
 		equals: 1.0
-		description: 'testOpening:1.14'.
+		description: 'testOpening_amp:1.14'.
 	self
 		assert: c color hue class
 		equals: SmallFloat64
-		description: 'testOpening:1.15'.
-	self assert: c color hue equals: 0.0 description: 'testOpening:1.16'.
+		description: 'testOpening_amp:1.15'.
+	self
+		assert: c color hue
+		equals: 0.0
+		description: 'testOpening_amp:1.16'.
 	self
 		assert: c color green class
 		equals: SmallFloat64
-		description: 'testOpening:1.17'.
+		description: 'testOpening_amp:1.17'.
 	self
 		assert: c color green
 		equals: 1.0
-		description: 'testOpening:1.18'.
+		description: 'testOpening_amp:1.18'.
 	self
 		assert: c color chroma class
 		equals: SmallFloat64
-		description: 'testOpening:1.19'.
+		description: 'testOpening_amp:1.19'.
 	self
 		assert: c color chroma
 		equals: 0.0
-		description: 'testOpening:1.20'.
+		description: 'testOpening_amp:1.20'.
 	self
 		assert: c color lightness class
 		equals: SmallFloat64
-		description: 'testOpening:1.21'.
+		description: 'testOpening_amp:1.21'.
 	self
 		assert: c color lightness
 		equals: 1.0
-		description: 'testOpening:1.22'.
+		description: 'testOpening_amp:1.22'.
 	self
 		assert: c color hslSaturation class
 		equals: SmallFloat64
-		description: 'testOpening:1.23'.
+		description: 'testOpening_amp:1.23'.
 	self
 		assert: c color hslSaturation
 		equals: 0.0
-		description: 'testOpening:1.24'.
+		description: 'testOpening_amp:1.24'.
 	self
 		assert: c color saturation class
 		equals: SmallFloat64
-		description: 'testOpening:1.25'.
+		description: 'testOpening_amp:1.25'.
 	self
 		assert: c color saturation
 		equals: 0.0
-		description: 'testOpening:1.26'.
+		description: 'testOpening_amp:1.26'.
 	self
 		assert: c color luminance class
 		equals: SmallFloat64
-		description: 'testOpening:1.27'.
+		description: 'testOpening_amp:1.27'.
 	self
 		assert: c color luminance
 		equals: 1.0
-		description: 'testOpening:1.28'.
+		description: 'testOpening_amp:1.28'.
 	self
 		assert: c color blue class
 		equals: SmallFloat64
-		description: 'testOpening:1.29'.
-	self assert: c color blue equals: 1.0 description: 'testOpening:1.30'.
+		description: 'testOpening_amp:1.29'.
+	self
+		assert: c color blue
+		equals: 1.0
+		description: 'testOpening_amp:1.30'.
 	self
 		assert: c numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testOpening:1.31'.
+		description: 'testOpening_amp:1.31'.
 	self
 		assert: c numberOfFixedShapes
 		equals: 0
-		description: 'testOpening:1.32'.
+		description: 'testOpening_amp:1.32'.
 	self
 		assert: c morph class
 		equals: TSAthensMorph
-		description: 'testOpening:1.33'.
+		description: 'testOpening_amp:1.33'.
 	self
 		assert: c morph isDrawing class
 		equals: False
-		description: 'testOpening:1.34'.
+		description: 'testOpening_amp:1.34'.
 	self
 		assert: c morph isDrawing
 		equals: false
-		description: 'testOpening:1.35'.
+		description: 'testOpening_amp:1.35'.
 	self
 		assert: c morph wantsSteps class
 		equals: False
-		description: 'testOpening:1.36'.
+		description: 'testOpening_amp:1.36'.
 	self
 		assert: c morph wantsSteps
 		equals: false
-		description: 'testOpening:1.37'.
+		description: 'testOpening_amp:1.37'.
 	self
 		assert: c morph isDragging class
 		equals: False
-		description: 'testOpening:1.38'.
+		description: 'testOpening_amp:1.38'.
 	self
 		assert: c morph isDragging
 		equals: false
-		description: 'testOpening:1.39'.
+		description: 'testOpening_amp:1.39'.
 	self
 		assert: c extent class
 		equals: Point
-		description: 'testOpening:1.40'.
+		description: 'testOpening_amp:1.40'.
 	self
 		assert: c extent isZero class
 		equals: False
-		description: 'testOpening:1.41'.
+		description: 'testOpening_amp:1.41'.
 	self
 		assert: c extent isZero
 		equals: false
-		description: 'testOpening:1.42'.
+		description: 'testOpening_amp:1.42'.
 	self
 		assert: c extent y class
 		equals: SmallInteger
-		description: 'testOpening:1.43'.
-	self assert: c extent y equals: 500 description: 'testOpening:1.44'.
+		description: 'testOpening_amp:1.43'.
+	self
+		assert: c extent y
+		equals: 500
+		description: 'testOpening_amp:1.44'.
 	self
 		assert: c extent isFloatPoint class
 		equals: False
-		description: 'testOpening:1.45'.
+		description: 'testOpening_amp:1.45'.
 	self
 		assert: c extent isFloatPoint
 		equals: false
-		description: 'testOpening:1.46'.
+		description: 'testOpening_amp:1.46'.
 	self
 		assert: c extent isIntegerPoint class
 		equals: True
-		description: 'testOpening:1.47'.
+		description: 'testOpening_amp:1.47'.
 	self
 		assert: c extent isIntegerPoint
 		equals: true
-		description: 'testOpening:1.48'.
+		description: 'testOpening_amp:1.48'.
 	self
 		assert: c extent x class
 		equals: SmallInteger
-		description: 'testOpening:1.49'.
-	self assert: c extent x equals: 500 description: 'testOpening:1.50'.
+		description: 'testOpening_amp:1.49'.
+	self
+		assert: c extent x
+		equals: 500
+		description: 'testOpening_amp:1.50'.
 	self
 		assert: c extent isPoint class
 		equals: True
-		description: 'testOpening:1.51'.
+		description: 'testOpening_amp:1.51'.
 	self
 		assert: c extent isPoint
 		equals: true
-		description: 'testOpening:1.52'.
+		description: 'testOpening_amp:1.52'.
 	self
 		assert: c parent class
 		equals: TSCanvas
-		description: 'testOpening:1.53'.
+		description: 'testOpening_amp:1.53'.
 	self
 		assert: c parent showRectangles class
 		equals: False
-		description: 'testOpening:1.54'.
+		description: 'testOpening_amp:1.54'.
 	self
 		assert: c parent showRectangles
 		equals: false
-		description: 'testOpening:1.55'.
+		description: 'testOpening_amp:1.55'.
 	self
 		assert: c parent numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testOpening:1.56'.
+		description: 'testOpening_amp:1.56'.
 	self
 		assert: c parent numberOfFixedShapes
 		equals: 0
-		description: 'testOpening:1.57'.
+		description: 'testOpening_amp:1.57'.
 	self
 		assert: c parent view class
 		equals: UndefinedObject
-		description: 'testOpening:1.58'.
+		description: 'testOpening_amp:1.58'.
 	self
 		assert: c parent view
 		equals: nil
-		description: 'testOpening:1.59'.
+		description: 'testOpening_amp:1.59'.
 	self
 		assert: c parent isShape class
 		equals: False
-		description: 'testOpening:1.60'.
+		description: 'testOpening_amp:1.60'.
 	self
 		assert: c parent isShape
 		equals: false
-		description: 'testOpening:1.61'.
+		description: 'testOpening_amp:1.61'.
 	self
 		assert: c parent numberOfShapes class
 		equals: SmallInteger
-		description: 'testOpening:1.62'.
+		description: 'testOpening_amp:1.62'.
 	self
 		assert: c parent numberOfShapes
 		equals: 0
-		description: 'testOpening:1.63'.
+		description: 'testOpening_amp:1.63'.
 	self
 		assert: c parent clearBackground class
 		equals: True
-		description: 'testOpening:1.64'.
+		description: 'testOpening_amp:1.64'.
 	self
 		assert: c parent clearBackground
 		equals: true
-		description: 'testOpening:1.65'.
+		description: 'testOpening_amp:1.65'.
 	self
 		assert: c shapes class
 		equals: TSGroup
-		description: 'testOpening:1.66'.
-	self assert: c shapes size equals: 0 description: 'testOpening:1.67'.
+		description: 'testOpening_amp:1.66'.
+	self
+		assert: c shapes size
+		equals: 0
+		description: 'testOpening_amp:1.67'.
 	self
 		assert: c encompassingRectangle class
 		equals: Rectangle
-		description: 'testOpening:1.68'.
+		description: 'testOpening_amp:1.68'.
 	self
 		assert: c encompassingRectangle top class
 		equals: SmallInteger
-		description: 'testOpening:1.69'.
+		description: 'testOpening_amp:1.69'.
 	self
 		assert: c encompassingRectangle top
 		equals: 0
-		description: 'testOpening:1.70'.
+		description: 'testOpening_amp:1.70'.
 	self
 		assert: c encompassingRectangle hasPositiveExtent class
 		equals: True
-		description: 'testOpening:1.71'.
+		description: 'testOpening_amp:1.71'.
 	self
 		assert: c encompassingRectangle hasPositiveExtent
 		equals: true
-		description: 'testOpening:1.72'.
+		description: 'testOpening_amp:1.72'.
 	self
 		assert: c encompassingRectangle area class
 		equals: SmallInteger
-		description: 'testOpening:1.73'.
+		description: 'testOpening_amp:1.73'.
 	self
 		assert: c encompassingRectangle area
 		equals: 1
-		description: 'testOpening:1.74'.
+		description: 'testOpening_amp:1.74'.
 	self
 		assert: c encompassingRectangle isTall class
 		equals: False
-		description: 'testOpening:1.75'.
+		description: 'testOpening_amp:1.75'.
 	self
 		assert: c encompassingRectangle isTall
 		equals: false
-		description: 'testOpening:1.76'.
+		description: 'testOpening_amp:1.76'.
 	self
 		assert: c encompassingRectangle left class
 		equals: SmallInteger
-		description: 'testOpening:1.77'.
+		description: 'testOpening_amp:1.77'.
 	self
 		assert: c encompassingRectangle left
 		equals: 0
-		description: 'testOpening:1.78'.
+		description: 'testOpening_amp:1.78'.
 	self
 		assert: c encompassingRectangle width class
 		equals: SmallInteger
-		description: 'testOpening:1.79'.
+		description: 'testOpening_amp:1.79'.
 	self
 		assert: c encompassingRectangle width
 		equals: 1
-		description: 'testOpening:1.80'.
+		description: 'testOpening_amp:1.80'.
 	self
 		assert: c encompassingRectangle right class
 		equals: SmallInteger
-		description: 'testOpening:1.81'.
+		description: 'testOpening_amp:1.81'.
 	self
 		assert: c encompassingRectangle right
 		equals: 1
-		description: 'testOpening:1.82'.
+		description: 'testOpening_amp:1.82'.
 	self
 		assert: c encompassingRectangle isZero class
 		equals: False
-		description: 'testOpening:1.83'.
+		description: 'testOpening_amp:1.83'.
 	self
 		assert: c encompassingRectangle isZero
 		equals: false
-		description: 'testOpening:1.84'.
+		description: 'testOpening_amp:1.84'.
 	self
 		assert: c encompassingRectangle isWide class
 		equals: False
-		description: 'testOpening:1.85'.
+		description: 'testOpening_amp:1.85'.
 	self
 		assert: c encompassingRectangle isWide
 		equals: false
-		description: 'testOpening:1.86'.
+		description: 'testOpening_amp:1.86'.
 	self
 		assert: c encompassingRectangle bottom class
 		equals: SmallInteger
-		description: 'testOpening:1.87'.
+		description: 'testOpening_amp:1.87'.
 	self
 		assert: c encompassingRectangle bottom
 		equals: 1
-		description: 'testOpening:1.88'.
+		description: 'testOpening_amp:1.88'.
 	self
 		assert: c encompassingRectangle isRectangle class
 		equals: True
-		description: 'testOpening:1.89'.
+		description: 'testOpening_amp:1.89'.
 	self
 		assert: c encompassingRectangle isRectangle
 		equals: true
-		description: 'testOpening:1.90'.
+		description: 'testOpening_amp:1.90'.
 	self
 		assert: c encompassingRectangle height class
 		equals: SmallInteger
-		description: 'testOpening:1.91'.
+		description: 'testOpening_amp:1.91'.
 	self
 		assert: c encompassingRectangle height
 		equals: 1
-		description: 'testOpening:1.92'.
+		description: 'testOpening_amp:1.92'.
 	self
 		assert: c view class
 		equals: UndefinedObject
-		description: 'testOpening:1.93'.
-	self assert: c view equals: nil description: 'testOpening:1.94'.
+		description: 'testOpening_amp:1.93'.
+	self assert: c view equals: nil description: 'testOpening_amp:1.94'.
 	self
 		assert: c isShape class
 		equals: False
-		description: 'testOpening:1.95'.
-	self assert: c isShape equals: false description: 'testOpening:1.96'.
+		description: 'testOpening_amp:1.95'.
+	self
+		assert: c isShape
+		equals: false
+		description: 'testOpening_amp:1.96'.
 	self
 		assert: c basicRectangle class
 		equals: Rectangle
-		description: 'testOpening:1.97'.
+		description: 'testOpening_amp:1.97'.
 	self
 		assert: c basicRectangle top class
 		equals: SmallInteger
-		description: 'testOpening:1.98'.
+		description: 'testOpening_amp:1.98'.
 	self
 		assert: c basicRectangle top
 		equals: 0
-		description: 'testOpening:1.99'.
+		description: 'testOpening_amp:1.99'.
 	self
 		assert: c basicRectangle hasPositiveExtent class
 		equals: True
-		description: 'testOpening:1.100'.
+		description: 'testOpening_amp:1.100'.
 	self
 		assert: c basicRectangle hasPositiveExtent
 		equals: true
-		description: 'testOpening:1.101'.
+		description: 'testOpening_amp:1.101'.
 	self
 		assert: c basicRectangle area class
 		equals: SmallInteger
-		description: 'testOpening:1.102'.
+		description: 'testOpening_amp:1.102'.
 	self
 		assert: c basicRectangle area
 		equals: 250000
-		description: 'testOpening:1.103'.
+		description: 'testOpening_amp:1.103'.
 	self
 		assert: c basicRectangle isTall class
 		equals: False
-		description: 'testOpening:1.104'.
+		description: 'testOpening_amp:1.104'.
 	self
 		assert: c basicRectangle isTall
 		equals: false
-		description: 'testOpening:1.105'.
+		description: 'testOpening_amp:1.105'.
 	self
 		assert: c basicRectangle left class
 		equals: SmallInteger
-		description: 'testOpening:1.106'.
+		description: 'testOpening_amp:1.106'.
 	self
 		assert: c basicRectangle left
 		equals: 0
-		description: 'testOpening:1.107'.
+		description: 'testOpening_amp:1.107'.
 	self
 		assert: c basicRectangle width class
 		equals: SmallInteger
-		description: 'testOpening:1.108'.
+		description: 'testOpening_amp:1.108'.
 	self
 		assert: c basicRectangle width
 		equals: 500
-		description: 'testOpening:1.109'.
+		description: 'testOpening_amp:1.109'.
 	self
 		assert: c basicRectangle right class
 		equals: SmallInteger
-		description: 'testOpening:1.110'.
+		description: 'testOpening_amp:1.110'.
 	self
 		assert: c basicRectangle right
 		equals: 500
-		description: 'testOpening:1.111'.
+		description: 'testOpening_amp:1.111'.
 	self
 		assert: c basicRectangle isZero class
 		equals: False
-		description: 'testOpening:1.112'.
+		description: 'testOpening_amp:1.112'.
 	self
 		assert: c basicRectangle isZero
 		equals: false
-		description: 'testOpening:1.113'.
+		description: 'testOpening_amp:1.113'.
 	self
 		assert: c basicRectangle isWide class
 		equals: False
-		description: 'testOpening:1.114'.
+		description: 'testOpening_amp:1.114'.
 	self
 		assert: c basicRectangle isWide
 		equals: false
-		description: 'testOpening:1.115'.
+		description: 'testOpening_amp:1.115'.
 	self
 		assert: c basicRectangle bottom class
 		equals: SmallInteger
-		description: 'testOpening:1.116'.
+		description: 'testOpening_amp:1.116'.
 	self
 		assert: c basicRectangle bottom
 		equals: 500
-		description: 'testOpening:1.117'.
+		description: 'testOpening_amp:1.117'.
 	self
 		assert: c basicRectangle isRectangle class
 		equals: True
-		description: 'testOpening:1.118'.
+		description: 'testOpening_amp:1.118'.
 	self
 		assert: c basicRectangle isRectangle
 		equals: true
-		description: 'testOpening:1.119'.
+		description: 'testOpening_amp:1.119'.
 	self
 		assert: c basicRectangle height class
 		equals: SmallInteger
-		description: 'testOpening:1.120'.
+		description: 'testOpening_amp:1.120'.
 	self
 		assert: c basicRectangle height
 		equals: 500
-		description: 'testOpening:1.121'.
+		description: 'testOpening_amp:1.121'.
 	self
 		assert: c topParent class
 		equals: TSCanvas
-		description: 'testOpening:1.122'.
+		description: 'testOpening_amp:1.122'.
 	self
 		assert: c topParent showRectangles class
 		equals: False
-		description: 'testOpening:1.123'.
+		description: 'testOpening_amp:1.123'.
 	self
 		assert: c topParent showRectangles
 		equals: false
-		description: 'testOpening:1.124'.
+		description: 'testOpening_amp:1.124'.
 	self
 		assert: c topParent numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testOpening:1.125'.
+		description: 'testOpening_amp:1.125'.
 	self
 		assert: c topParent numberOfFixedShapes
 		equals: 0
-		description: 'testOpening:1.126'.
+		description: 'testOpening_amp:1.126'.
 	self
 		assert: c topParent view class
 		equals: UndefinedObject
-		description: 'testOpening:1.127'.
+		description: 'testOpening_amp:1.127'.
 	self
 		assert: c topParent view
 		equals: nil
-		description: 'testOpening:1.128'.
+		description: 'testOpening_amp:1.128'.
 	self
 		assert: c topParent isShape class
 		equals: False
-		description: 'testOpening:1.129'.
+		description: 'testOpening_amp:1.129'.
 	self
 		assert: c topParent isShape
 		equals: false
-		description: 'testOpening:1.130'.
+		description: 'testOpening_amp:1.130'.
 	self
 		assert: c topParent numberOfShapes class
 		equals: SmallInteger
-		description: 'testOpening:1.131'.
+		description: 'testOpening_amp:1.131'.
 	self
 		assert: c topParent numberOfShapes
 		equals: 0
-		description: 'testOpening:1.132'.
+		description: 'testOpening_amp:1.132'.
 	self
 		assert: c topParent clearBackground class
 		equals: True
-		description: 'testOpening:1.133'.
+		description: 'testOpening_amp:1.133'.
 	self
 		assert: c topParent clearBackground
 		equals: true
-		description: 'testOpening:1.134'.
+		description: 'testOpening_amp:1.134'.
 	self
 		assert: c numberOfShapes class
 		equals: SmallInteger
-		description: 'testOpening:1.135'.
+		description: 'testOpening_amp:1.135'.
 	self
 		assert: c numberOfShapes
 		equals: 0
-		description: 'testOpening:1.136'.
+		description: 'testOpening_amp:1.136'.
 	self
 		assert: c canvas class
 		equals: TSCanvas
-		description: 'testOpening:1.137'.
+		description: 'testOpening_amp:1.137'.
 	self
 		assert: c canvas showRectangles class
 		equals: False
-		description: 'testOpening:1.138'.
+		description: 'testOpening_amp:1.138'.
 	self
 		assert: c canvas showRectangles
 		equals: false
-		description: 'testOpening:1.139'.
+		description: 'testOpening_amp:1.139'.
 	self
 		assert: c canvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testOpening:1.140'.
+		description: 'testOpening_amp:1.140'.
 	self
 		assert: c canvas numberOfFixedShapes
 		equals: 0
-		description: 'testOpening:1.141'.
+		description: 'testOpening_amp:1.141'.
 	self
 		assert: c canvas view class
 		equals: UndefinedObject
-		description: 'testOpening:1.142'.
+		description: 'testOpening_amp:1.142'.
 	self
 		assert: c canvas view
 		equals: nil
-		description: 'testOpening:1.143'.
+		description: 'testOpening_amp:1.143'.
 	self
 		assert: c canvas isShape class
 		equals: False
-		description: 'testOpening:1.144'.
+		description: 'testOpening_amp:1.144'.
 	self
 		assert: c canvas isShape
 		equals: false
-		description: 'testOpening:1.145'.
+		description: 'testOpening_amp:1.145'.
 	self
 		assert: c canvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testOpening:1.146'.
+		description: 'testOpening_amp:1.146'.
 	self
 		assert: c canvas numberOfShapes
 		equals: 0
-		description: 'testOpening:1.147'.
+		description: 'testOpening_amp:1.147'.
 	self
 		assert: c canvas clearBackground class
 		equals: True
-		description: 'testOpening:1.148'.
+		description: 'testOpening_amp:1.148'.
 	self
 		assert: c canvas clearBackground
 		equals: true
-		description: 'testOpening:1.149'.
+		description: 'testOpening_amp:1.149'.
 	self
 		assert: c clearBackground class
 		equals: True
-		description: 'testOpening:1.150'.
+		description: 'testOpening_amp:1.150'.
 	self
 		assert: c clearBackground
 		equals: true
-		description: 'testOpening:1.151'.
+		description: 'testOpening_amp:1.151'.
 	self
-		assert: tmp_GDMzqKewMV2 class
+		assert: tmp_NRRzW2MuQf2 class
 		equals: SystemWindow
-		description: 'testOpening:1.1'.
+		description: 'testOpening_amp:1.1'.
 	self
-		assert: tmp_GDMzqKewMV2 isSystemWindow class
+		assert: tmp_NRRzW2MuQf2 isSystemWindow class
 		equals: True
-		description: 'testOpening:1.2'.
+		description: 'testOpening_amp:1.2'.
 	self
-		assert: tmp_GDMzqKewMV2 isSystemWindow
+		assert: tmp_NRRzW2MuQf2 isSystemWindow
 		equals: true
-		description: 'testOpening:1.3'.
+		description: 'testOpening_amp:1.3'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddable class
+		assert: tmp_NRRzW2MuQf2 embeddable class
 		equals: False
-		description: 'testOpening:1.4'.
+		description: 'testOpening_amp:1.4'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddable
+		assert: tmp_NRRzW2MuQf2 embeddable
 		equals: false
-		description: 'testOpening:1.5'.
+		description: 'testOpening_amp:1.5'.
 	self
-		assert: tmp_GDMzqKewMV2 isDisplayed class
+		assert: tmp_NRRzW2MuQf2 isDisplayed class
 		equals: True
-		description: 'testOpening:1.6'.
+		description: 'testOpening_amp:1.6'.
 	self
-		assert: tmp_GDMzqKewMV2 isDisplayed
+		assert: tmp_NRRzW2MuQf2 isDisplayed
 		equals: true
-		description: 'testOpening:1.7'.
+		description: 'testOpening_amp:1.7'.
 	self
-		assert: tmp_GDMzqKewMV2 isCloseable class
+		assert: tmp_NRRzW2MuQf2 isCloseable class
 		equals: True
-		description: 'testOpening:1.8'.
+		description: 'testOpening_amp:1.8'.
 	self
-		assert: tmp_GDMzqKewMV2 isCloseable
+		assert: tmp_NRRzW2MuQf2 isCloseable
 		equals: true
-		description: 'testOpening:1.9'.
+		description: 'testOpening_amp:1.9'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil class
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil class
 		equals: SystemWindow
-		description: 'testOpening:1.10'.
+		description: 'testOpening_amp:1.10'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil isSystemWindow class
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil isSystemWindow class
 		equals: True
-		description: 'testOpening:1.11'.
+		description: 'testOpening_amp:1.11'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil isSystemWindow
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil isSystemWindow
 		equals: true
-		description: 'testOpening:1.12'.
+		description: 'testOpening_amp:1.12'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil embeddable class
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil embeddable class
 		equals: False
-		description: 'testOpening:1.13'.
+		description: 'testOpening_amp:1.13'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil embeddable
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil embeddable
 		equals: false
-		description: 'testOpening:1.14'.
+		description: 'testOpening_amp:1.14'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil isDisplayed class
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil isDisplayed class
 		equals: True
-		description: 'testOpening:1.15'.
+		description: 'testOpening_amp:1.15'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil isDisplayed
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil isDisplayed
 		equals: true
-		description: 'testOpening:1.16'.
+		description: 'testOpening_amp:1.16'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil isCloseable class
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil isCloseable class
 		equals: True
-		description: 'testOpening:1.17'.
+		description: 'testOpening_amp:1.17'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil isCloseable
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil isCloseable
 		equals: true
-		description: 'testOpening:1.18'.
+		description: 'testOpening_amp:1.18'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil shouldDropOnMouseUp class
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil shouldDropOnMouseUp class
 		equals: True
-		description: 'testOpening:1.19'.
+		description: 'testOpening_amp:1.19'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil shouldDropOnMouseUp
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil shouldDropOnMouseUp
 		equals: true
-		description: 'testOpening:1.20'.
+		description: 'testOpening_amp:1.20'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil wantsToBeCachedByHand class
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil wantsToBeCachedByHand class
 		equals: True
-		description: 'testOpening:1.21'.
+		description: 'testOpening_amp:1.21'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil wantsToBeCachedByHand
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil wantsToBeCachedByHand
 		equals: true
-		description: 'testOpening:1.22'.
+		description: 'testOpening_amp:1.22'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil canBeMaximized class
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil canBeMaximized class
 		equals: True
-		description: 'testOpening:1.23'.
+		description: 'testOpening_amp:1.23'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil canBeMaximized
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil canBeMaximized
 		equals: true
-		description: 'testOpening:1.24'.
+		description: 'testOpening_amp:1.24'.
 	self
-		assert: tmp_GDMzqKewMV2 shouldDropOnMouseUp class
+		assert: tmp_NRRzW2MuQf2 shouldDropOnMouseUp class
 		equals: True
-		description: 'testOpening:1.25'.
+		description: 'testOpening_amp:1.25'.
 	self
-		assert: tmp_GDMzqKewMV2 shouldDropOnMouseUp
+		assert: tmp_NRRzW2MuQf2 shouldDropOnMouseUp
 		equals: true
-		description: 'testOpening:1.26'.
+		description: 'testOpening_amp:1.26'.
 	self
-		assert: tmp_GDMzqKewMV2 wantsToBeCachedByHand class
+		assert: tmp_NRRzW2MuQf2 wantsToBeCachedByHand class
 		equals: True
-		description: 'testOpening:1.27'.
+		description: 'testOpening_amp:1.27'.
 	self
-		assert: tmp_GDMzqKewMV2 wantsToBeCachedByHand
+		assert: tmp_NRRzW2MuQf2 wantsToBeCachedByHand
 		equals: true
-		description: 'testOpening:1.28'.
+		description: 'testOpening_amp:1.28'.
 	self
-		assert: tmp_GDMzqKewMV2 canBeMaximized class
+		assert: tmp_NRRzW2MuQf2 canBeMaximized class
 		equals: True
-		description: 'testOpening:1.29'.
+		description: 'testOpening_amp:1.29'.
 	self
-		assert: tmp_GDMzqKewMV2 canBeMaximized
+		assert: tmp_NRRzW2MuQf2 canBeMaximized
 		equals: true
-		description: 'testOpening:1.30'.
-	tmp_GDMzqKewMV2 delete.
+		description: 'testOpening_amp:1.30'.
+	tmp_NRRzW2MuQf2 delete.
 	self
-		assert: tmp_GDMzqKewMV2 class
+		assert: tmp_NRRzW2MuQf2 class
 		equals: SystemWindow
-		description: 'testOpening:2.1'.
+		description: 'testOpening_amp:2.1'.
 	self
-		assert: tmp_GDMzqKewMV2 isSystemWindow class
+		assert: tmp_NRRzW2MuQf2 isSystemWindow class
 		equals: True
-		description: 'testOpening:2.2'.
+		description: 'testOpening_amp:2.2'.
 	self
-		assert: tmp_GDMzqKewMV2 isSystemWindow
+		assert: tmp_NRRzW2MuQf2 isSystemWindow
 		equals: true
-		description: 'testOpening:2.3'.
+		description: 'testOpening_amp:2.3'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddable class
+		assert: tmp_NRRzW2MuQf2 embeddable class
 		equals: False
-		description: 'testOpening:2.4'.
+		description: 'testOpening_amp:2.4'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddable
+		assert: tmp_NRRzW2MuQf2 embeddable
 		equals: false
-		description: 'testOpening:2.5'.
+		description: 'testOpening_amp:2.5'.
 	self
-		assert: tmp_GDMzqKewMV2 isDisplayed class
+		assert: tmp_NRRzW2MuQf2 isDisplayed class
 		equals: False
-		description: 'testOpening:2.6'.
+		description: 'testOpening_amp:2.6'.
 	self
-		assert: tmp_GDMzqKewMV2 isDisplayed
+		assert: tmp_NRRzW2MuQf2 isDisplayed
 		equals: false
-		description: 'testOpening:2.7'.
+		description: 'testOpening_amp:2.7'.
 	self
-		assert: tmp_GDMzqKewMV2 isCloseable class
+		assert: tmp_NRRzW2MuQf2 isCloseable class
 		equals: True
-		description: 'testOpening:2.8'.
+		description: 'testOpening_amp:2.8'.
 	self
-		assert: tmp_GDMzqKewMV2 isCloseable
+		assert: tmp_NRRzW2MuQf2 isCloseable
 		equals: true
-		description: 'testOpening:2.9'.
+		description: 'testOpening_amp:2.9'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil class
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil class
 		equals: SystemWindow
-		description: 'testOpening:2.10'.
+		description: 'testOpening_amp:2.10'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil isSystemWindow class
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil isSystemWindow class
 		equals: True
-		description: 'testOpening:2.11'.
+		description: 'testOpening_amp:2.11'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil isSystemWindow
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil isSystemWindow
 		equals: true
-		description: 'testOpening:2.12'.
+		description: 'testOpening_amp:2.12'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil embeddable class
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil embeddable class
 		equals: False
-		description: 'testOpening:2.13'.
+		description: 'testOpening_amp:2.13'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil embeddable
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil embeddable
 		equals: false
-		description: 'testOpening:2.14'.
+		description: 'testOpening_amp:2.14'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil isDisplayed class
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil isDisplayed class
 		equals: False
-		description: 'testOpening:2.15'.
+		description: 'testOpening_amp:2.15'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil isDisplayed
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil isDisplayed
 		equals: false
-		description: 'testOpening:2.16'.
+		description: 'testOpening_amp:2.16'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil isCloseable class
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil isCloseable class
 		equals: True
-		description: 'testOpening:2.17'.
+		description: 'testOpening_amp:2.17'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil isCloseable
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil isCloseable
 		equals: true
-		description: 'testOpening:2.18'.
+		description: 'testOpening_amp:2.18'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil shouldDropOnMouseUp class
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil shouldDropOnMouseUp class
 		equals: True
-		description: 'testOpening:2.19'.
+		description: 'testOpening_amp:2.19'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil shouldDropOnMouseUp
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil shouldDropOnMouseUp
 		equals: true
-		description: 'testOpening:2.20'.
+		description: 'testOpening_amp:2.20'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil wantsToBeCachedByHand class
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil wantsToBeCachedByHand class
 		equals: True
-		description: 'testOpening:2.21'.
+		description: 'testOpening_amp:2.21'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil wantsToBeCachedByHand
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil wantsToBeCachedByHand
 		equals: true
-		description: 'testOpening:2.22'.
+		description: 'testOpening_amp:2.22'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil canBeMaximized class
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil canBeMaximized class
 		equals: True
-		description: 'testOpening:2.23'.
+		description: 'testOpening_amp:2.23'.
 	self
-		assert: tmp_GDMzqKewMV2 embeddedWindowOrNil canBeMaximized
+		assert: tmp_NRRzW2MuQf2 embeddedWindowOrNil canBeMaximized
 		equals: true
-		description: 'testOpening:2.24'.
+		description: 'testOpening_amp:2.24'.
 	self
-		assert: tmp_GDMzqKewMV2 shouldDropOnMouseUp class
+		assert: tmp_NRRzW2MuQf2 shouldDropOnMouseUp class
 		equals: True
-		description: 'testOpening:2.25'.
+		description: 'testOpening_amp:2.25'.
 	self
-		assert: tmp_GDMzqKewMV2 shouldDropOnMouseUp
+		assert: tmp_NRRzW2MuQf2 shouldDropOnMouseUp
 		equals: true
-		description: 'testOpening:2.26'.
+		description: 'testOpening_amp:2.26'.
 	self
-		assert: tmp_GDMzqKewMV2 wantsToBeCachedByHand class
+		assert: tmp_NRRzW2MuQf2 wantsToBeCachedByHand class
 		equals: True
-		description: 'testOpening:2.27'.
+		description: 'testOpening_amp:2.27'.
 	self
-		assert: tmp_GDMzqKewMV2 wantsToBeCachedByHand
+		assert: tmp_NRRzW2MuQf2 wantsToBeCachedByHand
 		equals: true
-		description: 'testOpening:2.28'.
+		description: 'testOpening_amp:2.28'.
 	self
-		assert: tmp_GDMzqKewMV2 canBeMaximized class
+		assert: tmp_NRRzW2MuQf2 canBeMaximized class
 		equals: True
-		description: 'testOpening:2.29'.
+		description: 'testOpening_amp:2.29'.
 	self
-		assert: tmp_GDMzqKewMV2 canBeMaximized
+		assert: tmp_NRRzW2MuQf2 canBeMaximized
 		equals: true
-		description: 'testOpening:2.30'
+		description: 'testOpening_amp:2.30'
 ]
 
 { #category : #'as yet unclassified' }
-TSCanvasTestAmpTest >> testRemovingShapes [
+TSCanvasTestAmpTest >> testRemovingShapes_amp [
 	<madeBySmallAmp>
 	| e |
 	e := TSEllipse new.
 	self
 		assert: e class
 		equals: TSEllipse
-		description: 'testRemovingShapes:1.1'.
+		description: 'testRemovingShapes_amp:1.1'.
 	self
 		assert: e radius class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:1.2'.
+		description: 'testRemovingShapes_amp:1.2'.
 	self
 		assert: e radius
 		equals: 0.0
-		description: 'testRemovingShapes:1.3'.
+		description: 'testRemovingShapes_amp:1.3'.
 	c addShape: e.
 	self
 		assert: c class
 		equals: TSCanvas
-		description: 'testRemovingShapes:2.1'.
+		description: 'testRemovingShapes_amp:2.1'.
 	self
 		assert: c fixedShapes class
 		equals: TSGroup
-		description: 'testRemovingShapes:2.2'.
+		description: 'testRemovingShapes_amp:2.2'.
 	self
 		assert: c fixedShapes size
 		equals: 0
-		description: 'testRemovingShapes:2.3'.
+		description: 'testRemovingShapes_amp:2.3'.
 	self
 		assert: c showRectangles class
 		equals: False
-		description: 'testRemovingShapes:2.4'.
+		description: 'testRemovingShapes_amp:2.4'.
 	self
 		assert: c showRectangles
 		equals: false
-		description: 'testRemovingShapes:2.5'.
+		description: 'testRemovingShapes_amp:2.5'.
 	self
 		assert: c color class
 		equals: Color
-		description: 'testRemovingShapes:2.6'.
+		description: 'testRemovingShapes_amp:2.6'.
 	self
 		assert: c color alpha class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:2.7'.
+		description: 'testRemovingShapes_amp:2.7'.
 	self
 		assert: c color alpha
 		equals: 1.0
-		description: 'testRemovingShapes:2.8'.
+		description: 'testRemovingShapes_amp:2.8'.
 	self
 		assert: c color red class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:2.9'.
+		description: 'testRemovingShapes_amp:2.9'.
 	self
 		assert: c color red
 		equals: 1.0
-		description: 'testRemovingShapes:2.10'.
+		description: 'testRemovingShapes_amp:2.10'.
 	self
 		assert: c color hsvSaturation class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:2.11'.
+		description: 'testRemovingShapes_amp:2.11'.
 	self
 		assert: c color hsvSaturation
 		equals: 0.0
-		description: 'testRemovingShapes:2.12'.
+		description: 'testRemovingShapes_amp:2.12'.
 	self
 		assert: c color brightness class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:2.13'.
+		description: 'testRemovingShapes_amp:2.13'.
 	self
 		assert: c color brightness
 		equals: 1.0
-		description: 'testRemovingShapes:2.14'.
+		description: 'testRemovingShapes_amp:2.14'.
 	self
 		assert: c color hue class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:2.15'.
+		description: 'testRemovingShapes_amp:2.15'.
 	self
 		assert: c color hue
 		equals: 0.0
-		description: 'testRemovingShapes:2.16'.
+		description: 'testRemovingShapes_amp:2.16'.
 	self
 		assert: c color green class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:2.17'.
+		description: 'testRemovingShapes_amp:2.17'.
 	self
 		assert: c color green
 		equals: 1.0
-		description: 'testRemovingShapes:2.18'.
+		description: 'testRemovingShapes_amp:2.18'.
 	self
 		assert: c color chroma class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:2.19'.
+		description: 'testRemovingShapes_amp:2.19'.
 	self
 		assert: c color chroma
 		equals: 0.0
-		description: 'testRemovingShapes:2.20'.
+		description: 'testRemovingShapes_amp:2.20'.
 	self
 		assert: c color lightness class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:2.21'.
+		description: 'testRemovingShapes_amp:2.21'.
 	self
 		assert: c color lightness
 		equals: 1.0
-		description: 'testRemovingShapes:2.22'.
+		description: 'testRemovingShapes_amp:2.22'.
 	self
 		assert: c color hslSaturation class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:2.23'.
+		description: 'testRemovingShapes_amp:2.23'.
 	self
 		assert: c color hslSaturation
 		equals: 0.0
-		description: 'testRemovingShapes:2.24'.
+		description: 'testRemovingShapes_amp:2.24'.
 	self
 		assert: c color saturation class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:2.25'.
+		description: 'testRemovingShapes_amp:2.25'.
 	self
 		assert: c color saturation
 		equals: 0.0
-		description: 'testRemovingShapes:2.26'.
+		description: 'testRemovingShapes_amp:2.26'.
 	self
 		assert: c color luminance class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:2.27'.
+		description: 'testRemovingShapes_amp:2.27'.
 	self
 		assert: c color luminance
 		equals: 1.0
-		description: 'testRemovingShapes:2.28'.
+		description: 'testRemovingShapes_amp:2.28'.
 	self
 		assert: c color blue class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:2.29'.
+		description: 'testRemovingShapes_amp:2.29'.
 	self
 		assert: c color blue
 		equals: 1.0
-		description: 'testRemovingShapes:2.30'.
+		description: 'testRemovingShapes_amp:2.30'.
 	self
 		assert: c numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testRemovingShapes:2.31'.
+		description: 'testRemovingShapes_amp:2.31'.
 	self
 		assert: c numberOfFixedShapes
 		equals: 0
-		description: 'testRemovingShapes:2.32'.
+		description: 'testRemovingShapes_amp:2.32'.
 	self
 		assert: c morph class
 		equals: UndefinedObject
-		description: 'testRemovingShapes:2.33'.
+		description: 'testRemovingShapes_amp:2.33'.
 	self
 		assert: c morph
 		equals: nil
-		description: 'testRemovingShapes:2.34'.
+		description: 'testRemovingShapes_amp:2.34'.
 	self
 		assert: c extent class
 		equals: Point
-		description: 'testRemovingShapes:2.35'.
+		description: 'testRemovingShapes_amp:2.35'.
 	self
 		assert: c extent isZero class
 		equals: False
-		description: 'testRemovingShapes:2.36'.
+		description: 'testRemovingShapes_amp:2.36'.
 	self
 		assert: c extent isZero
 		equals: false
-		description: 'testRemovingShapes:2.37'.
+		description: 'testRemovingShapes_amp:2.37'.
 	self
 		assert: c extent y class
 		equals: SmallInteger
-		description: 'testRemovingShapes:2.38'.
+		description: 'testRemovingShapes_amp:2.38'.
 	self
 		assert: c extent y
 		equals: 500
-		description: 'testRemovingShapes:2.39'.
+		description: 'testRemovingShapes_amp:2.39'.
 	self
 		assert: c extent isFloatPoint class
 		equals: False
-		description: 'testRemovingShapes:2.40'.
+		description: 'testRemovingShapes_amp:2.40'.
 	self
 		assert: c extent isFloatPoint
 		equals: false
-		description: 'testRemovingShapes:2.41'.
+		description: 'testRemovingShapes_amp:2.41'.
 	self
 		assert: c extent isIntegerPoint class
 		equals: True
-		description: 'testRemovingShapes:2.42'.
+		description: 'testRemovingShapes_amp:2.42'.
 	self
 		assert: c extent isIntegerPoint
 		equals: true
-		description: 'testRemovingShapes:2.43'.
+		description: 'testRemovingShapes_amp:2.43'.
 	self
 		assert: c extent x class
 		equals: SmallInteger
-		description: 'testRemovingShapes:2.44'.
+		description: 'testRemovingShapes_amp:2.44'.
 	self
 		assert: c extent x
 		equals: 500
-		description: 'testRemovingShapes:2.45'.
+		description: 'testRemovingShapes_amp:2.45'.
 	self
 		assert: c extent isPoint class
 		equals: True
-		description: 'testRemovingShapes:2.46'.
+		description: 'testRemovingShapes_amp:2.46'.
 	self
 		assert: c extent isPoint
 		equals: true
-		description: 'testRemovingShapes:2.47'.
+		description: 'testRemovingShapes_amp:2.47'.
 	self
 		assert: c parent class
 		equals: TSCanvas
-		description: 'testRemovingShapes:2.48'.
+		description: 'testRemovingShapes_amp:2.48'.
 	self
 		assert: c parent showRectangles class
 		equals: False
-		description: 'testRemovingShapes:2.49'.
+		description: 'testRemovingShapes_amp:2.49'.
 	self
 		assert: c parent showRectangles
 		equals: false
-		description: 'testRemovingShapes:2.50'.
+		description: 'testRemovingShapes_amp:2.50'.
 	self
 		assert: c parent numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testRemovingShapes:2.51'.
+		description: 'testRemovingShapes_amp:2.51'.
 	self
 		assert: c parent numberOfFixedShapes
 		equals: 0
-		description: 'testRemovingShapes:2.52'.
+		description: 'testRemovingShapes_amp:2.52'.
 	self
 		assert: c parent morph class
 		equals: UndefinedObject
-		description: 'testRemovingShapes:2.53'.
+		description: 'testRemovingShapes_amp:2.53'.
 	self
 		assert: c parent morph
 		equals: nil
-		description: 'testRemovingShapes:2.54'.
+		description: 'testRemovingShapes_amp:2.54'.
 	self
 		assert: c parent view class
 		equals: UndefinedObject
-		description: 'testRemovingShapes:2.55'.
+		description: 'testRemovingShapes_amp:2.55'.
 	self
 		assert: c parent view
 		equals: nil
-		description: 'testRemovingShapes:2.56'.
+		description: 'testRemovingShapes_amp:2.56'.
 	self
 		assert: c parent isShape class
 		equals: False
-		description: 'testRemovingShapes:2.57'.
+		description: 'testRemovingShapes_amp:2.57'.
 	self
 		assert: c parent isShape
 		equals: false
-		description: 'testRemovingShapes:2.58'.
+		description: 'testRemovingShapes_amp:2.58'.
 	self
 		assert: c parent numberOfShapes class
 		equals: SmallInteger
-		description: 'testRemovingShapes:2.59'.
+		description: 'testRemovingShapes_amp:2.59'.
 	self
 		assert: c parent numberOfShapes
 		equals: 1
-		description: 'testRemovingShapes:2.60'.
+		description: 'testRemovingShapes_amp:2.60'.
 	self
 		assert: c parent clearBackground class
 		equals: True
-		description: 'testRemovingShapes:2.61'.
+		description: 'testRemovingShapes_amp:2.61'.
 	self
 		assert: c parent clearBackground
 		equals: true
-		description: 'testRemovingShapes:2.62'.
+		description: 'testRemovingShapes_amp:2.62'.
 	self
 		assert: c shapes class
 		equals: TSGroup
-		description: 'testRemovingShapes:2.63'.
+		description: 'testRemovingShapes_amp:2.63'.
 	self
 		assert: c shapes size
 		equals: 1
-		description: 'testRemovingShapes:2.64'.
+		description: 'testRemovingShapes_amp:2.64'.
 	self
 		assert: c encompassingRectangle class
 		equals: Rectangle
-		description: 'testRemovingShapes:2.65'.
+		description: 'testRemovingShapes_amp:2.65'.
 	self
 		assert: c encompassingRectangle top class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:2.66'.
+		description: 'testRemovingShapes_amp:2.66'.
 	self
 		assert: c encompassingRectangle top
 		equals: 0.0
-		description: 'testRemovingShapes:2.67'.
+		description: 'testRemovingShapes_amp:2.67'.
 	self
 		assert: c encompassingRectangle hasPositiveExtent class
 		equals: True
-		description: 'testRemovingShapes:2.68'.
+		description: 'testRemovingShapes_amp:2.68'.
 	self
 		assert: c encompassingRectangle hasPositiveExtent
 		equals: true
-		description: 'testRemovingShapes:2.69'.
+		description: 'testRemovingShapes_amp:2.69'.
 	self
 		assert: c encompassingRectangle area class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:2.70'.
+		description: 'testRemovingShapes_amp:2.70'.
 	self
 		assert: c encompassingRectangle area
 		equals: 1.0
-		description: 'testRemovingShapes:2.71'.
+		description: 'testRemovingShapes_amp:2.71'.
 	self
 		assert: c encompassingRectangle isTall class
 		equals: False
-		description: 'testRemovingShapes:2.72'.
+		description: 'testRemovingShapes_amp:2.72'.
 	self
 		assert: c encompassingRectangle isTall
 		equals: false
-		description: 'testRemovingShapes:2.73'.
+		description: 'testRemovingShapes_amp:2.73'.
 	self
 		assert: c encompassingRectangle left class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:2.74'.
+		description: 'testRemovingShapes_amp:2.74'.
 	self
 		assert: c encompassingRectangle left
 		equals: 0.0
-		description: 'testRemovingShapes:2.75'.
+		description: 'testRemovingShapes_amp:2.75'.
 	self
 		assert: c encompassingRectangle width class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:2.76'.
+		description: 'testRemovingShapes_amp:2.76'.
 	self
 		assert: c encompassingRectangle width
 		equals: 1.0
-		description: 'testRemovingShapes:2.77'.
+		description: 'testRemovingShapes_amp:2.77'.
 	self
 		assert: c encompassingRectangle right class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:2.78'.
+		description: 'testRemovingShapes_amp:2.78'.
 	self
 		assert: c encompassingRectangle right
 		equals: 1.0
-		description: 'testRemovingShapes:2.79'.
+		description: 'testRemovingShapes_amp:2.79'.
 	self
 		assert: c encompassingRectangle isZero class
 		equals: False
-		description: 'testRemovingShapes:2.80'.
+		description: 'testRemovingShapes_amp:2.80'.
 	self
 		assert: c encompassingRectangle isZero
 		equals: false
-		description: 'testRemovingShapes:2.81'.
+		description: 'testRemovingShapes_amp:2.81'.
 	self
 		assert: c encompassingRectangle isWide class
 		equals: False
-		description: 'testRemovingShapes:2.82'.
+		description: 'testRemovingShapes_amp:2.82'.
 	self
 		assert: c encompassingRectangle isWide
 		equals: false
-		description: 'testRemovingShapes:2.83'.
+		description: 'testRemovingShapes_amp:2.83'.
 	self
 		assert: c encompassingRectangle bottom class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:2.84'.
+		description: 'testRemovingShapes_amp:2.84'.
 	self
 		assert: c encompassingRectangle bottom
 		equals: 1.0
-		description: 'testRemovingShapes:2.85'.
+		description: 'testRemovingShapes_amp:2.85'.
 	self
 		assert: c encompassingRectangle isRectangle class
 		equals: True
-		description: 'testRemovingShapes:2.86'.
+		description: 'testRemovingShapes_amp:2.86'.
 	self
 		assert: c encompassingRectangle isRectangle
 		equals: true
-		description: 'testRemovingShapes:2.87'.
+		description: 'testRemovingShapes_amp:2.87'.
 	self
 		assert: c encompassingRectangle height class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:2.88'.
+		description: 'testRemovingShapes_amp:2.88'.
 	self
 		assert: c encompassingRectangle height
 		equals: 1.0
-		description: 'testRemovingShapes:2.89'.
+		description: 'testRemovingShapes_amp:2.89'.
 	self
 		assert: c view class
 		equals: UndefinedObject
-		description: 'testRemovingShapes:2.90'.
+		description: 'testRemovingShapes_amp:2.90'.
 	self
 		assert: c view
 		equals: nil
-		description: 'testRemovingShapes:2.91'.
+		description: 'testRemovingShapes_amp:2.91'.
 	self
 		assert: c isShape class
 		equals: False
-		description: 'testRemovingShapes:2.92'.
+		description: 'testRemovingShapes_amp:2.92'.
 	self
 		assert: c isShape
 		equals: false
-		description: 'testRemovingShapes:2.93'.
+		description: 'testRemovingShapes_amp:2.93'.
 	self
 		assert: c basicRectangle class
 		equals: Rectangle
-		description: 'testRemovingShapes:2.94'.
+		description: 'testRemovingShapes_amp:2.94'.
 	self
 		assert: c basicRectangle top class
 		equals: SmallInteger
-		description: 'testRemovingShapes:2.95'.
+		description: 'testRemovingShapes_amp:2.95'.
 	self
 		assert: c basicRectangle top
 		equals: 0
-		description: 'testRemovingShapes:2.96'.
+		description: 'testRemovingShapes_amp:2.96'.
 	self
 		assert: c basicRectangle hasPositiveExtent class
 		equals: True
-		description: 'testRemovingShapes:2.97'.
+		description: 'testRemovingShapes_amp:2.97'.
 	self
 		assert: c basicRectangle hasPositiveExtent
 		equals: true
-		description: 'testRemovingShapes:2.98'.
+		description: 'testRemovingShapes_amp:2.98'.
 	self
 		assert: c basicRectangle area class
 		equals: SmallInteger
-		description: 'testRemovingShapes:2.99'.
+		description: 'testRemovingShapes_amp:2.99'.
 	self
 		assert: c basicRectangle area
 		equals: 250000
-		description: 'testRemovingShapes:2.100'.
+		description: 'testRemovingShapes_amp:2.100'.
 	self
 		assert: c basicRectangle isTall class
 		equals: False
-		description: 'testRemovingShapes:2.101'.
+		description: 'testRemovingShapes_amp:2.101'.
 	self
 		assert: c basicRectangle isTall
 		equals: false
-		description: 'testRemovingShapes:2.102'.
+		description: 'testRemovingShapes_amp:2.102'.
 	self
 		assert: c basicRectangle left class
 		equals: SmallInteger
-		description: 'testRemovingShapes:2.103'.
+		description: 'testRemovingShapes_amp:2.103'.
 	self
 		assert: c basicRectangle left
 		equals: 0
-		description: 'testRemovingShapes:2.104'.
+		description: 'testRemovingShapes_amp:2.104'.
 	self
 		assert: c basicRectangle width class
 		equals: SmallInteger
-		description: 'testRemovingShapes:2.105'.
+		description: 'testRemovingShapes_amp:2.105'.
 	self
 		assert: c basicRectangle width
 		equals: 500
-		description: 'testRemovingShapes:2.106'.
+		description: 'testRemovingShapes_amp:2.106'.
 	self
 		assert: c basicRectangle right class
 		equals: SmallInteger
-		description: 'testRemovingShapes:2.107'.
+		description: 'testRemovingShapes_amp:2.107'.
 	self
 		assert: c basicRectangle right
 		equals: 500
-		description: 'testRemovingShapes:2.108'.
+		description: 'testRemovingShapes_amp:2.108'.
 	self
 		assert: c basicRectangle isZero class
 		equals: False
-		description: 'testRemovingShapes:2.109'.
+		description: 'testRemovingShapes_amp:2.109'.
 	self
 		assert: c basicRectangle isZero
 		equals: false
-		description: 'testRemovingShapes:2.110'.
+		description: 'testRemovingShapes_amp:2.110'.
 	self
 		assert: c basicRectangle isWide class
 		equals: False
-		description: 'testRemovingShapes:2.111'.
+		description: 'testRemovingShapes_amp:2.111'.
 	self
 		assert: c basicRectangle isWide
 		equals: false
-		description: 'testRemovingShapes:2.112'.
+		description: 'testRemovingShapes_amp:2.112'.
 	self
 		assert: c basicRectangle bottom class
 		equals: SmallInteger
-		description: 'testRemovingShapes:2.113'.
+		description: 'testRemovingShapes_amp:2.113'.
 	self
 		assert: c basicRectangle bottom
 		equals: 500
-		description: 'testRemovingShapes:2.114'.
+		description: 'testRemovingShapes_amp:2.114'.
 	self
 		assert: c basicRectangle isRectangle class
 		equals: True
-		description: 'testRemovingShapes:2.115'.
+		description: 'testRemovingShapes_amp:2.115'.
 	self
 		assert: c basicRectangle isRectangle
 		equals: true
-		description: 'testRemovingShapes:2.116'.
+		description: 'testRemovingShapes_amp:2.116'.
 	self
 		assert: c basicRectangle height class
 		equals: SmallInteger
-		description: 'testRemovingShapes:2.117'.
+		description: 'testRemovingShapes_amp:2.117'.
 	self
 		assert: c basicRectangle height
 		equals: 500
-		description: 'testRemovingShapes:2.118'.
+		description: 'testRemovingShapes_amp:2.118'.
 	self
 		assert: c topParent class
 		equals: TSCanvas
-		description: 'testRemovingShapes:2.119'.
+		description: 'testRemovingShapes_amp:2.119'.
 	self
 		assert: c topParent showRectangles class
 		equals: False
-		description: 'testRemovingShapes:2.120'.
+		description: 'testRemovingShapes_amp:2.120'.
 	self
 		assert: c topParent showRectangles
 		equals: false
-		description: 'testRemovingShapes:2.121'.
+		description: 'testRemovingShapes_amp:2.121'.
 	self
 		assert: c topParent numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testRemovingShapes:2.122'.
+		description: 'testRemovingShapes_amp:2.122'.
 	self
 		assert: c topParent numberOfFixedShapes
 		equals: 0
-		description: 'testRemovingShapes:2.123'.
+		description: 'testRemovingShapes_amp:2.123'.
 	self
 		assert: c topParent morph class
 		equals: UndefinedObject
-		description: 'testRemovingShapes:2.124'.
+		description: 'testRemovingShapes_amp:2.124'.
 	self
 		assert: c topParent morph
 		equals: nil
-		description: 'testRemovingShapes:2.125'.
+		description: 'testRemovingShapes_amp:2.125'.
 	self
 		assert: c topParent view class
 		equals: UndefinedObject
-		description: 'testRemovingShapes:2.126'.
+		description: 'testRemovingShapes_amp:2.126'.
 	self
 		assert: c topParent view
 		equals: nil
-		description: 'testRemovingShapes:2.127'.
+		description: 'testRemovingShapes_amp:2.127'.
 	self
 		assert: c topParent isShape class
 		equals: False
-		description: 'testRemovingShapes:2.128'.
+		description: 'testRemovingShapes_amp:2.128'.
 	self
 		assert: c topParent isShape
 		equals: false
-		description: 'testRemovingShapes:2.129'.
+		description: 'testRemovingShapes_amp:2.129'.
 	self
 		assert: c topParent numberOfShapes class
 		equals: SmallInteger
-		description: 'testRemovingShapes:2.130'.
+		description: 'testRemovingShapes_amp:2.130'.
 	self
 		assert: c topParent numberOfShapes
 		equals: 1
-		description: 'testRemovingShapes:2.131'.
+		description: 'testRemovingShapes_amp:2.131'.
 	self
 		assert: c topParent clearBackground class
 		equals: True
-		description: 'testRemovingShapes:2.132'.
+		description: 'testRemovingShapes_amp:2.132'.
 	self
 		assert: c topParent clearBackground
 		equals: true
-		description: 'testRemovingShapes:2.133'.
+		description: 'testRemovingShapes_amp:2.133'.
 	self
 		assert: c numberOfShapes class
 		equals: SmallInteger
-		description: 'testRemovingShapes:2.134'.
+		description: 'testRemovingShapes_amp:2.134'.
 	self
 		assert: c numberOfShapes
 		equals: 1
-		description: 'testRemovingShapes:2.135'.
+		description: 'testRemovingShapes_amp:2.135'.
 	self
 		assert: c canvas class
 		equals: TSCanvas
-		description: 'testRemovingShapes:2.136'.
+		description: 'testRemovingShapes_amp:2.136'.
 	self
 		assert: c canvas showRectangles class
 		equals: False
-		description: 'testRemovingShapes:2.137'.
+		description: 'testRemovingShapes_amp:2.137'.
 	self
 		assert: c canvas showRectangles
 		equals: false
-		description: 'testRemovingShapes:2.138'.
+		description: 'testRemovingShapes_amp:2.138'.
 	self
 		assert: c canvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testRemovingShapes:2.139'.
+		description: 'testRemovingShapes_amp:2.139'.
 	self
 		assert: c canvas numberOfFixedShapes
 		equals: 0
-		description: 'testRemovingShapes:2.140'.
+		description: 'testRemovingShapes_amp:2.140'.
 	self
 		assert: c canvas morph class
 		equals: UndefinedObject
-		description: 'testRemovingShapes:2.141'.
+		description: 'testRemovingShapes_amp:2.141'.
 	self
 		assert: c canvas morph
 		equals: nil
-		description: 'testRemovingShapes:2.142'.
+		description: 'testRemovingShapes_amp:2.142'.
 	self
 		assert: c canvas view class
 		equals: UndefinedObject
-		description: 'testRemovingShapes:2.143'.
+		description: 'testRemovingShapes_amp:2.143'.
 	self
 		assert: c canvas view
 		equals: nil
-		description: 'testRemovingShapes:2.144'.
+		description: 'testRemovingShapes_amp:2.144'.
 	self
 		assert: c canvas isShape class
 		equals: False
-		description: 'testRemovingShapes:2.145'.
+		description: 'testRemovingShapes_amp:2.145'.
 	self
 		assert: c canvas isShape
 		equals: false
-		description: 'testRemovingShapes:2.146'.
+		description: 'testRemovingShapes_amp:2.146'.
 	self
 		assert: c canvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testRemovingShapes:2.147'.
+		description: 'testRemovingShapes_amp:2.147'.
 	self
 		assert: c canvas numberOfShapes
 		equals: 1
-		description: 'testRemovingShapes:2.148'.
+		description: 'testRemovingShapes_amp:2.148'.
 	self
 		assert: c canvas clearBackground class
 		equals: True
-		description: 'testRemovingShapes:2.149'.
+		description: 'testRemovingShapes_amp:2.149'.
 	self
 		assert: c canvas clearBackground
 		equals: true
-		description: 'testRemovingShapes:2.150'.
+		description: 'testRemovingShapes_amp:2.150'.
 	self
 		assert: c clearBackground class
 		equals: True
-		description: 'testRemovingShapes:2.151'.
+		description: 'testRemovingShapes_amp:2.151'.
 	self
 		assert: c clearBackground
 		equals: true
-		description: 'testRemovingShapes:2.152'.
+		description: 'testRemovingShapes_amp:2.152'.
 	e remove.
 	self
 		assert: e class
 		equals: TSEllipse
-		description: 'testRemovingShapes:3.1'.
+		description: 'testRemovingShapes_amp:3.1'.
 	self
 		assert: e radius class
 		equals: SmallFloat64
-		description: 'testRemovingShapes:3.2'.
+		description: 'testRemovingShapes_amp:3.2'.
 	self
 		assert: e radius
 		equals: 0.0
-		description: 'testRemovingShapes:3.3'
+		description: 'testRemovingShapes_amp:3.3'
 ]

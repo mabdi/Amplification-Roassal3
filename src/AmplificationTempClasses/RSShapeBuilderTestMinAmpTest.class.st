@@ -5,7 +5,7 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-RSShapeBuilderTestMinAmpTest >> testColor [
+RSShapeBuilderTestMinAmpTest >> testColor_amp [
 	<madeBySmallAmp>
 	| sb |
 	sb := RSShapeBuilder box.
@@ -15,7 +15,7 @@ RSShapeBuilderTestMinAmpTest >> testColor [
 ]
 
 { #category : #'as yet unclassified' }
-RSShapeBuilderTestMinAmpTest >> testMultilineLabel [
+RSShapeBuilderTestMinAmpTest >> testMultilineLabel_amp [
 	<madeBySmallAmp>
 	| shape label child |
 	shape := RSShapeBuilder multiline

@@ -1,5 +1,5 @@
 Class {
-	#name : #TSAnimationTestMinAmpTest,
+	#name : #TSAnimationTestMinAddAmpTest,
 	#superclass : #TSTest,
 	#instVars : [
 		'canvas'
@@ -8,12 +8,32 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-TSAnimationTestMinAmpTest >> setUp [
+TSAnimationTestMinAddAmpTest >> setUp [
 	canvas := TSCanvas new.
 ]
 
 { #category : #'as yet unclassified' }
-TSAnimationTestMinAmpTest >> testTransitionAnimationCreation_amp [
+TSAnimationTestMinAddAmpTest >> testSequentialAnimationCreation [
+	<madeBySmallAmp>
+	| animation |
+	self assert: canvas animations size equals: 0.
+	animation := canvas animationFrom: {}.
+	self assert: canvas animations size equals: 1.
+	self assert: animation class equals: TSSequentialAnimation
+]
+
+{ #category : #'as yet unclassified' }
+TSAnimationTestMinAddAmpTest >> testTransitionAnimationCreation [
+	<madeBySmallAmp>
+	| animation |
+	self assert: canvas animations size equals: 0.
+	animation := canvas newAnimation.
+	self assert: canvas animations size equals: 1.
+	self assert: animation class equals: TSTransitionAnimation
+]
+
+{ #category : #'as yet unclassified' }
+TSAnimationTestMinAddAmpTest >> testTransitionAnimationCreation_amp [
 	<madeBySmallAmp>
 	| animation |
 	animation := canvas newAnimation.

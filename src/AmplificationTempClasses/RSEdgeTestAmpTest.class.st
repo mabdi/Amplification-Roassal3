@@ -69,265 +69,265 @@ RSEdgeTestAmpTest >> should: aBlock takeMoreThan: aDuration description: descrip
 ]
 
 { #category : #'as yet unclassified' }
-RSEdgeTestAmpTest >> testAddingEdgeAndGroup [
+RSEdgeTestAmpTest >> testAddingEdgeAndGroup_amp [
 	<madeBySmallAmp>
-	| v g tmp_xsZh1uiVsU1 tmp_y83sHP6jYa2 |
+	| v g tmp_YTwudHpD7n1 tmp_mYCcfSgX382 |
 	v := RSView new.
 	self
 		assert: v class
 		equals: RSView
-		description: 'testAddingEdgeAndGroup:1.1'.
+		description: 'testAddingEdgeAndGroup_amp:1.1'.
 	self
 		assert: v numberOfEdges class
 		equals: SmallInteger
-		description: 'testAddingEdgeAndGroup:1.2'.
+		description: 'testAddingEdgeAndGroup_amp:1.2'.
 	self
 		assert: v numberOfEdges
 		equals: 0
-		description: 'testAddingEdgeAndGroup:1.3'.
+		description: 'testAddingEdgeAndGroup_amp:1.3'.
 	self
 		assert: v announcer class
 		equals: Announcer
-		description: 'testAddingEdgeAndGroup:1.4'.
+		description: 'testAddingEdgeAndGroup_amp:1.4'.
 	self
 		assert: v edges class
 		equals: TSGroup
-		description: 'testAddingEdgeAndGroup:1.5'.
+		description: 'testAddingEdgeAndGroup_amp:1.5'.
 	self
 		assert: v edges size
 		equals: 0
-		description: 'testAddingEdgeAndGroup:1.6'.
+		description: 'testAddingEdgeAndGroup_amp:1.6'.
 	self
 		assert: v canvas class
 		equals: TSCanvas
-		description: 'testAddingEdgeAndGroup:1.7'.
+		description: 'testAddingEdgeAndGroup_amp:1.7'.
 	self
 		assert: v canvas showRectangles class
 		equals: False
-		description: 'testAddingEdgeAndGroup:1.8'.
+		description: 'testAddingEdgeAndGroup_amp:1.8'.
 	self
 		assert: v canvas showRectangles
 		equals: false
-		description: 'testAddingEdgeAndGroup:1.9'.
+		description: 'testAddingEdgeAndGroup_amp:1.9'.
 	self
 		assert: v canvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testAddingEdgeAndGroup:1.10'.
+		description: 'testAddingEdgeAndGroup_amp:1.10'.
 	self
 		assert: v canvas numberOfFixedShapes
 		equals: 0
-		description: 'testAddingEdgeAndGroup:1.11'.
+		description: 'testAddingEdgeAndGroup_amp:1.11'.
 	self
 		assert: v canvas morph class
 		equals: UndefinedObject
-		description: 'testAddingEdgeAndGroup:1.12'.
+		description: 'testAddingEdgeAndGroup_amp:1.12'.
 	self
 		assert: v canvas morph
 		equals: nil
-		description: 'testAddingEdgeAndGroup:1.13'.
+		description: 'testAddingEdgeAndGroup_amp:1.13'.
 	self
 		assert: v canvas isShape class
 		equals: False
-		description: 'testAddingEdgeAndGroup:1.14'.
+		description: 'testAddingEdgeAndGroup_amp:1.14'.
 	self
 		assert: v canvas isShape
 		equals: false
-		description: 'testAddingEdgeAndGroup:1.15'.
+		description: 'testAddingEdgeAndGroup_amp:1.15'.
 	self
 		assert: v canvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testAddingEdgeAndGroup:1.16'.
+		description: 'testAddingEdgeAndGroup_amp:1.16'.
 	self
 		assert: v canvas numberOfShapes
 		equals: 0
-		description: 'testAddingEdgeAndGroup:1.17'.
+		description: 'testAddingEdgeAndGroup_amp:1.17'.
 	self
 		assert: v canvas clearBackground class
 		equals: True
-		description: 'testAddingEdgeAndGroup:1.18'.
+		description: 'testAddingEdgeAndGroup_amp:1.18'.
 	self
 		assert: v canvas clearBackground
 		equals: true
-		description: 'testAddingEdgeAndGroup:1.19'.
+		description: 'testAddingEdgeAndGroup_amp:1.19'.
 	self
 		assert: v elements class
 		equals: TSGroup
-		description: 'testAddingEdgeAndGroup:1.20'.
+		description: 'testAddingEdgeAndGroup_amp:1.20'.
 	self
 		assert: v elements size
 		equals: 0
-		description: 'testAddingEdgeAndGroup:1.21'.
+		description: 'testAddingEdgeAndGroup_amp:1.21'.
 	g := TSGroup new.
 	self
 		assert: g class
 		equals: TSGroup
-		description: 'testAddingEdgeAndGroup:2.1'.
+		description: 'testAddingEdgeAndGroup_amp:2.1'.
 	self
 		assert: g size
 		equals: 0
-		description: 'testAddingEdgeAndGroup:2.2'.
-	tmp_y83sHP6jYa2 := g add: el1.
+		description: 'testAddingEdgeAndGroup_amp:2.2'.
+	tmp_mYCcfSgX382 := g add: el1.
 	self
 		assert: g class
 		equals: TSGroup
-		description: 'testAddingEdgeAndGroup:3.1'.
+		description: 'testAddingEdgeAndGroup_amp:3.1'.
 	self
 		assert: g size
 		equals: 1
-		description: 'testAddingEdgeAndGroup:3.2'.
+		description: 'testAddingEdgeAndGroup_amp:3.2'.
 	self
-		assert: tmp_y83sHP6jYa2 class
+		assert: tmp_mYCcfSgX382 class
 		equals: RSElement
-		description: 'testAddingEdgeAndGroup:3.1'.
+		description: 'testAddingEdgeAndGroup_amp:3.1'.
 	self
-		assert: tmp_y83sHP6jYa2 hasChildren class
+		assert: tmp_mYCcfSgX382 hasChildren class
 		equals: False
-		description: 'testAddingEdgeAndGroup:3.2'.
+		description: 'testAddingEdgeAndGroup_amp:3.2'.
 	self
-		assert: tmp_y83sHP6jYa2 hasChildren
+		assert: tmp_mYCcfSgX382 hasChildren
 		equals: false
-		description: 'testAddingEdgeAndGroup:3.3'.
+		description: 'testAddingEdgeAndGroup_amp:3.3'.
 	v addAll: g.
 	self
 		assert: v class
 		equals: RSView
-		description: 'testAddingEdgeAndGroup:4.1'.
+		description: 'testAddingEdgeAndGroup_amp:4.1'.
 	self
 		assert: v numberOfEdges class
 		equals: SmallInteger
-		description: 'testAddingEdgeAndGroup:4.2'.
+		description: 'testAddingEdgeAndGroup_amp:4.2'.
 	self
 		assert: v numberOfEdges
 		equals: 0
-		description: 'testAddingEdgeAndGroup:4.3'.
+		description: 'testAddingEdgeAndGroup_amp:4.3'.
 	self
 		assert: v announcer class
 		equals: Announcer
-		description: 'testAddingEdgeAndGroup:4.4'.
+		description: 'testAddingEdgeAndGroup_amp:4.4'.
 	self
 		assert: v edges class
 		equals: TSGroup
-		description: 'testAddingEdgeAndGroup:4.5'.
+		description: 'testAddingEdgeAndGroup_amp:4.5'.
 	self
 		assert: v edges size
 		equals: 0
-		description: 'testAddingEdgeAndGroup:4.6'.
+		description: 'testAddingEdgeAndGroup_amp:4.6'.
 	self
 		assert: v canvas class
 		equals: TSCanvas
-		description: 'testAddingEdgeAndGroup:4.7'.
+		description: 'testAddingEdgeAndGroup_amp:4.7'.
 	self
 		assert: v canvas showRectangles class
 		equals: False
-		description: 'testAddingEdgeAndGroup:4.8'.
+		description: 'testAddingEdgeAndGroup_amp:4.8'.
 	self
 		assert: v canvas showRectangles
 		equals: false
-		description: 'testAddingEdgeAndGroup:4.9'.
+		description: 'testAddingEdgeAndGroup_amp:4.9'.
 	self
 		assert: v canvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testAddingEdgeAndGroup:4.10'.
+		description: 'testAddingEdgeAndGroup_amp:4.10'.
 	self
 		assert: v canvas numberOfFixedShapes
 		equals: 0
-		description: 'testAddingEdgeAndGroup:4.11'.
+		description: 'testAddingEdgeAndGroup_amp:4.11'.
 	self
 		assert: v canvas morph class
 		equals: UndefinedObject
-		description: 'testAddingEdgeAndGroup:4.12'.
+		description: 'testAddingEdgeAndGroup_amp:4.12'.
 	self
 		assert: v canvas morph
 		equals: nil
-		description: 'testAddingEdgeAndGroup:4.13'.
+		description: 'testAddingEdgeAndGroup_amp:4.13'.
 	self
 		assert: v canvas isShape class
 		equals: False
-		description: 'testAddingEdgeAndGroup:4.14'.
+		description: 'testAddingEdgeAndGroup_amp:4.14'.
 	self
 		assert: v canvas isShape
 		equals: false
-		description: 'testAddingEdgeAndGroup:4.15'.
+		description: 'testAddingEdgeAndGroup_amp:4.15'.
 	self
 		assert: v canvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testAddingEdgeAndGroup:4.16'.
+		description: 'testAddingEdgeAndGroup_amp:4.16'.
 	self
 		assert: v canvas numberOfShapes
 		equals: 1
-		description: 'testAddingEdgeAndGroup:4.17'.
+		description: 'testAddingEdgeAndGroup_amp:4.17'.
 	self
 		assert: v canvas clearBackground class
 		equals: True
-		description: 'testAddingEdgeAndGroup:4.18'.
+		description: 'testAddingEdgeAndGroup_amp:4.18'.
 	self
 		assert: v canvas clearBackground
 		equals: true
-		description: 'testAddingEdgeAndGroup:4.19'.
+		description: 'testAddingEdgeAndGroup_amp:4.19'.
 	self
 		assert: v elements class
 		equals: TSGroup
-		description: 'testAddingEdgeAndGroup:4.20'.
+		description: 'testAddingEdgeAndGroup_amp:4.20'.
 	self
 		assert: v elements size
 		equals: 1
-		description: 'testAddingEdgeAndGroup:4.21'.
-	tmp_xsZh1uiVsU1 := g add: edge.
+		description: 'testAddingEdgeAndGroup_amp:4.21'.
+	tmp_YTwudHpD7n1 := g add: edge.
 	self
 		assert: g class
 		equals: TSGroup
-		description: 'testAddingEdgeAndGroup:5.1'.
+		description: 'testAddingEdgeAndGroup_amp:5.1'.
 	self
 		assert: g size
 		equals: 2
-		description: 'testAddingEdgeAndGroup:5.2'.
+		description: 'testAddingEdgeAndGroup_amp:5.2'.
 	self
-		assert: tmp_xsZh1uiVsU1 class
+		assert: tmp_YTwudHpD7n1 class
 		equals: RSEdge
-		description: 'testAddingEdgeAndGroup:5.1'.
+		description: 'testAddingEdgeAndGroup_amp:5.1'.
 	self
-		assert: tmp_xsZh1uiVsU1 isEdge class
+		assert: tmp_YTwudHpD7n1 isEdge class
 		equals: True
-		description: 'testAddingEdgeAndGroup:5.2'.
+		description: 'testAddingEdgeAndGroup_amp:5.2'.
 	self
-		assert: tmp_xsZh1uiVsU1 isEdge
+		assert: tmp_YTwudHpD7n1 isEdge
 		equals: true
-		description: 'testAddingEdgeAndGroup:5.3'.
+		description: 'testAddingEdgeAndGroup_amp:5.3'.
 	self
-		assert: tmp_xsZh1uiVsU1 controlPoints class
+		assert: tmp_YTwudHpD7n1 controlPoints class
 		equals: UndefinedObject
-		description: 'testAddingEdgeAndGroup:5.4'.
+		description: 'testAddingEdgeAndGroup_amp:5.4'.
 	self
-		assert: tmp_xsZh1uiVsU1 controlPoints
+		assert: tmp_YTwudHpD7n1 controlPoints
 		equals: nil
-		description: 'testAddingEdgeAndGroup:5.5'.
+		description: 'testAddingEdgeAndGroup_amp:5.5'.
 	self
-		assert: tmp_xsZh1uiVsU1 to class
+		assert: tmp_YTwudHpD7n1 to class
 		equals: RSElement
-		description: 'testAddingEdgeAndGroup:5.6'.
+		description: 'testAddingEdgeAndGroup_amp:5.6'.
 	self
-		assert: tmp_xsZh1uiVsU1 to hasChildren class
+		assert: tmp_YTwudHpD7n1 to hasChildren class
 		equals: False
-		description: 'testAddingEdgeAndGroup:5.7'.
+		description: 'testAddingEdgeAndGroup_amp:5.7'.
 	self
-		assert: tmp_xsZh1uiVsU1 to hasChildren
+		assert: tmp_YTwudHpD7n1 to hasChildren
 		equals: false
-		description: 'testAddingEdgeAndGroup:5.8'.
+		description: 'testAddingEdgeAndGroup_amp:5.8'.
 	self
-		assert: tmp_xsZh1uiVsU1 from class
+		assert: tmp_YTwudHpD7n1 from class
 		equals: RSElement
-		description: 'testAddingEdgeAndGroup:5.9'.
+		description: 'testAddingEdgeAndGroup_amp:5.9'.
 	self
-		assert: tmp_xsZh1uiVsU1 from hasChildren class
+		assert: tmp_YTwudHpD7n1 from hasChildren class
 		equals: False
-		description: 'testAddingEdgeAndGroup:5.10'.
+		description: 'testAddingEdgeAndGroup_amp:5.10'.
 	self
-		assert: tmp_xsZh1uiVsU1 from hasChildren
+		assert: tmp_YTwudHpD7n1 from hasChildren
 		equals: false
-		description: 'testAddingEdgeAndGroup:5.11'.
+		description: 'testAddingEdgeAndGroup_amp:5.11'.
 	self
-		assert: tmp_xsZh1uiVsU1 attachPoint class
+		assert: tmp_YTwudHpD7n1 attachPoint class
 		equals: TSCenteredAttachPoint
-		description: 'testAddingEdgeAndGroup:5.12'.
+		description: 'testAddingEdgeAndGroup_amp:5.12'.
 	v addAll: g
 ]

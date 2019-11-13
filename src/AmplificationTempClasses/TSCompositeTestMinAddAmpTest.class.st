@@ -1,11 +1,34 @@
 Class {
-	#name : #TSCompositeTestMinAmpTest,
+	#name : #TSCompositeTestMinAddAmpTest,
 	#superclass : #TSTest,
 	#category : #AmplificationTempClasses
 }
 
 { #category : #'as yet unclassified' }
-TSCompositeTestMinAmpTest >> testPaddingOkay_amp [
+TSCompositeTestMinAddAmpTest >> testPaddingOkay [
+	"No error should be raised"
+
+	<madeBySmallAmp>
+	TSComposite new
+		shapes:
+			(TSGroup new
+				add: TSBox new;
+				yourself);
+		padding: 5.
+	TSComposite new
+		shapes:
+			(TSGroup new
+				add: TSBox new;
+				add: TSBox new;
+				yourself);
+		padding: 5.
+	TSComposite new
+		shapes: TSGroup new;
+		padding: 5
+]
+
+{ #category : #'as yet unclassified' }
+TSCompositeTestMinAddAmpTest >> testPaddingOkay_amp [
 	"No error should be raised"
 
 	<madeBySmallAmp>

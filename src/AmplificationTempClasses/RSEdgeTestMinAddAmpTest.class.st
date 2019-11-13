@@ -1,5 +1,5 @@
 Class {
-	#name : #RSEdgeTestMinAmpTest,
+	#name : #RSEdgeTestMinAddAmpTest,
 	#superclass : #TSTest,
 	#instVars : [
 		'el1',
@@ -10,7 +10,7 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-RSEdgeTestMinAmpTest >> setUp [
+RSEdgeTestMinAddAmpTest >> setUp [
 	super setUp.
 	el1 := RSShapeBuilder box element.
 	el2 := RSShapeBuilder box element.
@@ -26,7 +26,22 @@ RSEdgeTestMinAmpTest >> setUp [
 ]
 
 { #category : #'as yet unclassified' }
-RSEdgeTestMinAmpTest >> testAddingEdgeAndGroup_amp [
+RSEdgeTestMinAddAmpTest >> testAddingEdgeAndGroup [
+	<madeBySmallAmp>
+	| v g |
+	v := RSView new.
+	g := TSGroup new.
+	g
+		add: el1;
+		add: el2;
+		add: edge.
+	v addAll: g.
+	self assert: edge shape notNil.
+	self assert: edge shape color notNil
+]
+
+{ #category : #'as yet unclassified' }
+RSEdgeTestMinAddAmpTest >> testAddingEdgeAndGroup_amp [
 	<madeBySmallAmp>
 	| v g tmp_YTwudHpD7n1 tmp_mYCcfSgX382 |
 	v := RSView new.

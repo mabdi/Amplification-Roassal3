@@ -57,101 +57,101 @@ RSViewTestAmpTest >> should: aBlock takeMoreThan: aDuration description: descrip
 ]
 
 { #category : #'as yet unclassified' }
-RSViewTestAmpTest >> testElementFromModel [
+RSViewTestAmpTest >> testElementFromModel_amp [
 	<madeBySmallAmp>
 	| els |
 	els := RSShapeBuilder box elementsOn: (1 to: 3).
 	self
 		assert: els class
 		equals: TSGroup
-		description: 'testElementFromModel:1.1'.
+		description: 'testElementFromModel_amp:1.1'.
 	self
 		assert: els size
 		equals: 3
-		description: 'testElementFromModel:1.2'.
+		description: 'testElementFromModel_amp:1.2'.
 	view addAll: els.
 	self
 		assert: view class
 		equals: RSView
-		description: 'testElementFromModel:2.1'.
+		description: 'testElementFromModel_amp:2.1'.
 	self
 		assert: view numberOfEdges class
 		equals: SmallInteger
-		description: 'testElementFromModel:2.2'.
+		description: 'testElementFromModel_amp:2.2'.
 	self
 		assert: view numberOfEdges
 		equals: 0
-		description: 'testElementFromModel:2.3'.
+		description: 'testElementFromModel_amp:2.3'.
 	self
 		assert: view announcer class
 		equals: Announcer
-		description: 'testElementFromModel:2.4'.
+		description: 'testElementFromModel_amp:2.4'.
 	self
 		assert: view edges class
 		equals: TSGroup
-		description: 'testElementFromModel:2.5'.
+		description: 'testElementFromModel_amp:2.5'.
 	self
 		assert: view edges size
 		equals: 0
-		description: 'testElementFromModel:2.6'.
+		description: 'testElementFromModel_amp:2.6'.
 	self
 		assert: view canvas class
 		equals: TSCanvas
-		description: 'testElementFromModel:2.7'.
+		description: 'testElementFromModel_amp:2.7'.
 	self
 		assert: view canvas showRectangles class
 		equals: False
-		description: 'testElementFromModel:2.8'.
+		description: 'testElementFromModel_amp:2.8'.
 	self
 		assert: view canvas showRectangles
 		equals: false
-		description: 'testElementFromModel:2.9'.
+		description: 'testElementFromModel_amp:2.9'.
 	self
 		assert: view canvas numberOfFixedShapes class
 		equals: SmallInteger
-		description: 'testElementFromModel:2.10'.
+		description: 'testElementFromModel_amp:2.10'.
 	self
 		assert: view canvas numberOfFixedShapes
 		equals: 0
-		description: 'testElementFromModel:2.11'.
+		description: 'testElementFromModel_amp:2.11'.
 	self
 		assert: view canvas morph class
 		equals: UndefinedObject
-		description: 'testElementFromModel:2.12'.
+		description: 'testElementFromModel_amp:2.12'.
 	self
 		assert: view canvas morph
 		equals: nil
-		description: 'testElementFromModel:2.13'.
+		description: 'testElementFromModel_amp:2.13'.
 	self
 		assert: view canvas isShape class
 		equals: False
-		description: 'testElementFromModel:2.14'.
+		description: 'testElementFromModel_amp:2.14'.
 	self
 		assert: view canvas isShape
 		equals: false
-		description: 'testElementFromModel:2.15'.
+		description: 'testElementFromModel_amp:2.15'.
 	self
 		assert: view canvas numberOfShapes class
 		equals: SmallInteger
-		description: 'testElementFromModel:2.16'.
+		description: 'testElementFromModel_amp:2.16'.
 	self
 		assert: view canvas numberOfShapes
 		equals: 3
-		description: 'testElementFromModel:2.17'.
+		description: 'testElementFromModel_amp:2.17'.
 	self
 		assert: view canvas clearBackground class
 		equals: True
-		description: 'testElementFromModel:2.18'.
+		description: 'testElementFromModel_amp:2.18'.
 	self
 		assert: view canvas clearBackground
 		equals: true
-		description: 'testElementFromModel:2.19'.
+		description: 'testElementFromModel_amp:2.19'.
 	self
 		assert: view elements class
 		equals: TSGroup
-		description: 'testElementFromModel:2.20'.
+		description: 'testElementFromModel_amp:2.20'.
 	self
 		assert: view elements size
 		equals: 3
-		description: 'testElementFromModel:2.21'
+		description: 'testElementFromModel_amp:2.21'
 ]

@@ -16,6 +16,7 @@ TestAmplificationRoassel >> amplifyAndVisualize [
 	| runs |
 	ASTHelper uniqueInstance clearTempClasses.
 	runs := super amplifyAll.
+	Transcript show: (super createMdTable: runs).
 	self visualizeAmplification2: runs
 ]
 

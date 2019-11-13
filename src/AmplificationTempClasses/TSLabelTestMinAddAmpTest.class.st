@@ -1,11 +1,26 @@
 Class {
-	#name : #TSLabelTestMinAmpTest,
+	#name : #TSLabelTestMinAddAmpTest,
 	#superclass : #TSCanvasTest,
 	#category : #AmplificationTempClasses
 }
 
 { #category : #'as yet unclassified' }
-TSLabelTestMinAmpTest >> testDrawBorderLabel_amp [
+TSLabelTestMinAddAmpTest >> testDrawBorderLabel [
+	<madeBySmallAmp>
+	c
+		addShape:
+			(TSLabel new
+				border: TSBorder new;
+				color: (Color purple alpha: 0.5);
+				fontName: 'Source Sans Pro';
+				position: -50 @ 0;
+				text: 'Hello world!';
+				yourself).
+	c createMorph drawOnMockCanvas
+]
+
+{ #category : #'as yet unclassified' }
+TSLabelTestMinAddAmpTest >> testDrawBorderLabel_amp [
 	<madeBySmallAmp>
 	| tmp_lFGzB2sdgp3 |
 	c
@@ -39,4 +54,29 @@ TSLabelTestMinAmpTest >> testDrawBorderLabel_amp [
 		assert: tmp_lFGzB2sdgp3 canvas view class
 		equals: UndefinedObject.
 	tmp_lFGzB2sdgp3 drawOnMockCanvas
+]
+
+{ #category : #'as yet unclassified' }
+TSLabelTestMinAddAmpTest >> testDrawLabel [
+	<madeBySmallAmp>
+	c
+		addShape:
+			(TSLabel new
+				color: (Color purple alpha: 0.5);
+				position: -50 @ 0;
+				text: 'Hello world!';
+				yourself).
+	c createMorph drawOnMockCanvas
+]
+
+{ #category : #'as yet unclassified' }
+TSLabelTestMinAddAmpTest >> testUnderlineStruckout [
+	<madeBySmallAmp>
+	| label |
+	label := TSLabel new.
+	self assert: label isNormal.
+	label underline.
+	label bold.
+	self assert: label isBold.
+	self assert: label isUnderlined
 ]

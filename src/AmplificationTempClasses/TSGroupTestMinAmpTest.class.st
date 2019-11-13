@@ -5,11 +5,11 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-TSGroupTestMinAmpTest >> testAddShape [
+TSGroupTestMinAmpTest >> testAddShape_amp [
 	<madeBySmallAmp>
-	| g tmp_IaHDgFpPZS1 |
+	| g tmp_fgnehuAhAL1 |
 	g := TSGroup new.
-	tmp_IaHDgFpPZS1 := g add: TSBox new.
+	tmp_fgnehuAhAL1 := g add: TSBox new.
 	self assert: g class equals: TSGroup.
-	self assert: tmp_IaHDgFpPZS1 class equals: TSBox
+	self assert: tmp_fgnehuAhAL1 class equals: TSBox
 ]

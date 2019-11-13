@@ -14,7 +14,7 @@ TSCanvasTestMinAmpTest >> setUp [
 ]
 
 { #category : #'as yet unclassified' }
-TSCanvasTestMinAmpTest >> testAddOneShape [
+TSCanvasTestMinAmpTest >> testAddOneShape_amp [
 	<madeBySmallAmp>
 	c addShape: TSBox new.
 	self assert: c fixedShapes class equals: TSGroup.
@@ -36,34 +36,36 @@ TSCanvasTestMinAmpTest >> testAddOneShape [
 ]
 
 { #category : #'as yet unclassified' }
-TSCanvasTestMinAmpTest >> testDrawCanvas [
+TSCanvasTestMinAmpTest >> testDrawCanvasWithGroup_amp [
 	<madeBySmallAmp>
-	| tmp_M03YXq7Hba4 |
-	c
-		addShape:
+	| g tmp_C81dg3r4CM5 |
+	g := TSComposite new.
+	g
+		add:
 			(TSBox new
 				extent: 100 @ 100;
 				yourself).
-	c
-		addShape:
+	g
+		add:
 			(TSEllipse new
 				position: 100 @ 100;
 				extent: 100 @ 100;
 				yourself).
-	tmp_M03YXq7Hba4 := c createMorph.
+	c addShape: g.
+	tmp_C81dg3r4CM5 := c createMorph.
 	self assert: c class equals: TSCanvas.
 	self assert: c morph wantsSteps class equals: False.
-	self assert: tmp_M03YXq7Hba4 class equals: TSAthensMorph.
+	self assert: tmp_C81dg3r4CM5 class equals: TSAthensMorph.
 	self
-		assert: tmp_M03YXq7Hba4 canvas view class
+		assert: tmp_C81dg3r4CM5 canvas view class
 		equals: UndefinedObject.
-	tmp_M03YXq7Hba4 drawOnMockCanvas
+	tmp_C81dg3r4CM5 drawOnMockCanvas
 ]
 
 { #category : #'as yet unclassified' }
-TSCanvasTestMinAmpTest >> testDrawFixed [
+TSCanvasTestMinAmpTest >> testDrawFixed_amp [
 	<madeBySmallAmp>
-	| box tmp_f1lbs83IzF12 |
+	| box tmp_T8gT1umE4112 |
 	box := TSBox new
 		extent: 100 @ 100;
 		yourself.
@@ -74,17 +76,17 @@ TSCanvasTestMinAmpTest >> testDrawFixed [
 		yourself.
 	c addShape: box.
 	box setAsFixed.
-	tmp_f1lbs83IzF12 := c createMorph.
+	tmp_T8gT1umE4112 := c createMorph.
 	self assert: c parent numberOfShapes equals: 0.
-	tmp_f1lbs83IzF12 drawOnMockCanvas
+	tmp_T8gT1umE4112 drawOnMockCanvas
 ]
 
 { #category : #'as yet unclassified' }
-TSCanvasTestMinAmpTest >> testOpening [
+TSCanvasTestMinAmpTest >> testOpening_amp [
 	<madeBySmallAmp>
-	| tmp_GDMzqKewMV2 |
-	tmp_GDMzqKewMV2 := c open.
+	| tmp_NRRzW2MuQf2 |
+	tmp_NRRzW2MuQf2 := c open.
 	self assert: c class equals: TSCanvas.
-	self assert: tmp_GDMzqKewMV2 class equals: SystemWindow.
-	tmp_GDMzqKewMV2 delete
+	self assert: tmp_NRRzW2MuQf2 class equals: SystemWindow.
+	tmp_NRRzW2MuQf2 delete
 ]

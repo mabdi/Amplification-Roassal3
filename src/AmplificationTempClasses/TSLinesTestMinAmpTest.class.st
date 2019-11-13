@@ -5,9 +5,9 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-TSLinesTestMinAmpTest >> testDrawBezierLine [
+TSLinesTestMinAmpTest >> testDrawBezierLine_amp [
 	<madeBySmallAmp>
-	| tmp_Pm38weMs963 |
+	| tmp_KQkzjgnPo73 |
 	c
 		addShape:
 			(TSBezier new
@@ -27,12 +27,12 @@ TSLinesTestMinAmpTest >> testDrawBezierLine [
 	self assert: c encompassingRectangle class equals: Rectangle.
 	self assert: c encompassingRectangle area equals: 10000.
 	self assert: c basicRectangle class equals: Rectangle.
-	tmp_Pm38weMs963 := c createMorph.
+	tmp_KQkzjgnPo73 := c createMorph.
 	self assert: c class equals: TSCanvas.
 	self assert: c morph wantsSteps class equals: False.
-	self assert: tmp_Pm38weMs963 class equals: TSAthensMorph.
+	self assert: tmp_KQkzjgnPo73 class equals: TSAthensMorph.
 	self
-		assert: tmp_Pm38weMs963 canvas view class
+		assert: tmp_KQkzjgnPo73 canvas view class
 		equals: UndefinedObject.
-	tmp_Pm38weMs963 drawOnMockCanvas
+	tmp_KQkzjgnPo73 drawOnMockCanvas
 ]

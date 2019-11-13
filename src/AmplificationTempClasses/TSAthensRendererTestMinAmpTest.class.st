@@ -5,7 +5,7 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-TSAthensRendererTestMinAmpTest >> testArcCorner [
+TSAthensRendererTestMinAmpTest >> testArcCorner_amp [
 	<madeBySmallAmp>
 	| renderer |
 	renderer := TSAthensRenderer new.
