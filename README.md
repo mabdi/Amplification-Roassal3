@@ -17,7 +17,7 @@ Then run the following code:
 ```smalltalk
 Metacello new
   baseline: 'AmplificationRoassal3';
-  repository: 'github://mabdi/Amplification-Roassal3/src';
+  repository: 'github:///mabdi/Amplification-Roassal3/tree/ampOnForked/src';
   load.
 ```
 
