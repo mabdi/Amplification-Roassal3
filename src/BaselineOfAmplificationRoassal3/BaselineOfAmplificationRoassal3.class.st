@@ -20,5 +20,5 @@ BaselineOfAmplificationRoassal3 >> baseline: spec [
 				with: [ spec repository: 'github://mabdi/small-amp/src' ].
 			spec
 				baseline: 'Roassal3'
-				with: [ spec repository: 'github://ObjectProfile/Roassal3/src' ] ]
+				with: [ spec repository: 'github://ObjectProfile/Roassal3:stable/src' ] ]
 ]
