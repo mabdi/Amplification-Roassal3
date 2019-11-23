@@ -49,7 +49,7 @@ Small-Amp uses a simple visualizing window. This window appears when the run of 
 
 ## Generated versions
 
-Currently, Small-Amp creates this versions:
+Currently, Small-Amp creates these versions:
 
 - Amp: amplified tests generated from original.
 - AmpMin: The assert statements which doesn't kill a mutant is removed from Amp.
